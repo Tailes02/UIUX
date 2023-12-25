@@ -43,32 +43,12 @@
                                 <Image url="@../Logo.jpg" />
                             </image>
                         </ImageView>
-                        <Button layoutX="48.0" layoutY="355.0" mnemonicParsing="false" prefHeight="81.0" prefWidth="288.0" style="-fx-background-radius: 20; -fx-padding: 0 0 0 0; -fx-alignment: CENTER; -fx-margin: 0 0 54 0;" text="Thông tin nhân khẩu">
+                        <Button layoutX="48.0" layoutY="355.0" mnemonicParsing="false" prefHeight="81.0" prefWidth="288.0" style="-fx-background-color: #8CC84B; -fx-background-radius: 20; -fx-padding: 0 0 0 0; -fx-alignment: CENTER; -fx-margin: 0 0 54 0;" text="Trang chủ">
                             <font>
                                 <Font name="System Bold" size="25.0" />
                             </font>
                         </Button>
-                        <Button layoutX="48.0" layoutY="460.0" mnemonicParsing="false" prefHeight="81.0" prefWidth="288.0" style="-fx-background-radius: 20; -fx-padding: 0 0 0 0; -fx-alignment: CENTER; -fx-margin: 0 0 54 0;" text="Thông tin nhân khẩu">
-                            <font>
-                                <Font name="System Bold" size="25.0" />
-                            </font>
-                        </Button>
-                        <Button layoutX="48.0" layoutY="565.0" mnemonicParsing="false" prefHeight="81.0" prefWidth="288.0" style="-fx-background-radius: 20; -fx-padding: 0 0 0 0; -fx-alignment: CENTER; -fx-margin: 0 0 54 0;" text="Thông tin nhân khẩu">
-                            <font>
-                                <Font name="System Bold" size="25.0" />
-                            </font>
-                        </Button>
-                        <Button layoutX="48.0" layoutY="670.0" mnemonicParsing="false" prefHeight="81.0" prefWidth="288.0" style="-fx-background-radius: 20; -fx-padding: 0 0 0 0; -fx-alignment: CENTER; -fx-margin: 0 0 54 0;" text="Thông tin nhân khẩu">
-                            <font>
-                                <Font name="System Bold" size="25.0" />
-                            </font>
-                        </Button>
-                        <Button layoutX="48.0" layoutY="775.0" mnemonicParsing="false" prefHeight="81.0" prefWidth="288.0" style="-fx-background-radius: 20; -fx-padding: 0 0 0 0; -fx-alignment: CENTER; -fx-margin: 0 0 54 0;" text="Thông tin nhân khẩu">
-                            <font>
-                                <Font name="System Bold" size="25.0" />
-                            </font>
-                        </Button>
-                        <Button layoutX="48.0" layoutY="880.0" mnemonicParsing="false" prefHeight="81.0" prefWidth="288.0" style="-fx-background-radius: 20; -fx-padding: 0 0 0 0; -fx-alignment: CENTER; -fx-margin: 0 0 54 0;" text="Thông tin nhân khẩu">
+                        <Button layoutX="48.0" layoutY="460.0" mnemonicParsing="false" prefHeight="81.0" prefWidth="288.0" style="-fx-background-radius: 20; -fx-padding: 0 0 0 0; -fx-alignment: CENTER; -fx-margin: 0 0 54 0; -fx-background-color: #8CC84B;" text="Hóa đơn">
                             <font>
                                 <Font name="System Bold" size="25.0" />
                             </font>
