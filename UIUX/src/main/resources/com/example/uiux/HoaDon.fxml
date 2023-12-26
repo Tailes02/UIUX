@@ -2,9 +2,6 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Spinner?>
-<?import javafx.scene.control.TableColumn?>
-<?import javafx.scene.control.TableView?>
-<?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -46,32 +43,12 @@
                                 <Image url="@../Logo.jpg" />
                             </image>
                         </ImageView>
-                        <Button layoutX="48.0" layoutY="355.0" mnemonicParsing="false" prefHeight="81.0" prefWidth="288.0" style="-fx-background-radius: 20; -fx-padding: 0 0 0 0; -fx-alignment: CENTER; -fx-margin: 0 0 54 0;" text="Thông tin nhân khẩu">
+                        <Button layoutX="48.0" layoutY="355.0" mnemonicParsing="false" prefHeight="81.0" prefWidth="288.0" style="-fx-background-color: #8CC84B; -fx-background-radius: 20; -fx-padding: 0 0 0 0; -fx-alignment: CENTER; -fx-margin: 0 0 54 0;" text="Trang chủ">
                             <font>
                                 <Font name="System Bold" size="25.0" />
                             </font>
                         </Button>
-                        <Button layoutX="48.0" layoutY="460.0" mnemonicParsing="false" prefHeight="81.0" prefWidth="288.0" style="-fx-background-radius: 20; -fx-padding: 0 0 0 0; -fx-alignment: CENTER; -fx-margin: 0 0 54 0;" text="Thông tin nhân khẩu">
-                            <font>
-                                <Font name="System Bold" size="25.0" />
-                            </font>
-                        </Button>
-                        <Button layoutX="48.0" layoutY="565.0" mnemonicParsing="false" prefHeight="81.0" prefWidth="288.0" style="-fx-background-radius: 20; -fx-padding: 0 0 0 0; -fx-alignment: CENTER; -fx-margin: 0 0 54 0;" text="Thông tin nhân khẩu">
-                            <font>
-                                <Font name="System Bold" size="25.0" />
-                            </font>
-                        </Button>
-                        <Button layoutX="48.0" layoutY="670.0" mnemonicParsing="false" prefHeight="81.0" prefWidth="288.0" style="-fx-background-radius: 20; -fx-padding: 0 0 0 0; -fx-alignment: CENTER; -fx-margin: 0 0 54 0;" text="Thông tin nhân khẩu">
-                            <font>
-                                <Font name="System Bold" size="25.0" />
-                            </font>
-                        </Button>
-                        <Button layoutX="48.0" layoutY="775.0" mnemonicParsing="false" prefHeight="81.0" prefWidth="288.0" style="-fx-background-radius: 20; -fx-padding: 0 0 0 0; -fx-alignment: CENTER; -fx-margin: 0 0 54 0;" text="Thông tin nhân khẩu">
-                            <font>
-                                <Font name="System Bold" size="25.0" />
-                            </font>
-                        </Button>
-                        <Button layoutX="48.0" layoutY="880.0" mnemonicParsing="false" prefHeight="81.0" prefWidth="288.0" style="-fx-background-radius: 20; -fx-padding: 0 0 0 0; -fx-alignment: CENTER; -fx-margin: 0 0 54 0;" text="Thông tin nhân khẩu">
+                        <Button layoutX="48.0" layoutY="460.0" mnemonicParsing="false" prefHeight="81.0" prefWidth="288.0" style="-fx-background-radius: 20; -fx-padding: 0 0 0 0; -fx-alignment: CENTER; -fx-margin: 0 0 54 0; -fx-background-color: #8CC84B;" text="Hóa đơn">
                             <font>
                                 <Font name="System Bold" size="25.0" />
                             </font>
@@ -90,12 +67,12 @@
                               <Image url="@../../../icon/sbcf-default-avatar.png" />
                            </image>
                         </ImageView>
-                        <Text layoutX="189.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nguyễn Thu Trang">
+                        <Text layoutX="189.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nguyễn Hàn My">
                            <font>
                               <Font size="40.0" />
                            </font>
                         </Text>
-                        <Text layoutX="189.0" layoutY="149.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quản lý">
+                        <Text layoutX="189.0" layoutY="149.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cư dân">
                            <font>
                               <Font size="24.0" />
                            </font>
@@ -152,35 +129,98 @@
                                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                             </rowConstraints>
                      <children>
-                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Danh sách hóa đơn" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Hóa đơn" GridPane.columnIndex="1" GridPane.rowIndex="1">
                            <font>
-                              <Font size="40.0" />
+                              <Font size="34.0" />
                            </font>
                         </Text>
-                        <TextField GridPane.columnIndex="1" GridPane.columnSpan="8" GridPane.rowIndex="2" />
-                        <ImageView fitHeight="35.0" fitWidth="35.0" GridPane.columnIndex="9" GridPane.rowIndex="2">
-                           <image>
-                              <Image url="@../../../icon/3917132.png" />
-                           </image>
-                        </ImageView>
-                        <TableView prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.columnSpan="18" GridPane.rowIndex="3" GridPane.rowSpan="15">
-                          <columns>
-                            <TableColumn prefWidth="50.0" text="ID" />
-                            <TableColumn prefWidth="1050.0" text="Danh sách" />
-                              <TableColumn prefWidth="290.0" text="Thời hạn" />
-                          </columns>
-                        </TableView>
-                        <ImageView GridPane.columnIndex="18" GridPane.rowIndex="2">
-                           <image>
-                              <Image url="@../../../icon/Vector.png" />
-                           </image>
-                        </ImageView>
-                        <Spinner GridPane.columnIndex="18" GridPane.rowIndex="18" />
-                        <ImageView GridPane.columnIndex="17" GridPane.rowIndex="2">
-                           <image>
-                              <Image url="@../../../icon/ic_outline-plus.png" />
-                           </image>
-                        </ImageView>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Đang thu" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                           <font>
+                              <Font size="34.0" />
+                           </font>
+                        </Text>
+                        <Pane prefHeight="54.0" prefWidth="1309.0" style="-fx-background-color: WHITE;" GridPane.columnIndex="2" GridPane.columnSpan="17" GridPane.rowIndex="4" GridPane.rowSpan="2">
+                           <children>
+                              <Text layoutX="20.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Thu tiền nước tháng 8">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="25.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Địa điểm: Văn phòng">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="1034.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="186.000">
+                                 <font>
+                                    <Font size="64.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </Pane>
+                        <Pane prefHeight="54.0" prefWidth="1309.0" style="-fx-background-color: WHITE;" GridPane.columnIndex="2" GridPane.columnSpan="17" GridPane.rowIndex="7" GridPane.rowSpan="2">
+                           <children>
+                              <Text layoutX="22.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Thu tiền nước tháng 8">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="27.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Địa điểm: Văn phòng">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="1041.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="504.000">
+                                 <font>
+                                    <Font size="64.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </Pane>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Lịch sử" GridPane.columnIndex="2" GridPane.rowIndex="10">
+                           <font>
+                              <Font size="34.0" />
+                           </font>
+                        </Text>
+                        <Pane prefHeight="0.0" prefWidth="1309.0" style="-fx-background-color: WHITE;" GridPane.columnIndex="2" GridPane.columnSpan="17" GridPane.rowIndex="11" GridPane.rowSpan="2">
+                           <children>
+                              <Text layoutX="20.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Thu tiền vệ sinh 2023">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="25.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Địa điểm: Văn phòng">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="1041.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="109.000">
+                                 <font>
+                                    <Font size="64.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </Pane>
+                        <Pane prefHeight="0.0" prefWidth="1309.0" style="-fx-background-color: WHITE;" GridPane.columnIndex="2" GridPane.columnSpan="17" GridPane.rowIndex="14" GridPane.rowSpan="2">
+                           <children>
+                              <Text layoutX="22.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Thu tiền sinh hoạt chung tháng 7">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="27.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Địa điểm: Văn phòng">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="1044.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="30.000">
+                                 <font>
+                                    <Font size="64.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </Pane>
+                        <Spinner editable="true" GridPane.columnIndex="18" GridPane.rowIndex="17" />
                      </children>
                         </GridPane>
                     </children>
