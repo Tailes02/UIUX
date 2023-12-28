@@ -34,7 +34,7 @@
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
             </rowConstraints>
             <children>
-                <Pane fx:id="LeftSidePane" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #D9D9D9;" GridPane.rowSpan="5">
+                <Pane fx:id="LeftSidePane" prefHeight="200.0" prefWidth="368.0" style="-fx-background-color: WHITE;" GridPane.rowSpan="5">
                     <children>
                         <Text layoutX="120.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="iHopT" textAlignment="CENTER">
                             <font>
@@ -61,17 +61,17 @@
                                 <Font name="System Bold" size="25.0" />
                             </font>
                         </Button>
-                        <Button layoutX="48.0" layoutY="670.0" mnemonicParsing="false" prefHeight="81.0" prefWidth="288.0" style="-fx-background-radius: 20; -fx-padding: 0 0 0 0; -fx-alignment: CENTER; -fx-margin: 0 0 54 0; -fx-background-color: #8CC84B;" text="Hóa đơn">
+                        <Button layoutX="48.0" layoutY="670.0" mnemonicParsing="false" prefHeight="81.0" prefWidth="288.0" style="-fx-background-radius: 20; -fx-padding: 0 0 0 0; -fx-alignment: CENTER; -fx-margin: 0 0 54 0; -fx-background-color: #fe8e28;" text="Hóa đơn">
                             <font>
                                 <Font name="System Bold" size="25.0" />
                             </font>
                         </Button>
-                        <Line endX="370.6666564941406" startX="370.6666564941406" startY="1088.833251953125" />
+                        <Line endX="370.6666564941406" layoutX="12.0" layoutY="-1.0" startX="370.6666564941406" startY="1088.833251953125" />
 
-
-                    </children>
+            
+                                </children>
                 </Pane>
-                <Pane fx:id="AccInfoPane" prefHeight="220.0" prefWidth="294.0" GridPane.columnIndex="1" GridPane.columnSpan="2">
+                <Pane fx:id="AccInfoPane" prefHeight="220.0" prefWidth="294.0" style="-fx-background-color: #eef8e0;" GridPane.columnIndex="1" GridPane.columnSpan="3">
                <children>
                   <Pane layoutX="80.0" layoutY="40.0" prefHeight="165.0" prefWidth="593.0" style="-fx-background-color: WHITE;">
                      <children>
@@ -93,8 +93,8 @@
                      </children>
                   </Pane>
                </children></Pane>
-                <Pane fx:id="NotiPane" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #D9D9D9;" GridPane.columnIndex="4" />
-                <Pane fx:id="MainPane" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.columnSpan="4" GridPane.rowIndex="1" GridPane.rowSpan="4">
+                <Pane fx:id="NotiPane" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #eef8e0;" GridPane.columnIndex="4" />
+                <Pane fx:id="MainPane" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #eef8e0;" GridPane.columnIndex="1" GridPane.columnSpan="4" GridPane.rowIndex="1" GridPane.rowSpan="4">
                     <children>
                         <GridPane fx:id="GridMainPane" alignment="CENTER" prefHeight="858.0" prefWidth="1538.0">
                             <columnConstraints>
@@ -153,11 +153,12 @@
                               <Image url="@../../../icon/3917132.png" />
                            </image>
                         </ImageView>
-                        <TableView prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.columnSpan="18" GridPane.rowIndex="3" GridPane.rowSpan="15">
+                        <TableView prefHeight="200.0" prefWidth="1421.0" GridPane.columnIndex="1" GridPane.columnSpan="18" GridPane.rowIndex="3" GridPane.rowSpan="15">
                           <columns>
                             <TableColumn prefWidth="50.0" text="ID" />
-                            <TableColumn prefWidth="1050.0" text="Danh sách" />
-                              <TableColumn prefWidth="290.0" text="Thời hạn" />
+                            <TableColumn prefWidth="975.0" text="Danh sách" />
+                              <TableColumn minWidth="0.0" prefWidth="248.0" text="Thời hạn" />
+                              <TableColumn prefWidth="111.0" text="Tình trạng" />
                           </columns>
                         </TableView>
                         <ImageView GridPane.columnIndex="18" GridPane.rowIndex="2">
