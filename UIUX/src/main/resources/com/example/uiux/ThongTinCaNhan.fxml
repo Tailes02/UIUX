@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+
+    <!-- Left Sidebar -->
+    <VBox fx:id="sidebar" layoutX="0" layoutY="0" prefWidth="240.0" prefHeight="720.0" style="-fx-background-color: #C8E6C9;" spacing="15" alignment="TOP_CENTER" fillWidth="true">
+        <Label fx:id="titleLabel" text="iHopT" style="-fx-font-size: 24; -fx-text-fill: #333333;" layoutY="30.0" VBox.vgrow="NEVER"/>
+        <Button fx:id="homeButton" text="Trang chủ" style="-fx-background-color: #8BC34A; -fx-text-fill: white; -fx-font-weight: bold;" prefWidth="200" prefHeight="40"/>
+        <Button fx:id="infoButton" text="Thông tin nhân khẩu" style="-fx-background-color: #8BC34A; -fx-text-fill: white; -fx-font-weight: bold;" prefWidth="200" prefHeight="40"/>
+        <Button fx:id="notificationButton" text="Tạo thông báo" style="-fx-background-color: #8BC34A; -fx-text-fill: white; -fx-font-weight: bold;" prefWidth="200" prefHeight="40"/>
+    </VBox>
+
+    <!-- Main Content -->
+    <AnchorPane fx:id="mainContent" layoutX="240.0" layoutY="0" prefWidth="1040.0" prefHeight="720.0" style="-fx-background-color: #FFFFFF;">
+
+        <!-- Header -->
+        <HBox layoutX="10" layoutY="10" spacing="10" alignment="CENTER_LEFT">
+            <Circle fx:id="userIcon" fill="#757575" radius="20"/>
+            <Label fx:id="userNameLabel" text="Chu Hữu Phúc" style="-fx-font-size: 20;"/>
+            <Label fx:id="userRoleLabel" text="Quản trị" style="-fx-font-size: 14; -fx-text-fill: #757575;"/>
+        </HBox>
+
+        <!-- Account Info Section -->
+        <VBox layoutX="400" layoutY="200" spacing="20" alignment="TOP_CENTER">
+            <Label fx:id="accountSectionLabel" text="Thông tin tài khoản" style="-fx-font-size: 24;"/>
+            <Circle fx:id="profilePicture" radius="50" fill="#BBBBBB"/>
+            <Label fx:id="accountTypeLabel" text="Admin" style="-fx-font-size: 16;"/>
+            <HBox spacing="10" alignment="CENTER">
+                <Label fx:id="accountIdLabel" text="Tài khoản: Admin" style="-fx-font-size: 14;"/>
+                <Button fx:id="editButton" text="sửa" style="-fx-background-color: #A5D6A7;"/>
+            </HBox>
+            <HBox spacing="10" alignment="CENTER">
+                <Label fx:id="passwordLabel" text="Mật khẩu: ********" style="-fx-font-size: 14;"/>
+                <Button fx:id="changePasswordButton" text="Thay đổi" style="-fx-background-color: #A5D6A7;"/>
+            </HBox>
+            <Button fx:id="logoutButton" text="Đăng xuất" style="-fx-background-color: #8BC34A; -fx-text-fill: white; -fx-font-size: 14;"/>
+        </VBox>
+
+    </AnchorPane>
+
+</AnchorPane>

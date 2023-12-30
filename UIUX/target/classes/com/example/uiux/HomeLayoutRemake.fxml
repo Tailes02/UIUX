@@ -3,13 +3,12 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.RowConstraints?>
 
-
-<?import javafx.scene.layout.Pane?>
 <AnchorPane prefHeight="720" prefWidth="1280" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.uiux.HomeLayoutRemakeController">
     <children>
-        <GridPane layoutX="154.0" layoutY="156.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <GridPane fx:id="MainGrid" layoutX="0.0" layoutY="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
             <columnConstraints>
                 <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                 <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -24,15 +23,56 @@
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
             </rowConstraints>
+
             <children>
-                <!-- Pane in (0, 0) to (0, 4) -->
-                <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #D9D9D9;" GridPane.columnIndex="0" GridPane.rowSpan="5" />
+            <GridPane GridPane.rowSpan="5">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+
+                  <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                      <!-- Pane in (0, 0) to (0, 4) -->
+                      <Pane fx:id="LeftSidePane" prefHeight="0.0" prefWidth="0.0" style="-fx-background-color: #D9D9D9;" GridPane.rowIndex="4" />
+               </children>
+            </GridPane>
 
                 <!-- AccInfoPane in (1, 0) -->
-                <Pane fx:id="AccInfoPane" prefHeight="220.0" prefWidth="294.0" style="-fx-background-color: #D9D9D9;" GridPane.columnIndex="1" />
-
-                <!-- NotiPane in (4, 0) -->
-                <Pane fx:id="NotiPane" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #D9D9D9;" GridPane.columnIndex="4" />
+                <Pane fx:id="HeaderPane" prefHeight="220.0" prefWidth="294.0" style="-fx-background-color: #D9D9D9;" GridPane.columnIndex="1" GridPane.columnSpan="4">
+               <children>
+                  <GridPane fx:id="HeaderGrid" layoutX="33.0" layoutY="15.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                  </GridPane>
+               </children></Pane>
+            <Pane fx:id="InfomationPane" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.columnSpan="4" GridPane.rowIndex="1" GridPane.rowSpan="4">
+               <children>
+                  <GridPane fx:id="InformationGrid" layoutX="57.0" layoutY="29.0" prefHeight="487.0" prefWidth="947.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                  </GridPane>
+               </children>
+            </Pane>
             </children>
         </GridPane>
     </children>
