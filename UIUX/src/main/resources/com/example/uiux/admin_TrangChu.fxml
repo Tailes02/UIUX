@@ -30,17 +30,6 @@
             <RowConstraints percentHeight="20" />
             <RowConstraints percentHeight="20" />
         </rowConstraints>
-
-        <!-- Information Pane -->
-        <Pane fx:id="InfomationPane" prefHeight="573.0" prefWidth="1024.0" style="-fx-background-color: #C5E99B;" GridPane.columnIndex="1" GridPane.columnSpan="4" GridPane.rowIndex="1" GridPane.rowSpan="4">
-         <children>
-             <TableView fx:id="EventTable" prefHeight="573.0" prefWidth="1024.0">
-                 <columns>
-                     <TableColumn text="Tin tức sự kiện"/>
-                 </columns>
-             </TableView>
-         </children>
-        </Pane>
       <GridPane fx:id="HeaderGrid" prefHeight="144.0" prefWidth="1024.0" style="-fx-background-color: #C5E99B;" GridPane.columnIndex="1" GridPane.columnSpan="4">
          <columnConstraints>
             <ColumnConstraints percentWidth="5" />
@@ -77,7 +66,27 @@
             <RowConstraints percentHeight="10" />
          </rowConstraints>
           <children>
-              <Pane fx:id="HeaderPane" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 15;" GridPane.columnIndex="1" GridPane.columnSpan="18" GridPane.rowIndex="2" GridPane.rowSpan="6" />
+              <Pane fx:id="HeaderPane" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 15;" GridPane.columnIndex="1" GridPane.columnSpan="18" GridPane.rowIndex="2" GridPane.rowSpan="6">
+               <children>
+                  <Pane layoutX="4.0" prefHeight="91.0" prefWidth="320.0" style="-fx-background-radius: 15;">
+                     <children>
+                        <Text layoutX="104.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Chu Hữu Phúc">
+                           <font>
+                              <Font name="System Bold" size="30.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="104.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quản lí">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Text>
+                        <ImageView fitHeight="68.0" fitWidth="76.0" layoutX="20.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../icon/sbcf-default-avatar.png" />
+                           </image>
+                        </ImageView>
+                     </children></Pane>
+               </children></Pane>
           </children>
       </GridPane>
       <GridPane fx:id="LeftSideGrid" GridPane.rowIndex="1" GridPane.rowSpan="4">
@@ -140,45 +149,45 @@
       </GridPane>
       <GridPane>
           <columnConstraints>
-              <ColumnConstraints percentWidth="5" />
-              <ColumnConstraints percentWidth="5" />
-              <ColumnConstraints percentWidth="5" />
-              <ColumnConstraints percentWidth="5" />
-              <ColumnConstraints percentWidth="5" />
-              <ColumnConstraints percentWidth="5" />
-              <ColumnConstraints percentWidth="5" />
-              <ColumnConstraints percentWidth="5" />
-              <ColumnConstraints percentWidth="5" />
-              <ColumnConstraints percentWidth="5" />
-              <ColumnConstraints percentWidth="5" />
-              <ColumnConstraints percentWidth="5" />
-              <ColumnConstraints percentWidth="5" />
-              <ColumnConstraints percentWidth="5" />
-              <ColumnConstraints percentWidth="5" />
-              <ColumnConstraints percentWidth="5" />
-              <ColumnConstraints percentWidth="5" />
-              <ColumnConstraints percentWidth="5" />
-              <ColumnConstraints percentWidth="5" />
-              <ColumnConstraints percentWidth="5" />
+              <ColumnConstraints percentWidth="5.0" />
+              <ColumnConstraints percentWidth="5.0" />
+              <ColumnConstraints percentWidth="5.0" />
+              <ColumnConstraints percentWidth="5.0" />
+              <ColumnConstraints percentWidth="5.0" />
+              <ColumnConstraints percentWidth="5.0" />
+              <ColumnConstraints percentWidth="5.0" />
+              <ColumnConstraints percentWidth="5.0" />
+              <ColumnConstraints percentWidth="5.0" />
+              <ColumnConstraints percentWidth="5.0" />
+              <ColumnConstraints percentWidth="5.0" />
+              <ColumnConstraints percentWidth="5.0" />
+              <ColumnConstraints percentWidth="5.0" />
+              <ColumnConstraints percentWidth="5.0" />
+              <ColumnConstraints percentWidth="5.0" />
+              <ColumnConstraints percentWidth="5.0" />
+              <ColumnConstraints percentWidth="5.0" />
+              <ColumnConstraints percentWidth="5.0" />
+              <ColumnConstraints percentWidth="5.0" />
+              <ColumnConstraints percentWidth="5.0" />
         </columnConstraints>
           <rowConstraints>
-              <RowConstraints percentHeight="10" />
-              <RowConstraints percentHeight="10" />
-              <RowConstraints percentHeight="10" />
-              <RowConstraints percentHeight="10" />
-              <RowConstraints percentHeight="10" />
-              <RowConstraints percentHeight="10" />
-              <RowConstraints percentHeight="10" />
-              <RowConstraints percentHeight="10" />
-              <RowConstraints percentHeight="10" />
-              <RowConstraints percentHeight="10" />
+              <RowConstraints percentHeight="10.0" />
+              <RowConstraints percentHeight="10.0" />
+              <RowConstraints percentHeight="10.0" />
+              <RowConstraints percentHeight="10.0" />
+              <RowConstraints percentHeight="10.0" />
+              <RowConstraints percentHeight="10.0" />
+              <RowConstraints percentHeight="10.0" />
+              <RowConstraints percentHeight="10.0" />
+              <RowConstraints percentHeight="10.0" />
+              <RowConstraints percentHeight="10.0" />
           </rowConstraints>
           <children>
-              <ImageView fitHeight="59.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.columnSpan="4" GridPane.rowIndex="4" GridPane.rowSpan="2">
+              <ImageView fitHeight="59.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.columnSpan="4" GridPane.rowIndex="4" GridPane.rowSpan="2">
                <image>
                   <Image url="@../Logo.jpg" />
                </image></ImageView>
-            <Pane prefHeight="86.0" prefWidth="150.0" GridPane.columnIndex="6" GridPane.columnSpan="13" GridPane.rowIndex="2" GridPane.rowSpan="5">
+            <Pane prefHeight="72.0" prefWidth="145.0" GridPane.columnIndex="7" GridPane.columnSpan="11" GridPane.rowIndex="2" GridPane.rowSpan="5">
                <children>
                   <Text layoutX="14.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="iHopT">
                      <font>
@@ -187,6 +196,59 @@
                   </Text>
                </children></Pane>
           </children>
+      </GridPane>
+      <GridPane fx:id="InfomationGrid" style="-fx-background-color: #C5E99B;" GridPane.columnIndex="1" GridPane.columnSpan="4" GridPane.rowIndex="1" GridPane.rowSpan="4">
+        <columnConstraints>
+            <ColumnConstraints percentWidth="5" />
+            <ColumnConstraints percentWidth="5" />
+            <ColumnConstraints percentWidth="5" />
+            <ColumnConstraints percentWidth="5" />
+            <ColumnConstraints percentWidth="5" />
+            <ColumnConstraints percentWidth="5" />
+            <ColumnConstraints percentWidth="5" />
+            <ColumnConstraints percentWidth="5" />
+            <ColumnConstraints percentWidth="5" />
+            <ColumnConstraints percentWidth="5" />
+            <ColumnConstraints percentWidth="5" />
+            <ColumnConstraints percentWidth="5" />
+            <ColumnConstraints percentWidth="5" />
+            <ColumnConstraints percentWidth="5" />
+            <ColumnConstraints percentWidth="5" />
+            <ColumnConstraints percentWidth="5" />
+            <ColumnConstraints percentWidth="5" />
+            <ColumnConstraints percentWidth="5" />
+            <ColumnConstraints percentWidth="5" />
+            <ColumnConstraints percentWidth="5" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints percentHeight="5" />
+            <RowConstraints percentHeight="5" />
+            <RowConstraints percentHeight="5" />
+            <RowConstraints percentHeight="5" />
+            <RowConstraints percentHeight="5" />
+            <RowConstraints percentHeight="5" />
+            <RowConstraints percentHeight="5" />
+            <RowConstraints percentHeight="5" />
+            <RowConstraints percentHeight="5" />
+            <RowConstraints percentHeight="5" />
+            <RowConstraints percentHeight="5" />
+            <RowConstraints percentHeight="5" />
+            <RowConstraints percentHeight="5" />
+            <RowConstraints percentHeight="5" />
+            <RowConstraints percentHeight="5" />
+            <RowConstraints percentHeight="5" />
+            <RowConstraints percentHeight="5" />
+            <RowConstraints percentHeight="5" />
+            <RowConstraints percentHeight="5" />
+            <RowConstraints percentHeight="5" />
+        </rowConstraints>
+         <children>
+            <TableView prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.columnSpan="18" GridPane.rowIndex="2" GridPane.rowSpan="16">
+               <columns>
+                  <TableColumn prefWidth="1384.0" text="Tin tức sự kiện" />
+               </columns>
+            </TableView>
+         </children>
       </GridPane>
 
         <!-- Grid content goes here -->
