@@ -187,10 +187,7 @@
                <image>
                   <Image url="@../Logo.jpg" />
                </image></ImageView>
-              <ImageView fitHeight="59.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.columnSpan="4" GridPane.rowIndex="4" GridPane.rowSpan="2">
-                  <image>
-                      <Image url="@../Logo.jpg" />
-                  </image></ImageView>
+
             <Pane prefHeight="72.0" prefWidth="145.0" GridPane.columnIndex="7" GridPane.columnSpan="11" GridPane.rowIndex="2" GridPane.rowSpan="5">
                <children>
                   <Text layoutX="14.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="iHopT">
