@@ -192,7 +192,7 @@
                <children>
                   <Text layoutX="14.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="iHopT">
                      <font>
-                        <Font name="System Bold" size="40.0" />
+                        <Ft ont name="System Bold" size="40.0" />
                      </font>
                   </Text>
                </children></Pane>

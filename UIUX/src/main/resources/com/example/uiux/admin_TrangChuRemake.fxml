@@ -12,7 +12,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="720" prefWidth="1280" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.uiux.HomeLayoutRemakeController">
+<AnchorPane prefHeight="720" prefWidth="1280" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.uiux.HomeLayoutRemakeController">
     <GridPane fx:id="mainGrid" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <columnConstraints>
             <ColumnConstraints percentWidth="20.0" />
@@ -31,26 +31,26 @@
         </rowConstraints>
         <GridPane fx:id="HeaderGrid" prefHeight="144.0" prefWidth="1024.0" style="-fx-background-color: #FFFFFF;" GridPane.columnIndex="1" GridPane.columnSpan="4">
             <columnConstraints>
-                <ColumnConstraints percentWidth="5" />
-                <ColumnConstraints percentWidth="5" />
-                <ColumnConstraints percentWidth="5" />
-                <ColumnConstraints percentWidth="5" />
-                <ColumnConstraints percentWidth="5" />
-                <ColumnConstraints percentWidth="5" />
-                <ColumnConstraints percentWidth="5" />
-                <ColumnConstraints percentWidth="5" />
-                <ColumnConstraints percentWidth="5" />
-                <ColumnConstraints percentWidth="5" />
-                <ColumnConstraints percentWidth="5" />
-                <ColumnConstraints percentWidth="5" />
-                <ColumnConstraints percentWidth="5" />
-                <ColumnConstraints percentWidth="5" />
-                <ColumnConstraints percentWidth="5" />
-                <ColumnConstraints percentWidth="5" />
-                <ColumnConstraints percentWidth="5" />
-                <ColumnConstraints percentWidth="5" />
-                <ColumnConstraints percentWidth="5" />
-                <ColumnConstraints percentWidth="5" />
+                <ColumnConstraints percentWidth="5.0" />
+                <ColumnConstraints percentWidth="5.0" />
+                <ColumnConstraints percentWidth="5.0" />
+                <ColumnConstraints percentWidth="5.0" />
+                <ColumnConstraints percentWidth="5.0" />
+                <ColumnConstraints percentWidth="5.0" />
+                <ColumnConstraints percentWidth="5.0" />
+                <ColumnConstraints percentWidth="5.0" />
+                <ColumnConstraints percentWidth="5.0" />
+                <ColumnConstraints percentWidth="5.0" />
+                <ColumnConstraints percentWidth="5.0" />
+                <ColumnConstraints percentWidth="5.0" />
+                <ColumnConstraints percentWidth="5.0" />
+                <ColumnConstraints percentWidth="5.0" />
+                <ColumnConstraints percentWidth="5.0" />
+                <ColumnConstraints percentWidth="5.0" />
+                <ColumnConstraints percentWidth="5.0" />
+                <ColumnConstraints percentWidth="5.0" />
+                <ColumnConstraints percentWidth="5.0" />
+                <ColumnConstraints percentWidth="5.0" />
             </columnConstraints>
             <rowConstraints>
                 <RowConstraints percentHeight="10.0" />
@@ -61,33 +61,44 @@
                 <RowConstraints percentHeight="10.0" />
                 <RowConstraints percentHeight="10.0" />
                 <RowConstraints percentHeight="10.0" />
-            <RowConstraints minHeight="10.0" percentHeight="10.0" prefHeight="30.0" />
-            <RowConstraints minHeight="10.0" percentHeight="10.0" prefHeight="30.0" />
-
+            <RowConstraints maxHeight="24.0" minHeight="10.0" percentHeight="10.0" prefHeight="22.0" />
+            <RowConstraints maxHeight="13.0" minHeight="5.0" percentHeight="10.0" prefHeight="7.0" />
+   
             </rowConstraints>
             <children>
-                <Pane fx:id="HeaderPane" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 15;" GridPane.columnIndex="1" GridPane.columnSpan="18" GridPane.rowIndex="1" GridPane.rowSpan="6">
-                    <children>
-                        <Pane layoutX="4.0" prefHeight="91.0" prefWidth="320.0" style="-fx-background-radius: 15;">
-                            <children>
-                                <Text layoutX="104.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Chu Hữu Phúc">
-                                    <font>
-                                        <Font name="System Bold" size="30.0" />
-                                    </font>
-                                </Text>
-                                <Text layoutX="104.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quản lí">
-                                    <font>
-                                        <Font size="20.0" />
-                                    </font>
-                                </Text>
-                                <ImageView fitHeight="68.0" fitWidth="76.0" layoutX="20.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
-                                    <image>
-                                        <Image url="@../../../icon/sbcf-default-avatar.png" />
-                                    </image>
-                                </ImageView>
-                            </children></Pane>
-                    </children></Pane>
-            <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #f4f4f4;" GridPane.columnSpan="20" GridPane.rowIndex="8" GridPane.rowSpan="2" />
+            <Pane prefHeight="91.0" prefWidth="320.0" style="-fx-background-radius: 15;" GridPane.columnIndex="1" GridPane.columnSpan="10" GridPane.rowIndex="1" GridPane.rowSpan="6">
+               <children>
+                  <Text layoutX="104.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Chu Hữu Phúc">
+                     <font>
+                        <Font name="System Bold" size="30.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="104.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quản lí">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="68.0" fitWidth="76.0" layoutX="20.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../icon/sbcf-default-avatar.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane prefHeight="53.0" prefWidth="105.0" style="-fx-border-color: lightgray; -fx-border-width: 1; -fx-border-radius: 20;" GridPane.columnIndex="14" GridPane.columnSpan="3" GridPane.rowIndex="2" GridPane.rowSpan="4">
+               <children>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../icon/Bell.png" />
+                     </image>
+                  </ImageView>
+                  <Text layoutX="50.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Thông báo">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
             </children>
         </GridPane>
         <GridPane fx:id="LeftSideGrid" style="-fx-background-color: #0B8C56;" GridPane.rowIndex="1" GridPane.rowSpan="4">
@@ -267,4 +278,5 @@
         <!-- Grid content goes here -->
     </GridPane>
    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="30.0" layoutX="166.0" layoutY="-62.0" stroke="BLACK" strokeType="INSIDE" width="8.0" />
+   <Pane layoutX="1094.0" layoutY="-54.0" prefHeight="27.0" prefWidth="29.0" style="-fx-background-color: #f4f4f4;" />
 </AnchorPane>
