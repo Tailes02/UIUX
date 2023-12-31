@@ -15,7 +15,7 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) {
         Main.primaryStage = primaryStage; // Assign the primaryStage to the static field
-        loadScene("admin_TrangChuRemake.fxml");
+        loadScene("admin_ThongTinTaiKhoan.fxml");
     }
 
     public static void loadScene(String fxmlFile) {
