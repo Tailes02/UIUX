@@ -85,7 +85,7 @@
                   </ImageView>
                </children>
             </Pane>
-            <Pane prefHeight="53.0" prefWidth="105.0" style="-fx-border-color: lightgray; -fx-border-width: 1; -fx-border-radius: 20;" GridPane.columnIndex="14" GridPane.columnSpan="3" GridPane.rowIndex="2" GridPane.rowSpan="4">
+            <Pane prefHeight="53.0" prefWidth="105.0" style="-fx-border-color: #0B8C56; -fx-border-width: 1; -fx-border-radius: 20;" GridPane.columnIndex="15" GridPane.columnSpan="3" GridPane.rowIndex="2" GridPane.rowSpan="4">
                <children>
                   <ImageView fitHeight="50.0" fitWidth="50.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -99,6 +99,7 @@
                   </Text>
                </children>
             </Pane>
+            <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: f4f4f4;" GridPane.columnSpan="20" GridPane.rowIndex="8" GridPane.rowSpan="2" />
             </children>
         </GridPane>
         <GridPane fx:id="LeftSideGrid" style="-fx-background-color: #0B8C56;" GridPane.rowIndex="1" GridPane.rowSpan="4">
@@ -159,6 +160,11 @@
                 </Button>
                 <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#E3D464" height="55.0" stroke="BLACK" strokeType="INSIDE" width="13.0" GridPane.rowSpan="2" />
             <Button mnemonicParsing="false" prefHeight="58.0" prefWidth="204.0" style="-fx-background-color: #0B8C56; -fx-padding: 0 0 0 0; -fx-alignment: CENTER_LEFT; -fx-margin: 0 0 54 0;" text="Thông tin cá nhân" textFill="WHITE" GridPane.columnIndex="1" GridPane.columnSpan="8" GridPane.rowIndex="2" GridPane.rowSpan="2">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="81.0" prefWidth="288.0" style="-fx-background-color: #0B8C56; -fx-padding: 0 0 0 0; -fx-alignment: CENTER_LEFT; -fx-margin: 0 0 54 0;" text="Tin nhắn" textFill="WHITE" GridPane.columnIndex="1" GridPane.columnSpan="8" GridPane.rowIndex="10" GridPane.rowSpan="2">
                <font>
                   <Font name="System Bold" size="20.0" />
                </font>
@@ -272,11 +278,17 @@
                 <RowConstraints percentHeight="5.0" />
                 <RowConstraints percentHeight="5.0" />
                 <RowConstraints percentHeight="5.0" />
+            <RowConstraints percentHeight="5.0" />
             </rowConstraints>
+         <children>
+            <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnSpan="4">
+               <children>
+                  <Text layoutX="47.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sự kiện" />
+               </children>
+            </Pane>
+         </children>
         </GridPane>
 
         <!-- Grid content goes here -->
     </GridPane>
-   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="30.0" layoutX="166.0" layoutY="-62.0" stroke="BLACK" strokeType="INSIDE" width="8.0" />
-   <Pane layoutX="1094.0" layoutY="-54.0" prefHeight="27.0" prefWidth="29.0" style="-fx-background-color: #f4f4f4;" />
 </AnchorPane>
