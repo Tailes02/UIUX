@@ -1,9 +1,10 @@
 package com.example.uiux;
 
 import javafx.fxml.FXML;
-import javafx.scene.control.Button;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.scene.text.Text;
+
+import java.util.Optional;
 
 public class admin_ThongTinTaiKhoanController extends admin_ChuyenTrangController {
     @FXML
@@ -44,8 +45,39 @@ public class admin_ThongTinTaiKhoanController extends admin_ChuyenTrangControlle
 
     @FXML
     private void handleXacNhanButtonClicked() {
-        // Handle the action when XacNhanButton is clicked
-        // You can add your custom logic here
+        // Create the confirmation dialog
+        Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
+        alert.setHeaderText("Xác nhận đổi mật khẩu ?");
+//        alert.setContentText("Are you sure you want to perform this action?");
+
+        // Add "Confirm" and "Cancel" buttons
+        ButtonType buttonTypeConfirm = new ButtonType("Xác nhận");
+        ButtonType buttonTypeCancel = new ButtonType("Hủy");
+        alert.getButtonTypes().setAll(buttonTypeConfirm, buttonTypeCancel);
+
+        // Show the dialog and wait for a result
+        Optional<ButtonType> result = alert.showAndWait();
+
+        // Handle the result based on the button clicked
+        if (result.isPresent() && result.get() == buttonTypeConfirm) {
+            // Handle Confirm button clicked
+            Main.showAlert("Thay đổi mật khẩu thành công",null, Alert.AlertType.INFORMATION);
+            handleConfirmAction();
+        } else {
+            handleConfirmAction();
+        }
     }
 
+    private void handleConfirmAction() {
+        PasswordTextField.setVisible(false);
+        PasswordText.setVisible(true);
+        XacNhanButton.setVisible(false);
+    }
+
+    private void handleCancelAction() {
+        // Handle the action when "Cancel" is clicked or the dialog is closed
+        // You can add your custom logic here
+    }
 }
+
+

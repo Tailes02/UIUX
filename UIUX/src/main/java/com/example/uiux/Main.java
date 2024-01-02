@@ -39,33 +39,6 @@ public class Main extends Application {
         }
     }
 
-//     @FXML
-//    private TextField usernameField;
-//    @FXML
-//    private PasswordField passwordField;
-//
-//    String QuanLyUsername = "QuanLy";
-//    String QuanLyPassword = "123";
-//    String QuanTriUsername = "QuanTri";
-//    String QuanTriPassword = "123";
-//    String CuDanUsername = "CuDan";
-//    String CuDanPassword = "123";
-//
-//    @FXML
-//    private void login(ActionEvent event) {
-//        String username = usernameField.getText();
-//        String password = passwordField.getText();
-//
-//        if (username.equals(QuanLyUsername) && password.equals(QuanLyPassword)) {
-//            System.out.println("Đăng nhập thành công");
-//        } else if (username.equals(QuanTriUsername) && password.equals(QuanTriPassword)) {
-//            System.out.println("Đăng nhập thành công");
-//        } else if (username.equals(CuDanUsername) && password.equals(CuDanPassword)) {
-//            System.out.println("Đăng nhập thành công");
-//        } else {
-//            showAlert("Sai thông tin vui lòng thử lại!", "Login Error", Alert.AlertType.ERROR);
-//        }
-//    }
 
     public static void main(String[] args) {
         launch();
