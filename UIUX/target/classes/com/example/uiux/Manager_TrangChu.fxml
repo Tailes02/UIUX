@@ -68,7 +68,7 @@
             <children>
             <Pane prefHeight="91.0" prefWidth="320.0" style="-fx-background-radius: 15;" GridPane.columnIndex="1" GridPane.columnSpan="10" GridPane.rowIndex="1" GridPane.rowSpan="6">
                <children>
-                  <Text layoutX="104.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Chu Hữu Phúc">
+                  <Text layoutX="104.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nguyễn Thu Trang">
                      <font>
                         <Font name="System Bold" size="30.0" />
                      </font>

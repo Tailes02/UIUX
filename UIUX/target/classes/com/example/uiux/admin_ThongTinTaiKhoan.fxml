@@ -338,7 +338,7 @@
                 </StackPane>
                 <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="8" GridPane.columnSpan="4" GridPane.rowIndex="16" GridPane.rowSpan="2">
                     <children>
-                        <Button fx:id="LogoutButton" mnemonicParsing="false" prefHeight="54.0" prefWidth="189.0" style="-fx-background-radius: 20;" text="Đăng xuất" textFill="#ef0000">
+                        <Button fx:id="LogoutButton" mnemonicParsing="false" prefHeight="54.0" prefWidth="189.0" style="-fx-background-radius: 20;" text="Đăng xuất" textFill="#ef0000" onAction="#LogoutButtonClicked">
                             <font>
                                 <Font name="System Bold" size="15.0" />
                             </font>
