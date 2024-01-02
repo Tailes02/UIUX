@@ -312,9 +312,9 @@
                </children>
             </Pane>
             <ComboBox prefHeight="44.0" prefWidth="154.0" GridPane.columnIndex="4" GridPane.columnSpan="3" GridPane.rowIndex="3" />
-            <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ffffff; -fx-background-radius: 20;" GridPane.columnIndex="4" GridPane.columnSpan="12" GridPane.rowIndex="5" />
-            <DatePicker prefHeight="27.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.columnSpan="4" GridPane.rowIndex="7" />
-            <DatePicker prefHeight="27.0" prefWidth="253.0" GridPane.columnIndex="9" GridPane.columnSpan="4" GridPane.rowIndex="7" />
+            <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ffffff; -fx-background-radius: 20;" GridPane.columnIndex="4" GridPane.columnSpan="10" GridPane.rowIndex="5" />
+            <DatePicker prefHeight="27.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.columnSpan="3" GridPane.rowIndex="7" />
+            <DatePicker prefHeight="27.0" prefWidth="253.0" GridPane.columnIndex="9" GridPane.columnSpan="3" GridPane.rowIndex="7" />
             <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.columnSpan="3" GridPane.rowIndex="9">
                <children>
                   <Text layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Số tiền">
@@ -353,7 +353,7 @@
                </children>
             </Pane>
             <ComboBox prefHeight="40.0" prefWidth="146.0" GridPane.columnIndex="4" GridPane.columnSpan="3" GridPane.rowIndex="12" />
-            <Button mnemonicParsing="false" prefHeight="69.0" prefWidth="93.0" style="-fx-border-radius: 20; -fx-background-radius: 20; -fx-border-color: #0B8C56; -fx-background-color: #ffffff;" text="Hủy" GridPane.columnIndex="4" GridPane.columnSpan="2" GridPane.rowIndex="16" GridPane.rowSpan="2">
+            <Button mnemonicParsing="false" prefHeight="69.0" prefWidth="93.0" style="-fx-border-radius: 20; -fx-background-radius: 20; -fx-border-color: #0B8C56; -fx-background-color: #ffffff;" text="Hủy" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="16" GridPane.rowSpan="2">
                <font>
                   <Font name="System Bold" size="15.0" />
                </font>
