@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.ScrollBar?>
-<?import javafx.scene.control.ScrollPane?>
-<?import javafx.scene.control.TableColumn?>
-<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -162,7 +159,7 @@
                         <Font name="System Bold" size="20.0" />
                     </font>
                 </Button>
-                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#E3D464" height="55.0" stroke="BLACK" strokeType="INSIDE" width="13.0" GridPane.rowIndex="4" GridPane.rowSpan="2" />
+                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#E3D464" height="55.0" stroke="BLACK" strokeType="INSIDE" width="13.0" GridPane.rowSpan="2" />
             <Button mnemonicParsing="false" prefHeight="58.0" prefWidth="204.0" style="-fx-background-color: #0B8C56; -fx-padding: 0 0 0 0; -fx-alignment: CENTER_LEFT; -fx-margin: 0 0 54 0;" text="Thông tin cá nhân" textFill="WHITE" GridPane.columnIndex="1" GridPane.columnSpan="8" GridPane.rowIndex="2" GridPane.rowSpan="2">
                <font>
                   <Font name="System Bold" size="20.0" />
@@ -260,7 +257,6 @@
                 <ColumnConstraints percentWidth="5.0" />
                 <ColumnConstraints percentWidth="5.0" />
                 <ColumnConstraints percentWidth="5.0" />
-            <ColumnConstraints percentWidth="5.0" />
             </columnConstraints>
             <rowConstraints>
                 <RowConstraints percentHeight="5.0" />
@@ -285,25 +281,34 @@
             <RowConstraints percentHeight="5.0" />
             </rowConstraints>
          <children>
-            <ScrollPane prefHeight="479.0" prefWidth="965.0" GridPane.columnSpan="19" GridPane.rowSpan="18" />
-            <Pane prefHeight="411.0" prefWidth="922.0">
+            <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.columnSpan="4">
                <children>
-                  <Text layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Thông tin nhân khẩu">
+                  <Text layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tạo hóa đơn">
                      <font>
-                        <Font size="25.0" />
-                     </font>
-                  </Text>
-                  <TableView layoutY="44.0" prefHeight="364.0" prefWidth="922.0">
-                     <columns>
-                        <TableColumn prefWidth="40.0" text="ID" />
-                        <TableColumn prefWidth="450.0" text="Danh sách" />
-                        <TableColumn prefWidth="200.0" text="Thời hạn" />
-                        <TableColumn prefWidth="150.0" text="Tình trạng" />
-                     </columns>
-                  </TableView>
+                        <Font name="System Bold" size="25.0" />
+                     </font></Text>
                </children>
             </Pane>
-            <ScrollBar orientation="VERTICAL" GridPane.columnIndex="19" GridPane.rowIndex="2" />
+            <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.rowIndex="2">
+               <children>
+                  <Text layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Loại hóa đơn">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.rowIndex="4">
+               <children>
+                  <Text layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tên danh sách">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <ComboBox prefHeight="44.0" prefWidth="154.0" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.rowIndex="3" />
+            <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ffffff;" GridPane.columnIndex="1" GridPane.columnSpan="10" GridPane.rowIndex="5" />
          </children>
         </GridPane>
 

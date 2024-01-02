@@ -356,19 +356,19 @@
             </Pane>
             <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="8" GridPane.columnSpan="5" GridPane.rowIndex="13">
                <children>
-                  <Text layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email: TrangNT@gmail.gicom">
+                  <Text layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email: TrangNT@gmail.com">
                      <font>
                         <Font size="20.0" />
                      </font>
                   </Text>
                </children>
             </Pane>
-            <Button mnemonicParsing="false" prefHeight="54.0" prefWidth="227.0" style="-fx-background-radius: 20; -fx-background-color: #E3D464;" text="Yêu cầu chỉnh sửa" GridPane.columnIndex="8" GridPane.columnSpan="4" GridPane.rowIndex="15" GridPane.rowSpan="2">
+            <Button mnemonicParsing="false" prefHeight="54.0" prefWidth="227.0" style="-fx-border-radius: 20; -fx-background-radius: 20; -fx-border-color: #0B8C56; -fx-background-color: #ffffff;" text="Yêu cầu chỉnh sửa" GridPane.columnIndex="8" GridPane.columnSpan="4" GridPane.rowIndex="15" GridPane.rowSpan="2">
                <font>
                   <Font name="System Bold" size="15.0" />
                </font>
             </Button>
-            <Button fx:id="LogoutButton" mnemonicParsing="false" prefHeight="54.0" prefWidth="261.0" style="-fx-background-radius: 20; -fx-background-color: #E3D464;" text="Đăng xuất" textFill="#ef0000" GridPane.columnIndex="8" GridPane.columnSpan="4" GridPane.rowIndex="17" GridPane.rowSpan="2">
+            <Button fx:id="LogoutButton" mnemonicParsing="false" prefHeight="54.0" prefWidth="261.0" style="-fx-border-radius: 20; -fx-background-radius: 20; -fx-background-color: #ffffff; -fx-border-color: #0B8C56;" text="Đăng xuất" textFill="#ef0000" GridPane.columnIndex="8" GridPane.columnSpan="4" GridPane.rowIndex="17" GridPane.rowSpan="2">
                <font>
                   <Font name="System Bold" size="15.0" />
                </font>
