@@ -1,0 +1,32 @@
+.table-view .column-header, .table-view .column-header .label {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-alignment: center-left;
+    -fx-font-size: 20px;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: transparent;
+}
+
+.table-view .table-cell {
+    -fx-border-color: transparent;
+    -fx-background-color: transparent;
+}
+
+.table-view {
+    -fx-table-cell-border-color: transparent;
+    -fx-border-color: transparent;
+}
+.table-view .column-header, .table-view .column-header .ThongTinChiTietColumn {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-alignment: center-right;
+}
+.table-view .center-aligned-cell {
+    -fx-alignment: center;
+}
+.table-view .table-cell {
+    -fx-font-size: 15px;
+}
+
