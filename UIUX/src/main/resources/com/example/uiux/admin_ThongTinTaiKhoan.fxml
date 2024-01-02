@@ -329,11 +329,11 @@
                         </Button>
                     </children>
                 </StackPane>
-            <Button fx:id="XacNhanButton" mnemonicParsing="false" prefHeight="34.0" prefWidth="103.0" text="xác nhận" GridPane.columnIndex="12" GridPane.columnSpan="2" GridPane.rowIndex="9" onAction="#handleXacNhanButtonClicked"/>
-            <GridPane fx:id="AccInfoGrid" GridPane.columnIndex="8" GridPane.columnSpan="4" GridPane.rowIndex="8" GridPane.rowSpan="2">
+            <Button fx:id="XacNhanButton" mnemonicParsing="false" prefHeight="34.0" prefWidth="103.0" text="xác nhận" GridPane.columnIndex="13" GridPane.columnSpan="2" GridPane.rowIndex="9" />
+            <GridPane fx:id="AccInfoGrid" GridPane.columnIndex="8" GridPane.columnSpan="5" GridPane.rowIndex="8" GridPane.rowSpan="2">
               <columnConstraints>
-                  <ColumnConstraints percentWidth="50.0" />
-                  <ColumnConstraints percentWidth="50.0" />
+                  <ColumnConstraints percentWidth="40.0" />
+                  <ColumnConstraints percentWidth="60.0" />
               </columnConstraints>
               <rowConstraints>
                 <RowConstraints percentHeight="50.0" />
@@ -345,7 +345,7 @@
 <!--                              <Font size="15.0" />-->
 <!--                           </font>-->
 <!--                        </Text>-->
-                   <TextField fx:id="PasswordTextField" prefHeight="15.0" prefWidth="100.0" promptText="*********" GridPane.columnIndex="1" GridPane.rowIndex="1" visible="false"/>
+                   <TextField fx:id="PasswordTextField" prefHeight="15.0" prefWidth="100.0" promptText="*********" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="1" />
                   <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Tài khoản :">
                      <font>
                         <Font size="15.0" />
@@ -361,7 +361,10 @@
                         <Font size="15.0" />
                      </font>
                   </Text>
-                  <Text fx:id="PasswordText" strokeType="OUTSIDE" strokeWidth="0.0" text="**********" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Text fx:id="PasswordText" strokeType="OUTSIDE" strokeWidth="0.0" text="*****************" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="15.0" />
+                     </font></Text>
                </children>
             </GridPane>
             </children>
