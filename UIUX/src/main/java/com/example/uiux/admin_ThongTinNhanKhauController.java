@@ -1,37 +1,34 @@
 package com.example.uiux;
 
 import javafx.beans.property.ReadOnlyObjectWrapper;
-import javafx.beans.property.SimpleIntegerProperty;
-import javafx.beans.property.SimpleStringProperty;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.scene.control.TableCell;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
-import javafx.scene.control.cell.PropertyValueFactory;
 
-public class admin_ThongTinNhanKhauController extends interfaceChuyenTrangAdmin {
-
-    @FXML
-    private TableView<com.example.uiux.admin_ThongTinNhanKhauController.Household> tableView;
+public class controller_ThongTinNhanKhauController extends admin_ChuyenTrangController {
 
     @FXML
-    private TableColumn<com.example.uiux.admin_ThongTinNhanKhauController.Household, Integer> IdColumn;
+    private TableView<controller_ThongTinNhanKhauController.Household> tableView;
 
     @FXML
-    private TableColumn<com.example.uiux.admin_ThongTinNhanKhauController.Household, String> CanHoColumn;
+    private TableColumn<controller_ThongTinNhanKhauController.Household, Integer> IdColumn;
 
     @FXML
-    private TableColumn<com.example.uiux.admin_ThongTinNhanKhauController.Household, String> ChuHoColumn;
+    private TableColumn<controller_ThongTinNhanKhauController.Household, String> CanHoColumn;
 
     @FXML
-    private TableColumn<com.example.uiux.admin_ThongTinNhanKhauController.Household, String> DienThoaiColumn;
+    private TableColumn<controller_ThongTinNhanKhauController.Household, String> ChuHoColumn;
 
     @FXML
-    private TableColumn<com.example.uiux.admin_ThongTinNhanKhauController.Household, Integer> SoThanhVienColumn;
+    private TableColumn<controller_ThongTinNhanKhauController.Household, String> DienThoaiColumn;
+
     @FXML
-    private TableColumn<com.example.uiux.admin_ThongTinNhanKhauController.Household, String> ThongTinChiTietColumn;
+    private TableColumn<controller_ThongTinNhanKhauController.Household, Integer> SoThanhVienColumn;
+    @FXML
+    private TableColumn<controller_ThongTinNhanKhauController.Household, String> ThongTinChiTietColumn;
 
     @FXML
     public void initialize() {
@@ -45,9 +42,9 @@ public class admin_ThongTinNhanKhauController extends interfaceChuyenTrangAdmin 
 
 
         // Create and add data to the table
-        ObservableList<com.example.uiux.admin_ThongTinNhanKhauController.Household> data = FXCollections.observableArrayList(
-                new com.example.uiux.admin_ThongTinNhanKhauController.Household(1, "101", "Nguyễn Thị Hằng", "0989958699",2,"..."),
-                new com.example.uiux.admin_ThongTinNhanKhauController.Household(2, "102", "Hoàng Thị Minh Nguyệt", "0912738073",3,"...")
+        ObservableList<controller_ThongTinNhanKhauController.Household> data = FXCollections.observableArrayList(
+                new controller_ThongTinNhanKhauController.Household(1, "101", "Nguyễn Thị Hằng", "0989958699",2,"..."),
+                new controller_ThongTinNhanKhauController.Household(2, "102", "Hoàng Thị Minh Nguyệt", "0912738073",3,"...")
                 // Add other data here...
         );
 
