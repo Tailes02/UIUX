@@ -139,17 +139,17 @@
                 <RowConstraints percentHeight="5.0" />
             </rowConstraints>
             <children>
-                <Button mnemonicParsing="false" id = "Trangchu-btn" prefHeight="58.0" prefWidth="276.0" style="-fx-background-color: #0B8C56; -fx-padding: 0 0 0 0; -fx-alignment: CENTER_LEFT; -fx-margin: 0 0 54 0;" text="Trang chủ" textFill="WHITE" GridPane.columnIndex="1" GridPane.columnSpan="8" GridPane.rowSpan="2">
+                <Button id="Trangchu-btn" mnemonicParsing="false" prefHeight="58.0" prefWidth="276.0" style="-fx-background-color: #0B8C56; -fx-padding: 0 0 0 0; -fx-alignment: CENTER_LEFT; -fx-margin: 0 0 54 0;" text="Trang chủ" textFill="WHITE" GridPane.columnIndex="1" GridPane.columnSpan="8" GridPane.rowSpan="2">
                     <font>
                         <Font name="System Bold" size="20.0" />
                     </font>
                 </Button>
-                <Button mnemonicParsing="false" id = "Thongbao-btn" prefHeight="81.0" prefWidth="288.0" style="-fx-background-color: #0B8C56; -fx-padding: 0 0 0 0; -fx-alignment: CENTER_LEFT; -fx-margin: 0 0 54 0;" text="Tạo thông báo" textFill="WHITE" GridPane.columnIndex="1" GridPane.columnSpan="8" GridPane.rowIndex="6" GridPane.rowSpan="2">
+                <Button id="Thongbao-btn" mnemonicParsing="false" prefHeight="81.0" prefWidth="288.0" style="-fx-background-color: #0B8C56; -fx-padding: 0 0 0 0; -fx-alignment: CENTER_LEFT; -fx-margin: 0 0 54 0;" text="Tạo thông báo" textFill="WHITE" GridPane.columnIndex="1" GridPane.columnSpan="8" GridPane.rowIndex="6" GridPane.rowSpan="2">
                     <font>
                         <Font name="System Bold" size="20.0" />
                     </font>
                 </Button>
-                <Button mnemonicParsing="false" id = "Hoadon-btnt" prefHeight="81.0" prefWidth="288.0" style="-fx-background-color: #0B8C56; -fx-padding: 0 0 0 0; -fx-alignment: CENTER_LEFT; -fx-margin: 0 0 54 0;" text="Hóa đơn" textFill="WHITE" GridPane.columnIndex="1" GridPane.columnSpan="8" GridPane.rowIndex="8" GridPane.rowSpan="2">
+                <Button id="Hoadon-btntx  " mnemonicParsing="false" prefHeight="81.0" prefWidth="288.0" style="-fx-background-color: #0B8C56; -fx-padding: 0 0 0 0; -fx-alignment: CENTER_LEFT; -fx-margin: 0 0 54 0;" text="Hóa đơn" textFill="WHITE" GridPane.columnIndex="1" GridPane.columnSpan="8" GridPane.rowIndex="8" GridPane.rowSpan="2">
                     <font>
                         <Font name="System Bold" size="20.0" />
                     </font>
@@ -304,7 +304,7 @@
                     <children>
                         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Nguyễn Thu Trang">
                             <font>
-                                <Font size="25.0" />
+                                <Font size="20.0" />
                             </font>
                         </Text>
                     </children>
@@ -325,24 +325,6 @@
                                 <Font size="20.0" />
                             </font>
                         </Text>
-                    </children>
-                </StackPane>
-                <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="8" GridPane.columnSpan="4" GridPane.rowIndex="14" GridPane.rowSpan="2">
-                    <children>
-                        <Button mnemonicParsing="false" prefHeight="54.0" prefWidth="189.0" style="-fx-background-radius: 20; -fx-background-color: #E3D464;" text="Yêu cầu chỉnh sửa">
-                            <font>
-                                <Font name="System Bold" size="15.0" />
-                            </font>
-                        </Button>
-                    </children>
-                </StackPane>
-                <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="8" GridPane.columnSpan="4" GridPane.rowIndex="16" GridPane.rowSpan="2">
-                    <children>
-                        <Button fx:id="LogoutButton" mnemonicParsing="false" prefHeight="54.0" prefWidth="189.0" style="-fx-background-radius: 20; -fx-background-color: #E3D464;" text="Đăng xuất" textFill="#ef0000">
-                            <font>
-                                <Font name="System Bold" size="15.0" />
-                            </font>
-                        </Button>
                     </children>
                 </StackPane>
             <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="8" GridPane.columnSpan="5" GridPane.rowIndex="10">
@@ -381,6 +363,16 @@
                   </Text>
                </children>
             </Pane>
+            <Button mnemonicParsing="false" prefHeight="54.0" prefWidth="227.0" style="-fx-background-radius: 20; -fx-background-color: #E3D464;" text="Yêu cầu chỉnh sửa" GridPane.columnIndex="8" GridPane.columnSpan="4" GridPane.rowIndex="15" GridPane.rowSpan="2">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="LogoutButton" mnemonicParsing="false" prefHeight="54.0" prefWidth="261.0" style="-fx-background-radius: 20; -fx-background-color: #E3D464;" text="Đăng xuất" textFill="#ef0000" GridPane.columnIndex="8" GridPane.columnSpan="4" GridPane.rowIndex="17" GridPane.rowSpan="2">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
             </children>
         </GridPane>
 

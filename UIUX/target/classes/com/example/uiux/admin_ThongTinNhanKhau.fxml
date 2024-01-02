@@ -287,7 +287,7 @@
                  <columns>
                      <TableColumn fx:id="IdColumn"  prefWidth="51.2" text="ID" />
                      <TableColumn fx:id="CanHoColumn"  prefWidth="102.4" text="Căn hộ" />
-                     <TableColumn fx:id="ChuHoColumn"  prefWidth="331.8" text="Tên chủ hộ" />
+                     <TableColumn fx:id="ChuHoColumn"  prefWidth="332.8" text="Tên chủ hộ" />
                      <TableColumn fx:id="DienThoaiColumn"  prefWidth="153.6" text="Điện thoại" />
                      <TableColumn fx:id="SoThanhVienColumn" prefWidth="153.6" text="Số thành viên" />
                      <TableColumn fx:id="ThongTinChiTietColumn" prefWidth="25.6"  />
