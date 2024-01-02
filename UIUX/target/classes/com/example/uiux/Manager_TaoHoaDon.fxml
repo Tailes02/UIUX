@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import com.gluonhq.charm.glisten.control.TextField?>
 <?import java.lang.String?>
 <?import javafx.collections.FXCollections?>
 <?import javafx.scene.control.Button?>
@@ -16,7 +17,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="720" prefWidth="1280" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.uiux.HomeLayoutRemakeController">
+<AnchorPane prefHeight="720" prefWidth="1git 280" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.uiux.HomeLayoutRemakeController">
     <GridPane fx:id="mainGrid" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <columnConstraints>
             <ColumnConstraints percentWidth="20.0" />
@@ -313,7 +314,7 @@
                   </Text>
                </children>
             </Pane>
-             <ComboBox prefHeight="40.0" prefWidth="146.0" promptText="Khoản thu" GridPane.columnIndex="4" GridPane.columnSpan="3" GridPane.rowIndex="3">
+             <ComboBox opacity="0.5" prefHeight="40.0" prefWidth="146.0" promptText="Khoản thu" style="-fx-background-color: #ffffff; -fx-border-radius: 20;" GridPane.columnIndex="4" GridPane.columnSpan="3" GridPane.rowIndex="3">
                  <items>
                      <FXCollections fx:factory="observableArrayList">
                          <String fx:value="Khoản thu" />
@@ -322,7 +323,6 @@
                      </FXCollections>
                  </items>
              </ComboBox>
-             <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ffffff; -fx-background-radius: 20;" GridPane.columnIndex="4" GridPane.columnSpan="10" GridPane.rowIndex="5" />
             <DatePicker prefHeight="27.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.columnSpan="3" GridPane.rowIndex="7" />
             <DatePicker prefHeight="27.0" prefWidth="253.0" GridPane.columnIndex="9" GridPane.columnSpan="3" GridPane.rowIndex="7" />
             <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.columnSpan="3" GridPane.rowIndex="9">
@@ -362,7 +362,7 @@
                   </Text>
                </children>
             </Pane>
-             <ComboBox prefHeight="40.0" prefWidth="146.0" promptText="Đang thu" GridPane.columnIndex="4" GridPane.columnSpan="3" GridPane.rowIndex="14">
+             <ComboBox opacity="0.5" prefHeight="40.0" prefWidth="146.0" promptText="Đang thu" style="-fx-background-color: #ffffff;" GridPane.columnIndex="4" GridPane.columnSpan="3" GridPane.rowIndex="14">
                  <items>
                      <FXCollections fx:factory="observableArrayList">
                          <String fx:value="Đang thu" />
@@ -391,9 +391,11 @@
                </children>
             </Pane>
             <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ffffff; -fx-background-radius: 20;" GridPane.columnIndex="4" GridPane.columnSpan="4" GridPane.rowIndex="12" />
+            <TextField prefHeight="44.0" prefWidth="466.0" style="-fx-border-radius: 20; -fx-background-radius: 20;" GridPane.columnIndex="4" GridPane.columnSpan="10" GridPane.rowIndex="5" />
          </children>
         </GridPane>
 
         <!-- Grid content goes here -->
     </GridPane>
+   <TextField />
 </AnchorPane>

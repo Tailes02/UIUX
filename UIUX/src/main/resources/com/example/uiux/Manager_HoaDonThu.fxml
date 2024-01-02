@@ -10,7 +10,6 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.RowConstraints?>
-<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
@@ -237,7 +236,7 @@
                 <Pane fx:id="BorderPane" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: lightgray; -fx-border-width: 1;" GridPane.columnSpan="20" GridPane.rowSpan="8" />
             </children>
         </GridPane>
-        <GridPane fx:id="InformationGrid" prefHeight="554.0" prefWidth="1024.0" style="-fx-background-color: f4f4f4;" GridPane.columnIndex="1" GridPane.columnSpan="4" GridPane.rowIndex="1" GridPane.rowSpan="4">
+        <GridPane fx:id="InformationGrid" prefHeight="554.0" prefWidth="1024.0" style="-fx-background-radius: 40; -fx-border-radius: 40;" GridPane.columnIndex="1" GridPane.columnSpan="4" GridPane.rowIndex="1" GridPane.rowSpan="4">
             <columnConstraints>
                 <ColumnConstraints percentWidth="5.0" />
                 <ColumnConstraints percentWidth="5.0" />
@@ -259,7 +258,6 @@
                 <ColumnConstraints percentWidth="5.0" />
                 <ColumnConstraints percentWidth="5.0" />
                 <ColumnConstraints percentWidth="5.0" />
-            <ColumnConstraints percentWidth="5.0" />
             </columnConstraints>
             <rowConstraints>
                 <RowConstraints percentHeight="5.0" />
@@ -289,14 +287,23 @@
                  <columns>
                      <TableColumn fx:id="IdColumn" prefWidth="51.2" text="ID" />
                      <TableColumn fx:id="CanHoColumn" prefWidth="102.4" text="Căn hộ" />
-                     <TableColumn fx:id="ChuHoColumn" prefWidth="332.8" text="Tên chủ hộ" />
-                     <TableColumn fx:id="DienThoaiColumn" prefWidth="153.6" text="Điện thoại" />
-                     <TableColumn fx:id="SoThanhVienColumn" prefWidth="153.6" text="Số thành viên" />
-                     <TableColumn fx:id="ThongTinChiTietColumn" prefWidth="25.6" />
+                     <TableColumn fx:id="TenColumn" prefWidth="332.8" text="Tên khoản thu" />
+                     <TableColumn fx:id="ThoiHanColumn" prefWidth="153.6" text="Thời hạn" />
+                     <TableColumn fx:id="TinhTrangColumn" prefWidth="153.6" text="Tình trạng" />
+                     <TableColumn fx:id="ThongTinChiTietColumn" prefWidth="25.6"git />
+
                  </columns>
              </TableView>
-            <Button mnemonicParsing="false" prefHeight="127.0" prefWidth="204.0" text="Thêm khoản thu mới" GridPane.columnIndex="2" GridPane.columnSpan="4" GridPane.rowIndex="17" GridPane.rowSpan="2" />
-            <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="17" GridPane.rowIndex="16" />
+            <Button mnemonicParsing="false" prefHeight="84.0" prefWidth="147.0" style="-fx-border-radius: 25; -fx-background-radius: 25; -fx-background-color: #ffffff; -fx-border-color: #0B8C56;" text="Thêm mới" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="17" GridPane.rowSpan="2">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="84.0" prefWidth="147.0" style="-fx-border-radius: 25; -fx-background-radius: 25; -fx-background-color: #ffffff; -fx-border-color: #0B8C56;" text="Xuất excel" GridPane.columnIndex="16" GridPane.columnSpan="2" GridPane.rowIndex="17" GridPane.rowSpan="2">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
          </children>
         </GridPane>
 

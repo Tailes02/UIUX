@@ -10,7 +10,6 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.RowConstraints?>
-<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
@@ -71,7 +70,7 @@
             <children>
                 <Pane prefHeight="91.0" prefWidth="320.0" style="-fx-background-radius: 15;" GridPane.columnIndex="1" GridPane.columnSpan="10" GridPane.rowIndex="1" GridPane.rowSpan="6">
                     <children>
-                        <Text layoutX="104.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Chu Hữu Phúc">
+                        <Text layoutX="104.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nguyễn Thu Trang">
                             <font>
                                 <Font name="System Bold" size="30.0" />
                             </font>
@@ -259,7 +258,6 @@
                 <ColumnConstraints percentWidth="5.0" />
                 <ColumnConstraints percentWidth="5.0" />
                 <ColumnConstraints percentWidth="5.0" />
-            <ColumnConstraints percentWidth="5.0" />
             </columnConstraints>
             <rowConstraints>
                 <RowConstraints percentHeight="5.0" />
@@ -295,8 +293,6 @@
                      <TableColumn fx:id="ThongTinChiTietColumn" prefWidth="25.6" />
                  </columns>
              </TableView>
-            <Button mnemonicParsing="false" prefHeight="127.0" prefWidth="204.0" text="Thêm khoản thu mới" GridPane.columnIndex="2" GridPane.columnSpan="4" GridPane.rowIndex="17" GridPane.rowSpan="2" />
-            <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="17" GridPane.rowIndex="16" />
          </children>
         </GridPane>
 
