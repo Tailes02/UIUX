@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -309,27 +310,10 @@
                         </Text>
                     </children>
                 </StackPane>
-                <StackPane alignment="CENTER_LEFT" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="8" GridPane.columnSpan="3" GridPane.rowIndex="8">
-                    <children>
-                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Tài khoản :  admin">
-                            <font>
-                                <Font size="15.0" />
-                            </font>
-                        </Text>
-                    </children>
-                </StackPane>
-                <StackPane alignment="CENTER_LEFT" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="8" GridPane.columnSpan="3" GridPane.rowIndex="9">
-                    <children>
-                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Mật khẩu : **************">
-                            <font>
-                                <Font size="15.0" />
-                            </font>
-                        </Text>
-                    </children>
-                </StackPane>
+                <StackPane alignment="CENTER_LEFT" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="8" GridPane.columnSpan="3" GridPane.rowIndex="9" />
                 <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="8" GridPane.columnSpan="4" GridPane.rowIndex="14" GridPane.rowSpan="2">
                     <children>
-                        <Button mnemonicParsing="false" prefHeight="54.0" prefWidth="189.0" style="-fx-background-radius: 20;" text="Lưu thay đổi">
+                        <Button fx:id="DoiMatKhauButton" mnemonicParsing="false" onAction="#handleDoiMatKhauButtonClicked" prefHeight="54.0" prefWidth="189.0" style="-fx-background-radius: 20;" text="Đổi mật khẩu">
                             <font>
                                 <Font name="System Bold" size="15.0" />
                             </font>
@@ -338,13 +322,51 @@
                 </StackPane>
                 <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="8" GridPane.columnSpan="4" GridPane.rowIndex="16" GridPane.rowSpan="2">
                     <children>
-                        <Button fx:id="LogoutButton" mnemonicParsing="false" prefHeight="54.0" prefWidth="189.0" style="-fx-background-radius: 20;" text="Đăng xuất" textFill="#ef0000">
+                        <Button fx:id="LogoutButton" mnemonicParsing="false" onAction="#LogoutButtonClicked" prefHeight="54.0" prefWidth="189.0" style="-fx-background-radius: 20;" text="Đăng xuất" textFill="#ef0000">
                             <font>
                                 <Font name="System Bold" size="15.0" />
                             </font>
                         </Button>
                     </children>
                 </StackPane>
+            <Button fx:id="XacNhanButton" mnemonicParsing="false" prefHeight="34.0" prefWidth="103.0" text="xác nhận" GridPane.columnIndex="13" GridPane.columnSpan="2" GridPane.rowIndex="9" />
+            <GridPane fx:id="AccInfoGrid" GridPane.columnIndex="8" GridPane.columnSpan="5" GridPane.rowIndex="8" GridPane.rowSpan="2">
+              <columnConstraints>
+                  <ColumnConstraints percentWidth="40.0" />
+                  <ColumnConstraints percentWidth="60.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints percentHeight="50.0" />
+                <RowConstraints percentHeight="50.0" />
+              </rowConstraints>
+               <children>
+<!--                        <Text fx:id="PasswordText" layoutX="10.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*********">-->
+<!--                           <font>-->
+<!--                              <Font size="15.0" />-->
+<!--                           </font>-->
+<!--                        </Text>-->
+                   <TextField fx:id="PasswordTextField" prefHeight="15.0" prefWidth="100.0" promptText="*********" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Tài khoản :">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Mật khẩu :" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="admin" GridPane.columnIndex="1">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="PasswordText" strokeType="OUTSIDE" strokeWidth="0.0" text="*****************" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="15.0" />
+                     </font></Text>
+               </children>
+            </GridPane>
             </children>
         </GridPane>
 

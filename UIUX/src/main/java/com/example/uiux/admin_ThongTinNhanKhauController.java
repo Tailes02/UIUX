@@ -44,8 +44,28 @@ public class admin_ThongTinNhanKhauController extends admin_ChuyenTrangControlle
         // Create and add data to the table
         ObservableList<admin_ThongTinNhanKhauController.Household> data = FXCollections.observableArrayList(
                 new admin_ThongTinNhanKhauController.Household(1, "101", "Nguyễn Thị Hằng", "0989958699",2,"..."),
-                new admin_ThongTinNhanKhauController.Household(2, "102", "Hoàng Thị Minh Nguyệt", "0912738073",3,"...")
-                // Add other data here...
+                new admin_ThongTinNhanKhauController.Household(2, "102", "Hoàng Thị Minh Nguyệt", "0912738073",3,"..."),
+                new admin_ThongTinNhanKhauController.Household(2, "103", "Nguyễn Thanh Mai", "09112345678",3,"..."),
+                new admin_ThongTinNhanKhauController.Household(2, "104", "Trần Ngọc Linh", "09198765432",1,"..."),
+                new admin_ThongTinNhanKhauController.Household(2, "105", "Nguyễn Ngọc Khánh", "09123456789",2,"..."),
+                new admin_ThongTinNhanKhauController.Household(2, "106", "Nguyễn Tiến Dũng", "09187654321",4,"..."),
+                new admin_ThongTinNhanKhauController.Household(2, "107", "Mai Ngọc Linh", "09134567890",3,"..."),
+                new admin_ThongTinNhanKhauController.Household(2, "108", "Phạm Ngọc Ngà", "09176543210",2,"..."),
+                new admin_ThongTinNhanKhauController.Household(2, "201", "Trần Phương Anh", "09154321098",2,"..."),
+                new admin_ThongTinNhanKhauController.Household(2, "202", "Lương Thanh Hà", "09189012345",3,"...")
+
+            /* dự phòng
+                new admin_ThongTinNhanKhauController.Household(1, "203", "Lương Văn Đức", "0989958699",2,"..."),
+                new admin_ThongTinNhanKhauController.Household(2, "204", "Trần Ngọc An", "0912738073",3,"..."),
+                new admin_ThongTinNhanKhauController.Household(2, "205", "Trần Trọng Hoàng", "09112345678",3,"..."),
+                new admin_ThongTinNhanKhauController.Household(2, "206", "Trần Ngọc Linh", "09198765432",3,"..."),
+                new admin_ThongTinNhanKhauController.Household(2, "207", "Nguyễn Ngọc Khánh", "09123456789",3,"..."),
+                new admin_ThongTinNhanKhauController.Household(2, "208", "Nguyễn Tiến Dũng", "09187654321",3,"..."),
+                new admin_ThongTinNhanKhauController.Household(2, "301", "Mai Ngọc Linh", "09134567890",3,"..."),
+                new admin_ThongTinNhanKhauController.Household(2, "302", "Phạm Ngọc Ngà", "09176543210",3,"..."),
+                new admin_ThongTinNhanKhauController.Household(2, "303", "Trần Phương Anh", "09154321098",3,"...")
+                new admin_ThongTinNhanKhauController.Household(2, "304", "Lương Thanh Hà", "09189012345",3,"...")
+            */
         );
 
         SoThanhVienColumn.setCellFactory(column -> new TableCell<Household, Integer>() {
