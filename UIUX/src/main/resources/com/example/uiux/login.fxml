@@ -100,11 +100,11 @@
                               <Font size="20.0" />
                            </font>
                         </Text>
-                        <TextField layoutX="145.0" layoutY="22.0" prefHeight="30.0" prefWidth="240.0" />
-                        <TextField layoutX="145.0" layoutY="83.0" prefHeight="30.0" prefWidth="240.0" />
+                        <TextField fx:id="UsernameTextField" layoutX="145.0" layoutY="22.0" prefHeight="30.0" prefWidth="240.0" />
+                        <TextField fx:id="PasswordTextField" layoutX="145.0" layoutY="83.0" prefHeight="30.0" prefWidth="240.0" />
                      </children>
                   </Pane>
-                  <Button mnemonicParsing="false" prefHeight="72.0" prefWidth="164.0" style="-fx-background-radius: 30; -fx-border-color: #0B8C56; -fx-border-radius: 30; -fx-background-color: FFFFFF;" text="Đăng nhập" GridPane.columnIndex="4" GridPane.columnSpan="3" GridPane.rowIndex="6">
+                  <Button fx:id="LoginButton" mnemonicParsing="false" prefHeight="72.0" prefWidth="164.0" style="-fx-background-radius: 30; -fx-border-color: #0B8C56; -fx-border-radius: 30; -fx-background-color: FFFFFF;" text="Đăng nhập" GridPane.columnIndex="4" GridPane.columnSpan="3" GridPane.rowIndex="6">
                      <font>
                         <Font size="20.0" />
                      </font>
