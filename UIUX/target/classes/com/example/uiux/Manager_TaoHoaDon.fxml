@@ -258,6 +258,7 @@
                 <ColumnConstraints percentWidth="5.0" />
                 <ColumnConstraints percentWidth="5.0" />
                 <ColumnConstraints percentWidth="5.0" />
+            <ColumnConstraints percentWidth="5.0" />
             </columnConstraints>
             <rowConstraints>
                 <RowConstraints percentHeight="5.0" />
@@ -311,11 +312,11 @@
             </Pane>
             <ComboBox prefHeight="44.0" prefWidth="154.0" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.rowIndex="3" />
             <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ffffff;" GridPane.columnIndex="1" GridPane.columnSpan="10" GridPane.rowIndex="5" />
-            <DatePicker prefHeight="27.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.columnSpan="3" GridPane.rowIndex="7" />
-            <DatePicker prefHeight="27.0" prefWidth="253.0" GridPane.columnIndex="9" GridPane.columnSpan="3" GridPane.rowIndex="7" />
-            <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.rowIndex="9">
+            <DatePicker prefHeight="27.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.rowIndex="8" />
+            <DatePicker prefHeight="27.0" prefWidth="253.0" GridPane.columnIndex="7" GridPane.columnSpan="3" GridPane.rowIndex="8" />
+            <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.rowIndex="10">
                <children>
-                  <Text layoutY="22.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Số tiền">
+                  <Text layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Số tiền">
                      <font>
                         <Font size="18.0" />
                      </font>
@@ -340,8 +341,9 @@
                   </Text>
                </children>
             </Pane>
-            <Button mnemonicParsing="false" prefHeight="120.0" prefWidth="205.0" text="Hủy" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="15" GridPane.rowSpan="2" />
-            <Button mnemonicParsing="false" prefHeight="81.0" prefWidth="166.0" text="Button" GridPane.columnIndex="11" GridPane.columnSpan="2" GridPane.rowIndex="15" GridPane.rowSpan="2" />
+            <Button mnemonicParsing="false" prefHeight="120.0" prefWidth="205.0" style="-fx-background-radius: 20; -fx-border-radius: 20; -fx-background-color: #ffffff; -fx-border-color: #0B8C56;" text="Hủy" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="15" GridPane.rowSpan="2" />
+            <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ffffff;" GridPane.columnIndex="1" GridPane.columnSpan="5" GridPane.rowIndex="11" />
+            <Button mnemonicParsing="false" prefHeight="120.0" prefWidth="205.0" style="-fx-background-radius: 20; -fx-border-radius: 20; -fx-background-color: #ffffff; -fx-border-color: #0B8C56;" text="Tạo mới" GridPane.columnIndex="16" GridPane.columnSpan="2" GridPane.rowIndex="15" GridPane.rowSpan="2" />
          </children>
         </GridPane>
 
