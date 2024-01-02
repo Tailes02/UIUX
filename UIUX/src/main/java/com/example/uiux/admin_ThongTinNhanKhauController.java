@@ -6,6 +6,7 @@ import javafx.beans.property.SimpleStringProperty;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
+import javafx.scene.control.TableCell;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
@@ -29,6 +30,8 @@ public class admin_ThongTinNhanKhauController {
 
     @FXML
     private TableColumn<com.example.uiux.admin_ThongTinNhanKhauController.Household, Integer> SoThanhVienColumn;
+    @FXML
+    private TableColumn<com.example.uiux.admin_ThongTinNhanKhauController.Household, String> ThongTinChiTietColumn;
 
     @FXML
     public void initialize() {
@@ -38,16 +41,30 @@ public class admin_ThongTinNhanKhauController {
         ChuHoColumn.setCellValueFactory(cellData -> new ReadOnlyObjectWrapper<>(cellData.getValue().getChuHo()));
         DienThoaiColumn.setCellValueFactory(cellData -> new ReadOnlyObjectWrapper<>(cellData.getValue().getDienthoai()));
         SoThanhVienColumn.setCellValueFactory(cellData -> new ReadOnlyObjectWrapper<>(cellData.getValue().getSoThanhVien()));
+        ThongTinChiTietColumn.setCellValueFactory(cellData -> new ReadOnlyObjectWrapper<>(cellData.getValue().getChiTiet()));
 
 
         // Create and add data to the table
         ObservableList<com.example.uiux.admin_ThongTinNhanKhauController.Household> data = FXCollections.observableArrayList(
-                new com.example.uiux.admin_ThongTinNhanKhauController.Household(1, "101", "Nguyễn Thị Hằng", "0989958699",2),
-                new com.example.uiux.admin_ThongTinNhanKhauController.Household(2, "102", "Hoàng Thị Minh Nguyệt", "0912738073",3)
+                new com.example.uiux.admin_ThongTinNhanKhauController.Household(1, "101", "Nguyễn Thị Hằng", "0989958699",2,"..."),
+                new com.example.uiux.admin_ThongTinNhanKhauController.Household(2, "102", "Hoàng Thị Minh Nguyệt", "0912738073",3,"...")
                 // Add other data here...
         );
 
-
+        SoThanhVienColumn.setCellFactory(column -> new TableCell<Household, Integer>() {
+            @Override
+            protected void updateItem(Integer item, boolean empty) {
+                super.updateItem(item, empty);
+                if (item == null || empty) {
+                    setText(null);
+                    setStyle("");
+                } else {
+                    // Format cell
+                    setText(item.toString()); // Convert integer to String
+                    getStyleClass().add("center-aligned-cell"); // apply the CSS class
+                }
+            }
+        });
         tableView.setItems(data);
     }
 
@@ -58,13 +75,15 @@ public class admin_ThongTinNhanKhauController {
         private String chuHo;
         private String dienthoai;
         private int soThanhVien;
+        private String chiTiet;
 
-        public Household(int id, String canHo, String chuHo, String dienthoai,int soThanhVien) {
+        public Household(int id, String canHo, String chuHo, String dienthoai,int soThanhVien,String chiTietq) {
             this.id = id;
             this.canHo = canHo;
             this.chuHo = chuHo;
             this.dienthoai = dienthoai;
             this.soThanhVien = soThanhVien;
+            this.chiTiet = chiTiet;
         }
 
         // Getters and setters for each property
@@ -106,6 +125,14 @@ public class admin_ThongTinNhanKhauController {
 
         public void setSoThanhVien(int soThanhVien) {
             this.soThanhVien = soThanhVien;
+        }
+
+        public String getChiTiet() {
+            return chiTiet;
+        }
+
+        public void setChiTiet(String chiTiet) {
+            this.chiTiet = chiTiet;
         }
     }
 
