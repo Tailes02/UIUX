@@ -11,7 +11,7 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 
-public class admin_ThongTinNhanKhauController {
+public class admin_ThongTinNhanKhauController extends interfaceChuyenTrangAdmin {
 
     @FXML
     private TableView<com.example.uiux.admin_ThongTinNhanKhauController.Household> tableView;
