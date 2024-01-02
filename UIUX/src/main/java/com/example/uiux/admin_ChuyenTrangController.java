@@ -2,7 +2,7 @@ package com.example.uiux;
 
 import javafx.fxml.FXML;
 
-public class interfaceChuyenTrangAdmin {
+public class admin_ChuyenTrangController {
     @FXML
     private void TrangChu(){
         Main.loadScene("admin_TrangChu.fxml");

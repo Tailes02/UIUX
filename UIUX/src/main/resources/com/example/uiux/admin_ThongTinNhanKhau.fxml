@@ -140,7 +140,7 @@
                 <RowConstraints percentHeight="5.0" />
             </rowConstraints>
             <children>
-                <Button fx:id="ButtonTrangChu" mnemonicParsing="false" prefHeight="58.0" prefWidth="276.0" style="-fx-background-color: #0B8C56; -fx-padding: 0 0 0 0; -fx-alignment: CENTER_LEFT; -fx-margin: 0 0 54 0;" text="Trang chủ" textFill="WHITE" GridPane.columnIndex="1" GridPane.columnSpan="8" GridPane.rowSpan="2">
+                <Button fx:id="ButtonTrangChu" mnemonicParsing="false" onAction="#TrangChu" prefHeight="58.0" prefWidth="276.0" style="-fx-background-color: #0B8C56; -fx-padding: 0 0 0 0; -fx-alignment: CENTER_LEFT; -fx-margin: 0 0 54 0;" text="Trang chủ" textFill="WHITE" GridPane.columnIndex="1" GridPane.columnSpan="8" GridPane.rowSpan="2">
                     <font>
                         <Font name="System Bold" size="20.0" />
                     </font>
@@ -161,12 +161,12 @@
                     </font>
                 </Button>
                 <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#E3D464" height="55.0" stroke="BLACK" strokeType="INSIDE" width="13.0" GridPane.rowIndex="4" GridPane.rowSpan="2" />
-                <Button fx:id="ButtonThongTinTaiKhoan" mnemonicParsing="false" prefHeight="58.0" prefWidth="204.0" style="-fx-background-color: #0B8C56; -fx-padding: 0 0 0 0; -fx-alignment: CENTER_LEFT; -fx-margin: 0 0 54 0;" text="Thông tin tài khoản" textFill="WHITE" GridPane.columnIndex="1" GridPane.columnSpan="8" GridPane.rowIndex="2" GridPane.rowSpan="2">
+                <Button fx:id="ButtonThongTinTaiKhoan" mnemonicParsing="false" onAction="#ThongTinTaiKhoan" prefHeight="58.0" prefWidth="204.0" style="-fx-background-color: #0B8C56; -fx-padding: 0 0 0 0; -fx-alignment: CENTER_LEFT; -fx-margin: 0 0 54 0;" text="Thông tin tài khoản" textFill="WHITE" GridPane.columnIndex="1" GridPane.columnSpan="8" GridPane.rowIndex="2" GridPane.rowSpan="2">
                     <font>
                         <Font name="System Bold" size="20.0" />
                     </font>
                 </Button>
-                <Button fx:id="ButtonTinNhan" mnemonicParsing="false" prefHeight="81.0" prefWidth="288.0" style="-fx-background-color: #0B8C56; -fx-padding: 0 0 0 0; -fx-alignment: CENTER_LEFT; -fx-margin: 0 0 54 0;" text="Tin nhắn" textFill="WHITE" GridPane.columnIndex="1" GridPane.columnSpan="8" GridPane.rowIndex="10" GridPane.rowSpan="2">
+                <Button fx:id="ButtonTinNhan" mnemonicParsing="false" onAction="#TinNhan" prefHeight="81.0" prefWidth="288.0" style="-fx-background-color: #0B8C56; -fx-padding: 0 0 0 0; -fx-alignment: CENTER_LEFT; -fx-margin: 0 0 54 0;" text="Tin nhắn" textFill="WHITE" GridPane.columnIndex="1" GridPane.columnSpan="8" GridPane.rowIndex="10" GridPane.rowSpan="2">
                     <font>
                         <Font name="System Bold" size="20.0" />
                     </font>
@@ -283,14 +283,14 @@
 
             </rowConstraints>
          <children>
-             <TableView fx:id="tableView" stylesheets="@style.css" prefHeight="200.0" prefWidth="200.0" style=" -fx-alignment: TOP_RIGHT" GridPane.columnIndex="2" GridPane.columnSpan="16" GridPane.rowIndex="3" GridPane.rowSpan="13">
+             <TableView fx:id="tableView" prefHeight="200.0" prefWidth="200.0" style=" -fx-alignment: TOP_RIGHT" stylesheets="@style.css" GridPane.columnIndex="2" GridPane.columnSpan="16" GridPane.rowIndex="3" GridPane.rowSpan="13">
                  <columns>
-                     <TableColumn fx:id="IdColumn"  prefWidth="51.2" text="ID" />
-                     <TableColumn fx:id="CanHoColumn"  prefWidth="102.4" text="Căn hộ" />
-                     <TableColumn fx:id="ChuHoColumn"  prefWidth="332.8" text="Tên chủ hộ" />
-                     <TableColumn fx:id="DienThoaiColumn"  prefWidth="153.6" text="Điện thoại" />
+                     <TableColumn fx:id="IdColumn" prefWidth="51.2" text="ID" />
+                     <TableColumn fx:id="CanHoColumn" prefWidth="102.4" text="Căn hộ" />
+                     <TableColumn fx:id="ChuHoColumn" prefWidth="332.8" text="Tên chủ hộ" />
+                     <TableColumn fx:id="DienThoaiColumn" prefWidth="153.6" text="Điện thoại" />
                      <TableColumn fx:id="SoThanhVienColumn" prefWidth="153.6" text="Số thành viên" />
-                     <TableColumn fx:id="ThongTinChiTietColumn" prefWidth="25.6"  />
+                     <TableColumn fx:id="ThongTinChiTietColumn" prefWidth="25.6" />
                  </columns>
              </TableView>
          </children>

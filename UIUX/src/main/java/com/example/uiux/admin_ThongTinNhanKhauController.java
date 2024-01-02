@@ -8,27 +8,27 @@ import javafx.scene.control.TableCell;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 
-public class controller_ThongTinNhanKhauController extends admin_ChuyenTrangController {
+public class admin_ThongTinNhanKhauController extends admin_ChuyenTrangController {
 
     @FXML
-    private TableView<controller_ThongTinNhanKhauController.Household> tableView;
+    private TableView<admin_ThongTinNhanKhauController.Household> tableView;
 
     @FXML
-    private TableColumn<controller_ThongTinNhanKhauController.Household, Integer> IdColumn;
+    private TableColumn<admin_ThongTinNhanKhauController.Household, Integer> IdColumn;
 
     @FXML
-    private TableColumn<controller_ThongTinNhanKhauController.Household, String> CanHoColumn;
+    private TableColumn<admin_ThongTinNhanKhauController.Household, String> CanHoColumn;
 
     @FXML
-    private TableColumn<controller_ThongTinNhanKhauController.Household, String> ChuHoColumn;
+    private TableColumn<admin_ThongTinNhanKhauController.Household, String> ChuHoColumn;
 
     @FXML
-    private TableColumn<controller_ThongTinNhanKhauController.Household, String> DienThoaiColumn;
+    private TableColumn<admin_ThongTinNhanKhauController.Household, String> DienThoaiColumn;
 
     @FXML
-    private TableColumn<controller_ThongTinNhanKhauController.Household, Integer> SoThanhVienColumn;
+    private TableColumn<admin_ThongTinNhanKhauController.Household, Integer> SoThanhVienColumn;
     @FXML
-    private TableColumn<controller_ThongTinNhanKhauController.Household, String> ThongTinChiTietColumn;
+    private TableColumn<admin_ThongTinNhanKhauController.Household, String> ThongTinChiTietColumn;
 
     @FXML
     public void initialize() {
@@ -42,9 +42,9 @@ public class controller_ThongTinNhanKhauController extends admin_ChuyenTrangCont
 
 
         // Create and add data to the table
-        ObservableList<controller_ThongTinNhanKhauController.Household> data = FXCollections.observableArrayList(
-                new controller_ThongTinNhanKhauController.Household(1, "101", "Nguyễn Thị Hằng", "0989958699",2,"..."),
-                new controller_ThongTinNhanKhauController.Household(2, "102", "Hoàng Thị Minh Nguyệt", "0912738073",3,"...")
+        ObservableList<admin_ThongTinNhanKhauController.Household> data = FXCollections.observableArrayList(
+                new admin_ThongTinNhanKhauController.Household(1, "101", "Nguyễn Thị Hằng", "0989958699",2,"..."),
+                new admin_ThongTinNhanKhauController.Household(2, "102", "Hoàng Thị Minh Nguyệt", "0912738073",3,"...")
                 // Add other data here...
         );
 
