@@ -19,8 +19,11 @@ public class loginController {
 
         if (username.equals("admin") && password.equals("1234")) {
             // Navigate to the admin scene using a function like Main.loadScene
-            Main.loadScene("admin_TrangChu.fxml"); // Replace with your actual navigation code
-        } else {
+            Main.loadScene("admin_TrangChu.fxml");
+        } else if (username.equals("manager") && password.equals("123456")) {
+            Main.loadScene("Manager_TrangChu.fxml");
+        }
+        else{
             // Handle incorrect credentials (e.g., show an error message)
             System.out.println("Invalid credentials");
         }
