@@ -51,7 +51,7 @@ public class admin_ThongTinNhanKhauController extends admin_ChuyenTrangControlle
                 new admin_ThongTinNhanKhauController.Household(2, "106", "Nguyễn Tiến Dũng", "09187654321",4,"..."),
                 new admin_ThongTinNhanKhauController.Household(2, "107", "Mai Ngọc Linh", "09134567890",3,"..."),
                 new admin_ThongTinNhanKhauController.Household(2, "108", "Phạm Ngọc Ngà", "09176543210",2,"..."),
-                new admin_ThongTinNhanKhauController.Household(2, "201", "Trần Phương Anh", "09154321098",2,"...")
+                new admin_ThongTinNhanKhauController.Household(2, "201", "Trần Phương Anh", "09154321098",2,"..."),
                 new admin_ThongTinNhanKhauController.Household(2, "202", "Lương Thanh Hà", "09189012345",3,"...")
 
             /* dự phòng
