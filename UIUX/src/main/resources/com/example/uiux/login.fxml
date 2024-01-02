@@ -30,8 +30,11 @@
          <RowConstraints percentHeight="20.0" />
       </rowConstraints>
          <children>
-            <ImageView fitHeight="720.0" fitWidth="768.0" pickOnBounds="true" preserveRatio="true" GridPane.columnSpan="3" GridPane.rowSpan="5" />
-            <GridPane fx:id="mainGrid1" style="-fx-background-color: #0B8C56;" GridPane.columnIndex="3" GridPane.columnSpan="2" GridPane.rowSpan="5">
+            <ImageView fitHeight="720.0" fitWidth="789.0" pickOnBounds="true" preserveRatio="true" GridPane.columnSpan="3" GridPane.rowSpan="5">
+               <image>
+                  <Image url="@../../../icon/apartment.png" />
+               </image></ImageView>
+            <GridPane fx:id="mainGrid1" GridPane.columnIndex="3" GridPane.columnSpan="2" GridPane.rowSpan="5">
                <columnConstraints>
                   <ColumnConstraints percentWidth="10.0" />
                   <ColumnConstraints percentWidth="10.0" />
@@ -59,7 +62,7 @@
                <children>
                   <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.columnSpan="8" GridPane.rowIndex="1" GridPane.rowSpan="2">
                      <children>
-                        <ImageView fitHeight="120.0" fitWidth="120.0" layoutX="19.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="120.0" fitWidth="120.0" layoutX="70.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
                            <clip>
                               <Circle centerX="60.0" centerY="60.0" radius="76.0" />
                            </clip>
@@ -67,9 +70,9 @@
                               <Image url="@../Logo.jpg" />
                            </image>
                         </ImageView>
-                        <Text fill="WHITE" layoutX="150.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" text="iHopT">
+                        <Text layoutX="220.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="iHopT">
                            <font>
-                              <Font size="40.0" />
+                              <Font name="System Bold" size="40.0" />
                            </font>
                         </Text>
                      </children>
