@@ -70,7 +70,7 @@
             <children>
                 <Pane prefHeight="91.0" prefWidth="320.0" style="-fx-background-radius: 15;" GridPane.columnIndex="1" GridPane.columnSpan="10" GridPane.rowIndex="1" GridPane.rowSpan="6">
                     <children>
-                        <Text layoutX="104.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Chu Hữu Phúc">
+                        <Text layoutX="104.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nguyễn Thu Trang">
                             <font>
                                 <Font name="System Bold" size="30.0" />
                             </font>
@@ -160,7 +160,7 @@
                         <Font name="System Bold" size="20.0" />
                     </font>
                 </Button>
-                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#E3D464" height="55.0" stroke="BLACK" strokeType="INSIDE" width="13.0" GridPane.rowIndex="4" GridPane.rowSpan="2" />
+                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#E3D464" height="55.0" stroke="BLACK" strokeType="INSIDE" width="13.0" GridPane.rowIndex="8" GridPane.rowSpan="2" />
                 <Button fx:id="ButtonThongTinTaiKhoan" mnemonicParsing="false" onAction="#ThongTinTaiKhoan" prefHeight="58.0" prefWidth="204.0" style="-fx-background-color: #0B8C56; -fx-padding: 0 0 0 0; -fx-alignment: CENTER_LEFT; -fx-margin: 0 0 54 0;" text="Thông tin tài khoản" textFill="WHITE" GridPane.columnIndex="1" GridPane.columnSpan="8" GridPane.rowIndex="2" GridPane.rowSpan="2">
                     <font>
                         <Font name="System Bold" size="20.0" />
@@ -286,11 +286,11 @@
              <TableView fx:id="tableView" prefHeight="200.0" prefWidth="200.0" style=" -fx-alignment: TOP_RIGHT" stylesheets="@style.css" GridPane.columnIndex="2" GridPane.columnSpan="16" GridPane.rowIndex="3" GridPane.rowSpan="13">
                  <columns>
                      <TableColumn fx:id="IdColumn" prefWidth="51.2" text="ID" />
-                     <TableColumn fx:id="CanHoColumn" prefWidth="102.4" text="Căn hộ" />
                      <TableColumn fx:id="TenColumn" prefWidth="332.8" text="Tên khoản thu" />
-                     <TableColumn fx:id="ThoiHanColumn" prefWidth="153.6" text="Thời hạn" />
-                     <TableColumn fx:id="TinhTrangColumn" prefWidth="153.6" text="Tình trạng" />
-                     <TableColumn fx:id="ThongTinChiTietColumn" prefWidth="25.6"git />
+                     <TableColumn fx:id="SoTienColumn" prefWidth="128" text="Số tiền" />
+                     <TableColumn fx:id="ThoiGianColumn" prefWidth="153.6" text="Thời gian" />
+                     <TableColumn fx:id="TinhTrangColumn" prefWidth="127" text="Tình trạng" />
+                     <TableColumn fx:id="ThongTinChiTietColumn" prefWidth="25.6" />
 
                  </columns>
              </TableView>

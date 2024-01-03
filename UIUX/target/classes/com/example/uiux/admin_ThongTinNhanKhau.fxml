@@ -10,11 +10,12 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="720" prefWidth="1280" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.uiux.admin_ThongTinNhanKhauController">
+<AnchorPane prefHeight="720" prefWidth="1280" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.uiux.admin_ThongTinNhanKhauController">
     <GridPane fx:id="mainGrid" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <columnConstraints>
             <ColumnConstraints percentWidth="20.0" />
@@ -258,6 +259,7 @@
                 <ColumnConstraints percentWidth="5.0" />
                 <ColumnConstraints percentWidth="5.0" />
                 <ColumnConstraints percentWidth="5.0" />
+            <ColumnConstraints percentWidth="5.0" />
             </columnConstraints>
             <rowConstraints>
                 <RowConstraints percentHeight="5.0" />
@@ -293,6 +295,8 @@
                      <TableColumn fx:id="ThongTinChiTietColumn" prefWidth="25.6" />
                  </columns>
              </TableView>
+            <Button mnemonicParsing="false" prefHeight="127.0" prefWidth="204.0" text="Thêm khoản thu mới" GridPane.columnIndex="2" GridPane.columnSpan="4" GridPane.rowIndex="17" GridPane.rowSpan="2" />
+            <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="17" GridPane.rowIndex="16" />
          </children>
         </GridPane>
 
