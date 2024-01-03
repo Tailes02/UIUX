@@ -309,6 +309,7 @@
                         </Text>
                     </children>
                 </StackPane>
+<<<<<<< HEAD
                 <StackPane alignment="CENTER_LEFT" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="8" GridPane.columnSpan="3" GridPane.rowIndex="8">
                     <children>
                         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Tài khoản :  Ma_01">
@@ -354,19 +355,84 @@
                   </Text>
                </children>
             </Pane>
+=======
+>>>>>>> 2755efaf18eaf4068864659a2ee3b56bbaeee578
             <Button mnemonicParsing="false" prefHeight="54.0" prefWidth="227.0" style="-fx-border-radius: 20; -fx-background-radius: 20; -fx-border-color: #0B8C56; -fx-background-color: #ffffff;" text="Yêu cầu chỉnh sửa" GridPane.columnIndex="8" GridPane.columnSpan="4" GridPane.rowIndex="15" GridPane.rowSpan="2">
                <font>
                   <Font name="System Bold" size="15.0" />
                </font>
             </Button>
-            <Button fx:id="LogoutButton" mnemonicParsing="false" prefHeight="54.0" prefWidth="261.0" style="-fx-border-radius: 20; -fx-background-radius: 20; -fx-background-color: #ffffff; -fx-border-color: #0B8C56;" text="Đăng xuất" textFill="#ef0000" GridPane.columnIndex="8" GridPane.columnSpan="4" GridPane.rowIndex="17" GridPane.rowSpan="2">
+            <Button fx:id="ButtonLogout" mnemonicParsing="false" prefHeight="54.0" prefWidth="261.0" style="-fx-border-radius: 20; -fx-background-radius: 20; -fx-background-color: #ffffff; -fx-border-color: #0B8C56;" text="Đăng xuất" textFill="#ef0000" GridPane.columnIndex="8" GridPane.columnSpan="4" GridPane.rowIndex="17" GridPane.rowSpan="2">
                <font>
                   <Font name="System Bold" size="15.0" />
                </font>
             </Button>
+            <GridPane fx:id="AccInfoGrid" GridPane.columnIndex="8" GridPane.columnSpan="6" GridPane.rowIndex="8" GridPane.rowSpan="5">
+              <columnConstraints>
+                <ColumnConstraints percentWidth="33.0" />
+                  <ColumnConstraints percentWidth="67.0" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints percentHeight="20.0" />
+                  <RowConstraints percentHeight="20.0" />
+                  <RowConstraints percentHeight="20.0" />
+                  <RowConstraints percentHeight="20.0" />
+                  <RowConstraints percentHeight="20.0" />
+              </rowConstraints>
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="**************" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="10.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mật khẩu :" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="10.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SĐT :" GridPane.rowIndex="3">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="10.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CCCD :" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="10.0" layoutY="119.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email :" GridPane.rowIndex="4">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="10.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Manager" GridPane.columnIndex="1">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="112.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="03530502857" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="112.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0976800423" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="112.0" layoutY="123.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TrangNT@gmail.com" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="112.0" layoutY="154.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tài khoản :">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+               </children>
+            </GridPane>
             </children>
         </GridPane>
-
-        <!-- Grid content goes here -->
     </GridPane>
 </AnchorPane>

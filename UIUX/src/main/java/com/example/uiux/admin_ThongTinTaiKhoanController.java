@@ -13,10 +13,7 @@ public class admin_ThongTinTaiKhoanController extends admin_ChuyenTrangControlle
     }
 
     @FXML
-    private Button XacNhanButton;
-
-    @FXML
-    private Button DoiMatKhauButton;
+    private Button ButtonXacNhan;
 
     @FXML
     private TextField PasswordTextField;
@@ -26,8 +23,8 @@ public class admin_ThongTinTaiKhoanController extends admin_ChuyenTrangControlle
 
 
     public void initialize() {
-        // Set XacNhanButton initially invisible
-        XacNhanButton.setVisible(false);
+        // Set ButtonXacNhan initially invisible
+        ButtonXacNhan.setVisible(false);
     }
 
     @FXML
@@ -37,14 +34,14 @@ public class admin_ThongTinTaiKhoanController extends admin_ChuyenTrangControlle
 
         // Show the PasswordTextField
         PasswordTextField.setVisible(true);
-        XacNhanButton.setVisible(true);
+        ButtonXacNhan.setVisible(true);
 
         // Set focus to the PasswordTextField
         PasswordTextField.requestFocus();
     }
 
     @FXML
-    private void handleXacNhanButtonClicked() {
+    private void handleButtonXacNhanClicked() {
         // Create the confirmation dialog
         Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
         alert.setHeaderText("Xác nhận đổi mật khẩu ?");
@@ -71,7 +68,7 @@ public class admin_ThongTinTaiKhoanController extends admin_ChuyenTrangControlle
     private void handleConfirmAction() {
         PasswordTextField.setVisible(false);
         PasswordText.setVisible(true);
-        XacNhanButton.setVisible(false);
+        ButtonXacNhan.setVisible(false);
     }
 
     private void handleCancelAction() {
