@@ -292,7 +292,6 @@
                      <TableColumn fx:id="ChuHoColumn" prefWidth="332.8" text="Tên chủ hộ" />
                      <TableColumn fx:id="DienThoaiColumn" prefWidth="153.6" text="Điện thoại" />
                      <TableColumn fx:id="SoThanhVienColumn" prefWidth="153.6" text="Số thành viên" />
-                     <TableColumn fx:id="ThongTinChiTietColumn" prefWidth="25.6" />
                  </columns>
              </TableView>
             <Button mnemonicParsing="false" prefHeight="127.0" prefWidth="204.0" text="Thêm khoản thu mới" GridPane.columnIndex="2" GridPane.columnSpan="4" GridPane.rowIndex="17" GridPane.rowSpan="2" />

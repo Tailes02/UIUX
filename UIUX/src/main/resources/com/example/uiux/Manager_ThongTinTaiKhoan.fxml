@@ -336,15 +336,6 @@
                   </Text>
                </children>
             </Pane>
-            <Pane prefHeight="29.0" prefWidth="168.0" GridPane.columnIndex="8" GridPane.columnSpan="5" GridPane.rowIndex="11">
-               <children>
-                  <Text layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Giới tính: Nữ">
-                     <font>
-                        <Font size="20.0" />
-                     </font>
-                  </Text>
-               </children>
-            </Pane>
             <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="8" GridPane.columnSpan="5" GridPane.rowIndex="12">
                <children>
                   <Text layoutY="22.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SĐT: 0976800423">
