@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -9,12 +8,11 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.RowConstraints?>
-<?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="720" prefWidth="1280" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.uiux.admin_ThongTinTaiKhoanController">
+<AnchorPane prefHeight="720" prefWidth="1280" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.uiux.admin_QuanLiSuKienController">
     <GridPane fx:id="mainGrid" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <columnConstraints>
             <ColumnConstraints percentWidth="20.0" />
@@ -140,7 +138,7 @@
                 <RowConstraints percentHeight="5.0" />
             </rowConstraints>
             <children>
-                <Button fx:id="ButtonTrangChu" mnemonicParsing="false" onAction="#TrangChu" prefHeight="58.0" prefWidth="276.0" style="-fx-background-color: #0B8C56; -fx-padding: 0 0 0 0; -fx-alignment: CENTER_LEFT; -fx-margin: 0 0 54 0;" text="Trang chủ" textFill="WHITE" GridPane.columnIndex="1" GridPane.columnSpan="8" GridPane.rowSpan="2">
+                <Button fx:id="ButtonTrangChu" mnemonicParsing="false" prefHeight="58.0" prefWidth="276.0" style="-fx-background-color: #0B8C56; -fx-padding: 0 0 0 0; -fx-alignment: CENTER_LEFT; -fx-margin: 0 0 54 0;" text="Trang chủ" textFill="WHITE" GridPane.columnIndex="1" GridPane.columnSpan="8" GridPane.rowSpan="2">
                     <font>
                         <Font name="System Bold" size="20.0" />
                     </font>
@@ -160,8 +158,8 @@
                         <Font name="System Bold" size="20.0" />
                     </font>
                 </Button>
-                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#E3D464" height="55.0" stroke="BLACK" strokeType="INSIDE" width="13.0" GridPane.rowIndex="2" GridPane.rowSpan="2" />
-                <Button fx:id="ButtonThongTinTaiKhoan" mnemonicParsing="false" prefHeight="58.0" prefWidth="204.0" style="-fx-background-color: #0B8C56; -fx-padding: 0 0 0 0; -fx-alignment: CENTER_LEFT; -fx-margin: 0 0 54 0;" text="Thông tin tài khoản" textFill="WHITE" GridPane.columnIndex="1" GridPane.columnSpan="8" GridPane.rowIndex="2" GridPane.rowSpan="2">
+                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#E3D464" height="55.0" stroke="BLACK" strokeType="INSIDE" width="13.0" GridPane.rowIndex="6" GridPane.rowSpan="2" />
+                <Button fx:id="ButtonThongTinTaiKhoan" mnemonicParsing="false" onAction="#ThongTinTaiKhoan" prefHeight="58.0" prefWidth="204.0" style="-fx-background-color: #0B8C56; -fx-padding: 0 0 0 0; -fx-alignment: CENTER_LEFT; -fx-margin: 0 0 54 0;" text="Thông tin tài khoản" textFill="WHITE" GridPane.columnIndex="1" GridPane.columnSpan="8" GridPane.rowIndex="2" GridPane.rowSpan="2">
                     <font>
                         <Font name="System Bold" size="20.0" />
                     </font>
@@ -236,7 +234,7 @@
                 <Pane fx:id="BorderPane" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: lightgray; -fx-border-width: 1;" GridPane.columnSpan="20" GridPane.rowSpan="8" />
             </children>
         </GridPane>
-        <GridPane fx:id="InformationGrid" prefHeight="554.0" prefWidth="1024.0" style="-fx-background-color: f4f4f4;" GridPane.columnIndex="1" GridPane.columnSpan="4" GridPane.rowIndex="1" GridPane.rowSpan="4">
+        <GridPane fx:id="InfomationGrid" prefHeight="554.0" prefWidth="1024.0" style="-fx-background-color: f4f4f4;" GridPane.columnIndex="1" GridPane.columnSpan="4" GridPane.rowIndex="1" GridPane.rowSpan="4">
             <columnConstraints>
                 <ColumnConstraints percentWidth="5.0" />
                 <ColumnConstraints percentWidth="5.0" />
@@ -280,86 +278,7 @@
                 <RowConstraints percentHeight="5.0" />
                 <RowConstraints percentHeight="5.0" />
                 <RowConstraints percentHeight="5.0" />
-
             </rowConstraints>
-            <children>
-                <StackPane alignment="CENTER" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="7" GridPane.columnSpan="6" GridPane.rowSpan="2">
-                    <children>
-                        <Text strokeWidth="0.0" text="Thông tin tài khoản">
-                            <font>
-                                <Font name="System Bold" size="30.0" />
-                            </font>
-                        </Text>
-                    </children>
-                </StackPane>
-                <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="9" GridPane.columnSpan="2" GridPane.rowIndex="4" GridPane.rowSpan="3">
-                    <children>
-                        <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
-                            <image>
-                                <Image url="@../../../icon/sbcf-default-avatar.png" />
-                            </image>
-                        </ImageView>
-                    </children>
-                </StackPane>
-                <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="8" GridPane.columnSpan="4" GridPane.rowIndex="2">
-                    <children>
-                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Chu Hữu Phúc">
-                            <font>
-                                <Font size="20.0" />
-                            </font>
-                        </Text>
-                    </children>
-                </StackPane>
-                <StackPane alignment="CENTER_LEFT" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="8" GridPane.columnSpan="3" GridPane.rowIndex="9" />
-            <Button fx:id="ButtonXacNhan" mnemonicParsing="false" onAction="#handleButtonXacNhanClicked" prefHeight="34.0" prefWidth="103.0" text="xác nhận" GridPane.columnIndex="13" GridPane.columnSpan="2" GridPane.rowIndex="9" />
-            <GridPane fx:id="AccInfoGrid" GridPane.columnIndex="8" GridPane.columnSpan="5" GridPane.rowIndex="8" GridPane.rowSpan="2">
-              <columnConstraints>
-                  <ColumnConstraints percentWidth="40.0" />
-                  <ColumnConstraints percentWidth="60.0" />
-              </columnConstraints>
-              <rowConstraints>
-                <RowConstraints percentHeight="50.0" />
-                <RowConstraints percentHeight="50.0" />
-              </rowConstraints>
-               <children>
-<!--                        <Text fx:id="PasswordText" layoutX="10.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*********">-->
-<!--                           <font>-->
-<!--                              <Font size="15.0" />-->
-<!--                           </font>-->
-<!--                        </Text>-->
-                   <TextField fx:id="PasswordTextField" prefHeight="15.0" prefWidth="100.0" promptText="*********" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Tài khoản :">
-                     <font>
-                        <Font size="20.0" />
-                     </font>
-                  </Text>
-                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Mật khẩu :" GridPane.rowIndex="1">
-                     <font>
-                        <Font size="20.0" />
-                     </font>
-                  </Text>
-                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="admin" GridPane.columnIndex="1">
-                     <font>
-                        <Font size="20.0" />
-                     </font>
-                  </Text>
-                  <Text fx:id="PasswordText" strokeType="OUTSIDE" strokeWidth="0.0" text="*****************" GridPane.columnIndex="1" GridPane.rowIndex="1">
-                     <font>
-                        <Font size="20.0" />
-                     </font></Text>
-               </children>
-            </GridPane>
-            <Button fx:id="ButtonDoiMatKhau" mnemonicParsing="false" onAction="#handleDoiMatKhauButtonClicked" prefHeight="77.0" prefWidth="204.0" style="-fx-background-radius: 20; -fx-background-color: #ffffff; -fx-border-radius: 20; -fx-border-color: #0B8C56;" text="Đổi mật khẩu" GridPane.columnIndex="8" GridPane.columnSpan="4" GridPane.rowIndex="14" GridPane.rowSpan="2">
-               <font>
-                  <Font name="System Bold" size="15.0" />
-               </font>
-            </Button>
-            <Button fx:id="ButtonLogout" mnemonicParsing="false" onAction="#LogoutButtonClicked" prefHeight="54.0" prefWidth="251.0" style="-fx-background-radius: 20; -fx-background-color: #ffffff; -fx-border-color: #0B8C56; -fx-border-radius: 20;" text="Đăng xuất" textFill="#ef0000" GridPane.columnIndex="8" GridPane.columnSpan="4" GridPane.rowIndex="16" GridPane.rowSpan="2">
-               <font>
-                  <Font name="System Bold" size="15.0" />
-               </font>
-            </Button>
-            </children>
         </GridPane>
 
         <!-- Grid content goes here -->
