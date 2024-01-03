@@ -30,6 +30,6 @@ public class admin_ChuyenTrangController {
 
     @FXML
     private void TinNhan(){
-        Main.loadScene("Chat.fxml");
+        Main.loadScene("admin_Chat.fxml");
     }
 }
