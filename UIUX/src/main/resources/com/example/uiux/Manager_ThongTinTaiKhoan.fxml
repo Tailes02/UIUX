@@ -139,22 +139,22 @@
                 <RowConstraints percentHeight="5.0" />
             </rowConstraints>
             <children>
-                <Button id="Trangchu-btn" fx:id="ButtonTrangChu" mnemonicParsing="false" prefHeight="58.0" prefWidth="276.0" style="-fx-background-color: #0B8C56; -fx-padding: 0 0 0 0; -fx-alignment: CENTER_LEFT; -fx-margin: 0 0 54 0;" text="Trang chủ" textFill="WHITE" GridPane.columnIndex="1" GridPane.columnSpan="8" GridPane.rowSpan="2">
+                <Button id="Trangchu-btn" fx:id="ButtonTrangChu" mnemonicParsing="false" onAction="#TrangChu" prefHeight="58.0" prefWidth="276.0" style="-fx-background-color: #0B8C56; -fx-padding: 0 0 0 0; -fx-alignment: CENTER_LEFT; -fx-margin: 0 0 54 0;" text="Trang chủ" textFill="WHITE" GridPane.columnIndex="1" GridPane.columnSpan="8" GridPane.rowSpan="2">
                     <font>
                         <Font name="System Bold" size="20.0" />
                     </font>
                 </Button>
-                <Button id="Thongbao-btn" fx:id="ButtonTaoThongBao" mnemonicParsing="false" prefHeight="81.0" prefWidth="288.0" style="-fx-background-color: #0B8C56; -fx-padding: 0 0 0 0; -fx-alignment: CENTER_LEFT; -fx-margin: 0 0 54 0;" text="Tạo thông báo" textFill="WHITE" GridPane.columnIndex="1" GridPane.columnSpan="8" GridPane.rowIndex="6" GridPane.rowSpan="2">
+                <Button id="Thongbao-btn" fx:id="ButtonTaoThongBao" mnemonicParsing="false" onAction="#TaoThongBao" prefHeight="81.0" prefWidth="288.0" style="-fx-background-color: #0B8C56; -fx-padding: 0 0 0 0; -fx-alignment: CENTER_LEFT; -fx-margin: 0 0 54 0;" text="Tạo thông báo" textFill="WHITE" GridPane.columnIndex="1" GridPane.columnSpan="8" GridPane.rowIndex="6" GridPane.rowSpan="2">
                     <font>
                         <Font name="System Bold" size="20.0" />
                     </font>
                 </Button>
-                <Button id="Hoadon-btntx  " fx:id="ButtonHoaDon" mnemonicParsing="false" prefHeight="81.0" prefWidth="288.0" style="-fx-background-color: #0B8C56; -fx-padding: 0 0 0 0; -fx-alignment: CENTER_LEFT; -fx-margin: 0 0 54 0;" text="Hóa đơn" textFill="WHITE" GridPane.columnIndex="1" GridPane.columnSpan="8" GridPane.rowIndex="8" GridPane.rowSpan="2">
+                <Button id="Hoadon-btntx  " fx:id="ButtonHoaDon" mnemonicParsing="false" onAction="#HoaDon" prefHeight="81.0" prefWidth="288.0" style="-fx-background-color: #0B8C56; -fx-padding: 0 0 0 0; -fx-alignment: CENTER_LEFT; -fx-margin: 0 0 54 0;" text="Hóa đơn" textFill="WHITE" GridPane.columnIndex="1" GridPane.columnSpan="8" GridPane.rowIndex="8" GridPane.rowSpan="2">
                     <font>
                         <Font name="System Bold" size="20.0" />
                     </font>
                 </Button>
-                <Button fx:id="ButtonThongTinNhanKhau" mnemonicParsing="false" prefHeight="58.0" prefWidth="263.0" style="-fx-background-color: #0B8C56; -fx-padding: 0 0 0 0; -fx-alignment: CENTER_LEFT; -fx-margin: 0 0 54 0;" text="Thông tin nhân khẩu" textFill="WHITE" GridPane.columnIndex="1" GridPane.columnSpan="8" GridPane.rowIndex="4" GridPane.rowSpan="2">
+                <Button fx:id="ButtonThongTinNhanKhau" mnemonicParsing="false" onAction="#ThongTinNhanKhau" prefHeight="58.0" prefWidth="263.0" style="-fx-background-color: #0B8C56; -fx-padding: 0 0 0 0; -fx-alignment: CENTER_LEFT; -fx-margin: 0 0 54 0;" text="Thông tin nhân khẩu" textFill="WHITE" GridPane.columnIndex="1" GridPane.columnSpan="8" GridPane.rowIndex="4" GridPane.rowSpan="2">
                     <font>
                         <Font name="System Bold" size="20.0" />
                     </font>
@@ -165,7 +165,7 @@
                         <Font name="System Bold" size="20.0" />
                     </font>
                 </Button>
-                <Button fx:id="ButtonTinNhan" mnemonicParsing="false" prefHeight="81.0" prefWidth="288.0" style="-fx-background-color: #0B8C56; -fx-padding: 0 0 0 0; -fx-alignment: CENTER_LEFT; -fx-margin: 0 0 54 0;" text="Tin nhắn" textFill="WHITE" GridPane.columnIndex="1" GridPane.columnSpan="8" GridPane.rowIndex="10" GridPane.rowSpan="2">
+                <Button fx:id="ButtonTinNhan" mnemonicParsing="false" onAction="#TinNhan" prefHeight="81.0" prefWidth="288.0" style="-fx-background-color: #0B8C56; -fx-padding: 0 0 0 0; -fx-alignment: CENTER_LEFT; -fx-margin: 0 0 54 0;" text="Tin nhắn" textFill="WHITE" GridPane.columnIndex="1" GridPane.columnSpan="8" GridPane.rowIndex="10" GridPane.rowSpan="2">
                     <font>
                         <Font name="System Bold" size="20.0" />
                     </font>
@@ -314,7 +314,7 @@
                   <Font name="System Bold" size="15.0" />
                </font>
             </Button>
-            <Button fx:id="ButtonLogout" mnemonicParsing="false" prefHeight="54.0" prefWidth="261.0" style="-fx-border-radius: 20; -fx-background-radius: 20; -fx-background-color: #ffffff; -fx-border-color: #0B8C56;" text="Đăng xuất" textFill="#ef0000" GridPane.columnIndex="8" GridPane.columnSpan="4" GridPane.rowIndex="17" GridPane.rowSpan="2" onAction="#LogoutButtonClicked">
+            <Button fx:id="ButtonLogout" mnemonicParsing="false" onAction="#LogoutButtonClicked" prefHeight="54.0" prefWidth="261.0" style="-fx-border-radius: 20; -fx-background-radius: 20; -fx-background-color: #ffffff; -fx-border-color: #0B8C56;" text="Đăng xuất" textFill="#ef0000" GridPane.columnIndex="8" GridPane.columnSpan="4" GridPane.rowIndex="17" GridPane.rowSpan="2">
                <font>
                   <Font name="System Bold" size="15.0" />
                </font>

@@ -138,12 +138,12 @@
                 <RowConstraints percentHeight="5.0" />
             </rowConstraints>
             <children>
-                <Button fx:id="ButtonTrangChu" mnemonicParsing="false" prefHeight="58.0" prefWidth="276.0" style="-fx-background-color: #0B8C56; -fx-padding: 0 0 0 0; -fx-alignment: CENTER_LEFT; -fx-margin: 0 0 54 0;" text="Trang chủ" textFill="WHITE" GridPane.columnIndex="1" GridPane.columnSpan="8" GridPane.rowSpan="2">
+                <Button fx:id="ButtonTrangChu" mnemonicParsing="false" onAction="#TrangChu" prefHeight="58.0" prefWidth="276.0" style="-fx-background-color: #0B8C56; -fx-padding: 0 0 0 0; -fx-alignment: CENTER_LEFT; -fx-margin: 0 0 54 0;" text="Trang chủ" textFill="WHITE" GridPane.columnIndex="1" GridPane.columnSpan="8" GridPane.rowSpan="2">
                     <font>
                         <Font name="System Bold" size="20.0" />
                     </font>
                 </Button>
-                <Button fx:id="ButtonTaoThongBao" mnemonicParsing="false" prefHeight="81.0" prefWidth="288.0" style="-fx-background-color: #0B8C56; -fx-padding: 0 0 0 0; -fx-alignment: CENTER_LEFT; -fx-margin: 0 0 54 0;" text="Tạo thông báo" textFill="WHITE" GridPane.columnIndex="1" GridPane.columnSpan="8" GridPane.rowIndex="6" GridPane.rowSpan="2">
+                <Button fx:id="ButtonTaoThongBao" mnemonicParsing="false" onAction="#TaoThongBao" prefHeight="81.0" prefWidth="288.0" style="-fx-background-color: #0B8C56; -fx-padding: 0 0 0 0; -fx-alignment: CENTER_LEFT; -fx-margin: 0 0 54 0;" text="Tạo thông báo" textFill="WHITE" GridPane.columnIndex="1" GridPane.columnSpan="8" GridPane.rowIndex="6" GridPane.rowSpan="2">
                     <font>
                         <Font name="System Bold" size="20.0" />
                     </font>
