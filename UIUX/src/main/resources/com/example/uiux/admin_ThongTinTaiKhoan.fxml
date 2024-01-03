@@ -14,7 +14,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="720" prefWidth="1280" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.uiux.admin_ThongTinTaiKhoanController">
+<AnchorPane prefHeight="720" prefWidth="1280" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.uiux.admin_ThongTinTaiKhoanController">
     <GridPane fx:id="mainGrid" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <columnConstraints>
             <ColumnConstraints percentWidth="20.0" />
@@ -311,7 +311,7 @@
                     </children>
                 </StackPane>
                 <StackPane alignment="CENTER_LEFT" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="8" GridPane.columnSpan="3" GridPane.rowIndex="9" />
-            <Button fx:id="XacNhanButton" mnemonicParsing="false" onAction="#handleXacNhanButtonClicked" prefHeight="34.0" prefWidth="103.0" text="xác nhận" GridPane.columnIndex="13" GridPane.columnSpan="2" GridPane.rowIndex="9" />
+            <Button fx:id="ButtonXacNhan" mnemonicParsing="false" onAction="#handleButtonXacNhanClicked" prefHeight="34.0" prefWidth="103.0" text="xác nhận" GridPane.columnIndex="13" GridPane.columnSpan="2" GridPane.rowIndex="9" />
             <GridPane fx:id="AccInfoGrid" GridPane.columnIndex="8" GridPane.columnSpan="5" GridPane.rowIndex="8" GridPane.rowSpan="2">
               <columnConstraints>
                   <ColumnConstraints percentWidth="40.0" />
@@ -349,12 +349,12 @@
                      </font></Text>
                </children>
             </GridPane>
-            <Button fx:id="DoiMatKhauButton" mnemonicParsing="false" onAction="#handleDoiMatKhauButtonClicked" prefHeight="77.0" prefWidth="204.0" style="-fx-background-radius: 20; -fx-background-color: #ffffff; -fx-border-radius: 20; -fx-border-color: #0B8C56;" text="Đổi mật khẩu" GridPane.columnIndex="8" GridPane.columnSpan="4" GridPane.rowIndex="14" GridPane.rowSpan="2">
+            <Button fx:id="ButtonDoiMatKhau" mnemonicParsing="false" onAction="#handleDoiMatKhauButtonClicked" prefHeight="77.0" prefWidth="204.0" style="-fx-background-radius: 20; -fx-background-color: #ffffff; -fx-border-radius: 20; -fx-border-color: #0B8C56;" text="Đổi mật khẩu" GridPane.columnIndex="8" GridPane.columnSpan="4" GridPane.rowIndex="14" GridPane.rowSpan="2">
                <font>
                   <Font name="System Bold" size="15.0" />
                </font>
             </Button>
-            <Button fx:id="LogoutButton" mnemonicParsing="false" onAction="#LogoutButtonClicked" prefHeight="54.0" prefWidth="251.0" style="-fx-background-radius: 20; -fx-background-color: #ffffff; -fx-border-color: #0B8C56; -fx-border-radius: 20;" text="Đăng xuất" textFill="#ef0000" GridPane.columnIndex="8" GridPane.columnSpan="4" GridPane.rowIndex="16" GridPane.rowSpan="2">
+            <Button fx:id="ButtonLogout" mnemonicParsing="false" onAction="#LogoutButtonClicked" prefHeight="54.0" prefWidth="251.0" style="-fx-background-radius: 20; -fx-background-color: #ffffff; -fx-border-color: #0B8C56; -fx-border-radius: 20;" text="Đăng xuất" textFill="#ef0000" GridPane.columnIndex="8" GridPane.columnSpan="4" GridPane.rowIndex="16" GridPane.rowSpan="2">
                <font>
                   <Font name="System Bold" size="15.0" />
                </font>
