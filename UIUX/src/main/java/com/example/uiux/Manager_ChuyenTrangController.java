@@ -21,6 +21,6 @@ public class Manager_ChuyenTrangController {
     }
     @FXML
     private void TinNhan(){
-        Main.loadScene("Chat.fxml");
+        Main.loadScene("Chat_old.fxml");
     }
 }
