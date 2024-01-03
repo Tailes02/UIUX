@@ -296,7 +296,7 @@
                         <Image url="@../../../icon/test.png" />
                      </image>
                   </ImageView>
-                  <Button fx:id="LoginButton" mnemonicParsing="false" onAction="#onLoginButtonClicked" prefHeight="40.0" prefWidth="164.0" style="-fx-background-radius: 30; -fx-border-color: #0B8C56; -fx-border-radius: 30; -fx-background-color: FFFFFF;" text="Đăng xuất" GridPane.columnIndex="14" GridPane.columnSpan="4" GridPane.rowIndex="2" GridPane.rowSpan="2">
+                  <Button fx:id="LogoutButton" mnemonicParsing="false" onAction="#onLoginButtonClicked" prefHeight="40.0" prefWidth="164.0" style="-fx-background-radius: 30; -fx-border-color: #0B8C56; -fx-border-radius: 30; -fx-background-color: FFFFFF;" text="Đăng xuất" GridPane.columnIndex="14" GridPane.columnSpan="4" GridPane.rowIndex="2" GridPane.rowSpan="2">
                      <font>
                         <Font size="20.0" />
                      </font>
