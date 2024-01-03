@@ -1,8 +1,4 @@
 package com.example.uiux;
 
-import javafx.fxml.FXML;
-
-public class citizen_ThongTinCanHoController {
-    @FXML
-    private void LogoutButtonClicked(){Main.loadScene("login.fxml");}
+public class citizen_ThongtinCanHoController extends citizen_ChuyenTrangController {
 }
