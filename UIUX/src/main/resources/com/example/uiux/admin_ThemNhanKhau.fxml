@@ -308,6 +308,11 @@
                         <Font size="18.0" />
                      </font>
                   </Text>
+                  <Text fill="RED" layoutX="86.0" layoutY="17.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
                </children>
             </Pane>
             <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.columnSpan="3" GridPane.rowIndex="6">
@@ -317,14 +322,24 @@
                         <Font size="18.0" />
                      </font>
                   </Text>
+                  <Text fill="RED" layoutX="52.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
                </children>
             </Pane>
-            <DatePicker prefHeight="27.0" prefWidth="297.0" GridPane.columnIndex="4" GridPane.columnSpan="3" GridPane.rowIndex="9" />
+            <DatePicker prefHeight="27.0" prefWidth="297.0" promptText="1/1/2000" GridPane.columnIndex="4" GridPane.columnSpan="3" GridPane.rowIndex="9" />
             <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.columnSpan="3" GridPane.rowIndex="2">
                <children>
                   <Text layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tài khoản">
                      <font>
                         <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Text fill="RED" layoutX="84.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*">
+                     <font>
+                        <Font size="20.0" />
                      </font>
                   </Text>
                </children>
@@ -373,6 +388,11 @@
                         <Font size="18.0" />
                      </font>
                   </Text>
+                  <Text fill="RED" layoutX="81.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
                </children>
             </Pane>
             <TextField prefHeight="27.0" prefWidth="335.0" promptText="User_001" style="-fx-border-radius: 20; -fx-background-radius: 20;" GridPane.columnIndex="4" GridPane.columnSpan="7" GridPane.rowIndex="3" />
@@ -384,6 +404,11 @@
                   <Text layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Số điện thoại">
                      <font>
                         <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Text fill="RED" layoutX="113.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*">
+                     <font>
+                        <Font size="20.0" />
                      </font>
                   </Text>
                </children>
