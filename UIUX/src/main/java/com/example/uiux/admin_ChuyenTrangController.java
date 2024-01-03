@@ -20,14 +20,14 @@ public class admin_ChuyenTrangController {
 
     @FXML
     private void TaoThongBao(){
-        Main.loadScene("TaoThongBao.fxml");
+        Main.loadScene("admin_TaoThongBao.fxml");
     }
 
     @FXML
     private void QuanLiSuKien(){
-        Main.loadScene("QuanLiSuKien.fxml");
+        Main.loadScene("admin_QuanLiSuKien.fxml");
     }
-    
+
     @FXML
     private void TinNhan(){
         Main.loadScene("Chat.fxml");
