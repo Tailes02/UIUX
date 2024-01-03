@@ -21,7 +21,7 @@
             <ColumnConstraints percentWidth="20.0" />
             <ColumnConstraints percentWidth="20.0" />
         </columnConstraints>
-        <!-- Define 5 rows with equal height -->
+
         <rowConstraints>
             <RowConstraints percentHeight="20.0" />
             <RowConstraints percentHeight="20.0" />
