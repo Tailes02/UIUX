@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.image.Image?>
@@ -285,15 +286,19 @@
 
             </rowConstraints>
          <children>
-             <TableView fx:id="tableView" prefHeight="200.0" prefWidth="200.0" style=" -fx-alignment: TOP_RIGHT" stylesheets="@style.css" GridPane.columnIndex="2" GridPane.columnSpan="16" GridPane.rowIndex="3" GridPane.rowSpan="12">
-                 <columns>
-                     <TableColumn fx:id="IdColumn" prefWidth="51.2" text="ID" />
-                     <TableColumn fx:id="CanHoColumn" prefWidth="102.4" text="Căn hộ" />
-                     <TableColumn fx:id="ChuHoColumn" prefWidth="332.8" text="Tên chủ hộ" />
-                     <TableColumn fx:id="DienThoaiColumn" prefWidth="153.6" text="Điện thoại" />
-                     <TableColumn fx:id="SoThanhVienColumn" prefWidth="153.6" text="Số thành viên" />
-                 </columns>
-             </TableView>
+            <ScrollPane hbarPolicy="NEVER" prefHeight="346.0" prefWidth="795.0" GridPane.columnIndex="2" GridPane.columnSpan="17" GridPane.rowIndex="3" GridPane.rowSpan="12">
+               <content>
+                   <TableView fx:id="tableView" prefWidth="828.0" style=" -fx-alignment: TOP_RIGHT" stylesheets="@style.css">
+                       <columns>
+                           <TableColumn fx:id="IdColumn" prefWidth="51.2" text="ID" />
+                           <TableColumn fx:id="CanHoColumn" prefWidth="102.4" text="Căn hộ" />
+                           <TableColumn fx:id="ChuHoColumn" prefWidth="332.8" text="Tên chủ hộ" />
+                           <TableColumn fx:id="DienThoaiColumn" prefWidth="153.6" text="Điện thoại" />
+                           <TableColumn fx:id="SoThanhVienColumn" prefWidth="153.6" text="Số thành viên" />
+                       </columns>
+                   </TableView>
+               </content>
+            </ScrollPane>
             <Button mnemonicParsing="false" prefHeight="127.0" prefWidth="204.0" text="Thêm khoản thu mới" GridPane.columnIndex="2" GridPane.columnSpan="4" GridPane.rowIndex="17" GridPane.rowSpan="2" />
             <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="17" GridPane.rowIndex="16" />
          </children>

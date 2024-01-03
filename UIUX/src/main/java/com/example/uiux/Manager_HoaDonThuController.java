@@ -17,13 +17,13 @@ public class Manager_HoaDonThuController extends admin_ChuyenTrangController {
     private TableColumn<Manager_HoaDonThuController.Household, Integer> IdColumn;
 
     @FXML
-    private TableColumn<Manager_HoaDonThuController.Household, String> SoTienColumn;
+    private TableColumn<Manager_HoaDonThuController.Household, Integer> SoTienColumn;
 
     @FXML
     private TableColumn<Manager_HoaDonThuController.Household, String> TenColumn;
 
     @FXML
-    private TableColumn<Manager_HoaDonThuController.Household, String> DienThoaiColumn;
+    private TableColumn<Manager_HoaDonThuController.Household, String> ThoiGianColumn;
 
     @FXML
     private TableColumn<Manager_HoaDonThuController.Household, Integer> SoThanhVienColumn;
@@ -34,19 +34,19 @@ public class Manager_HoaDonThuController extends admin_ChuyenTrangController {
         IdColumn.setCellValueFactory(cellData -> new ReadOnlyObjectWrapper<>(cellData.getValue().getId()));
         SoTienColumn.setCellValueFactory(cellData -> new ReadOnlyObjectWrapper<>(cellData.getValue().getSoTien()));
         TenColumn.setCellValueFactory(cellData -> new ReadOnlyObjectWrapper<>(cellData.getValue().getTen()));
-        DienThoaiColumn.setCellValueFactory(cellData -> new ReadOnlyObjectWrapper<>(cellData.getValue().getDienthoai()));
+        ThoiGianColumn.setCellValueFactory(cellData -> new ReadOnlyObjectWrapper<>(cellData.getValue().getThoiGian()));
         SoThanhVienColumn.setCellValueFactory(cellData -> new ReadOnlyObjectWrapper<>(cellData.getValue().getSoThanhVien()));
 
 
         // Create and add data to the table
         ObservableList<Manager_HoaDonThuController.Household> data = FXCollections.observableArrayList(
-                new Manager_HoaDonThuController.Household(1, 1.000.000, "Nguyễn Thị Hằng", "0989958699",2),
-                new Manager_HoaDonThuController.Household(2, 200.000, "Hoàng Thị Minh Nguyệt", "0912738073",3),
-                new Manager_HoaDonThuController.Household(2, 340.000, "Nguyễn Thanh Mai", "09112345678",3),
-                new Manager_HoaDonThuController.Household(2, 450.000, "Trần Ngọc Linh", "09198765432",1),
-                new Manager_HoaDonThuController.Household(2, 205.000, "Nguyễn Ngọc Khánh", "09123456789",2),
-                new Manager_HoaDonThuController.Household(2, 201.000, "Nguyễn Tiến Dũng", "09187654321",4),
-                new Manager_HoaDonThuController.Household(2, 206.000, "Mai Ngọc Linh", "09134567890",3),
+                new Manager_HoaDonThuController.Household(1, 1000000, "Nguyễn Thị Hằng", "0989958699",2),
+                new Manager_HoaDonThuController.Household(2, 200000, "Hoàng Thị Minh Nguyệt", "0912738073",3),
+                new Manager_HoaDonThuController.Household(2, 340000, "Nguyễn Thanh Mai", "09112345678",3),
+                new Manager_HoaDonThuController.Household(2, 450000, "Trần Ngọc Linh", "09198765432",1),
+                new Manager_HoaDonThuController.Household(2, 205000, "Nguyễn Ngọc Khánh", "09123456789",2),
+                new Manager_HoaDonThuController.Household(2, 201000, "Nguyễn Tiến Dũng", "09187654321",4),
+                new Manager_HoaDonThuController.Household(2, 206000, "Mai Ngọc Linh", "09134567890",3)
 //                new Manager_HoaDonThuController.Household(2, "108", "Phạm Ngọc Ngà", "09176543210",2),
 //                new Manager_HoaDonThuController.Household(2, "201", "Trần Phương Anh", "09154321098",2),
 //                new Manager_HoaDonThuController.Household(2, "202", "Lương Thanh Hà", "09189012345",3)
@@ -86,15 +86,15 @@ public class Manager_HoaDonThuController extends admin_ChuyenTrangController {
     public class Household {
         private int id;
         private int soTien;
-        private String chuHo;
-        private String dienthoai;
+        private String ten;
+        private String thoiGian;
         private int soThanhVien;
 
-        public Household(int id, int soTien, String chuHo, String dienthoai,int soThanhVien) {
+        public Household(int id, int soTien, String ten, String thoiGian,int soThanhVien) {
             this.id = id;
             this.soTien = soTien;
-            this.chuHo = chuHo;
-            this.dienthoai = dienthoai;
+            this.ten = ten;
+            this.thoiGian = thoiGian;
             this.soThanhVien = soThanhVien;
         }
 
@@ -116,19 +116,19 @@ public class Manager_HoaDonThuController extends admin_ChuyenTrangController {
         }
 
         public String getTen() {
-            return chuHo;
+            return ten;
         }
 
-        public void setTen(String chuHo) {
-            this.chuHo = chuHo;
+        public void setTen(String ten) {
+            this.ten = ten;
         }
 
-        public String getDienthoai() {
-            return dienthoai;
+        public String getThoiGian() {
+            return thoiGian;
         }
 
-        public void setDienthoai(String dienthoai) {
-            this.dienthoai = dienthoai;
+        public void setThoiGian(String thoiGian) {
+            this.thoiGian = thoiGian;
         }
 
         public int getSoThanhVien() {
