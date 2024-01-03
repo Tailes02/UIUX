@@ -1,0 +1,22 @@
+Việc cần làm:
+All:
+- tạo popup của thông báo
+- tạo màn hình sự kiện
+- tạo tin nhắn
+
+admin+manager:
+- Tạo thông báo
+- Xem chi tiết thông tin nhân khẩu
+
+manager:
+- Chi tiết khoản thu 
+- Thêm khoản chi
+
+admin:
+**Xác nhận/từ chối thay đổi
+- Chi tiết nhân khẩu
+
+*Thông tin nhân khẩu = thông tin tài khoản 
+
+citizen:
+?????
