@@ -1,15 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
-<?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="715.0" style="-fx-background-color: GREEN;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="60.0" prefWidth="764.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Text fx:id="message" fill="WHITE" layoutX="9.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bể nước bị làm sao thế em?" textAlignment="RIGHT" wrappingWidth="696.48046875">
-         <font>
-            <Font size="24.0" />
-         </font>
-      </Text>
+      <Pane layoutX="12.0" layoutY="14.0" maxHeight="40.0" maxWidth="738.0" prefHeight="40.0" style="-fx-background-color: #0B8C56; -fx-background-radius: 30;" AnchorPane.rightAnchor="14.0">
+         <children>
+            <Label fx:id="message" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="19.0" layoutY="3.0" maxHeight="35.0" maxWidth="718.0" prefHeight="35.0" text="sao thế em?" textAlignment="RIGHT" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <padding>
+                  <Insets right="20.0" />
+               </padding>
+            </Label>
+         </children>
+      </Pane>
    </children>
 </AnchorPane>
