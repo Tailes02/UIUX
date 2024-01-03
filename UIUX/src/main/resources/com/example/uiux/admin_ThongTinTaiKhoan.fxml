@@ -329,7 +329,7 @@
                         </Button>
                     </children>
                 </StackPane>
-            <Button fx:id="XacNhanButton" mnemonicParsing="false" prefHeight="34.0" prefWidth="103.0" text="xác nhận" GridPane.columnIndex="13" GridPane.columnSpan="2" GridPane.rowIndex="9" />
+            <Button fx:id="XacNhanButton" mnemonicParsing="false" onAction="#handleXacNhanButtonClicked" prefHeight="34.0" prefWidth="103.0" text="xác nhận" GridPane.columnIndex="13" GridPane.columnSpan="2" GridPane.rowIndex="9" />
             <GridPane fx:id="AccInfoGrid" GridPane.columnIndex="8" GridPane.columnSpan="5" GridPane.rowIndex="8" GridPane.rowSpan="2">
               <columnConstraints>
                   <ColumnConstraints percentWidth="40.0" />
