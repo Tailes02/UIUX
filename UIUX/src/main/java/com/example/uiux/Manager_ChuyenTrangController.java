@@ -16,6 +16,10 @@ public class Manager_ChuyenTrangController {
         Main.loadScene("Manager_ThongTinNhanKhau.fxml");
     }
     @FXML
+    private void HoaDon(){
+        Main.loadScene("Manager_HoaDonThu.fxml");
+    }
+    @FXML
     private void TinNhan(){
         Main.loadScene("Chat.fxml");
     }

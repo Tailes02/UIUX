@@ -311,11 +311,7 @@
                     </children>
                 </StackPane>
                 <StackPane alignment="CENTER_LEFT" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="8" GridPane.columnSpan="3" GridPane.rowIndex="9" />
-<<<<<<< HEAD
-            <Button fx:id="XacNhanButton" mnemonicParsing="false" onAction="#handleXacNhanButtonClicked" prefHeight="34.0" prefWidth="103.0" text="xác nhận" GridPane.columnIndex="13" GridPane.columnSpan="2" GridPane.rowIndex="9" />
-=======
             <Button fx:id="ButtonXacNhan" mnemonicParsing="false" onAction="#handleButtonXacNhanClicked" prefHeight="34.0" prefWidth="103.0" text="xác nhận" GridPane.columnIndex="13" GridPane.columnSpan="2" GridPane.rowIndex="9" />
->>>>>>> 2755efaf18eaf4068864659a2ee3b56bbaeee578
             <GridPane fx:id="AccInfoGrid" GridPane.columnIndex="8" GridPane.columnSpan="5" GridPane.rowIndex="8" GridPane.rowSpan="2">
               <columnConstraints>
                   <ColumnConstraints percentWidth="40.0" />
@@ -353,20 +349,12 @@
                      </font></Text>
                </children>
             </GridPane>
-<<<<<<< HEAD
-            <Button fx:id="DoiMatKhauButton" mnemonicParsing="false" onAction="#handleDoiMatKhauButtonClicked" prefHeight="77.0" prefWidth="204.0" style="-fx-background-radius: 20; -fx-background-color: #ffffff; -fx-border-radius: 20; -fx-border-color: #0B8C56;" text="Đổi mật khẩu" GridPane.columnIndex="8" GridPane.columnSpan="4" GridPane.rowIndex="14" GridPane.rowSpan="2">
-=======
             <Button fx:id="ButtonDoiMatKhau" mnemonicParsing="false" onAction="#handleDoiMatKhauButtonClicked" prefHeight="77.0" prefWidth="204.0" style="-fx-background-radius: 20; -fx-background-color: #ffffff; -fx-border-radius: 20; -fx-border-color: #0B8C56;" text="Đổi mật khẩu" GridPane.columnIndex="8" GridPane.columnSpan="4" GridPane.rowIndex="14" GridPane.rowSpan="2">
->>>>>>> 2755efaf18eaf4068864659a2ee3b56bbaeee578
                <font>
                   <Font name="System Bold" size="15.0" />
                </font>
             </Button>
-<<<<<<< HEAD
-            <Button fx:id="LogoutButton" mnemonicParsing="false" onAction="#LogoutButtonClicked" prefHeight="54.0" prefWidth="251.0" style="-fx-background-radius: 20; -fx-background-color: #ffffff; -fx-border-color: #0B8C56; -fx-border-radius: 20;" text="Đăng xuất" textFill="#ef0000" GridPane.columnIndex="8" GridPane.columnSpan="4" GridPane.rowIndex="16" GridPane.rowSpan="2">
-=======
             <Button fx:id="ButtonLogout" mnemonicParsing="false" onAction="#LogoutButtonClicked" prefHeight="54.0" prefWidth="251.0" style="-fx-background-radius: 20; -fx-background-color: #ffffff; -fx-border-color: #0B8C56; -fx-border-radius: 20;" text="Đăng xuất" textFill="#ef0000" GridPane.columnIndex="8" GridPane.columnSpan="4" GridPane.rowIndex="16" GridPane.rowSpan="2">
->>>>>>> 2755efaf18eaf4068864659a2ee3b56bbaeee578
                <font>
                   <Font name="System Bold" size="15.0" />
                </font>
