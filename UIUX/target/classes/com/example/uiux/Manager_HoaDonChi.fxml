@@ -289,7 +289,6 @@
                      <TableColumn fx:id="TenColumn" prefWidth="332.8" text="Tên khoản thu" />
                      <TableColumn fx:id="SoTienColumn" prefWidth="153.6" text="Số tiền" />
                      <TableColumn fx:id="ThoiGianColumn" prefWidth="102.4" text="Thời gian" />
-                     <TableColumn fx:id="GhiChu" prefWidth="153.6" text="Ghi chú" />
                      <TableColumn fx:id="ThongTinChiTietColumn" prefWidth="25.6" />
 
                  </columns>
