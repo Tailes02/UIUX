@@ -14,12 +14,8 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<<<<<<< HEAD
 <?import javafx.util.Callback?>
 <AnchorPane prefHeight="720" prefWidth="1280" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.uiux.Manager_HoaDonChiTietController">
-=======
-<AnchorPane prefHeight="720" prefWidth="1280" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.uiux.Manager_HoaDonThuController">
->>>>>>> c1105cdf42276f60e753494eded271daea644abd
     <GridPane fx:id="mainGrid" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <columnConstraints>
             <ColumnConstraints percentWidth="20.0" />
@@ -160,11 +156,7 @@
                         <Font name="System Bold" size="20.0" />
                     </font>
                 </Button>
-<<<<<<< HEAD
-                <Button fx:id="ButtonThongTinNhanKhau" mnemonicParsing="false" onAction="#ThongTinNhanKhau" prefHeight="58.0" prefWidth="263.0" style="-fx-background-color: #0B8C56; -fx-padding: 0 0 0 0; -fx-alignment: CENTER_LEFT; -fx-margin: 0 0 54 0;" text="Thông tin nhân khẩu" textFill="WHITE" GridPane.columnIndex="1" GridPane.columnSpan="8" GridPane.rowIndex="4" GridPane.rowSpan="2">
-=======
-                <Button fx:id="ButtonThongTinNhanKhau" mnemonicParsing="false" onAction="#ThongTinNhanKhau" prefHeight="58.0" prefWidth="263.0" style="-fx-background-color: #0B8C56; -fx-padding: 0 0 0 0; -fx-alignment: CENTER_LEFT; -fx-margin: 0 0 54 0;" text="Thông tin căn hộ" textFill="WHITE" GridPane.columnIndex="1" GridPane.columnSpan="8" GridPane.rowIndex="4" GridPane.rowSpan="2">
->>>>>>> c1105cdf42276f60e753494eded271daea644abd
+                <Button fx:id="ButtonThongTinCanHo" mnemonicParsing="false" onAction="#ThongTinCanHo" prefHeight="58.0" prefWidth="263.0" style="-fx-background-color: #0B8C56; -fx-padding: 0 0 0 0; -fx-alignment: CENTER_LEFT; -fx-margin: 0 0 54 0;" text="Thông tin căn hộ" textFill="WHITE" GridPane.columnIndex="1" GridPane.columnSpan="8" GridPane.rowIndex="4" GridPane.rowSpan="2">
                     <font>
                         <Font name="System Bold" size="20.0" />
                     </font>
@@ -294,7 +286,6 @@
          <children>
              <TableView fx:id="tableView" prefHeight="200.0" prefWidth="200.0" style=" -fx-alignment: TOP_RIGHT" stylesheets="@style.css" GridPane.columnIndex="2" GridPane.columnSpan="16" GridPane.rowIndex="3" GridPane.rowSpan="13">
                  <columns>
-<<<<<<< HEAD
                      <TableColumn fx:id="IdColumn" prefWidth="102.4" text="Phòng" />
                      <TableColumn fx:id="TenColumn" prefWidth="340.8" text="Tên chủ hộ" />
                      <TableColumn fx:id="SoTienColumn" prefWidth="102.4" text="Số tiền" />
@@ -305,13 +296,6 @@
                          </cellFactory>
                      </TableColumn>
 
-=======
-                     <TableColumn fx:id="SoPhongColumn" prefWidth="102.4" text="Phòng" />
-                     <TableColumn fx:id="TenColumn" prefWidth="340.8" text="Tên khoản thu" />
-                     <TableColumn fx:id="SoTienColumn" prefWidth="102.4" text="Số tiền" />
-                     <TableColumn fx:id="ThoiGianColumn" prefWidth="153.6" text="Thời gian" />
-                     <TableColumn fx:id="TinhTrangColumn" prefWidth="120" text="Tình trạng" />
->>>>>>> c1105cdf42276f60e753494eded271daea644abd
 
                  </columns>
              </TableView>

@@ -12,7 +12,7 @@
          <children>
             <Label fx:id="message" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="19.0" layoutY="3.0" maxHeight="35.0" maxWidth="718.0" prefHeight="35.0" text="sao thế em?" textAlignment="RIGHT" textFill="WHITE">
                <font>
-                  <Font size="24.0" />
+                  <Font size="18.0" />
                </font>
                <padding>
                   <Insets right="20.0" />

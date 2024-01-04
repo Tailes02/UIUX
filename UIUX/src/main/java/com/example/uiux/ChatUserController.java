@@ -27,8 +27,8 @@ public class ChatUserController {
     @FXML
     public void initialize(){
         this.username.setText(u);
-        if (p.length()>36)
-            this.preview.setText(p.substring(0,36)+"...");
+        if (p.length()>32)
+            this.preview.setText(p.substring(0,32)+"...");
         else
             this.preview.setText(p);
         if (h){

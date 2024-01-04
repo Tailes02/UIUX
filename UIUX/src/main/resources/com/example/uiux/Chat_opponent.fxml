@@ -12,7 +12,7 @@
          <children>
             <Label fx:id="message" layoutX="13.0" layoutY="3.0" maxHeight="1.7976931348623157E308" maxWidth="713.0" prefHeight="35.0" text="Anh ơi bê nước nhà em ">
                <font>
-                  <Font size="24.0" />
+                  <Font size="18.0" />
                </font>
                <padding>
                   <Insets right="10.0" />

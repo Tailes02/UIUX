@@ -17,6 +17,8 @@ public class citizen_ChatController extends citizen_ChuyenTrangController {
     @FXML
     private VBox userColumn;
     @FXML
+    private VBox adminColumn;
+    @FXML
     private ScrollPane chatScroll;
     @FXML
     private ScrollPane userScroll;
@@ -42,10 +44,12 @@ public class citizen_ChatController extends citizen_ChuyenTrangController {
     private void loadUsers(String preview, String user, String role, Boolean highlight){
         try {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("Chat_user.fxml"));
-            ChatUserController chatUserController = new ChatUserController(preview, user, role, highlight);
+            ChatUserController chatUserController = new ChatUserController(preview, user, highlight);
             loader.setController(chatUserController);
             loader.load();
-            userColumn.getChildren().add(loader.getRoot());
+            if (role.contains("Cư dân"))
+                userColumn.getChildren().add(loader.getRoot());
+            else adminColumn.getChildren().add(loader.getRoot());
         }catch (IOException e){
             e.printStackTrace();
         }
