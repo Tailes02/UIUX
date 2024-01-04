@@ -14,13 +14,18 @@ public class admin_ChatController extends admin_ChuyenTrangController {
     @FXML
     private VBox userColumn;
     @FXML
+    private VBox adminColumn;
+    @FXML
     private ScrollPane chatScroll;
     @FXML
     private ScrollPane userScroll;
     @FXML
+    private ScrollPane adminScroll;
+    @FXML
     public void initialize() {
         chatScroll.setVbarPolicy(ScrollPane.ScrollBarPolicy.NEVER);
         userScroll.setVbarPolicy(ScrollPane.ScrollBarPolicy.NEVER);
+        adminScroll.setVbarPolicy(ScrollPane.ScrollBarPolicy.NEVER);
         loadUsers("Anh ơi nhà em mất điện rồi anh giúp em vớifjweopfjwaepofjopaweofj ","Phòng 309", "Cư dân",true);
         loadUsers("Mày ôm tiền định trốn à ","Trịnh Phú Quang", "Quản lý",false);
         loadUsers("Trả tiền đi em ơi, chơi xấu thế","Lê Hữu Tài","Quản trị", false);
@@ -28,6 +33,8 @@ public class admin_ChatController extends admin_ChuyenTrangController {
         loadUsers("Sao em đóng tiền rồi mà không có điện","Phòng 509","Cư dân",false);
         loadUsers("Mày ôm tiền định trốn à ","Trịnh Phú Quang", "Quản lý",false);
         loadUsers("Trả tiền đi em ơi, chơi xấu thế","Lê Hữu Tài","Quản trị", false);
+        loadUsers("Anh ơi bể nước nhà em gặp vấn đề","Phòng 409","Cư dân", false);
+        loadUsers("Sao em đóng tiền rồi mà không có điện","Phòng 509","Cư dân",false);
         loadUsers("Anh ơi bể nước nhà em gặp vấn đề","Phòng 409","Cư dân", false);
         loadUsers("Sao em đóng tiền rồi mà không có điện","Phòng 509","Cư dân",false);
 
@@ -39,10 +46,13 @@ public class admin_ChatController extends admin_ChuyenTrangController {
     private void loadUsers(String preview, String user, String role, Boolean highlight){
         try {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("Chat_user.fxml"));
-            ChatUserController chatUserController = new ChatUserController(preview, user, role, highlight);
+            ChatUserController chatUserController = new ChatUserController(preview, user, highlight);
             loader.setController(chatUserController);
             loader.load();
-            userColumn.getChildren().add(loader.getRoot());
+            if (role.contains("Cư dân"))
+                userColumn.getChildren().add(loader.getRoot());
+            else adminColumn.getChildren().add(loader.getRoot());
+
         }catch (IOException e){
             e.printStackTrace();
         }
