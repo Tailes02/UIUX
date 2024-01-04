@@ -7,5 +7,4 @@ public class citizen_ThongTinTaiKhoanController extends citizen_ChuyenTrangContr
         private void LogoutButtonClicked(){
             Main.loadScene("login.fxml");
         }
-
 }
