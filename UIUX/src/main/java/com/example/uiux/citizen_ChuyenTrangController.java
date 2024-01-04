@@ -25,6 +25,6 @@ public class citizen_ChuyenTrangController {
     }
     @FXML
     private void YeuCauChinhSua(){
-        Main.loadScene("YeuCauChinhSua.fxml");
+        Main.loadScene("citizen_YeuCauChinhSua.fxml");
     }
 }

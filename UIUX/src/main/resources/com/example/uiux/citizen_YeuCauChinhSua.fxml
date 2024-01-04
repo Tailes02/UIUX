@@ -13,11 +13,10 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.RowConstraints?>
-<?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="720" prefWidth="1280" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.uiux.HomeLayoutRemakeController">
+<AnchorPane prefHeight="720" prefWidth="1280" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.uiux.citizen_YeuCauChinhSuaController">
     <GridPane fx:id="mainGrid" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <columnConstraints>
             <ColumnConstraints percentWidth="20.0" />
@@ -73,17 +72,17 @@
             <children>
             <Pane prefHeight="91.0" prefWidth="320.0" style="-fx-background-radius: 15;" GridPane.columnIndex="1" GridPane.columnSpan="10" GridPane.rowIndex="1" GridPane.rowSpan="6">
                <children>
-                  <Text layoutX="104.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Chu Hữu Phúc">
+                  <Text layoutX="104.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nguyễn Hàn My">
                      <font>
                         <Font name="System Bold" size="30.0" />
                      </font>
                   </Text>
-                  <Text layoutX="104.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quản trị">
+                  <Text layoutX="104.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cư dân">
                      <font>
                         <Font size="20.0" />
                      </font>
                   </Text>
-                  <ImageView fitHeight="68.0" fitWidth="76.0" layoutX="20.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="ThongTinTaiKhoan" fitHeight="68.0" fitWidth="76.0" layoutX="20.0" layoutY="7.0" onMouseClicked="#avatarClicked" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../../../icon/sbcf-default-avatar.png" />
                      </image>
@@ -143,33 +142,22 @@
                 <RowConstraints percentHeight="5.0" />
             </rowConstraints>
             <children>
-                <Button mnemonicParsing="false" prefHeight="58.0" prefWidth="276.0" style="-fx-background-color: #0B8C56; -fx-padding: 0 0 0 0; -fx-alignment: CENTER_LEFT; -fx-margin: 0 0 54 0;" text="Trang chủ" textFill="WHITE" GridPane.columnIndex="1" GridPane.columnSpan="8" GridPane.rowSpan="2">
+                <Button fx:id="ButtonTrangChu" mnemonicParsing="false" onAction="#TrangChu" prefHeight="58.0" prefWidth="276.0" style="-fx-background-color: #0B8C56; -fx-padding: 0 0 0 0; -fx-alignment: CENTER_LEFT; -fx-margin: 0 0 54 0;" text="Trang chủ" textFill="WHITE" GridPane.columnIndex="1" GridPane.columnSpan="8" GridPane.rowSpan="2">
                     <font>
                         <Font name="System Bold" size="20.0" />
                     </font>
                 </Button>
-                <Button mnemonicParsing="false" prefHeight="81.0" prefWidth="288.0" style="-fx-background-color: #0B8C56; -fx-padding: 0 0 0 0; -fx-alignment: CENTER_LEFT; -fx-margin: 0 0 54 0;" text="Tạo thông báo" textFill="WHITE" GridPane.columnIndex="1" GridPane.columnSpan="8" GridPane.rowIndex="6" GridPane.rowSpan="2">
+                <Button fx:id="ButtonTinNhan" mnemonicParsing="false" onAction="#TinNhan" prefHeight="81.0" prefWidth="288.0" style="-fx-background-color: #0B8C56; -fx-padding: 0 0 0 0; -fx-alignment: CENTER_LEFT; -fx-margin: 0 0 54 0;" text="Tin nhắn" textFill="WHITE" GridPane.columnIndex="1" GridPane.columnSpan="8" GridPane.rowIndex="6" GridPane.rowSpan="2">
                     <font>
                         <Font name="System Bold" size="20.0" />
                     </font>
                 </Button>
-                <Button mnemonicParsing="false" prefHeight="81.0" prefWidth="288.0" style="-fx-background-color: #0B8C56; -fx-padding: 0 0 0 0; -fx-alignment: CENTER_LEFT; -fx-margin: 0 0 54 0;" text="Hóa đơn" textFill="WHITE" GridPane.columnIndex="1" GridPane.columnSpan="8" GridPane.rowIndex="8" GridPane.rowSpan="2">
+                <Button fx:id="ButtonHoaDon" mnemonicParsing="false" onAction="#HoaDon" prefHeight="58.0" prefWidth="263.0" style="-fx-background-color: #0B8C56; -fx-padding: 0 0 0 0; -fx-alignment: CENTER_LEFT; -fx-margin: 0 0 54 0;" text="Hóa đơn" textFill="WHITE" GridPane.columnIndex="1" GridPane.columnSpan="8" GridPane.rowIndex="4" GridPane.rowSpan="2">
                     <font>
                         <Font name="System Bold" size="20.0" />
                     </font>
                 </Button>
-                <Button mnemonicParsing="false" prefHeight="58.0" prefWidth="263.0" style="-fx-background-color: #0B8C56; -fx-padding: 0 0 0 0; -fx-alignment: CENTER_LEFT; -fx-margin: 0 0 54 0;" text="Thông tin nhân khẩu" textFill="WHITE" GridPane.columnIndex="1" GridPane.columnSpan="8" GridPane.rowIndex="4" GridPane.rowSpan="2">
-                    <font>
-                        <Font name="System Bold" size="20.0" />
-                    </font>
-                </Button>
-                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#E3D464" height="55.0" stroke="BLACK" strokeType="INSIDE" width="13.0" GridPane.rowIndex="4" GridPane.rowSpan="2" />
-            <Button mnemonicParsing="false" prefHeight="58.0" prefWidth="204.0" style="-fx-background-color: #0B8C56; -fx-padding: 0 0 0 0; -fx-alignment: CENTER_LEFT; -fx-margin: 0 0 54 0;" text="Thông tin cá nhân" textFill="WHITE" GridPane.columnIndex="1" GridPane.columnSpan="8" GridPane.rowIndex="2" GridPane.rowSpan="2">
-               <font>
-                  <Font name="System Bold" size="20.0" />
-               </font>
-            </Button>
-            <Button mnemonicParsing="false" prefHeight="81.0" prefWidth="288.0" style="-fx-background-color: #0B8C56; -fx-padding: 0 0 0 0; -fx-alignment: CENTER_LEFT; -fx-margin: 0 0 54 0;" text="Tin nhắn" textFill="WHITE" GridPane.columnIndex="1" GridPane.columnSpan="8" GridPane.rowIndex="10" GridPane.rowSpan="2">
+            <Button fx:id="ButtonThongTinCanHo" mnemonicParsing="false" onAction="#ThongTinCanHo" prefHeight="58.0" prefWidth="204.0" style="-fx-background-color: #0B8C56; -fx-padding: 0 0 0 0; -fx-alignment: CENTER_LEFT; -fx-margin: 0 0 54 0;" text="Thông tin căn hộ" textFill="WHITE" GridPane.columnIndex="1" GridPane.columnSpan="8" GridPane.rowIndex="2" GridPane.rowSpan="2">
                <font>
                   <Font name="System Bold" size="20.0" />
                </font>
@@ -295,7 +283,7 @@
          <children>
             <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.columnSpan="5">
                <children>
-                  <Text layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Thêm nhân khẩu">
+                  <Text layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Chỉnh Sua Thông Tin">
                      <font>
                         <Font name="System Bold" size="25.0" />
                      </font></Text>
@@ -371,12 +359,12 @@
                      </FXCollections>
                  </items>
              </ComboBox>
-            <Button mnemonicParsing="false" prefHeight="90.0" prefWidth="93.0" style="-fx-border-radius: 30; -fx-background-radius: 30; -fx-border-color: #0B8C56; -fx-background-color: #ffffff;" text="Hủy" GridPane.columnIndex="4" GridPane.columnSpan="2" GridPane.rowIndex="16" GridPane.rowSpan="2">
+            <Button fx:id="ButtonHuy" mnemonicParsing="false" onAction="#Huy" prefHeight="90.0" prefWidth="93.0" style="-fx-border-radius: 30; -fx-background-radius: 30; -fx-border-color: #0B8C56; -fx-background-color: #ffffff;" text="Hủy" GridPane.columnIndex="4" GridPane.columnSpan="2" GridPane.rowIndex="16" GridPane.rowSpan="2">
                <font>
                   <Font name="System Bold" size="15.0" />
                </font>
             </Button>
-            <Button mnemonicParsing="false" prefHeight="55.0" prefWidth="273.0" style="-fx-border-radius: 20; -fx-background-radius: 20; -fx-border-color: #0B8C56; -fx-background-color: #ffffff;" text="Xác nhận" GridPane.columnIndex="19" GridPane.columnSpan="4" GridPane.rowIndex="16" GridPane.rowSpan="2">
+            <Button fx:id="ButtonXacNhan" mnemonicParsing="false" onAction="#XacNhan" prefHeight="55.0" prefWidth="273.0" style="-fx-border-radius: 20; -fx-background-radius: 20; -fx-border-color: #0B8C56; -fx-background-color: #ffffff;" text="Xác nhận" GridPane.columnIndex="19" GridPane.columnSpan="4" GridPane.rowIndex="16" GridPane.rowSpan="2">
                <font>
                   <Font name="System Bold" size="15.0" />
                </font>

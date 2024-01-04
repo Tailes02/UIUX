@@ -14,8 +14,8 @@ public class admin_ChuyenTrangController {
     }
 
     @FXML
-    private void ThongTinNhanKhau(){
-        Main.loadScene("admin_ThongTinNhanKhau.fxml");
+    private void ThongTinCanHo(){
+        Main.loadScene("admin_ThongTinCanHo.fxml");
     }
 
     @FXML
