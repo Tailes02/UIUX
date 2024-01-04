@@ -16,6 +16,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
+<?import javafx.scene.control.Label?>
 <AnchorPane prefHeight="720" prefWidth="1280" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.uiux.citizen_ChatController">
     <GridPane fx:id="mainGrid" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <columnConstraints>
@@ -300,9 +301,9 @@
                 <RowConstraints percentHeight="5.0" />
             </rowConstraints>
             <children>
-                <ScrollPane fx:id="userScroll" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: transparent;" GridPane.columnIndex="15" GridPane.columnSpan="5" GridPane.rowSpan="20">
+                <ScrollPane fx:id="userScroll" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: transparent;" GridPane.columnIndex="15" GridPane.columnSpan="5" GridPane.rowIndex="8" GridPane.rowSpan="12">
                     <content>
-                        <VBox fx:id="userColumn" prefHeight="559.0" prefWidth="253.0" />
+                        <VBox fx:id="userColumn" prefHeight="343.0" prefWidth="253.0" />
                     </content>
                 </ScrollPane>
                 <ScrollPane fx:id="chatScroll" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: transparent;" GridPane.columnSpan="15" GridPane.rowSpan="18">
@@ -310,15 +311,10 @@
                         <VBox fx:id="chatColumn" prefHeight="514.0" prefWidth="764.0" />
                     </content>
                 </ScrollPane>
-                <TextField fx:id="textBos" GridPane.columnIndex="1" GridPane.columnSpan="13" GridPane.rowIndex="18" GridPane.rowSpan="2" />
-                <ImageView fitHeight="30.0" fitWidth="30.0" GridPane.rowIndex="18" GridPane.rowSpan="2">
-                    <image>
-                        <Image url="@../../../icon/addfile.png" />
-                    </image>
+                <TextField fx:id="textBos" GridPane.columnSpan="14" GridPane.rowIndex="18" GridPane.rowSpan="2">
                     <GridPane.margin>
-                        <Insets left="10.0" />
-                    </GridPane.margin>
-                </ImageView>
+                        <Insets left="15.0" />
+                    </GridPane.margin></TextField>
                 <ImageView fitHeight="30.0" fitWidth="30.0" GridPane.columnIndex="14" GridPane.rowIndex="18" GridPane.rowSpan="2">
                     <image>
                         <Image url="@../../../icon/mingcute_send-fill.png" />
@@ -327,6 +323,27 @@
                         <Insets left="10.0" />
                     </GridPane.margin>
                 </ImageView>
+                <Label text="Cư dân" GridPane.columnIndex="15" GridPane.columnSpan="2" GridPane.rowIndex="7">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                    <GridPane.margin>
+                        <Insets left="15.0" />
+                    </GridPane.margin>
+                </Label>
+                <Label text="Quản lý &amp; Quản trị" GridPane.columnIndex="15" GridPane.columnSpan="4">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                    <GridPane.margin>
+                        <Insets left="15.0" />
+                    </GridPane.margin>
+                </Label>
+                <ScrollPane fx:id="adminScroll" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: transparent;" GridPane.columnIndex="15" GridPane.columnSpan="5" GridPane.rowIndex="1" GridPane.rowSpan="6">
+                    <content>
+                        <VBox fx:id="adminColumn" prefHeight="171.0" prefWidth="253.0" />
+                    </content>
+                </ScrollPane>
             </children>
         </GridPane>
 

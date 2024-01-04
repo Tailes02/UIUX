@@ -19,6 +19,8 @@ public class citizen_ChatController extends citizen_ChuyenTrangController {
     @FXML
     private VBox adminColumn;
     @FXML
+    private ScrollPane adminScroll;
+    @FXML
     private ScrollPane chatScroll;
     @FXML
     private ScrollPane userScroll;
@@ -26,6 +28,7 @@ public class citizen_ChatController extends citizen_ChuyenTrangController {
     public void initialize() {
         chatScroll.setVbarPolicy(ScrollPane.ScrollBarPolicy.NEVER);
         userScroll.setVbarPolicy(ScrollPane.ScrollBarPolicy.NEVER);
+        adminScroll.setVbarPolicy(ScrollPane.ScrollBarPolicy.NEVER);
         loadUsers("Anh ơi nhà em mất điện rồi anh giúp em vớifjweopfjwaepofjopaweofj ","Phòng 309", "Cư dân",true);
         loadUsers("Mày ôm tiền định trốn à ","Trịnh Phú Quang", "Quản lý",false);
         loadUsers("Trả tiền đi em ơi, chơi xấu thế","Lê Hữu Tài","Quản trị", false);
