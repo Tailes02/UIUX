@@ -16,7 +16,11 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) {
         com.example.uiux.Main.primaryStage = primaryStage; // Assign the primaryStage to the static field
+<<<<<<< HEAD
         loadScene("Manager_HoaDonChiTiet.fxml");
+=======
+        loadScene("login.fxml");
+>>>>>>> c1105cdf42276f60e753494eded271daea644abd
     }
 
     public static void showAlert(String message, String title, Alert.AlertType type) {

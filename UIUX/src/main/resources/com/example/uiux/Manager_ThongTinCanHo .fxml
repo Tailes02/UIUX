@@ -15,7 +15,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="720" prefWidth="1280" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.uiux.admin_ThongTinNhanKhauController">
+<AnchorPane prefHeight="720" prefWidth="1280" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.uiux.Manager_ThongTinCanHoController">
     <GridPane fx:id="mainGrid" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <columnConstraints>
             <ColumnConstraints percentWidth="20.0" />
@@ -71,12 +71,12 @@
             <children>
                 <Pane prefHeight="91.0" prefWidth="320.0" style="-fx-background-radius: 15;" GridPane.columnIndex="1" GridPane.columnSpan="10" GridPane.rowIndex="1" GridPane.rowSpan="6">
                     <children>
-                        <Text layoutX="104.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Chu Hữu Phúc">
+                        <Text layoutX="104.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nguyễn Thu Trang">
                             <font>
                                 <Font name="System Bold" size="30.0" />
                             </font>
                         </Text>
-                        <Text layoutX="104.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quản trị">
+                        <Text layoutX="104.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quản lí">
                             <font>
                                 <Font size="20.0" />
                             </font>
@@ -151,12 +151,12 @@
                         <Font name="System Bold" size="20.0" />
                     </font>
                 </Button>
-                <Button fx:id="ButtonQuanLiSuKien" mnemonicParsing="false" onAction="#QuanLiSuKien" prefHeight="81.0" prefWidth="288.0" style="-fx-background-color: #0B8C56; -fx-padding: 0 0 0 0; -fx-alignment: CENTER_LEFT; -fx-margin: 0 0 54 0;" text="Quản lí sự kiện" textFill="WHITE" GridPane.columnIndex="1" GridPane.columnSpan="8" GridPane.rowIndex="8" GridPane.rowSpan="2">
+                <Button fx:id="ButtonHoaDon" mnemonicParsing="false" onAction="#HoaDon" prefHeight="81.0" prefWidth="288.0" style="-fx-background-color: #0B8C56; -fx-padding: 0 0 0 0; -fx-alignment: CENTER_LEFT; -fx-margin: 0 0 54 0;" text="Hóa đơn" textFill="WHITE" GridPane.columnIndex="1" GridPane.columnSpan="8" GridPane.rowIndex="8" GridPane.rowSpan="2">
                     <font>
                         <Font name="System Bold" size="20.0" />
                     </font>
                 </Button>
-                <Button fx:id="ButtonThongTinNhanKhau" mnemonicParsing="false" prefHeight="58.0" prefWidth="263.0" style="-fx-background-color: #0B8C56; -fx-padding: 0 0 0 0; -fx-alignment: CENTER_LEFT; -fx-margin: 0 0 54 0;" text="Thông tin nhân khẩu" textFill="WHITE" GridPane.columnIndex="1" GridPane.columnSpan="8" GridPane.rowIndex="4" GridPane.rowSpan="2">
+                <Button fx:id="ButtonThongTinCanHo" mnemonicParsing="false" prefHeight="58.0" prefWidth="263.0" style="-fx-background-color: #0B8C56; -fx-padding: 0 0 0 0; -fx-alignment: CENTER_LEFT; -fx-margin: 0 0 54 0;" text="Thông tin căn hộ" textFill="WHITE" GridPane.columnIndex="1" GridPane.columnSpan="8" GridPane.rowIndex="4" GridPane.rowSpan="2">
                     <font>
                         <Font name="System Bold" size="20.0" />
                     </font>
@@ -258,8 +258,7 @@
                 <ColumnConstraints percentWidth="5.0" />
                 <ColumnConstraints percentWidth="5.0" />
                 <ColumnConstraints percentWidth="5.0" />
-
-            <ColumnConstraints percentWidth="5.0" />
+                <ColumnConstraints percentWidth="5.0" />
             </columnConstraints>
             <rowConstraints>
                 <RowConstraints percentHeight="5.0" />
@@ -285,15 +284,16 @@
 
             </rowConstraints>
          <children>
-            <ScrollPane hbarPolicy="NEVER" prefHeight="346.0" prefWidth="665.2" GridPane.columnIndex="2" GridPane.columnSpan="16" GridPane.rowIndex="3" GridPane.rowSpan="12">
+            <ScrollPane hbarPolicy="NEVER" GridPane.columnIndex="2" GridPane.columnSpan="16" GridPane.rowIndex="3" GridPane.rowSpan="13">
                <content>
-                   <TableView fx:id="tableView" prefHeight="400.0"  style=" -fx-alignment: TOP_RIGHT" stylesheets="@style.css">
+                   <TableView fx:id="tableView" prefHeight="1000.0" prefWidth="819.2" style=" -fx-alignment: TOP_RIGHT" stylesheets="@style.css">
                        <columns>
                            <TableColumn fx:id="IdColumn" prefWidth="51.2" text="ID" />
                            <TableColumn fx:id="CanHoColumn" prefWidth="102.4" text="Căn hộ" />
-                           <TableColumn fx:id="ChuHoColumn" prefWidth="358.4" text="Tên chủ hộ" />
+                           <TableColumn fx:id="ChuHoColumn" prefWidth="332.8" text="Tên chủ hộ" />
                            <TableColumn fx:id="DienThoaiColumn" prefWidth="153.6" text="Điện thoại" />
                            <TableColumn fx:id="SoThanhVienColumn" prefWidth="153.6" text="Số thành viên" />
+                           <TableColumn fx:id="ThongTinChiTietColumn" prefWidth="25.6" />
                        </columns>
                    </TableView>
                </content>

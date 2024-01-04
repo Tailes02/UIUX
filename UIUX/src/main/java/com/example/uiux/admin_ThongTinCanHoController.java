@@ -8,25 +8,25 @@ import javafx.scene.control.TableCell;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 
-public class admin_ThongTinNhanKhauController extends admin_ChuyenTrangController {
+public class admin_ThongTinCanHojController extends admin_ChuyenTrangController {
 
     @FXML
-    private TableView<admin_ThongTinNhanKhauController.Household> tableView;
+    private TableView<admin_ThongTinCanHojController.Household> tableView;
 
     @FXML
-    private TableColumn<admin_ThongTinNhanKhauController.Household, Integer> IdColumn;
+    private TableColumn<admin_ThongTinCanHojController.Household, Integer> IdColumn;
 
     @FXML
-    private TableColumn<admin_ThongTinNhanKhauController.Household, String> CanHoColumn;
+    private TableColumn<admin_ThongTinCanHojController.Household, String> CanHoColumn;
 
     @FXML
-    private TableColumn<admin_ThongTinNhanKhauController.Household, String> ChuHoColumn;
+    private TableColumn<admin_ThongTinCanHojController.Household, String> ChuHoColumn;
 
     @FXML
-    private TableColumn<admin_ThongTinNhanKhauController.Household, String> DienThoaiColumn;
+    private TableColumn<admin_ThongTinCanHojController.Household, String> DienThoaiColumn;
 
     @FXML
-    private TableColumn<admin_ThongTinNhanKhauController.Household, Integer> SoThanhVienColumn;
+    private TableColumn<admin_ThongTinCanHojController.Household, Integer> SoThanhVienColumn;
 
 
     public void initialize() {
@@ -39,17 +39,17 @@ public class admin_ThongTinNhanKhauController extends admin_ChuyenTrangControlle
 
 
         // Create and add data to the table
-        ObservableList<admin_ThongTinNhanKhauController.Household> data = FXCollections.observableArrayList(
-                new admin_ThongTinNhanKhauController.Household(1, "101", "Nguyễn Thị Hằng", "0989958699",2),
-                new admin_ThongTinNhanKhauController.Household(2, "102", "Hoàng Thị Minh Nguyệt", "0912738073",3),
-                new admin_ThongTinNhanKhauController.Household(2, "103", "Nguyễn Thanh Mai", "09112345678",3),
-                new admin_ThongTinNhanKhauController.Household(2, "104", "Trần Ngọc Linh", "09198765432",1),
-                new admin_ThongTinNhanKhauController.Household(2, "105", "Nguyễn Ngọc Khánh", "09123456789",2),
-                new admin_ThongTinNhanKhauController.Household(2, "106", "Nguyễn Tiến Dũng", "09187654321",4),
-                new admin_ThongTinNhanKhauController.Household(2, "107", "Mai Ngọc Linh", "09134567890",3),
-                new admin_ThongTinNhanKhauController.Household(2, "108", "Phạm Ngọc Ngà", "09176543210",2),
-                new admin_ThongTinNhanKhauController.Household(2, "201", "Trần Phương Anh", "09154321098",2),
-                new admin_ThongTinNhanKhauController.Household(2, "202", "Lương Thanh Hà", "09189012345",3)
+        ObservableList<admin_ThongTinCanHojController.Household> data = FXCollections.observableArrayList(
+                new admin_ThongTinCanHojController.Household(1, "101", "Nguyễn Thị Hằng", "0989958699",2),
+                new admin_ThongTinCanHojController.Household(2, "102", "Hoàng Thị Minh Nguyệt", "0912738073",3),
+                new admin_ThongTinCanHojController.Household(2, "103", "Nguyễn Thanh Mai", "09112345678",3),
+                new admin_ThongTinCanHojController.Household(2, "104", "Trần Ngọc Linh", "09198765432",1),
+                new admin_ThongTinCanHojController.Household(2, "105", "Nguyễn Ngọc Khánh", "09123456789",2),
+                new admin_ThongTinCanHojController.Household(2, "106", "Nguyễn Tiến Dũng", "09187654321",4),
+                new admin_ThongTinCanHojController.Household(2, "107", "Mai Ngọc Linh", "09134567890",3),
+                new admin_ThongTinCanHojController.Household(2, "108", "Phạm Ngọc Ngà", "09176543210",2),
+                new admin_ThongTinCanHojController.Household(2, "201", "Trần Phương Anh", "09154321098",2),
+                new admin_ThongTinCanHojController.Household(2, "202", "Lương Thanh Hà", "09189012345",3)
 
             /* dự phòng
                 new admin_ThongTinNhanKhauController.Household(1, "203", "Lương Văn Đức", "0989958699",2,"..."),

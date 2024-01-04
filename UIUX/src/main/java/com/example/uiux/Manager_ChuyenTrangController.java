@@ -12,8 +12,8 @@ public class Manager_ChuyenTrangController {
         Main.loadScene("Manager_ThongTinTaiKhoan.fxml");
     }
     @FXML
-    private void ThongTinNhanKhau(){
-        Main.loadScene("Manager_ThongTinNhanKhau.fxml");
+    private void ThongTinCanHo(){
+        Main.loadScene("Manager_ThongTinCanHo.fxml");
     }
     @FXML
     private void TaoThongBao(){
