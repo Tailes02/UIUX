@@ -78,7 +78,7 @@
                         <Font size="20.0" />
                      </font>
                   </Text>
-                  <ImageView fitHeight="68.0" fitWidth="76.0" layoutX="20.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="ThongTinTaiKhoan" fitHeight="68.0" fitWidth="76.0" layoutX="20.0" layoutY="7.0" onMouseClicked="#avatarClicked" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../../../icon/sbcf-default-avatar.png" />
                      </image>
