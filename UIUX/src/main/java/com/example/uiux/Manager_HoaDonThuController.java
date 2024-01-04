@@ -42,11 +42,11 @@ public class Manager_HoaDonThuController extends Manager_ChuyenTrangController{
         ObservableList<HoaDon> data = FXCollections.observableArrayList(
                 new HoaDon(1, 1000000, "Nguyễn Thị Hằng", "0989958699","y"),
                 new HoaDon(2, 200000, "Hoàng Thị Minh Nguyệt", "0912738073","y"),
-                new HoaDon(2, 340000, "Nguyễn Thanh Mai", "09112345678","y"),
-                new HoaDon(2, 450000, "Trần Ngọc Linh", "09198765432","y"),
-                new HoaDon(2, 205000, "Nguyễn Ngọc Khánh", "09123456789","y"),
-                new HoaDon(2, 201000, "Nguyễn Tiến Dũng", "09187654321","y"),
-                new HoaDon(2, 206000, "Mai Ngọc Linh", "09134567890","y")
+                new HoaDon(3, 340000, "Nguyễn Thanh Mai", "09112345678","y"),
+                new HoaDon(4, 450000, "Trần Ngọc Linh", "09198765432","y"),
+                new HoaDon(5, 205000, "Nguyễn Ngọc Khánh", "09123456789","y"),
+                new HoaDon(6, 201000, "Nguyễn Tiến Dũng", "09187654321","y"),
+                new HoaDon(7, 206000, "Mai Ngọc Linh", "09134567890","y")
 //                new Manager_HoaDonThuController.HoaDon(2, "108", "Phạm Ngọc Ngà", "09176543210",2),
 //                new Manager_HoaDonThuController.HoaDon(2, "201", "Trần Phương Anh", "09154321098",2),
 //                new Manager_HoaDonThuController.HoaDon(2, "202", "Lương Thanh Hà", "09189012345",3)
