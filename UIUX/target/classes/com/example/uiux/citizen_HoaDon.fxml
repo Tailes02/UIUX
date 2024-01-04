@@ -12,7 +12,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="720" prefWidth="1280" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.uiux.HomeLayoutRemakeController">
+<AnchorPane prefHeight="720" prefWidth="1280" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.uiux.citizen_HoaDonController">
     <GridPane fx:id="mainGrid" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <columnConstraints>
             <ColumnConstraints percentWidth="20.0" />
@@ -78,7 +78,7 @@
                         <Font size="20.0" />
                      </font>
                   </Text>
-                  <ImageView fitHeight="68.0" fitWidth="76.0" layoutX="20.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="ThongTinTaiKhoan" fitHeight="68.0" fitWidth="76.0" layoutX="20.0" layoutY="7.0" onMouseClicked="#avatarClicked" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../../../icon/sbcf-default-avatar.png" />
                      </image>
@@ -138,23 +138,23 @@
                 <RowConstraints percentHeight="5.0" />
             </rowConstraints>
             <children>
-                <Button fx:id="ButtonTrangChu" mnemonicParsing="false" prefHeight="58.0" prefWidth="276.0" style="-fx-background-color: #0B8C56; -fx-padding: 0 0 0 0; -fx-alignment: CENTER_LEFT; -fx-margin: 0 0 54 0;" text="Trang chủ" textFill="WHITE" GridPane.columnIndex="1" GridPane.columnSpan="8" GridPane.rowSpan="2">
+                <Button fx:id="ButtonTrangChu" mnemonicParsing="false" onAction="#TrangChu" prefHeight="58.0" prefWidth="276.0" style="-fx-background-color: #0B8C56; -fx-padding: 0 0 0 0; -fx-alignment: CENTER_LEFT; -fx-margin: 0 0 54 0;" text="Trang chủ" textFill="WHITE" GridPane.columnIndex="1" GridPane.columnSpan="8" GridPane.rowSpan="2">
                     <font>
                         <Font name="System Bold" size="20.0" />
                     </font>
                 </Button>
-                <Button fx:id="ButtonTinNhan" mnemonicParsing="false" prefHeight="81.0" prefWidth="288.0" style="-fx-background-color: #0B8C56; -fx-padding: 0 0 0 0; -fx-alignment: CENTER_LEFT; -fx-margin: 0 0 54 0;" text="Tin nhắn" textFill="WHITE" GridPane.columnIndex="1" GridPane.columnSpan="8" GridPane.rowIndex="6" GridPane.rowSpan="2">
+                <Button fx:id="ButtonTinNhan" mnemonicParsing="false" onAction="#TinNhan" prefHeight="81.0" prefWidth="288.0" style="-fx-background-color: #0B8C56; -fx-padding: 0 0 0 0; -fx-alignment: CENTER_LEFT; -fx-margin: 0 0 54 0;" text="Tin nhắn" textFill="WHITE" GridPane.columnIndex="1" GridPane.columnSpan="8" GridPane.rowIndex="6" GridPane.rowSpan="2">
                     <font>
                         <Font name="System Bold" size="20.0" />
                     </font>
                 </Button>
-                <Button fx:id="ButtonHoaDon" mnemonicParsing="false" prefHeight="58.0" prefWidth="263.0" style="-fx-background-color: #0B8C56; -fx-padding: 0 0 0 0; -fx-alignment: CENTER_LEFT; -fx-margin: 0 0 54 0;" text="Hóa đơn" textFill="WHITE" GridPane.columnIndex="1" GridPane.columnSpan="8" GridPane.rowIndex="4" GridPane.rowSpan="2">
+                <Button fx:id="ButtonHoaDon" mnemonicParsing="false" onAction="#HoaDon" prefHeight="58.0" prefWidth="263.0" style="-fx-background-color: #0B8C56; -fx-padding: 0 0 0 0; -fx-alignment: CENTER_LEFT; -fx-margin: 0 0 54 0;" text="Hóa đơn" textFill="WHITE" GridPane.columnIndex="1" GridPane.columnSpan="8" GridPane.rowIndex="4" GridPane.rowSpan="2">
                     <font>
                         <Font name="System Bold" size="20.0" />
                     </font>
                 </Button>
                 <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#E3D464" height="55.0" stroke="BLACK" strokeType="INSIDE" width="13.0" GridPane.rowIndex="4" GridPane.rowSpan="2" />
-            <Button fx:id="ButtonThongTinTaiKhoan" mnemonicParsing="false" prefHeight="58.0" prefWidth="204.0" style="-fx-background-color: #0B8C56; -fx-padding: 0 0 0 0; -fx-alignment: CENTER_LEFT; -fx-margin: 0 0 54 0;" text="Thông tin tài khoản" textFill="WHITE" GridPane.columnIndex="1" GridPane.columnSpan="8" GridPane.rowIndex="2" GridPane.rowSpan="2">
+            <Button fx:id="ButtonThongTinCanHo" mnemonicParsing="false" onAction="#ThongTinCanHo" prefHeight="58.0" prefWidth="204.0" style="-fx-background-color: #0B8C56; -fx-padding: 0 0 0 0; -fx-alignment: CENTER_LEFT; -fx-margin: 0 0 54 0;" text="Thông tin căn hộ" textFill="WHITE" GridPane.columnIndex="1" GridPane.columnSpan="8" GridPane.rowIndex="2" GridPane.rowSpan="2">
                <font>
                   <Font name="System Bold" size="20.0" />
                </font>
