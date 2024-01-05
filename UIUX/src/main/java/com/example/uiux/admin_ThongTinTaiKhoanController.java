@@ -71,10 +71,6 @@ public class admin_ThongTinTaiKhoanController extends admin_ChuyenTrangControlle
         ButtonXacNhan.setVisible(false);
     }
 
-    private void handleCancelAction() {
-        // Handle the action when "Cancel" is clicked or the dialog is closed
-        // You can add your custom logic here
-    }
 }
 
 

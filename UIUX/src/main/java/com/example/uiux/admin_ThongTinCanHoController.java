@@ -4,6 +4,7 @@ import javafx.beans.property.ReadOnlyObjectWrapper;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
+import javafx.scene.control.Button;
 import javafx.scene.control.TableCell;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
@@ -27,6 +28,9 @@ public class admin_ThongTinCanHoController extends admin_ChuyenTrangController {
 
     @FXML
     private TableColumn<admin_ThongTinCanHoController.Household, Integer> SoThanhVienColumn;
+
+    @FXML
+    private Button ButtonXemChiTiet;
 
 
     public void initialize() {
@@ -80,6 +84,21 @@ public class admin_ThongTinCanHoController extends admin_ChuyenTrangController {
             }
         });
         tableView.setItems(data);
+
+        tableView.getSelectionModel().selectedItemProperty().addListener((obs, oldSelection, newSelection) -> {
+            if (newSelection == null) {
+                // No row selected, disable the button and reset style
+                ButtonXemChiTiet.setDisable(true);
+                ButtonXemChiTiet.setStyle("-fx-background-radius: 20; -fx-background-color: #c4c2c2; -fx-border-radius: 20;");
+            } else {
+                // A row is selected, enable the button and change style
+                ButtonXemChiTiet.setDisable(false);
+                ButtonXemChiTiet.setStyle("-fx-background-radius: 20; -fx-background-color: #ffffff; -fx-border-radius: 20; -fx-border-color: #0B8C56;");
+            }
+        });
+
+        // Initialize the button as disabled since initially no row is selected
+        ButtonXemChiTiet.setDisable(true);
     }
 
     // ... other methods as needed
