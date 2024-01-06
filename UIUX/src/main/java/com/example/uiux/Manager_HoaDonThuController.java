@@ -20,9 +20,6 @@ public class Manager_HoaDonThuController extends Manager_ChuyenTrangController{
     private TableColumn<HoaDon, String> TenColumn;
 
     @FXML
-    private TableColumn<HoaDon, Integer> SoTienColumn;
-    
-    @FXML
     private TableColumn<HoaDon, String> ThoiGianColumn;
 
     @FXML
@@ -32,7 +29,6 @@ public class Manager_HoaDonThuController extends Manager_ChuyenTrangController{
     public void initialize() {
         // Initialize your columns here
         IdColumn.setCellValueFactory(cellData -> new ReadOnlyObjectWrapper<>(cellData.getValue().getId()));
-        SoTienColumn.setCellValueFactory(cellData -> new ReadOnlyObjectWrapper<>(cellData.getValue().getSoTien()));
         TenColumn.setCellValueFactory(cellData -> new ReadOnlyObjectWrapper<>(cellData.getValue().getTen()));
         ThoiGianColumn.setCellValueFactory(cellData -> new ReadOnlyObjectWrapper<>(cellData.getValue().getThoiGian()));
         TinhTrangColumn.setCellValueFactory(cellData -> new ReadOnlyObjectWrapper<>(cellData.getValue().getTinhTrang()));
@@ -40,16 +36,19 @@ public class Manager_HoaDonThuController extends Manager_ChuyenTrangController{
 
         // Create and add data to the table
         ObservableList<HoaDon> data = FXCollections.observableArrayList(
-                new HoaDon("PA1234567890", 1000000, "Nguyễn Thị Hằng", "20/07/20 - 23/12/22","Đã đóng"),
-                new HoaDon("PA1234567890", 200000, "Hoàng Thị Minh Nguyệt", "0912738073","Đã đóng"),
-                new HoaDon("PA1234567890", 340000, "Nguyễn Thanh Mai", "09112345678","Đã đóng"),
-                new HoaDon("PA1234567890", 450000, "Trần Ngọc Linh", "09198765432","Đang thu"),
-                new HoaDon("PA1234567890", 205000, "Nguyễn Ngọc Khánh", "09123456789","Đang thu"),
-                new HoaDon("PA1234567890", 201000, "Nguyễn Tiến Dũng", "09187654321","Đã đóng"),
-                new HoaDon("PA1234567890", 206000, "Mai Ngọc Linh", "09134567890","Đang thu")
-//                new Manager_HoaDonThuController.HoaDon(2, "108", "Phạm Ngọc Ngà", "09176543210",2),
-//                new Manager_HoaDonThuController.HoaDon(2, "201", "Trần Phương Anh", "09154321098",2),
-//                new Manager_HoaDonThuController.HoaDon(2, "202", "Lương Thanh Hà", "09189012345",3)
+                new HoaDon("00003546", "Danh sách thu tiền điện tháng 9", "01/10/23 - 31/10/23","Đang thu"),
+                new HoaDon("00003545", "Danh sách thu tiền nước tháng 9", "01/10/23 - 31/10/23", "Đang thu"),
+                new HoaDon("00003544", "Danh sách thu phí vệ sinh 2023", "15/09/23 - 31/09/23", "Đã đóng")
+//                new HoaDon("00003543", 450000, "Trần Ngọc Linh", "09198765432","Đang thu"),
+//                new HoaDon("00003542", 205000, "Nguyễn Ngọc Khánh", "09123456789","Đang thu"),
+//                new HoaDon("00003541", 201000, "Nguyễn Tiến Dũng", "09187654321","Đã đóng"),
+//                new HoaDon("00003540", 206000, "Mai Ngọc Linh", "09134567890","Đang thu"),
+//                new HoaDon("00003539", 200000, "Hoàng Thị Minh Nguyệt", "0912738073","Đã đóng"),
+//                new HoaDon("00003538", 340000, "Nguyễn Thanh Mai", "09112345678","Đã đóng"),
+//                new HoaDon("00003537", 450000, "Trần Ngọc Linh", "09198765432","Đang thu"),
+//                new HoaDon("00003536", 205000, "Nguyễn Ngọc Khánh", "09123456789","Đang thu"),
+//                new HoaDon("00003535", 201000, "Nguyễn Tiến Dũng", "09187654321","Đã đóng"),
+//                new HoaDon("00003534", 206000, "Mai Ngọc Linh", "09134567890","Đang thu")
 
             /* dự phòng
                 new admin_ThongTinNhanKhauController.HoaDon(1, "203", "Lương Văn Đức", "0989958699",2,"..."),
@@ -71,14 +70,12 @@ public class Manager_HoaDonThuController extends Manager_ChuyenTrangController{
     // ... other methods as needed
     public class HoaDon {
         private String id;
-        private int soTien;
         private String ten;
         private String thoiGian;
         private String tinhTrang;
 
-        public HoaDon(String id, int soTien, String ten, String thoiGian,String tinhTrang) {
+        public HoaDon(String id, String ten, String thoiGian,String tinhTrang) {
             this.id = id;
-            this.soTien = soTien;
             this.ten = ten;
             this.thoiGian = thoiGian;
             this.tinhTrang = tinhTrang;
@@ -91,14 +88,6 @@ public class Manager_HoaDonThuController extends Manager_ChuyenTrangController{
 
         public void setId(String id) {
             this.id = id;
-        }
-
-        public int getSoTien() {
-            return soTien;
-        }
-
-        public void setSoTien(int soTien) {
-            this.soTien = soTien;
         }
 
         public String getTen() {
