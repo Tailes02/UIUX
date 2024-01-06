@@ -306,12 +306,12 @@
                   </Text>
                </children>
             </Pane>
-            <ScrollPane fx:id="MainScrollPane" prefHeight="200.0" prefWidth="200.0" hbarPolicy="NEVER" GridPane.columnIndex="2" GridPane.columnSpan="16" GridPane.rowIndex="6" GridPane.rowSpan="10">
+            <ScrollPane fx:id="MainScrollPane" hbarPolicy="NEVER" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #0B8C56;" GridPane.columnIndex="2" GridPane.columnSpan="16" GridPane.rowIndex="6" GridPane.rowSpan="10">
                <content>
-                   <VBox fx:id="MainVBox" spacing="15">
+                   <VBox fx:id="MainVBox" spacing="5">
                    
                      <children>
-                        <HBox fx:id="InformationHBox0" prefHeight="115.2" prefWidth="818.2">
+                        <HBox fx:id="InformationHBox0" prefHeight="115.2" prefWidth="818.2" style="-fx-border-color: #0B8C56; -fx-border-width: 0 0 1 0;">
                            <children>
                               <VBox prefHeight="172.8" prefWidth="153.9" spacing="5.0">
                                  <children>
@@ -411,7 +411,7 @@
                               </VBox>
                            </children>
                         </HBox>
-                        <HBox fx:id="InformationHBox1" layoutX="10.0" layoutY="10.0" prefHeight="115.2" prefWidth="818.2">
+                        <HBox fx:id="InformationHBox1" layoutX="10.0" layoutY="10.0" prefHeight="115.2" prefWidth="818.2" style="-fx-border-color: #0B8C56; -fx-border-width: 0 0 1 0;">
                            <children>
                               <VBox prefHeight="172.8" prefWidth="153.9" spacing="5.0">
                                  <children>
@@ -615,6 +615,21 @@
                    </VBox>
                </content>
             </ScrollPane>
+            <Button fx:id="ButtonHuy" mnemonicParsing="false" prefHeight="66.0" prefWidth="102.0" style="-fx-border-radius: 30; -fx-background-radius: 30; -fx-background-color: #ffffff; -fx-border-color: #0B8C56;" text="Hủy" GridPane.columnIndex="14" GridPane.columnSpan="2" GridPane.rowIndex="17" GridPane.rowSpan="2">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="ButtonThayDoiThongTin" layoutX="112.0" layoutY="503.0" mnemonicParsing="false" prefHeight="78.0" prefWidth="206.0" style="-fx-border-radius: 30; -fx-background-radius: 30; -fx-background-color: #ffffff; -fx-border-color: #0B8C56;" text="Thay đổi thông tin" GridPane.columnIndex="2" GridPane.columnSpan="4" GridPane.rowIndex="17" GridPane.rowSpan="2">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="ButtonXacNhan" layoutX="727.0" layoutY="503.0" mnemonicParsing="false" prefHeight="82.0" prefWidth="103.0" style="-fx-border-radius: 30; -fx-background-radius: 30; -fx-background-color: #0B8C56; -fx-border-color: #0B8C56;" text="Xác nhận" textFill="WHITE" GridPane.columnIndex="16" GridPane.columnSpan="2" GridPane.rowIndex="17" GridPane.rowSpan="2">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
          </children>
         </GridPane>
 
