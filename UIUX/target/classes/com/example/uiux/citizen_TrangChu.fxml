@@ -90,7 +90,7 @@
                   </ImageView>
                </children>
             </Pane>
-            <Pane fx:id="ButtonThongBao" prefHeight="53.0" prefWidth="105.0" style="-fx-border-color: #0B8C56; -fx-border-width: 1; -fx-border-radius: 20;" GridPane.columnIndex="15" GridPane.columnSpan="3" GridPane.rowIndex="2" GridPane.rowSpan="4">
+            <Pane onMouseClicked="#ThongBao" prefHeight="53.0" prefWidth="105.0" style="-fx-border-color: #0B8C56; -fx-border-width: 1; -fx-border-radius: 20;" GridPane.columnIndex="15" GridPane.columnSpan="3" GridPane.rowIndex="2" GridPane.rowSpan="4">
                <children>
                   <ImageView fitHeight="50.0" fitWidth="50.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -102,6 +102,7 @@
                         <Font size="20.0" />
                      </font>
                   </Text>
+                  <Button layoutY="2.0" mnemonicParsing="false" onAction="#showThongBaoPopup" opacity="0.0" prefHeight="53.0" prefWidth="154.0" />
                </children>
             </Pane>
             <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: f4f4f4;" GridPane.columnSpan="20" GridPane.rowIndex="8" GridPane.rowSpan="2" />
