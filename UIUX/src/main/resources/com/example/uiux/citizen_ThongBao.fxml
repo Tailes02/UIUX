@@ -7,7 +7,6 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
 <Pane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.uiux.citizen_ThongBaoController">
    <children>
       <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="524.0" prefWidth="822.0">
@@ -17,7 +16,10 @@
                   <Font name="System Bold" size="25.0" />
                </font>
             </Text>
-            <Button fx:id="ButtonOK" layoutX="354.0" layoutY="467.0" mnemonicParsing="false" onAction="#OK" prefHeight="26.0" prefWidth="113.0" text="OK" />
+            <Button fx:id="ButtonOK" layoutX="354.0" layoutY="467.0" mnemonicParsing="false" onAction="#OK" prefHeight="26.0" prefWidth="113.0" text="OK">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
             <Text layoutX="119.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mới">
                <font>
                   <Font size="18.0" />
@@ -28,9 +30,9 @@
                   <Font size="18.0" />
                </font>
             </Text>
-            <Rectangle arcHeight="20.0" arcWidth="20.0" fill="#4cad50" height="69.0" layoutX="118.0" layoutY="122.0" stroke="BLACK" strokeType="INSIDE" width="668.0" />
-            <Rectangle arcHeight="20.0" arcWidth="20.0" fill="#4caf50" height="69.0" layoutX="118.0" layoutY="205.0" stroke="BLACK" strokeType="INSIDE" width="668.0" />
-            <Rectangle arcHeight="20.0" arcWidth="20.0" fill="#4caf50" height="69.0" layoutX="118.0" layoutY="342.0" stroke="BLACK" strokeType="INSIDE" width="668.0" />
+            <Rectangle arcHeight="20.0" arcWidth="20.0" fill="#0b8c56" height="69.0" layoutX="118.0" layoutY="122.0" stroke="BLACK" strokeType="INSIDE" width="668.0" />
+            <Rectangle arcHeight="20.0" arcWidth="20.0" fill="#0b8c56" height="69.0" layoutX="118.0" layoutY="205.0" stroke="BLACK" strokeType="INSIDE" width="668.0" />
+            <Rectangle arcHeight="20.0" arcWidth="20.0" fill="#0b8c56" height="69.0" layoutX="118.0" layoutY="342.0" stroke="BLACK" strokeType="INSIDE" width="668.0" />
             <Text fill="WHITE" layoutX="179.0" layoutY="381.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Thu tiền điện tháng 8/2023">
                <font>
                   <Font name="System Bold" size="18.0" />
