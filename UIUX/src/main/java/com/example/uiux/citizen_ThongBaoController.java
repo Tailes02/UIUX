@@ -12,14 +12,12 @@ public class citizen_ThongBaoController extends citizen_ChuyenTrangController {
 
     @FXML
     private void initialize() {
-        // Perform additional initialization if needed
+
     }
     @FXML
     private void OK() {
-        citizen_ChuyenTrangController mainApp = new citizen_ChuyenTrangController();
-        mainApp.showThongBaoPopup();
 
-        // Close the current ThongBao scene's stage
+        // Close and return to current scene
         Stage currentStage = (Stage) ButtonOK.getScene().getWindow();
         currentStage.close();
     }
