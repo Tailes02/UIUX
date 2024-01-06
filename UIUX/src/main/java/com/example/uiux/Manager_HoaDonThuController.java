@@ -14,7 +14,7 @@ public class Manager_HoaDonThuController extends Manager_ChuyenTrangController{
     private TableView<HoaDon> tableView;
 
     @FXML
-    private TableColumn<HoaDon, Integer> IdColumn;
+    private TableColumn<HoaDon, String> IdColumn;
 
     @FXML
     private TableColumn<HoaDon, String> TenColumn;
@@ -40,13 +40,13 @@ public class Manager_HoaDonThuController extends Manager_ChuyenTrangController{
 
         // Create and add data to the table
         ObservableList<HoaDon> data = FXCollections.observableArrayList(
-                new HoaDon(1, 1000000, "Nguyễn Thị Hằng", "0989958699","y"),
-                new HoaDon(2, 200000, "Hoàng Thị Minh Nguyệt", "0912738073","y"),
-                new HoaDon(3, 340000, "Nguyễn Thanh Mai", "09112345678","y"),
-                new HoaDon(4, 450000, "Trần Ngọc Linh", "09198765432","y"),
-                new HoaDon(5, 205000, "Nguyễn Ngọc Khánh", "09123456789","y"),
-                new HoaDon(6, 201000, "Nguyễn Tiến Dũng", "09187654321","y"),
-                new HoaDon(7, 206000, "Mai Ngọc Linh", "09134567890","y")
+                new HoaDon("PA1234567890", 1000000, "Nguyễn Thị Hằng", "20/07/20 - 23/12/22","Đã đóng"),
+                new HoaDon("PA1234567890", 200000, "Hoàng Thị Minh Nguyệt", "0912738073","Đã đóng"),
+                new HoaDon("PA1234567890", 340000, "Nguyễn Thanh Mai", "09112345678","Đã đóng"),
+                new HoaDon("PA1234567890", 450000, "Trần Ngọc Linh", "09198765432","Đang thu"),
+                new HoaDon("PA1234567890", 205000, "Nguyễn Ngọc Khánh", "09123456789","Đang thu"),
+                new HoaDon("PA1234567890", 201000, "Nguyễn Tiến Dũng", "09187654321","Đã đóng"),
+                new HoaDon("PA1234567890", 206000, "Mai Ngọc Linh", "09134567890","Đang thu")
 //                new Manager_HoaDonThuController.HoaDon(2, "108", "Phạm Ngọc Ngà", "09176543210",2),
 //                new Manager_HoaDonThuController.HoaDon(2, "201", "Trần Phương Anh", "09154321098",2),
 //                new Manager_HoaDonThuController.HoaDon(2, "202", "Lương Thanh Hà", "09189012345",3)
@@ -70,13 +70,13 @@ public class Manager_HoaDonThuController extends Manager_ChuyenTrangController{
 
     // ... other methods as needed
     public class HoaDon {
-        private int id;
+        private String id;
         private int soTien;
         private String ten;
         private String thoiGian;
         private String tinhTrang;
 
-        public HoaDon(int id, int soTien, String ten, String thoiGian,String tinhTrang) {
+        public HoaDon(String id, int soTien, String ten, String thoiGian,String tinhTrang) {
             this.id = id;
             this.soTien = soTien;
             this.ten = ten;
@@ -85,11 +85,11 @@ public class Manager_HoaDonThuController extends Manager_ChuyenTrangController{
         }
 
         // Getters and setters for each property
-        public int getId() {
+        public String getId() {
             return id;
         }
 
-        public void setId(int id) {
+        public void setId(String id) {
             this.id = id;
         }
 
