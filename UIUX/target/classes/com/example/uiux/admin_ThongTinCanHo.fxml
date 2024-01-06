@@ -297,7 +297,7 @@
 
             <TextField prefHeight="31.0" prefWidth="206.0" GridPane.columnIndex="2" GridPane.columnSpan="4" GridPane.rowIndex="1" />
             <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="116.0" text="Tìm kiếm" GridPane.columnIndex="6" GridPane.columnSpan="2" GridPane.rowIndex="1" />
-            <Button fx:id="ButtonXemChiTiet" mnemonicParsing="false" prefHeight="77.0" prefWidth="204.0" style="-fx-background-radius: 20; -fx-background-color: #ffffff; -fx-border-radius: 20; -fx-border-color: #0B8C56;" text="Xem chi tiết" textFill="#6b6b6b" GridPane.columnIndex="14" GridPane.columnSpan="4" GridPane.rowIndex="16" GridPane.rowSpan="2">
+            <Button fx:id="ButtonXemChiTiet" mnemonicParsing="false" prefHeight="77.0" prefWidth="204.0" style="-fx-background-radius: 20; -fx-background-color: #ffffff; -fx-border-radius: 20; -fx-border-color: #0B8C56;" text="Xem chi tiết" textFill="#6b6b6b" GridPane.columnIndex="14" GridPane.columnSpan="4" GridPane.rowIndex="16" GridPane.rowSpan="2" onAction="#handleXemChiTietButton">
                <font>
                   <Font name="System Bold" size="15.0" />
                </font>
