@@ -337,7 +337,7 @@
                                     </Text>
                                  </children>
                               </VBox>
-                              <VBox fx:id="FirstInfoVbox" layoutX="10.0" prefHeight="172.8" prefWidth="255.2" spacing="4">
+                              <VBox fx:id="FirstInfoVbox" layoutX="10.0" prefHeight="172.8" prefWidth="255.2" spacing="5.0">
                                  <children>
                                     <Text fx:id="TextName" strokeType="OUTSIDE" strokeWidth="0.0" text="Nguyễn Thị Hằng">
                                        <font>
@@ -385,7 +385,7 @@
                                     </Text>
                                  </children>
                               </VBox>
-                              <VBox fx:id="SecondInfoVbox" layoutX="368.0" prefHeight="172.8" prefWidth="255.2" spacing="4">
+                              <VBox fx:id="SecondInfoVbox" layoutX="368.0" prefHeight="172.8" prefWidth="255.2" spacing="5.0">
                                  <children>
                                     <Text fx:id="TextRole" strokeType="OUTSIDE" strokeWidth="0.0" text="Chủ hộ">
                                        <font>
