@@ -49,4 +49,16 @@ public class citizen_TrangChuController extends citizen_ChuyenTrangController{
             e.printStackTrace();
         }
     }
+    private void loadHeadlines(String headline, String content) {
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("Chat_user.fxml"));
+            //ChatUserController chatUserController = new ChatUserController(preview, user, highlight);
+            //loader.setController(chatUserController);
+            loader.load();
+            newsColumn.getChildren().add(loader.getRoot());
+
+        }catch (IOException e){
+            e.printStackTrace();
+        }
+    }
 }

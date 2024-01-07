@@ -98,6 +98,7 @@
                         <Font size="20.0" />
                      </font>
                   </Text>
+                  <Button layoutX="-4.0" layoutY="-3.0" mnemonicParsing="false" onAction="#showThongBaoPopup" opacity="0.0" prefHeight="68.0" prefWidth="161.0" text="Button" />
                </children>
             </Pane>
             <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: f4f4f4;" GridPane.columnSpan="20" GridPane.rowIndex="8" GridPane.rowSpan="2" />
