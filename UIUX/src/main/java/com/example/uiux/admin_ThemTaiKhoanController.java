@@ -30,9 +30,10 @@ public class admin_ThemTaiKhoanController extends admin_ChuyenTrangController{
             showRequiredFieldsAlert(); // Hiển thị cảnh báo nếu có trường chưa điền
         } else {
             Alert alert = new Alert(Alert.AlertType.INFORMATION);
-            alert.setTitle("Thành công !");
+            alert.setTitle("Thành công");
             alert.setHeaderText(null);
-            alert.setContentText("Thêm nhân khẩu thành công !");
+            alert.setContentText("Thêm tài khoản thành công !");
+            alert.showAndWait();
         }
     }
 
