@@ -294,12 +294,12 @@
                 </Pane>
                 <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.columnSpan="3" GridPane.rowIndex="4">
                     <children>
-                        <Text layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Họ và tên chủ hộ">
+                        <Text layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Họ và tên">
                             <font>
                                 <Font size="18.0" />
                             </font>
                         </Text>
-                        <Text fill="RED" layoutX="150.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*">
+                        <Text fill="RED" layoutX="84.0" layoutY="21.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*">
                             <font>
                                 <Font size="20.0" />
                             </font>
@@ -313,24 +313,14 @@
                                 <Font size="18.0" />
                             </font>
                         </Text>
-                        <Text fill="RED" layoutX="52.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*">
-                            <font>
-                                <Font size="20.0" />
-                            </font>
-                        </Text>
                     </children>
                 </Pane>
                 <DatePicker prefHeight="27.0" prefWidth="297.0" promptText="1/1/2000" GridPane.columnIndex="2" GridPane.columnSpan="3" GridPane.rowIndex="9" />
                 <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.columnSpan="3" GridPane.rowIndex="2">
                     <children>
-                        <Text layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tài khoản">
+                        <Text layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Căn hộ:">
                             <font>
                                 <Font size="18.0" />
-                            </font>
-                        </Text>
-                        <Text fill="RED" layoutX="84.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*">
-                            <font>
-                                <Font size="20.0" />
                             </font>
                         </Text>
                     </children>
@@ -372,24 +362,8 @@
                         <Font name="System Bold" size="15.0" />
                     </font>
                 </Button>
-                <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="12" GridPane.columnSpan="3" GridPane.rowIndex="2">
-                    <children>
-                        <Text layoutX="-2.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mật khẩu">
-                            <font>
-                                <Font size="18.0" />
-                            </font>
-                        </Text>
-                        <Text fill="RED" layoutX="81.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*">
-                            <font>
-                                <Font size="20.0" />
-                            </font>
-                        </Text>
-                    </children>
-                </Pane>
-                <TextField prefHeight="27.0" prefWidth="335.0" promptText="User_001" style="-fx-border-radius: 20; -fx-background-radius: 20;" GridPane.columnIndex="2" GridPane.columnSpan="6" GridPane.rowIndex="3" />
                 <TextField prefHeight="27.0" prefWidth="335.0" promptText="Nguyễn Văn A" style="-fx-border-radius: 20; -fx-background-radius: 20;" GridPane.columnIndex="2" GridPane.columnSpan="6" GridPane.rowIndex="5" />
                 <TextField prefHeight="27.0" prefWidth="335.0" promptText="035202000987" style="-fx-border-radius: 20; -fx-background-radius: 20;" GridPane.columnIndex="2" GridPane.columnSpan="6" GridPane.rowIndex="7" />
-                <TextField prefHeight="27.0" prefWidth="335.0" style="-fx-border-radius: 20; -fx-background-radius: 20;" GridPane.columnIndex="12" GridPane.columnSpan="6" GridPane.rowIndex="3" />
                 <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="12" GridPane.columnSpan="7" GridPane.rowIndex="4">
                     <children>
                         <Text layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Số điện thoại">
@@ -397,7 +371,7 @@
                                 <Font size="18.0" />
                             </font>
                         </Text>
-                        <Text fill="RED" layoutX="113.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*">
+                        <Text fill="RED" layoutX="113.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0">
                             <font>
                                 <Font size="20.0" />
                             </font>
@@ -405,7 +379,14 @@
                     </children>
                 </Pane>
                 <TextField prefHeight="27.0" prefWidth="335.0" promptText="0965800423" style="-fx-border-radius: 20; -fx-background-radius: 20;" GridPane.columnIndex="12" GridPane.columnSpan="6" GridPane.rowIndex="5" />
-                <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="12" GridPane.columnSpan="4" GridPane.rowIndex="10" />
+                <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="12" GridPane.columnSpan="4" GridPane.rowIndex="10">
+               <children>
+                  <Text layoutY="22.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vai trò">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+               </children></Pane>
                 <TextField prefHeight="27.0" prefWidth="335.0" promptText="quanlychungcu@gmail.com" style="-fx-border-radius: 20; -fx-background-radius: 20;" GridPane.columnIndex="2" GridPane.columnSpan="6" GridPane.rowIndex="11" />
                 <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="12" GridPane.columnSpan="4" GridPane.rowIndex="8">
                     <children>
@@ -422,6 +403,21 @@
                         <Font size="18.0" />
                     </font>
                 </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" GridPane.columnIndex="2" GridPane.rowIndex="3">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: FFFFFF; -fx-background-radius: 20;" GridPane.columnIndex="2" GridPane.columnSpan="6" GridPane.rowIndex="3">
+               <children>
+                  <Text layoutX="8.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="101">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <ComboBox prefHeight="30.0" prefWidth="328.0" GridPane.columnIndex="12" GridPane.columnSpan="6" GridPane.rowIndex="11" />
             </children>
         </GridPane>
 

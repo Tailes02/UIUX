@@ -50,6 +50,26 @@ public class admin_ThongTinCanHoController extends admin_ChuyenTrangController {
         DienThoaiColumn.setCellValueFactory(cellData -> new ReadOnlyObjectWrapper<>(cellData.getValue().getDienthoai()));
         SoThanhVienColumn.setCellValueFactory(cellData -> new ReadOnlyObjectWrapper<>(cellData.getValue().getSoThanhVien()));
 
+        CanHoColumn.setCellFactory(column -> new TableCell<Household, String>() {
+            @Override
+            protected void updateItem(String item, boolean empty) {
+                super.updateItem(item, empty);
+                if (item == null || empty) {
+                    setText(null);
+                    setStyle("");
+                } else {
+                    setText(item); // Set the text of the cell to the value of the item
+
+                    // If the item is "101", set the text color to red
+                    if ("101".equals(item)) {
+                        setStyle("-fx-text-fill: red;");
+                    } else {
+                        // Use a default style (you can adjust this as needed)
+                        setStyle("-fx-text-fill: black;");
+                    }
+                }
+            }
+        });
 
         // Create and add data to the table
         ObservableList<admin_ThongTinCanHoController.Household> data = FXCollections.observableArrayList(
@@ -86,7 +106,7 @@ public class admin_ThongTinCanHoController extends admin_ChuyenTrangController {
                     setText(null);
                     setStyle("");
                 } else {
-                    // Format cell
+
                     setText(item.toString()); // Convert integer to String
                     getStyleClass().add("center-aligned-cell"); // apply the CSS class
                 }
