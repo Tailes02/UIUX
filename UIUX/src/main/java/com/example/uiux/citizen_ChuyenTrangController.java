@@ -49,7 +49,7 @@ public class citizen_ChuyenTrangController {
         Main.loadScene("citizen_HoaDon.fxml");
     }
     @FXML
-    private void ThongTinTaiKhoan(){
+    private void avatarClicked(){
         Main.loadScene("citizen_ThongTinTaiKhoan.fxml");
     }
     @FXML

@@ -13,7 +13,7 @@
    <children>
       <Pane layoutX="15.0" prefHeight="171.0" prefWidth="734.0">
          <children>
-            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="7.0" layoutY="20.0">
+            <ImageView fx:id="thumbnail" fitHeight="150.0" fitWidth="200.0" layoutX="7.0" layoutY="20.0">
                <image>
                   <Image url="@../../../icon/LoginImage1.jpg" />
                </image>
