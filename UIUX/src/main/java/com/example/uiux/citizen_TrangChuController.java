@@ -2,8 +2,12 @@ package com.example.uiux;
 
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.ScrollPane;
 import javafx.scene.layout.VBox;
+import javafx.stage.Modality;
+import javafx.stage.Stage;
 
 import java.io.IOException;
 
@@ -59,4 +63,5 @@ public class citizen_TrangChuController extends citizen_ChuyenTrangController{
             e.printStackTrace();
         }
     }
+
 }

@@ -1,10 +1,15 @@
 package com.example.uiux;
 
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.text.Text;
+import javafx.stage.Modality;
+import javafx.stage.Stage;
 
 import java.net.URISyntaxException;
 
@@ -31,8 +36,34 @@ public class HeadLineController {
         news.setText(n);
         thumbnail.setImage((new Image(getClass().getResource(t).toURI().toString())));
         }
+    @FXML
+    public void newsDetail() {
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("TinTuc_detail.fxml"));
+            Parent root = loader.load();
 
+            Stage popupStage = new Stage();
+            popupStage.initModality(Modality.APPLICATION_MODAL);
+            popupStage.setTitle("Chung cư iHopT tổ chức lễ giáng sinh");
+
+            Scene scene = new Scene(root);
+            popupStage.setScene(scene);
+
+
+            popupStage.setOnCloseRequest(event -> {
+                event.consume();
+
+                popupStage.close();
+            });
+
+            // Show the popup
+            popupStage.showAndWait();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
+
+}
 
 
 

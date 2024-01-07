@@ -4,16 +4,9 @@ import javafx.beans.property.ReadOnlyObjectWrapper;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
-import javafx.scene.control.CheckBox;
 import javafx.scene.control.TableCell;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
-import javafx.stage.Stage;
-
-import java.io.IOException;
 
 public class Manager_HoaDonChiController extends Manager_ChuyenTrangController{
 
@@ -29,8 +22,7 @@ public class Manager_HoaDonChiController extends Manager_ChuyenTrangController{
     private TableColumn<HoaDonChi, Integer> SoTienColumn;
     @FXML
     private TableColumn<HoaDonChi, String> ThoiGianColumn;
-    @FXML
-    private CheckBox thuCheckBox;
+
 
     @FXML
     private TableColumn<HoaDonChi, String> GhiChuColumn;
@@ -42,28 +34,16 @@ public class Manager_HoaDonChiController extends Manager_ChuyenTrangController{
         ThoiGianColumn.setCellValueFactory(cellData -> new ReadOnlyObjectWrapper<>(cellData.getValue().getThoiGian()));
         SoTienColumn.setCellValueFactory(cellData -> new ReadOnlyObjectWrapper<>(cellData.getValue().getSoTien()));
         GhiChuColumn.setCellValueFactory(cellData -> new ReadOnlyObjectWrapper<>(cellData.getValue().getGhiChu()));
-        thuCheckBox.selectedProperty().addListener((observable, oldValue, newValue) -> {
-            if (newValue) {
-                navigateToHoaDonThu();
-            }
-        });
+
 
         // Create and add data to the table
         ObservableList<HoaDonChi> data = FXCollections.observableArrayList(
-                new HoaDonChi("00003546", "Danh sách thu tiền điện tháng 9", "01/10/23",240282,""),
-                new HoaDonChi("00003545", "Danh sách thu tiền nước tháng 9", "01/10/23", 323932,""),
-                new HoaDonChi("00003544", "Danh sách thu phí vệ sinh 2023", "15/09/23", 323082,"")
-//                new HoaDonChi("00003543", 450000, "Trần Ngọc Linh", "09198765432","Đang thu"),
-//                new HoaDonChi("00003542", 205000, "Nguyễn Ngọc Khánh", "09123456789","Đang thu"),
-//                new HoaDonChi("00003541", 201000, "Nguyễn Tiến Dũng", "09187654321","Đã đóng"),
-//                new HoaDonChi("00003540", 206000, "Mai Ngọc Linh", "09134567890","Đang thu"),
-//                new HoaDonChi("00003539", 200000, "Hoàng Thị Minh Nguyệt", "0912738073","Đã đóng"),
-//                new HoaDonChi("00003538", 340000, "Nguyễn Thanh Mai", "09112345678","Đã đóng"),
-//                new HoaDonChi("00003537", 450000, "Trần Ngọc Linh", "09198765432","Đang thu"),
-//                new HoaDonChi("00003536", 205000, "Nguyễn Ngọc Khánh", "09123456789","Đang thu"),
-//                new HoaDonChi("00003535", 201000, "Nguyễn Tiến Dũng", "09187654321","Đã đóng"),
-//                new HoaDonChi("00003534", 206000, "Mai Ngọc Linh", "09134567890","Đang thu")
-
+                new HoaDonChi("00003546", "Chi tiền tu sửa tháng 10", "15/10/23",240282,""),
+                new HoaDonChi("00003545", " Chi tiền sự kiện Trung Thu 2023", "01/10/23", 323932,""),
+                new HoaDonChi("00003544", " Chi tiền tu sửa tháng 9", "15/09/23", 203000,""),
+                new HoaDonChi("00003544", "Chi tiền đi du lịch hè 2023", "23/08/23", 43520000,""),
+                new HoaDonChi("00003544", " Chi tiền tu sửa tháng 8", "15/08/23", 190000,""),
+                new HoaDonChi("00003544", " Chi tiền nâng cấp đường truyền mạng", "02/05/23", 1500000,"")
             /* dự phòng
                 new admin_ThongTinNhanKhauController.HoaDonChi(1, "203", "Lương Văn Đức", "0989958699",2,"..."),
                 new admin_ThongTinNhanKhauController.HoaDonChi(2, "204", "Trần Ngọc An", "0912738073",3,"..."),
@@ -79,23 +59,6 @@ public class Manager_HoaDonChiController extends Manager_ChuyenTrangController{
         );
 
         tableView.setItems(data);
-    }
-
-    private void navigateToHoaDonThu() {
-        try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("Manager_HoaDonThu.fxml"));
-            Parent hoaDonChiRoot = loader.load();
-
-            // Get the current stage from the event source
-            Stage stage = (Stage) thuCheckBox.getScene().getWindow();
-
-            // Set the new scene
-            stage.setScene(new Scene(hoaDonChiRoot));
-            stage.show();
-        } catch (IOException e) {
-            e.printStackTrace();
-            // Handle exceptions here
-        }
     }
 
     // ... other methods as needed
