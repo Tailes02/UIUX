@@ -38,12 +38,12 @@ public class Manager_HoaDonThuController extends Manager_ChuyenTrangController{
         ObservableList<HoaDon> data = FXCollections.observableArrayList(
                 new HoaDon("00003546", "Danh sách thu tiền điện tháng 9", "01/10/23 - 31/10/23","Đang thu"),
                 new HoaDon("00003545", "Danh sách thu tiền nước tháng 9", "01/10/23 - 31/10/23", "Đang thu"),
-                new HoaDon("00003544", "Danh sách thu phí vệ sinh 2023", "15/09/23 - 31/09/23", "Đã đóng"),
-                new HoaDon("00003544", "Danh sách thu tiền điện tháng 8", "01/09/23 - 31/09/23", "Đã đóng"),
-                new HoaDon("00003544", "Danh sách thu tiền nước tháng 8", "01/09/23 - 31/09/23", "Đã đóng"),
-                new HoaDon("00003544", "Danh sách thu tiền điện tháng 7", "01/08/23 - 31/08/23", "Đã đóng"),
-                new HoaDon("00003544", "Danh sách thu tiền nước tháng 7", "01/08/23 - 31/08/23", "Đã đóng"),
-                new HoaDon("00003544", "Danh sách thu tiền điện tháng 6", "01/07/23 - 31/07/23", "Đã đóng")
+                new HoaDon("00003543", "Danh sách thu phí vệ sinh 2023", "15/09/23 - 31/09/23", "Đã đóng"),
+                new HoaDon("00003542", "Danh sách thu tiền điện tháng 8", "01/09/23 - 31/09/23", "Đã đóng"),
+                new HoaDon("00003541", "Danh sách thu tiền nước tháng 8", "01/09/23 - 31/09/23", "Đã đóng"),
+                new HoaDon("00003540", "Danh sách thu tiền điện tháng 7", "01/08/23 - 31/08/23", "Đã đóng"),
+                new HoaDon("00003539", "Danh sách thu tiền nước tháng 7", "01/08/23 - 31/08/23", "Đã đóng"),
+                new HoaDon("00003538", "Danh sách thu tiền điện tháng 6", "01/07/23 - 31/07/23", "Đã đóng")
 //                new HoaDon("00003543", 450000, "Trần Ngọc Linh", "09198765432","Đang thu"),
 //                new HoaDon("00003542", 205000, "Nguyễn Ngọc Khánh", "09123456789","Đang thu"),
 //                new HoaDon("00003541", 201000, "Nguyễn Tiến Dũng", "09187654321","Đã đóng"),
