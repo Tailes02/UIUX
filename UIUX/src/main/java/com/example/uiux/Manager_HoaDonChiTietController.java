@@ -30,7 +30,10 @@ public class Manager_HoaDonChiTietController extends Manager_ChuyenTrangControll
 
     @FXML
     private TableColumn<HoaDonChiTiet, String> GhiChuColumn;
-
+    @FXML
+    public void handleQuayLai() {
+        Main.loadScene("Manager_HoaDonThu.fxml");
+    }
 
     public void initialize() {
         // Initialize your columns here
