@@ -15,7 +15,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="720" prefWidth="1280" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.uiux.Manager_ThongTinCanHoController">
+<AnchorPane prefHeight="720" prefWidth="1280" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.uiux.Manager_ThongTinCanHoController">
     <GridPane fx:id="mainGrid" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <columnConstraints>
             <ColumnConstraints percentWidth="20.0" />
@@ -286,16 +286,6 @@
 
                 <TextField prefHeight="31.0" prefWidth="206.0" GridPane.columnIndex="2" GridPane.columnSpan="4" GridPane.rowIndex="1" />
                 <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="116.0" text="Tìm kiếm" GridPane.columnIndex="6" GridPane.columnSpan="2" GridPane.rowIndex="1" />
-                <Button fx:id="ButtonXemChiTiet" mnemonicParsing="false" onAction="#handleXemChiTietButton" prefHeight="77.0" prefWidth="204.0" style="-fx-background-radius: 20; -fx-background-color: #ffffff; -fx-border-radius: 20; -fx-border-color: #0B8C56;" text="Xem chi tiết" textFill="#6b6b6b" GridPane.columnIndex="14" GridPane.columnSpan="4" GridPane.rowIndex="16" GridPane.rowSpan="2">
-                    <font>
-                        <Font name="System Bold" size="15.0" />
-                    </font>
-                </Button>
-                <Button fx:id="ButtonThemTaiKhoan" layoutX="727.0" layoutY="471.0" mnemonicParsing="false" onAction="#handleThemTaiKhoanButton" prefHeight="77.0" prefWidth="204.0" style="-fx-background-radius: 20; -fx-background-color: #ffffff; -fx-border-radius: 20; -fx-border-color: #0B8C56;" text="Thêm tài khoản" textFill="#6b6b6b" GridPane.columnIndex="2" GridPane.columnSpan="4" GridPane.rowIndex="16" GridPane.rowSpan="2">
-                    <font>
-                        <Font name="System Bold" size="15.0" />
-                    </font>
-                </Button>
             </children>
         </GridPane>
 
