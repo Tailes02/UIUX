@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.TableColumn?>
-<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
@@ -11,11 +12,12 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="720" prefWidth="1280" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.uiux.admin_ThongTinCanHoSauThayDoiController">
+<AnchorPane prefHeight="720" prefWidth="1280" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.uiux.Manager_ChatController">
     <GridPane fx:id="mainGrid" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <columnConstraints>
             <ColumnConstraints percentWidth="20.0" />
@@ -64,45 +66,45 @@
                 <RowConstraints percentHeight="10.0" />
                 <RowConstraints percentHeight="10.0" />
                 <RowConstraints percentHeight="10.0" />
-                <RowConstraints maxHeight="24.0" minHeight="10.0" percentHeight="10.0" prefHeight="22.0" />
-                <RowConstraints maxHeight="13.0" minHeight="5.0" percentHeight="10.0" prefHeight="7.0" />
-
+            <RowConstraints maxHeight="24.0" minHeight="10.0" percentHeight="10.0" prefHeight="22.0" />
+            <RowConstraints maxHeight="13.0" minHeight="5.0" percentHeight="10.0" prefHeight="7.0" />
+   
             </rowConstraints>
             <children>
-                <Pane prefHeight="91.0" prefWidth="320.0" style="-fx-background-radius: 15;" GridPane.columnIndex="1" GridPane.columnSpan="10" GridPane.rowIndex="1" GridPane.rowSpan="6">
-                    <children>
-                        <Text layoutX="104.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Chu Hữu Phúc">
-                            <font>
-                                <Font name="System Bold" size="30.0" />
-                            </font>
-                        </Text>
-                        <Text layoutX="104.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quản trị">
-                            <font>
-                                <Font size="20.0" />
-                            </font>
-                        </Text>
-                        <ImageView fitHeight="68.0" fitWidth="76.0" layoutX="20.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
-                            <image>
-                                <Image url="@../../../icon/sbcf-default-avatar.png" />
-                            </image>
-                        </ImageView>
-                    </children>
-                </Pane>
-                <Pane fx:id="ButtonThongBao" prefHeight="53.0" prefWidth="105.0" style="-fx-border-color: #0B8C56; -fx-border-width: 1; -fx-border-radius: 20;" GridPane.columnIndex="15" GridPane.columnSpan="3" GridPane.rowIndex="2" GridPane.rowSpan="4">
-                    <children>
-                        <ImageView fitHeight="50.0" fitWidth="50.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
-                            <image>
-                                <Image url="@../../../icon/Bell.png" />
-                            </image>
-                        </ImageView>
-                        <Text layoutX="50.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Thông báo">
-                            <font>
-                                <Font size="20.0" />
-                            </font>
-                        </Text>
-                    </children>
-                </Pane>
-                <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: f4f4f4;" GridPane.columnSpan="20" GridPane.rowIndex="8" GridPane.rowSpan="2" />
+            <Pane prefHeight="91.0" prefWidth="320.0" style="-fx-background-radius: 15;" GridPane.columnIndex="1" GridPane.columnSpan="10" GridPane.rowIndex="1" GridPane.rowSpan="6">
+               <children>
+                  <Text layoutX="104.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nguyễn Thu Trang">
+                     <font>
+                        <Font name="System Bold" size="30.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="104.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quản lí">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="68.0" fitWidth="76.0" layoutX="20.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../icon/sbcf-default-avatar.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane onMouseClicked="#showThongBaoPopup" prefHeight="53.0" prefWidth="105.0" style="-fx-border-color: #0B8C56; -fx-border-width: 1; -fx-border-radius: 20;" GridPane.columnIndex="15" GridPane.columnSpan="3" GridPane.rowIndex="2" GridPane.rowSpan="4">
+               <children>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../icon/Bell.png" />
+                     </image>
+                  </ImageView>
+                  <Text layoutX="50.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Thông báo">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: f4f4f4;" GridPane.columnSpan="20" GridPane.rowIndex="8" GridPane.rowSpan="2" />
             </children>
         </GridPane>
         <GridPane fx:id="LeftSideGrid" style="-fx-background-color: #0B8C56;" GridPane.rowIndex="1" GridPane.rowSpan="4">
@@ -146,18 +148,23 @@
                         <Font name="System Bold" size="20.0" />
                     </font>
                 </Button>
-                <Button fx:id="ButtonThongTinNhanKhau" mnemonicParsing="false" prefHeight="58.0" prefWidth="263.0" style="-fx-background-color: #0B8C56; -fx-padding: 0 0 0 0; -fx-alignment: CENTER_LEFT; -fx-margin: 0 0 54 0;" text="Thông tin căn hộ" textFill="WHITE" GridPane.columnIndex="1" GridPane.columnSpan="8" GridPane.rowIndex="4" GridPane.rowSpan="2">
+                <Button fx:id="ButtonHoaDon" mnemonicParsing="false" onAction="#HoaDon" prefHeight="81.0" prefWidth="288.0" style="-fx-background-color: #0B8C56; -fx-padding: 0 0 0 0; -fx-alignment: CENTER_LEFT; -fx-margin: 0 0 54 0;" text="Hóa đơn" textFill="WHITE" GridPane.columnIndex="1" GridPane.columnSpan="8" GridPane.rowIndex="6" GridPane.rowSpan="2">
                     <font>
                         <Font name="System Bold" size="20.0" />
                     </font>
                 </Button>
-                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#E3D464" height="55.0" stroke="BLACK" strokeType="INSIDE" width="13.0" GridPane.rowIndex="4" GridPane.rowSpan="2" />
+                <Button fx:id="ButtonThongTinCanHo" mnemonicParsing="false" onAction="#ThongTinCanHo" prefHeight="58.0" prefWidth="263.0" style="-fx-background-color: #0B8C56; -fx-padding: 0 0 0 0; -fx-alignment: CENTER_LEFT; -fx-margin: 0 0 54 0;" text="Thông tin căn hộ" textFill="WHITE" GridPane.columnIndex="1" GridPane.columnSpan="8" GridPane.rowIndex="4" GridPane.rowSpan="2">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </Button>
+                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#E3D464" height="55.0" stroke="BLACK" strokeType="INSIDE" width="13.0" GridPane.rowIndex="8" GridPane.rowSpan="2" />
                 <Button fx:id="ButtonThongTinTaiKhoan" mnemonicParsing="false" onAction="#ThongTinTaiKhoan" prefHeight="58.0" prefWidth="204.0" style="-fx-background-color: #0B8C56; -fx-padding: 0 0 0 0; -fx-alignment: CENTER_LEFT; -fx-margin: 0 0 54 0;" text="Thông tin tài khoản" textFill="WHITE" GridPane.columnIndex="1" GridPane.columnSpan="8" GridPane.rowIndex="2" GridPane.rowSpan="2">
                     <font>
                         <Font name="System Bold" size="20.0" />
                     </font>
                 </Button>
-                <Button fx:id="ButtonTinNhan" mnemonicParsing="false" onAction="#TinNhan" prefHeight="81.0" prefWidth="288.0" style="-fx-background-color: #0B8C56; -fx-padding: 0 0 0 0; -fx-alignment: CENTER_LEFT; -fx-margin: 0 0 54 0;" text="Tin nhắn" textFill="WHITE" GridPane.columnIndex="1" GridPane.columnSpan="8" GridPane.rowIndex="6" GridPane.rowSpan="2">
+                <Button fx:id="ButtonTinNhan" mnemonicParsing="false" onAction="#TinNhan" prefHeight="81.0" prefWidth="288.0" style="-fx-background-color: #0B8C56; -fx-padding: 0 0 0 0; -fx-alignment: CENTER_LEFT; -fx-margin: 0 0 54 0;" text="Tin nhắn" textFill="WHITE" GridPane.columnIndex="1" GridPane.columnSpan="8" GridPane.rowIndex="8" GridPane.rowSpan="2">
                     <font>
                         <Font name="System Bold" size="20.0" />
                     </font>
@@ -203,8 +210,8 @@
                 <RowConstraints percentHeight="10.0" />
                 <RowConstraints percentHeight="10.0" />
                 <RowConstraints percentHeight="10.0" />
-                <RowConstraints minHeight="10.0" percentHeight="10.0" prefHeight="30.0" />
-                <RowConstraints minHeight="10.0" percentHeight="10.0" prefHeight="30.0" />
+            <RowConstraints minHeight="10.0" percentHeight="10.0" prefHeight="30.0" />
+            <RowConstraints minHeight="10.0" percentHeight="10.0" prefHeight="30.0" />
 
             </rowConstraints>
             <children>
@@ -212,9 +219,9 @@
                     <image>
                         <Image url="@../Logo.jpg" />
                     </image>
-                </ImageView>
+            </ImageView>
 
-                <Pane prefHeight="72.0" prefWidth="145.0" GridPane.columnIndex="7" GridPane.columnSpan="11" GridPane.rowIndex="1" GridPane.rowSpan="5">
+                      <Pane prefHeight="72.0" prefWidth="145.0" GridPane.columnIndex="7" GridPane.columnSpan="11" GridPane.rowIndex="1" GridPane.rowSpan="5">
                     <children>
                         <Text layoutX="14.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="iHopT">
                             <font>
@@ -222,12 +229,12 @@
                             </font>
                         </Text>
                     </children>
-                </Pane>
-                <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #0B8C56;" GridPane.columnSpan="20" GridPane.rowIndex="8" GridPane.rowSpan="2" />
-                <Pane fx:id="BorderPane" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: lightgray; -fx-border-width: 1;" GridPane.columnSpan="20" GridPane.rowSpan="8" />
+            </Pane>
+            <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #0B8C56;" GridPane.columnSpan="20" GridPane.rowIndex="8" GridPane.rowSpan="2" />
+            <Pane fx:id="BorderPane" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: lightgray; -fx-border-width: 1;" GridPane.columnSpan="20" GridPane.rowSpan="8" />
             </children>
         </GridPane>
-        <GridPane fx:id="InformationGrid" prefHeight="554.0" prefWidth="1024.0" style="-fx-background-color: f4f4f4;" GridPane.columnIndex="1" GridPane.columnSpan="4" GridPane.rowIndex="1" GridPane.rowSpan="4">
+        <GridPane fx:id="InfomationGrid" prefHeight="554.0" prefWidth="1024.0" style="-fx-background-color: f4f4f4;" GridPane.columnIndex="1" GridPane.columnSpan="4" GridPane.rowIndex="1" GridPane.rowSpan="4">
             <columnConstraints>
                 <ColumnConstraints percentWidth="5.0" />
                 <ColumnConstraints percentWidth="5.0" />
@@ -248,7 +255,6 @@
                 <ColumnConstraints percentWidth="5.0" />
                 <ColumnConstraints percentWidth="5.0" />
                 <ColumnConstraints percentWidth="5.0" />
-
                 <ColumnConstraints percentWidth="5.0" />
             </columnConstraints>
             <rowConstraints>
@@ -272,32 +278,54 @@
                 <RowConstraints percentHeight="5.0" />
                 <RowConstraints percentHeight="5.0" />
                 <RowConstraints percentHeight="5.0" />
-
             </rowConstraints>
             <children>
-                <TableView fx:id="tableView" stylesheets="@style.css" GridPane.columnIndex="2" GridPane.columnSpan="16" GridPane.rowIndex="3" GridPane.rowSpan="12">
-                    <columns>
-                        <TableColumn fx:id="IdColumn" prefWidth="51.2" text="ID" />
-                        <TableColumn fx:id="CanHoColumn" prefWidth="102.4" text="Căn hộ" />
-                        <TableColumn fx:id="ChuHoColumn" prefWidth="358.4" text="Tên chủ hộ" />
-                        <TableColumn fx:id="DienThoaiColumn" prefWidth="153.6" text="Điện thoại" />
-                        <TableColumn fx:id="SoThanhVienColumn" prefWidth="153.6" text="Số thành viên" />
-                    </columns>
-                </TableView>
-
-                <TextField fx:id="searchTextField" prefHeight="31.0" prefWidth="206.0" GridPane.columnIndex="2" GridPane.columnSpan="4" GridPane.rowIndex="1" />
-                <Button fx:id="ButtonTimKiem" mnemonicParsing="false" onAction="#handleTimKiem" prefHeight="30.0" prefWidth="116.0" text="Tìm kiếm" GridPane.columnIndex="6" GridPane.columnSpan="2" GridPane.rowIndex="1" />
-                <Button fx:id="ButtonXemChiTiet" mnemonicParsing="false" onAction="#handleXemChiTietButton" prefHeight="77.0" prefWidth="204.0" style="-fx-background-radius: 20; -fx-background-color: #ffffff; -fx-border-radius: 20; -fx-border-color: #0B8C56;" text="Xem chi tiết" textFill="#6b6b6b" GridPane.columnIndex="14" GridPane.columnSpan="4" GridPane.rowIndex="16" GridPane.rowSpan="2">
+                <ScrollPane fx:id="userScroll" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: transparent;" GridPane.columnIndex="15" GridPane.columnSpan="5" GridPane.rowIndex="8" GridPane.rowSpan="12">
+                    <content>
+                        <VBox fx:id="userColumn" prefHeight="343.0" prefWidth="253.0" />
+                    </content>
+                </ScrollPane>
+                <ScrollPane fx:id="chatScroll" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: transparent;" GridPane.columnSpan="15" GridPane.rowSpan="18">
+                    <content>
+                        <VBox fx:id="chatColumn" prefHeight="514.0" prefWidth="764.0" />
+                    </content>
+                </ScrollPane>
+                <TextField fx:id="textBos" GridPane.columnSpan="14" GridPane.rowIndex="18" GridPane.rowSpan="2">
+                    <GridPane.margin>
+                        <Insets left="15.0" />
+                    </GridPane.margin></TextField>
+                <ImageView fitHeight="30.0" fitWidth="30.0" GridPane.columnIndex="14" GridPane.rowIndex="18" GridPane.rowSpan="2">
+                    <image>
+                        <Image url="@../../../icon/mingcute_send-fill.png" />
+                    </image>
+                    <GridPane.margin>
+                        <Insets left="10.0" />
+                    </GridPane.margin>
+                </ImageView>
+                <Label text="Cư dân" GridPane.columnIndex="15" GridPane.columnSpan="2" GridPane.rowIndex="7">
                     <font>
-                        <Font name="System Bold" size="15.0" />
+                        <Font size="18.0" />
                     </font>
-                </Button>
-                <Button fx:id="ButtonThemTaiKhoan" layoutX="727.0" layoutY="471.0" mnemonicParsing="false" onAction="#handleThemTaiKhoanButton" prefHeight="77.0" prefWidth="204.0" style="-fx-background-radius: 20; -fx-background-color: #ffffff; -fx-border-radius: 20; -fx-border-color: #0B8C56;" text="Thêm tài khoản" textFill="#6b6b6b" GridPane.columnIndex="2" GridPane.columnSpan="4" GridPane.rowIndex="16" GridPane.rowSpan="2">
+                    <GridPane.margin>
+                        <Insets left="15.0" />
+                    </GridPane.margin>
+                </Label>
+                <Label text="Quản lý &amp; Quản trị" GridPane.columnIndex="15" GridPane.columnSpan="4">
                     <font>
-                        <Font name="System Bold" size="15.0" />
+                        <Font size="18.0" />
                     </font>
-                </Button>
+                    <GridPane.margin>
+                        <Insets left="15.0" />
+                    </GridPane.margin>
+                </Label>
+                <ScrollPane fx:id="adminScroll" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: transparent;" GridPane.columnIndex="15" GridPane.columnSpan="5" GridPane.rowIndex="1" GridPane.rowSpan="6">
+                    <content>
+                        <VBox fx:id="adminColumn" prefHeight="171.0" prefWidth="253.0" />
+                    </content>
+                </ScrollPane>
             </children>
         </GridPane>
+
+        <!-- Grid content goes here -->
     </GridPane>
 </AnchorPane>
