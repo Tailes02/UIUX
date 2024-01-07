@@ -7,10 +7,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.CheckBox;
-import javafx.scene.control.TableCell;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
+import javafx.scene.control.*;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -33,8 +30,14 @@ public class Manager_HoaDonThuController extends Manager_ChuyenTrangController{
     private TableColumn<HoaDon, String> TinhTrangColumn;
     @FXML
     private CheckBox chiCheckBox;
-
-
+    @FXML
+    public void handleThemMoi() {
+        Main.loadScene("Manager_TaoHoaDon.fxml");
+    }
+    @FXML
+    public void handleXemChiTietButton(){
+        Main.loadScene("Manager_HoaDonChiTiet.fxml");
+    }
     public void initialize() {
         // Initialize your columns here
         IdColumn.setCellValueFactory(cellData -> new ReadOnlyObjectWrapper<>(cellData.getValue().getId()));
