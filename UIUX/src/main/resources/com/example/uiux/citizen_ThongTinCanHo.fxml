@@ -7,8 +7,10 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
@@ -226,178 +228,436 @@
             <Pane fx:id="BorderPane" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: lightgray; -fx-border-width: 1;" GridPane.columnSpan="20" GridPane.rowSpan="8" />
             </children>
         </GridPane>
-      <ScrollPane hbarPolicy="NEVER" maxHeight="1000.0" prefHeight="1000.0" vbarPolicy="ALWAYS" GridPane.columnIndex="1" GridPane.columnSpan="4" GridPane.rowIndex="1" GridPane.rowSpan="4">
-         <content>
-              <GridPane fx:id="InfomationGrid" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="1024.0" style="-fx-background-color: f4f4f4;">
-                  <columnConstraints>
-                      <ColumnConstraints percentWidth="5.0" />
-                      <ColumnConstraints percentWidth="5.0" />
-                      <ColumnConstraints percentWidth="5.0" />
-                      <ColumnConstraints percentWidth="5.0" />
-                      <ColumnConstraints percentWidth="5.0" />
-                      <ColumnConstraints percentWidth="5.0" />
-                      <ColumnConstraints percentWidth="5.0" />
-                      <ColumnConstraints percentWidth="5.0" />
-                      <ColumnConstraints percentWidth="5.0" />
-                      <ColumnConstraints percentWidth="5.0" />
-                      <ColumnConstraints percentWidth="5.0" />
-                      <ColumnConstraints percentWidth="5.0" />
-                      <ColumnConstraints percentWidth="5.0" />
-                      <ColumnConstraints percentWidth="5.0" />
-                      <ColumnConstraints percentWidth="5.0" />
-                      <ColumnConstraints percentWidth="5.0" />
-                      <ColumnConstraints percentWidth="5.0" />
-                      <ColumnConstraints percentWidth="5.0" />
-                      <ColumnConstraints percentWidth="5.0" />
-                      <ColumnConstraints percentWidth="5.0" />
-                  </columnConstraints>
-                  <rowConstraints>
-                      <RowConstraints percentHeight="5.0" />
-                      <RowConstraints percentHeight="5.0" />
-                      <RowConstraints percentHeight="5.0" />
-                      <RowConstraints percentHeight="5.0" />
-                      <RowConstraints percentHeight="5.0" />
-                      <RowConstraints percentHeight="5.0" />
-                      <RowConstraints percentHeight="5.0" />
-                      <RowConstraints percentHeight="5.0" />
-                      <RowConstraints percentHeight="5.0" />
-                      <RowConstraints percentHeight="5.0" />
-                      <RowConstraints percentHeight="5.0" />
-                      <RowConstraints percentHeight="5.0" />
-                      <RowConstraints percentHeight="5.0" />
-                      <RowConstraints percentHeight="5.0" />
-                      <RowConstraints percentHeight="5.0" />
-                      <RowConstraints percentHeight="5.0" />
-                      <RowConstraints percentHeight="5.0" />
-                      <RowConstraints percentHeight="5.0" />
-                      <RowConstraints percentHeight="5.0" />
-                  <RowConstraints percentHeight="5.0" />
-                  <RowConstraints percentHeight="5.0" />
-                  <RowConstraints percentHeight="5.0" />
-                  <RowConstraints percentHeight="5.0" />
-                  <RowConstraints percentHeight="5.0" />
-                  </rowConstraints>
+      <GridPane fx:id="InfomationGrid" prefHeight="345.0" prefWidth="533.0" style="-fx-background-color: f4f4f4;" GridPane.columnIndex="1" GridPane.columnSpan="4" GridPane.rowIndex="1" GridPane.rowSpan="4">
+         <columnConstraints>
+            <ColumnConstraints percentWidth="5.0" />
+            <ColumnConstraints percentWidth="5.0" />
+            <ColumnConstraints percentWidth="5.0" />
+            <ColumnConstraints percentWidth="5.0" />
+            <ColumnConstraints percentWidth="5.0" />
+            <ColumnConstraints percentWidth="5.0" />
+            <ColumnConstraints percentWidth="5.0" />
+            <ColumnConstraints percentWidth="5.0" />
+            <ColumnConstraints percentWidth="5.0" />
+            <ColumnConstraints percentWidth="5.0" />
+            <ColumnConstraints percentWidth="5.0" />
+            <ColumnConstraints percentWidth="5.0" />
+            <ColumnConstraints percentWidth="5.0" />
+            <ColumnConstraints percentWidth="5.0" />
+            <ColumnConstraints percentWidth="5.0" />
+            <ColumnConstraints percentWidth="5.0" />
+            <ColumnConstraints percentWidth="5.0" />
+            <ColumnConstraints percentWidth="5.0" />
+            <ColumnConstraints percentWidth="5.0" />
+            <ColumnConstraints percentWidth="5.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints percentHeight="5.0" />
+            <RowConstraints percentHeight="5.0" />
+            <RowConstraints percentHeight="5.0" />
+            <RowConstraints percentHeight="5.0" />
+            <RowConstraints percentHeight="5.0" />
+            <RowConstraints percentHeight="5.0" />
+            <RowConstraints percentHeight="5.0" />
+            <RowConstraints percentHeight="5.0" />
+            <RowConstraints percentHeight="5.0" />
+            <RowConstraints percentHeight="10.0" />
+            <RowConstraints percentHeight="0.0" />
+            <RowConstraints percentHeight="5.0" />
+            <RowConstraints percentHeight="10.0" />
+            <RowConstraints percentHeight="0.0" />
+            <RowConstraints percentHeight="5.0" />
+            <RowConstraints percentHeight="5.0" />
+            <RowConstraints percentHeight="5.0" />
+            <RowConstraints percentHeight="5.0" />
+            <RowConstraints percentHeight="5.0" />
+            <RowConstraints percentHeight="5.0" />
+         </rowConstraints>
+         <children>
+            <Pane prefHeight="58.0" prefWidth="738.0" GridPane.columnIndex="2" GridPane.columnSpan="16" GridPane.rowIndex="1" GridPane.rowSpan="4">
                <children>
-                  <Pane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="200.0" GridPane.columnSpan="4">
+                  <ImageView fitHeight="100.0" fitWidth="100.0" layoutY="7.6" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../icon/sbcf-default-avatar.png" />
+                     </image>
+                  </ImageView>
+                  <HBox layoutX="125.0" layoutY="8.0" prefHeight="100.0" prefWidth="690.0">
                      <children>
-                        <Text layoutX="64.0" layoutY="149.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Thông tin căn hộ">
-                           <font>
-                              <Font name="System Bold" size="30.0" />
-                           </font>
-                        </Text>
-                        <Text layoutX="108.0" layoutY="196.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Căn hộ: 103">
-                           <font>
-                              <Font name="System Bold" size="25.0" />
-                           </font>
-                        </Text>
+                        <VBox prefHeight="200.0" prefWidth="150.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Căn hộ: ">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Chủ hộ:">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Số thành viên: ">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="200.0" prefWidth="225.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="101">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="10.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nguyễn Thị Hằng">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="3">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </VBox>
+                        <VBox layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Tài khoản: ">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </VBox>
+                        <VBox layoutX="391.0" layoutY="10.0" prefHeight="200.0" prefWidth="225.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="canho101">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </VBox>
                      </children>
-                  </Pane>
-                  <Pane prefHeight="200.0" prefWidth="330.0" GridPane.columnIndex="4" GridPane.columnSpan="13" GridPane.rowIndex="1">
-                     <children>
-                        <Text layoutX="222.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Họ và tên: Nguyễn Hàn My">
-                           <font>
-                              <Font size="18.0" />
-                           </font>
-                        </Text>
-                        <Text layoutX="222.0" layoutY="179.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Số điện thoại: 23321321321">
-                           <font>
-                              <Font size="18.0" />
-                           </font>
-                        </Text>
-                        <Text layoutX="222.0" layoutY="142.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nghề nghiệp: sinh viên">
-                           <font>
-                              <Font size="18.0" />
-                           </font>
-                        </Text>
-                        <Text layoutX="222.0" layoutY="106.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DOB: xx/xx/2002">
-                           <font>
-                              <Font size="18.0" />
-                           </font>
-                        </Text>
-                        <Text layoutX="222.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CCCD: 0012031203012">
-                           <font>
-                              <Font size="18.0" />
-                           </font>
-                        </Text>
-                        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="14.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../../../icon/sbcf-default-avatar.png" />
-                           </image>
-                        </ImageView>
-                     </children>
-                  </Pane>
-                  <Pane prefHeight="200.0" prefWidth="330.0" GridPane.columnIndex="4" GridPane.columnSpan="13" GridPane.rowIndex="3">
-                     <children>
-                        <Text layoutX="222.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Họ và tên: Lê Thanh Quang">
-                           <font>
-                              <Font size="18.0" />
-                           </font>
-                        </Text>
-                        <Text layoutX="222.0" layoutY="179.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Số điện thoại: 32131298">
-                           <font>
-                              <Font size="18.0" />
-                           </font>
-                        </Text>
-                        <Text layoutX="222.0" layoutY="142.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nghề nghiệp: sinh viên">
-                           <font>
-                              <Font size="18.0" />
-                           </font>
-                        </Text>
-                        <Text layoutX="222.0" layoutY="106.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DOB: xx/xx/2002">
-                           <font>
-                              <Font size="18.0" />
-                           </font>
-                        </Text>
-                        <Text layoutX="222.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CCCD: 0012031203012">
-                           <font>
-                              <Font size="18.0" />
-                           </font>
-                        </Text>
-                        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="14.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../../../icon/sbcf-default-avatar.png" />
-                           </image>
-                        </ImageView>
-                     </children>
-                  </Pane>
-                  <Pane prefHeight="200.0" prefWidth="330.0" GridPane.columnIndex="4" GridPane.columnSpan="13" GridPane.rowIndex="2">
-                     <children>
-                        <Text layoutX="222.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Họ và tên: Nguyễn ...">
-                           <font>
-                              <Font size="18.0" />
-                           </font>
-                        </Text>
-                        <Text layoutX="222.0" layoutY="179.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Số điện thoại: 423213123">
-                           <font>
-                              <Font size="18.0" />
-                           </font>
-                        </Text>
-                        <Text layoutX="222.0" layoutY="142.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nghề nghiệp: sinh viên">
-                           <font>
-                              <Font size="18.0" />
-                           </font>
-                        </Text>
-                        <Text layoutX="222.0" layoutY="106.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DOB: xx/xx/2002">
-                           <font>
-                              <Font size="18.0" />
-                           </font>
-                        </Text>
-                        <Text layoutX="222.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CCCD: 0012031203012">
-                           <font>
-                              <Font size="18.0" />
-                           </font>
-                        </Text>
-                        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="14.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../../../icon/sbcf-default-avatar.png" />
-                           </image>
-                        </ImageView>
-                     </children>
-                  </Pane>
+                  </HBox>
                </children>
-              </GridPane>
-         </content>
-      </ScrollPane>
+            </Pane>
+            <ScrollPane fx:id="MainScrollPane" hbarPolicy="NEVER" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #0B8C56;" GridPane.columnIndex="2" GridPane.columnSpan="16" GridPane.rowIndex="6" GridPane.rowSpan="10">
+               <content>
+                  <VBox fx:id="MainVBox" spacing="5">
+                     <children>
+                        <HBox fx:id="InformationHBox0" prefHeight="115.2" prefWidth="818.2" style="-fx-border-color: #0B8C56; -fx-border-width: 0 0 1 0;">
+                           <children>
+                              <VBox prefHeight="172.8" prefWidth="153.9" spacing="5.0">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Họ tên:">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Text>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Giới tính:">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Text>
+                                    <Text layoutX="10.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ngày sinh:">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Text>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Nghề nghiệp:">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </VBox>
+                              <VBox fx:id="FirstInfoVbox" layoutX="10.0" prefHeight="172.8" prefWidth="255.2" spacing="5.0">
+                                 <children>
+                                    <Text fx:id="TextName" strokeType="OUTSIDE" strokeWidth="0.0" text="Nguyễn Thị Hằng">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fx:id="TextSex" layoutX="10.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nữ">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fx:id="DOB" layoutX="10.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="14-12-2000">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fx:id="TextJob" layoutX="10.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kĩ sư">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </VBox>
+                              <VBox layoutX="250.0" prefHeight="172.8" prefWidth="102.7" spacing="5.0">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Vai trò :">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Text>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="CCCD:">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Text>
+                                    <Text layoutX="10.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mail:">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Text>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="SDT:">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                        <HBox fx:id="InformationHBox1" layoutX="10.0" layoutY="10.0" prefHeight="115.2" prefWidth="818.2" style="-fx-border-color: #0B8C56; -fx-border-width: 0 0 1 0;">
+                           <children>
+                              <VBox prefHeight="172.8" prefWidth="153.9" spacing="5.0">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Họ tên:">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Text>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Giới tính:">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Text>
+                                    <Text layoutX="10.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ngày sinh:">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Text>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Nghề nghiệp:">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </VBox>
+                              <VBox fx:id="FirstInfoVbox1" layoutX="10.0" prefHeight="172.8" prefWidth="255.2" spacing="5.0">
+                                 <children>
+                                    <Text fx:id="TextName1" strokeType="OUTSIDE" strokeWidth="0.0" text="Nguyễn Lan Hương">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fx:id="TextSex1" layoutX="10.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nữ">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fx:id="DOB1" layoutX="10.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="02-06-2000">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fx:id="TextJob1" layoutX="10.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tự do">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </VBox>
+                              <VBox layoutX="250.0" prefHeight="172.8" prefWidth="102.7" spacing="5.0">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Vai trò :">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Text>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="CCCD:">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Text>
+                                    <Text layoutX="10.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mail:">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Text>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="SDT:">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </VBox>
+                              <VBox fx:id="SecondInfoVbox1" layoutX="368.0" prefHeight="172.8" prefWidth="255.2" spacing="5.0">
+                                 <children>
+                                    <Text fx:id="TextRole1" strokeType="OUTSIDE" strokeWidth="0.0" text="Thành viên">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fx:id="TextCCCD1" layoutX="10.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="001202001037">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fx:id="TextMail1" layoutX="10.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fx:id="TextPhone1" layoutX="10.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0912714038">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </VBox>
+                              <VBox fx:id="SecondInfoVbox" prefHeight="172.8" prefWidth="306.4" spacing="5.0">
+                                 <children>
+                                    <Text fx:id="TextRole" strokeType="OUTSIDE" strokeWidth="0.0" text="Chủ hộ">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fx:id="TextCCCD" layoutX="10.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="001202008965">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fx:id="TextMail" layoutX="10.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HangN2000@yahoo.com">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fx:id="TextPhone" layoutX="10.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0912738037">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                        <HBox fx:id="InformationHBox11" layoutX="10.0" layoutY="148.0" prefHeight="115.2" prefWidth="818.2">
+                           <children>
+                              <VBox prefHeight="172.8" prefWidth="153.9" spacing="5.0">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Họ tên:">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Text>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Giới tính:">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Text>
+                                    <Text layoutX="10.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ngày sinh:">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Text>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Nghề nghiệp:">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </VBox>
+                              <VBox fx:id="FirstInfoVbox11" layoutX="10.0" prefHeight="172.8" prefWidth="255.2" spacing="5.0">
+                                 <children>
+                                    <Text fx:id="TextName11" strokeType="OUTSIDE" strokeWidth="0.0" text="Nguyễn Thị Thanh Hà">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fx:id="TextSex11" layoutX="10.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nữ">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fx:id="DOB11" layoutX="10.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="14-02-2000">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fx:id="TextJob11" layoutX="10.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tự do">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </VBox>
+                              <VBox layoutX="250.0" prefHeight="172.8" prefWidth="102.7" spacing="5.0">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Vai trò :">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Text>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="CCCD:">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Text>
+                                    <Text layoutX="10.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mail:">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Text>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="SDT:">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </VBox>
+                              <VBox fx:id="SecondInfoVbox11" layoutX="368.0" prefHeight="172.8" prefWidth="306.4" spacing="5.0">
+                                 <children>
+                                    <Text fx:id="TextRole11" strokeType="OUTSIDE" strokeWidth="0.0" text="Tạm trú">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fx:id="TextCCCD11" layoutX="10.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="001202001567">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fx:id="TextMail11" layoutX="10.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fx:id="TextPhone11" layoutX="10.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0912754367">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </content>
+            </ScrollPane>
+            <Button fx:id="ButtonThayDoiThongTin" layoutX="112.0" layoutY="503.0" mnemonicParsing="false" onAction="#ThayDoiThongTin" prefHeight="78.0" prefWidth="206.0" style="-fx-border-radius: 30; -fx-background-radius: 30; -fx-background-color: #ffffff; -fx-border-color: #0B8C56;" text="Thay đổi thông tin" GridPane.columnIndex="7" GridPane.columnSpan="4" GridPane.rowIndex="17" GridPane.rowSpan="2">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </GridPane>
 
         <!-- Grid content goes here -->
     </GridPane>
