@@ -2,7 +2,9 @@ package com.example.uiux;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
+import javafx.scene.control.ComboBox;
 import javafx.scene.control.TextField;
+import javafx.collections.FXCollections;
 
 public class admin_ThemTaiKhoanController extends admin_ChuyenTrangController{
     @FXML
@@ -17,6 +19,22 @@ public class admin_ThemTaiKhoanController extends admin_ChuyenTrangController{
     TextField textFieldCanHo;
     @FXML
     TextField textFieldSoDienThoai;
+    @FXML
+    ComboBox<String> RoleCombobox;
+
+    @FXML
+    public void initialize() {
+        // Initialize ComboBox with options
+        RoleCombobox.setItems(FXCollections.observableArrayList("Cư dân", "Quản lí"));
+
+        // Add listener to RoleCombobox
+        RoleCombobox.valueProperty().addListener((obs, oldVal, newVal) -> {
+            // If "Quản lí" is selected, set textFieldCanHo to "000"
+            if ("Quản lí".equals(newVal)) {
+                textFieldCanHo.setText("000");
+            }
+        });
+    }
 
     public void handleXacNhanButton() {
         String taiKhoan = textFieldTaiKhoan.getText();
@@ -27,12 +45,12 @@ public class admin_ThemTaiKhoanController extends admin_ChuyenTrangController{
         String SoDienThoai = textFieldSoDienThoai.getText();
 
         if (taiKhoan.isEmpty() || hoTen.isEmpty() || cccd.isEmpty() || matKhau.isEmpty() || CanHo.isEmpty() || SoDienThoai.isEmpty()) {
-            showRequiredFieldsAlert(); // Hiển thị cảnh báo nếu có trường chưa điền
+            showRequiredFieldsAlert(); // Show a warning if any required field is empty
         } else {
             Alert alert = new Alert(Alert.AlertType.INFORMATION);
             alert.setTitle("Thành công");
             alert.setHeaderText(null);
-            alert.setContentText("Thêm tài khoản thành công !");
+            alert.setContentText("Thêm tài khoản thành công!");
             alert.showAndWait();
         }
     }
@@ -45,7 +63,6 @@ public class admin_ThemTaiKhoanController extends admin_ChuyenTrangController{
 
         alert.showAndWait();
     }
-
 
     public void handleHuyButton(){
         Main.loadScene("admin_ThongTinCanHo.fxml");

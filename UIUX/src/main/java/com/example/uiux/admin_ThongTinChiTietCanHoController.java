@@ -30,7 +30,7 @@ public class admin_ThongTinChiTietCanHoController extends admin_ChuyenTrangContr
 
         if (result.isPresent() && result.get() == buttonTypeConfirm) {
             Main.showAlert("Thay đổi thông tin thành công",null, Alert.AlertType.INFORMATION);
-            Main.loadScene("admin_ThongTinChiTietCanHoSauXacNhan.fxml");
+            Main.loadScene("admin_ThongTinCanHoSauThayDoi.fxml");
         }
 
     }
