@@ -35,8 +35,11 @@ public class citizen_TrangChuController extends citizen_ChuyenTrangController{
         headlineScroll.setVbarPolicy(ScrollPane.ScrollBarPolicy.NEVER);
         loadNews("Chung cư iHopT tổ chức lễ giáng sinh","Giáng sinh 2023", false);
         loadNews("Ban quản lý tổ chức khen thưởng cho học sinh xuất sắc","Tổng kết học kì 1 2023", false);
-        loadHeadlines("Giáng sinh 2023","Chung cư iHopT tô chức lễ giáng sinh cho toàn bộ trẻ em trong khu chung cư. Địa điểm diễn ra ở sảnh chung cư");
-        loadNewsContent("Trung thu 2023","Quyên góp ủng hộ","Trao trưởng","Chung cư iHoptT tổ chức trung thu cho toàn bộ trẻ em trong khu chung cư","Chung cư iHopT tổ chức quyên góp ủng hộ nạn nhân vụ cháy chung cư Khương Hạ","Tuyên dương các em học sinh xuất sắc học kì 1 năm học 2023-2024");
+        loadHeadlines("Giáng sinh 2023","Không khí Giáng Sinh đang tràn ngập trên khắp phố phường và len lỏi trong từng con ngõ nhỏ. Tại mỗi quốc gia, mỗi khu vực trên thế giới lại có những phong tục độc đáo riêng để đón chào ngày lễ. Chúng ta đã chiêm ngưỡng cây thông Noel với ánh đèn rực rỡ muôn màu, Ngày của người lớn, của trẻ thơ với các ước nguyện hồn nhiên, trong trẻo",true);
+        loadHeadlines("Tổng kết học kì 1 2023-2024","Chung cư iHopT tổ chức trao thưởng cho học sinh xuất sắc học kì 1 năm học 2023-2024", false);
+        loadHeadlines("Trung thu 2023","Chung cư iHopT tổ chức lễ trung thu cho toàn bộ trẻ em thuộc địa bàn chung cư iHopT", false);
+
+
     }
 
     private void loadNews(String preview, String user, Boolean highlight){
@@ -51,21 +54,13 @@ public class citizen_TrangChuController extends citizen_ChuyenTrangController{
             e.printStackTrace();
         }
     }
-    private void loadNewsContent(String headline1, String headline2, String headline3, String newscontent1, String newscontent2, String newscontent3){
+    private void loadHeadlines(String headline, String content, boolean largePhoto) {
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("TinTuc_news.fxml"));
-            NewsController newsController = new NewsController(headline1, headline2, headline3, newscontent1, newscontent2, newscontent3);
-            loader.setController(newsController);
-            loader.load();
-            headlineColumn.getChildren().add(loader.getRoot());
-
-        }catch (IOException e){
-            e.printStackTrace();
-        }
-    }
-    private void loadHeadlines(String headline, String content) {
-        try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("TinTuc_headline.fxml"));
+            FXMLLoader loader = new FXMLLoader();
+            if (largePhoto)
+                loader = new FXMLLoader(getClass().getResource("TinTuc_headline.fxml"));
+            else
+                loader = new FXMLLoader(getClass().getResource("TinTuc_news.fxml"));
             HeadLineController headlineController = new HeadLineController(headline, content);
             loader.setController(headlineController);
             loader.load();

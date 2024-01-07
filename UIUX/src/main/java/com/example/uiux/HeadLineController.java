@@ -13,8 +13,6 @@ public class HeadLineController {
     @FXML
     private Label headline;
     @FXML
-    private TextFlow newsContent;
-    @FXML
     private Text news;
 
     private String h;
@@ -26,13 +24,8 @@ public class HeadLineController {
     }
     @FXML
     public void initialize(){
-        if (h.length()>15)
-            this.headline.setText(h.substring(0,15)+"...");
-        else
-            this.headline.setText(h);
+        headline.setText(h);
         news.setText(n);
-        news.setFont(Font.font("Helvetica", FontWeight.NORMAL, 18));
-        newsContent.getChildren().add(news);
         }
 
     }
