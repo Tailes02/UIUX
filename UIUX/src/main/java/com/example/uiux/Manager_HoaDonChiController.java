@@ -41,9 +41,9 @@ public class Manager_HoaDonChiController extends Manager_ChuyenTrangController{
                 new HoaDonChi("00003546", "Chi tiền tu sửa tháng 10", "15/10/23",240282,""),
                 new HoaDonChi("00003545", "Chi tiền sự kiện Trung Thu 2023", "01/10/23", 323932,""),
                 new HoaDonChi("00003544", "Chi tiền tu sửa tháng 9", "15/09/23", 203000,""),
-                new HoaDonChi("00003544", "Chi tiền đi du lịch hè 2023", "23/08/23", 43520000,""),
-                new HoaDonChi("00003544", "Chi tiền tu sửa tháng 8", "15/08/23", 190000,""),
-                new HoaDonChi("00003544", "Chi tiền nâng cấp đường truyền mạng", "02/05/23", 1500000,"")
+                new HoaDonChi("00003543", "Chi tiền đi du lịch hè 2023", "23/08/23", 43520000,""),
+                new HoaDonChi("00003542", "Chi tiền tu sửa tháng 8", "15/08/23", 190000,""),
+                new HoaDonChi("00003541", "Chi tiền nâng cấp đường truyền mạng", "02/05/23", 1500000,"")
             /* dự phòng
                 new admin_ThongTinNhanKhauController.HoaDonChi(1, "203", "Lương Văn Đức", "0989958699",2,"..."),
                 new admin_ThongTinNhanKhauController.HoaDonChi(2, "204", "Trần Ngọc An", "0912738073",3,"..."),
