@@ -32,6 +32,7 @@ public class admin_ThongTinCanHoController extends admin_ChuyenTrangController {
     @FXML
     private Button ButtonXemChiTiet;
 
+    @FXML
     public void handleXemChiTietButton(){
         Main.loadScene("admin_ThongTinChiTietCanHo.fxml");
     }

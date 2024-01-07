@@ -671,7 +671,7 @@
                         </VBox>
                     </content>
                 </ScrollPane>
-                <Button fx:id="ButtonHuy" mnemonicParsing="false" onAction="#handledButtonHuy" prefHeight="66.0" prefWidth="102.0" style="-fx-border-radius: 30; -fx-background-radius: 30; -fx-background-color: #ffffff; -fx-border-color: #0B8C56;" text="Hủy" GridPane.columnIndex="14" GridPane.columnSpan="2" GridPane.rowIndex="17" GridPane.rowSpan="2">
+                <Button fx:id="ButtonHuy" mnemonicParsing="false" onAction="#handledButtonHuy" prefHeight="66.0" prefWidth="102.0" style="-fx-border-radius: 30; -fx-background-radius: 30; -fx-background-color: #ffffff; -fx-border-color: #0B8C56;" text="Hủy bỏ" GridPane.columnIndex="14" GridPane.columnSpan="2" GridPane.rowIndex="17" GridPane.rowSpan="2">
                     <font>
                         <Font size="15.0" />
                     </font>
@@ -681,7 +681,7 @@
                         <Font size="15.0" />
                     </font>
                 </Button>
-                <Button fx:id="ButtonXacNhan" layoutX="727.0" layoutY="503.0" mnemonicParsing="false" prefHeight="82.0" prefWidth="103.0" style="-fx-border-radius: 30; -fx-background-radius: 30; -fx-background-color: #0B8C56; -fx-border-color: #0B8C56;" text="Xác nhận" textFill="WHITE" GridPane.columnIndex="16" GridPane.columnSpan="2" GridPane.rowIndex="17" GridPane.rowSpan="2">
+                <Button fx:id="ButtonXacNhan" onAction="#handledButtonXacNhan" layoutX="727.0" layoutY="503.0" mnemonicParsing="false" prefHeight="82.0" prefWidth="103.0" style="-fx-border-radius: 30; -fx-background-radius: 30; -fx-background-color: #0B8C56; -fx-border-color: #0B8C56;" text="Thay đổi" textFill="WHITE" GridPane.columnIndex="16" GridPane.columnSpan="2" GridPane.rowIndex="17" GridPane.rowSpan="2">
                     <font>
                         <Font size="15.0" />
                     </font>

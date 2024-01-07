@@ -8,4 +8,9 @@ public class admin_ThongTinChiTietCanHoController extends admin_ChuyenTrangContr
     private void handleButtonThayDoiThongTin(){
         Main.loadScene("admin_ThongTinCanHoSuu.fxml");
     }
+
+    @FXML
+    private void handleButtonHuy(){
+        Main.loadScene("admin_ThongTinCanHo.fxml");
+    }
 }
