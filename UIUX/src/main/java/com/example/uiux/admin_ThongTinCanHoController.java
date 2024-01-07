@@ -10,6 +10,35 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 
 public class admin_ThongTinCanHoController extends admin_ChuyenTrangController {
+    @FXML
+    Button ButtonTimKiem;
+    @FXML
+    private TextField searchTextField;
+    @FXML
+    private void handleTimKiem(ActionEvent event){
+        String keyword = searchTextField.getText().toLowerCase();
+        FilteredList<Household> filteredData = new FilteredList<>(tableView.getItems(), p -> true); 
+
+        filteredData.setPredicate(household -> {
+            return keyword.isEmpty() ||
+                    household.getCanHo().toLowerCase().contains(keyword) ||
+                    household.getChuHo().toLowerCase().contains(keyword) ||
+                    household.getDienthoai().toLowerCase().contains(keyword) ||
+                    String.valueOf(household.getId()).toLowerCase().contains(keyword) ||
+                    String.valueOf(household.getSoThanhVien()).toLowerCase().contains(keyword);
+        });
+
+        if (!filteredData.isEmpty()) {
+            tableView.setItems(filteredData);
+        } else {
+            Alert alert = new Alert(Alert.AlertType.INFORMATION);
+            alert.setTitle("Thông báo");
+            alert.setHeaderText(null);
+            alert.setContentText("Không tìm thấy thông tin phù hợp!");
+            alert.showAndWait();
+        }
+
+    }
 
     @FXML
     private TableView<admin_ThongTinCanHoController.Household> tableView;
