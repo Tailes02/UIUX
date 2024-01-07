@@ -42,22 +42,15 @@ public class admin_ThongTinTaiKhoanController extends admin_ChuyenTrangControlle
 
     @FXML
     private void handleButtonXacNhanClicked() {
-        // Create the confirmation dialog
         Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
         alert.setHeaderText("Xác nhận đổi mật khẩu ?");
-//        alert.setContentText("Are you sure you want to perform this action?");
 
-        // Add "Confirm" and "Cancel" buttons
         ButtonType buttonTypeConfirm = new ButtonType("Xác nhận");
         ButtonType buttonTypeCancel = new ButtonType("Hủy");
         alert.getButtonTypes().setAll(buttonTypeConfirm, buttonTypeCancel);
-
-        // Show the dialog and wait for a result
         Optional<ButtonType> result = alert.showAndWait();
 
-        // Handle the result based on the button clicked
         if (result.isPresent() && result.get() == buttonTypeConfirm) {
-            // Handle Confirm button clicked
             Main.showAlert("Thay đổi mật khẩu thành công",null, Alert.AlertType.INFORMATION);
             handleConfirmAction();
         } else {

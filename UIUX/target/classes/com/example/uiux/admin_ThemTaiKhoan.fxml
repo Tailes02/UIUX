@@ -17,7 +17,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="720" prefWidth="1280" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.uiux.admin_ThemTaiKhoanController">
+<AnchorPane prefHeight="720" prefWidth="1280" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.uiux.admin_ThemTaiKhoanController">
     <GridPane fx:id="mainGrid" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <columnConstraints>
             <ColumnConstraints percentWidth="20.0" />
@@ -367,7 +367,7 @@
                         <Font name="System Bold" size="15.0" />
                     </font>
                 </Button>
-                <Button mnemonicParsing="false" prefHeight="55.0" prefWidth="273.0" style="-fx-border-radius: 20; -fx-background-radius: 20; -fx-border-color: #0B8C56; -fx-background-color: #ffffff;" text="Xác nhận" GridPane.columnIndex="14" GridPane.columnSpan="4" GridPane.rowIndex="16" GridPane.rowSpan="2">
+                <Button fx:id="XacNhan" mnemonicParsing="false" onAction="#handleXacNhanButton" prefHeight="55.0" prefWidth="273.0" style="-fx-border-radius: 20; -fx-background-radius: 20; -fx-border-color: #0B8C56; -fx-background-color: #ffffff;" text="Xác nhận" GridPane.columnIndex="14" GridPane.columnSpan="4" GridPane.rowIndex="16" GridPane.rowSpan="2">
                     <font>
                         <Font name="System Bold" size="15.0" />
                     </font>
@@ -386,10 +386,10 @@
                         </Text>
                     </children>
                 </Pane>
-                <TextField prefHeight="27.0" prefWidth="335.0" promptText="User_001" style="-fx-border-radius: 20; -fx-background-radius: 20;" GridPane.columnIndex="2" GridPane.columnSpan="6" GridPane.rowIndex="3" />
-                <TextField prefHeight="27.0" prefWidth="335.0" promptText="Nguyễn Văn A" style="-fx-border-radius: 20; -fx-background-radius: 20;" GridPane.columnIndex="12" GridPane.columnSpan="6" GridPane.rowIndex="5" />
-                <TextField prefHeight="27.0" prefWidth="335.0" promptText="035202000987" style="-fx-border-radius: 20; -fx-background-radius: 20;" GridPane.columnIndex="2" GridPane.columnSpan="6" GridPane.rowIndex="7" />
-                <TextField prefHeight="27.0" prefWidth="335.0" style="-fx-border-radius: 20; -fx-background-radius: 20;" GridPane.columnIndex="12" GridPane.columnSpan="6" GridPane.rowIndex="3" />
+                <TextField fx:id="textFieldTaiKhoan" prefHeight="27.0" prefWidth="335.0" promptText="User_001" style="-fx-border-radius: 20; -fx-background-radius: 20;" GridPane.columnIndex="2" GridPane.columnSpan="6" GridPane.rowIndex="3" />
+                <TextField fx:id="textFieldHoTen" prefHeight="27.0" prefWidth="335.0" promptText="Nguyễn Văn A" style="-fx-border-radius: 20; -fx-background-radius: 20;" GridPane.columnIndex="12" GridPane.columnSpan="6" GridPane.rowIndex="5" />
+                <TextField fx:id="textFieldCCCD" prefHeight="27.0" prefWidth="335.0" promptText="035202000987" style="-fx-border-radius: 20; -fx-background-radius: 20;" GridPane.columnIndex="2" GridPane.columnSpan="6" GridPane.rowIndex="7" />
+                <TextField fx:id="textFieldMatKhau" prefHeight="27.0" prefWidth="335.0" style="-fx-border-radius: 20; -fx-background-radius: 20;" GridPane.columnIndex="12" GridPane.columnSpan="6" GridPane.rowIndex="3" />
                 <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="12" GridPane.columnSpan="7" GridPane.rowIndex="6">
                     <children>
                         <Text layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Số điện thoại">
@@ -404,7 +404,7 @@
                         </Text>
                     </children>
                 </Pane>
-                <TextField prefHeight="27.0" prefWidth="335.0" promptText="0965800423" style="-fx-border-radius: 20; -fx-background-radius: 20;" GridPane.columnIndex="12" GridPane.columnSpan="6" GridPane.rowIndex="7" />
+                <TextField fx:id="textFieldSoDienThoai" prefHeight="27.0" prefWidth="335.0" promptText="0965800423" style="-fx-border-radius: 20; -fx-background-radius: 20;" GridPane.columnIndex="12" GridPane.columnSpan="6" GridPane.rowIndex="7" />
                 <TextField prefHeight="27.0" prefWidth="335.0" promptText="quanlychungcu@gmail.com" style="-fx-border-radius: 20; -fx-background-radius: 20;" GridPane.columnIndex="2" GridPane.columnSpan="6" GridPane.rowIndex="11" />
                 <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="12" GridPane.columnSpan="4" GridPane.rowIndex="10">
                     <children>
@@ -421,7 +421,7 @@
                           <Font size="18.0" />
                       </font>
                   </Text>
-            <TextField prefHeight="27.0" prefWidth="335.0" promptText="Nguyễn Văn A" style="-fx-border-radius: 20; -fx-background-radius: 20;" GridPane.columnIndex="2" GridPane.columnSpan="6" GridPane.rowIndex="5" />
+            <TextField fx:id="textFieldCanHo" prefHeight="27.0" prefWidth="335.0" promptText="Nguyễn Văn A" style="-fx-border-radius: 20; -fx-background-radius: 20;" GridPane.columnIndex="2" GridPane.columnSpan="6" GridPane.rowIndex="5" />
             <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.columnSpan="6" GridPane.rowIndex="4">
                <children>
                   <Text layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Căn hộ">

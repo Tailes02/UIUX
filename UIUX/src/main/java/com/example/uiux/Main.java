@@ -16,8 +16,12 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) {
         com.example.uiux.Main.primaryStage = primaryStage; // Assign the primaryStage to the static field git
+<<<<<<< HEAD
         loadScene("Manager_HoaDonChi.fxml");
 
+=======
+        loadScene("login.fxml");
+>>>>>>> b7e1c5cc21453f62b15979adf537c9fffa9ff61f
     }
 
     public static void showAlert(String message, String title, Alert.AlertType type) {

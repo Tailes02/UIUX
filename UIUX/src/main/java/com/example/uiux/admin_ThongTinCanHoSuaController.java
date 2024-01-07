@@ -4,7 +4,7 @@ import javafx.fxml.FXML;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.HBox;
 
-public class admin_ThongTinCanHoSuuController extends admin_ChuyenTrangController {
+public class admin_ThongTinCanHoSuaController extends admin_ChuyenTrangController {
     @FXML
     private HBox InformationHBox0;
 
@@ -18,7 +18,12 @@ public class admin_ThongTinCanHoSuuController extends admin_ChuyenTrangControlle
 
     @FXML
     private void handledButtonHuy() {
-        Main.loadScene("admin_ThongTinCanHoSuu.fxml");
+        Main.loadScene("admin_ThongTinChiTietCanHo.fxml");
+    }
+
+    @FXML
+    private void handledButtonXacNhan() {
+        Main.loadScene("admin_ThongTinChiTietCanHoSauXacNhan.fxml");
     }
 
     @FXML
