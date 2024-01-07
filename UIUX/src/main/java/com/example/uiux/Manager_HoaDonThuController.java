@@ -35,7 +35,7 @@ public class Manager_HoaDonThuController extends Manager_ChuyenTrangController{
         Main.loadScene("Manager_TaoHoaDon.fxml");
     }
     @FXML
-    public void handleXemChiTietButton(){
+    public void handleXemChiTiet(){
         Main.loadScene("Manager_HoaDonChiTiet.fxml");
     }
     public void initialize() {
