@@ -226,7 +226,7 @@
             <Pane fx:id="BorderPane" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: lightgray; -fx-border-width: 1;" GridPane.columnSpan="20" GridPane.rowSpan="8" />
             </children>
         </GridPane>
-      <ScrollPane hbarPolicy="NEVER" maxHeight="100000.0" prefHeight="100000.0" vbarPolicy="ALWAYS" GridPane.columnIndex="1" GridPane.columnSpan="4" GridPane.rowIndex="1" GridPane.rowSpan="4">
+      <ScrollPane hbarPolicy="NEVER" maxHeight="1000.0" prefHeight="1000.0" vbarPolicy="ALWAYS" GridPane.columnIndex="1" GridPane.columnSpan="4" GridPane.rowIndex="1" GridPane.rowSpan="4">
          <content>
               <GridPane fx:id="InfomationGrid" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="1024.0" style="-fx-background-color: f4f4f4;">
                   <columnConstraints>
@@ -290,6 +290,108 @@
                               <Font name="System Bold" size="25.0" />
                            </font>
                         </Text>
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="200.0" prefWidth="330.0" GridPane.columnIndex="4" GridPane.columnSpan="13" GridPane.rowIndex="1">
+                     <children>
+                        <Text layoutX="222.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Họ và tên: Nguyễn Hàn My">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="222.0" layoutY="179.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Số điện thoại: 23321321321">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="222.0" layoutY="142.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nghề nghiệp: sinh viên">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="222.0" layoutY="106.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DOB: xx/xx/2002">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="222.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CCCD: 0012031203012">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Text>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="14.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../icon/sbcf-default-avatar.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="200.0" prefWidth="330.0" GridPane.columnIndex="4" GridPane.columnSpan="13" GridPane.rowIndex="3">
+                     <children>
+                        <Text layoutX="222.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Họ và tên: Lê Thanh Quang">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="222.0" layoutY="179.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Số điện thoại: 32131298">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="222.0" layoutY="142.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nghề nghiệp: sinh viên">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="222.0" layoutY="106.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DOB: xx/xx/2002">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="222.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CCCD: 0012031203012">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Text>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="14.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../icon/sbcf-default-avatar.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="200.0" prefWidth="330.0" GridPane.columnIndex="4" GridPane.columnSpan="13" GridPane.rowIndex="2">
+                     <children>
+                        <Text layoutX="222.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Họ và tên: Nguyễn ...">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="222.0" layoutY="179.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Số điện thoại: 423213123">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="222.0" layoutY="142.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nghề nghiệp: sinh viên">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="222.0" layoutY="106.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DOB: xx/xx/2002">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="222.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CCCD: 0012031203012">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Text>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="14.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../icon/sbcf-default-avatar.png" />
+                           </image>
+                        </ImageView>
                      </children>
                   </Pane>
                </children>
