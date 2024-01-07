@@ -169,12 +169,6 @@
                         <Font name="System Bold" size="20.0" />
                     </font>
                 </Button>
-                <!--                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#C5E99B" height="55.0" stroke="BLACK" strokeType="INSIDE" width="13.0" GridPane.rowIndex="3" GridPane.rowSpan="2" />-->
-                <!--                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#C5E99B" height="55.0" stroke="BLACK" strokeType="INSIDE" width="13.0" GridPane.rowIndex="5" GridPane.rowSpan="2" />-->
-                <!--                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#C5E99B" height="55.0" stroke="BLACK" strokeType="INSIDE" width="13.0" GridPane.rowIndex="7" GridPane.rowSpan="2" />-->
-
-
-
 
             </children>
         </GridPane>
@@ -281,6 +275,5 @@
             </rowConstraints>
         </GridPane>
 
-        <!-- Grid content goes here -->
     </GridPane>
 </AnchorPane>
