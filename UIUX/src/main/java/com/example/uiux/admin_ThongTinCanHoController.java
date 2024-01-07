@@ -3,11 +3,10 @@ package com.example.uiux;
 import javafx.beans.property.ReadOnlyObjectWrapper;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.collections.transformation.FilteredList;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.Button;
-import javafx.scene.control.TableCell;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
+import javafx.scene.control.*;
 
 public class admin_ThongTinCanHoController extends admin_ChuyenTrangController {
     @FXML
@@ -90,7 +89,7 @@ public class admin_ThongTinCanHoController extends admin_ChuyenTrangController {
                 } else {
                     setText(item); // Set the text of the cell to the value of the item
 
-                    if ("101".equals(item)) {
+                    if ("101".equals(item) || "201".equals(item)) {
                         setStyle("-fx-text-fill: red;");
                     } else {
                         setStyle("-fx-text-fill: black;");
@@ -102,14 +101,16 @@ public class admin_ThongTinCanHoController extends admin_ChuyenTrangController {
         // Create and add data to the table
         ObservableList<admin_ThongTinCanHoController.Household> data = FXCollections.observableArrayList(
                 new admin_ThongTinCanHoController.Household(1, "101", "Nguyễn Thị Hằng", "0989958699",2),
+                new admin_ThongTinCanHoController.Household(8, "201", "Lương Văn Đức", "0989958699",2),
                 new admin_ThongTinCanHoController.Household(2, "102", "Hoàng Thị Minh Nguyệt", "0912738073",3),
-                new admin_ThongTinCanHoController.Household(2, "103", "Nguyễn Thanh Mai", "09112345678",3),
-                new admin_ThongTinCanHoController.Household(2, "104", "Trần Ngọc Linh", "09198765432",1),
-                new admin_ThongTinCanHoController.Household(2, "105", "Nguyễn Ngọc Khánh", "09123456789",2),
-                new admin_ThongTinCanHoController.Household(2, "106", "Nguyễn Tiến Dũng", "09187654321",4),
-                new admin_ThongTinCanHoController.Household(2, "107", "Mai Ngọc Linh", "09134567890",3),
-                new admin_ThongTinCanHoController.Household(2, "108", "Phạm Ngọc Ngà", "09176543210",2),
-                new admin_ThongTinCanHoController.Household(2, "202", "Lương Thanh Hà", "09189012345",3)
+                new admin_ThongTinCanHoController.Household(3, "103", "Nguyễn Thanh Mai", "09112345678",3),
+                new admin_ThongTinCanHoController.Household(3, "104", "Trần Ngọc Linh", "09198765432",1),
+                new admin_ThongTinCanHoController.Household(4, "105", "Nguyễn Ngọc Khánh", "09123456789",2),
+                new admin_ThongTinCanHoController.Household(5, "106", "Nguyễn Tiến Dũng", "09187654321",4),
+                new admin_ThongTinCanHoController.Household(6, "107", "Mai Ngọc Linh", "09134567890",3),
+                new admin_ThongTinCanHoController.Household(7, "108", "Phạm Ngọc Ngà", "09176543210",2),
+                new admin_ThongTinCanHoController.Household(8, "201", "Lương Văn Đức", "0989958699",2),
+                new admin_ThongTinCanHoController.Household(9, "202", "Lương Thanh Hà", "09189012345",3)
 
             /* dự phòng
                 new admin_ThongTinNhanKhauController.Household(1, "203", "Lương Văn Đức", "0989958699",2,"..."),
