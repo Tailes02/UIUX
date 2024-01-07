@@ -17,6 +17,11 @@ public class admin_ThongTinCanHoSuaController extends admin_ChuyenTrangControlle
     private HBox currentlyHighlighted = null;
 
     @FXML
+    private void handledButtonThemNhanKhau() {
+        Main.loadScene("admin_ThemNhanKhau.fxml");
+    }
+
+    @FXML
     private void handledButtonHuy() {
         Main.loadScene("admin_ThongTinChiTietCanHo.fxml");
     }

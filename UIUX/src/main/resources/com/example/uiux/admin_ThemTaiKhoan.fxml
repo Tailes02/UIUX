@@ -286,7 +286,7 @@
             <children>
                 <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.columnSpan="5">
                     <children>
-                        <Text layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Thêm nhân khẩu">
+                        <Text layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Thêm tài khoản">
                             <font>
                                 <Font name="System Bold" size="25.0" />
                             </font></Text>
