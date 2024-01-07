@@ -2,37 +2,34 @@ package com.example.uiux;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
-import javafx.scene.layout.Pane;
-import javafx.scene.paint.Color;
-import javafx.scene.text.Font;
-import javafx.scene.text.FontWeight;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.text.Text;
-import javafx.scene.text.TextFlow;
+
+import java.net.URISyntaxException;
 
 public class HeadLineController {
     @FXML
     private Label headline;
     @FXML
-    private TextFlow newsContent;
+    private ImageView thumbnail;
     @FXML
     private Text news;
 
     private String h;
     private String n;
+    private String t;
 
-    public HeadLineController(String h, String n){
+    public HeadLineController(String h, String n, String t){
         this.h=h;
         this.n=n;
+        this.t=t;
     }
     @FXML
-    public void initialize(){
-        if (h.length()>15)
-            this.headline.setText(h.substring(0,15)+"...");
-        else
-            this.headline.setText(h);
+    public void initialize() throws URISyntaxException {
+        headline.setText(h);
         news.setText(n);
-        news.setFont(Font.font("Helvetica", FontWeight.NORMAL, 18));
-        newsContent.getChildren().add(news);
+        thumbnail.setImage((new Image(getClass().getResource(t).toURI().toString())));
         }
 
     }

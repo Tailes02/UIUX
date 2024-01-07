@@ -4,9 +4,16 @@ import javafx.beans.property.ReadOnlyObjectWrapper;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.control.CheckBox;
 import javafx.scene.control.TableCell;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.stage.Stage;
+
+import java.io.IOException;
 
 public class Manager_HoaDonChiController extends Manager_ChuyenTrangController{
 
@@ -22,7 +29,8 @@ public class Manager_HoaDonChiController extends Manager_ChuyenTrangController{
     private TableColumn<HoaDonChi, Integer> SoTienColumn;
     @FXML
     private TableColumn<HoaDonChi, String> ThoiGianColumn;
-
+    @FXML
+    private CheckBox thuCheckBox;
 
     @FXML
     private TableColumn<HoaDonChi, String> GhiChuColumn;
@@ -34,7 +42,11 @@ public class Manager_HoaDonChiController extends Manager_ChuyenTrangController{
         ThoiGianColumn.setCellValueFactory(cellData -> new ReadOnlyObjectWrapper<>(cellData.getValue().getThoiGian()));
         SoTienColumn.setCellValueFactory(cellData -> new ReadOnlyObjectWrapper<>(cellData.getValue().getSoTien()));
         GhiChuColumn.setCellValueFactory(cellData -> new ReadOnlyObjectWrapper<>(cellData.getValue().getGhiChu()));
-
+        thuCheckBox.selectedProperty().addListener((observable, oldValue, newValue) -> {
+            if (newValue) {
+                navigateToHoaDonThu();
+            }
+        });
 
         // Create and add data to the table
         ObservableList<HoaDonChi> data = FXCollections.observableArrayList(
@@ -67,6 +79,23 @@ public class Manager_HoaDonChiController extends Manager_ChuyenTrangController{
         );
 
         tableView.setItems(data);
+    }
+
+    private void navigateToHoaDonThu() {
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("Manager_HoaDonThu.fxml"));
+            Parent hoaDonChiRoot = loader.load();
+
+            // Get the current stage from the event source
+            Stage stage = (Stage) thuCheckBox.getScene().getWindow();
+
+            // Set the new scene
+            stage.setScene(new Scene(hoaDonChiRoot));
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+            // Handle exceptions here
+        }
     }
 
     // ... other methods as needed

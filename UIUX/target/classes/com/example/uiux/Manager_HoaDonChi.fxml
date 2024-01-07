@@ -304,12 +304,12 @@
                   <Font size="15.0" />
                </font>
             </Button>
-            <CheckBox mnemonicParsing="false" text="Thu" GridPane.columnIndex="14" GridPane.columnSpan="2" GridPane.rowIndex="1">
+            <CheckBox fx:id="thuCheckBox" mnemonicParsing="false" text="Thu" GridPane.columnIndex="14" GridPane.columnSpan="2" GridPane.rowIndex="1">
                <font>
                   <Font size="18.0" />
                </font>
             </CheckBox>
-            <CheckBox mnemonicParsing="false" text="Chi" GridPane.columnIndex="16" GridPane.columnSpan="2" GridPane.rowIndex="1">
+            <CheckBox mnemonicParsing="false" text="Chi" GridPane.columnIndex="16" GridPane.columnSpan="2" GridPane.rowIndex="1" selected="true">
                <font>
                   <Font size="18.0" />
                </font>
