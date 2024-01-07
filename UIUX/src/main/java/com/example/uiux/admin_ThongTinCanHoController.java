@@ -44,7 +44,7 @@ public class admin_ThongTinCanHoController extends admin_ChuyenTrangController {
     private TableView<admin_ThongTinCanHoController.Household> tableView;
 
     @FXML
-    private TableColumn<admin_ThongTinCanHoController.Household, Integer> IdColumn;
+    private TableColumn<admin_ThongTinCanHoController.Household, String> IdColumn;
 
     @FXML
     private TableColumn<admin_ThongTinCanHoController.Household, String> CanHoColumn;
@@ -89,7 +89,7 @@ public class admin_ThongTinCanHoController extends admin_ChuyenTrangController {
                 } else {
                     setText(item); // Set the text of the cell to the value of the item
 
-                    if ("101".equals(item) || "201".equals(item)) {
+                    if ("000".equals(item) ||"101".equals(item) || "201".equals(item)) {
                         setStyle("-fx-text-fill: red;");
                     } else {
                         setStyle("-fx-text-fill: black;");
@@ -100,17 +100,17 @@ public class admin_ThongTinCanHoController extends admin_ChuyenTrangController {
 
         // Create and add data to the table
         ObservableList<admin_ThongTinCanHoController.Household> data = FXCollections.observableArrayList(
-                new admin_ThongTinCanHoController.Household(1, "101", "Nguyễn Thị Hằng", "0989958699",2),
-                new admin_ThongTinCanHoController.Household(8, "201", "Lương Văn Đức", "0989958699",2),
-                new admin_ThongTinCanHoController.Household(2, "102", "Hoàng Thị Minh Nguyệt", "0912738073",3),
-                new admin_ThongTinCanHoController.Household(3, "103", "Nguyễn Thanh Mai", "09112345678",3),
-                new admin_ThongTinCanHoController.Household(3, "104", "Trần Ngọc Linh", "09198765432",1),
-                new admin_ThongTinCanHoController.Household(4, "105", "Nguyễn Ngọc Khánh", "09123456789",2),
-                new admin_ThongTinCanHoController.Household(5, "106", "Nguyễn Tiến Dũng", "09187654321",4),
-                new admin_ThongTinCanHoController.Household(6, "107", "Mai Ngọc Linh", "09134567890",3),
-                new admin_ThongTinCanHoController.Household(7, "108", "Phạm Ngọc Ngà", "09176543210",2),
-                new admin_ThongTinCanHoController.Household(8, "201", "Lương Văn Đức", "0989958699",2),
-                new admin_ThongTinCanHoController.Household(9, "202", "Lương Thanh Hà", "09189012345",3)
+                new admin_ThongTinCanHoController.Household("QL01", "000", "Nguyễn Thu Trang", "0976800423",1),
+                new admin_ThongTinCanHoController.Household("1", "101", "Nguyễn Thị Hằng", "0989958699",2),
+                new admin_ThongTinCanHoController.Household("8", "201", "Lương Văn Đức", "0989958699",2),
+                new admin_ThongTinCanHoController.Household("2", "102", "Hoàng Thị Minh Nguyệt", "0912738073",3),
+                new admin_ThongTinCanHoController.Household("3", "103", "Nguyễn Thanh Mai", "09112345678",3),
+                new admin_ThongTinCanHoController.Household("4", "104", "Trần Ngọc Linh", "09198765432",1),
+                new admin_ThongTinCanHoController.Household("5", "105", "Nguyễn Ngọc Khánh", "09123456789",2),
+                new admin_ThongTinCanHoController.Household("6", "106", "Nguyễn Tiến Dũng", "09187654321",4),
+                new admin_ThongTinCanHoController.Household("7", "107", "Mai Ngọc Linh", "09134567890",3),
+                new admin_ThongTinCanHoController.Household("8", "108", "Phạm Ngọc Ngà", "09176543210",2),
+                new admin_ThongTinCanHoController.Household("10", "202", "Lương Thanh Hà", "09189012345",3)
 
             /* dự phòng
                 new admin_ThongTinNhanKhauController.Household(1, "203", "Lương Văn Đức", "0989958699",2,"..."),
@@ -160,13 +160,13 @@ public class admin_ThongTinCanHoController extends admin_ChuyenTrangController {
 
     // ... other methods as needed
     public class Household {
-        private int id;
+        private String id;
         private String canHo;
         private String chuHo;
         private String dienthoai;
         private int soThanhVien;
 
-        public Household(int id, String canHo, String chuHo, String dienthoai,int soThanhVien) {
+        public Household(String id, String canHo, String chuHo, String dienthoai,int soThanhVien) {
             this.id = id;
             this.canHo = canHo;
             this.chuHo = chuHo;
@@ -175,11 +175,11 @@ public class admin_ThongTinCanHoController extends admin_ChuyenTrangController {
         }
 
         // Getters and setters for each property
-        public int getId() {
+        public String getId() {
             return id;
         }
 
-        public void setId(int id) {
+        public void setId(String id) {
             this.id = id;
         }
 
