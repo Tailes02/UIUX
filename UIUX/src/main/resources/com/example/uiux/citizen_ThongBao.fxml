@@ -7,7 +7,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<Pane xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.uiux.citizen_ThongBaoController">
+<Pane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.uiux.citizen_ThongBaoController">
    <children>
       <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="524.0" prefWidth="822.0" style="-fx-background-radius: 30; -fx-border-radius: 30;">
          <children>
@@ -16,7 +16,7 @@
                   <Font name="System Bold" size="25.0" />
                </font>
             </Text>
-            <Button fx:id="ButtonOK" layoutX="354.0" layoutY="467.0" mnemonicParsing="false" onAction="#OK" prefHeight="26.0" prefWidth="113.0" text="OK">
+            <Button fx:id="ButtonOK" layoutX="354.0" layoutY="467.0" mnemonicParsing="false" onAction="#OK" prefHeight="26.0" prefWidth="113.0" style="-fx-background-color: ffffff; -fx-background-radius: 20; -fx-border-color: #0b8c56; -fx-border-radius: 20;" text="OK">
                <font>
                   <Font size="14.0" />
                </font></Button>
@@ -30,20 +30,20 @@
                   <Font size="18.0" />
                </font>
             </Text>
-            <Rectangle arcHeight="20.0" arcWidth="20.0" fill="#0b8c56" height="69.0" layoutX="118.0" layoutY="122.0" stroke="BLACK" strokeType="INSIDE" width="668.0" />
-            <Rectangle arcHeight="20.0" arcWidth="20.0" fill="#0b8c56" height="69.0" layoutX="118.0" layoutY="205.0" stroke="BLACK" strokeType="INSIDE" width="668.0" />
-            <Rectangle arcHeight="20.0" arcWidth="20.0" fill="#0b8c56" height="69.0" layoutX="118.0" layoutY="342.0" stroke="BLACK" strokeType="INSIDE" width="668.0" />
+            <Rectangle arcHeight="20.0" arcWidth="20.0" fill="#0b8c56" height="40.0" layoutX="76.0" layoutY="103.0" stroke="BLACK" strokeType="INSIDE" width="668.0" />
+            <Rectangle arcHeight="20.0" arcWidth="20.0" fill="#0b8c56" height="40.0" layoutX="76.0" layoutY="159.0" stroke="BLACK" strokeType="INSIDE" width="668.0" />
+            <Rectangle arcHeight="20.0" arcWidth="20.0" fill="#0b8c56" height="69.0" layoutX="76.0" layoutY="214.0" stroke="BLACK" strokeType="INSIDE" width="668.0" />
             <Text fill="WHITE" layoutX="179.0" layoutY="381.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Thu tiền điện tháng 8/2023">
                <font>
                   <Font name="System Bold" size="18.0" />
                </font>
             </Text>
-            <Text fill="WHITE" layoutX="179.0" layoutY="246.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sự kiện sắp diễn ra: Trung thu 2023">
+            <Text fill="WHITE" layoutX="97.0" layoutY="186.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Đã có hóa đơn tiền nước tháng 9">
                <font>
                   <Font name="System Bold" size="18.0" />
                </font>
             </Text>
-            <Text fill="WHITE" layoutX="179.0" layoutY="163.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Thu tiền điện tháng 9/2023">
+            <Text fill="WHITE" layoutX="97.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Đã có hóa đơn tiền điện tháng 9">
                <font>
                   <Font name="System Bold" size="18.0" />
                </font>
