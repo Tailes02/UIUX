@@ -4,9 +4,16 @@ import javafx.beans.property.ReadOnlyObjectWrapper;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.control.CheckBox;
 import javafx.scene.control.TableCell;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.stage.Stage;
+
+import java.io.IOException;
 
 public class Manager_HoaDonThuController extends Manager_ChuyenTrangController{
 
@@ -24,6 +31,8 @@ public class Manager_HoaDonThuController extends Manager_ChuyenTrangController{
 
     @FXML
     private TableColumn<HoaDon, String> TinhTrangColumn;
+    @FXML
+    private CheckBox chiCheckBox;
 
 
     public void initialize() {
@@ -32,7 +41,11 @@ public class Manager_HoaDonThuController extends Manager_ChuyenTrangController{
         TenColumn.setCellValueFactory(cellData -> new ReadOnlyObjectWrapper<>(cellData.getValue().getTen()));
         ThoiGianColumn.setCellValueFactory(cellData -> new ReadOnlyObjectWrapper<>(cellData.getValue().getThoiGian()));
         TinhTrangColumn.setCellValueFactory(cellData -> new ReadOnlyObjectWrapper<>(cellData.getValue().getTinhTrang()));
-
+        chiCheckBox.selectedProperty().addListener((observable, oldValue, newValue) -> {
+            if (newValue) {
+                navigateToHoaDonChi();
+            }
+        });
 
         // Create and add data to the table
         ObservableList<HoaDon> data = FXCollections.observableArrayList(
@@ -71,7 +84,24 @@ public class Manager_HoaDonThuController extends Manager_ChuyenTrangController{
 
         tableView.setItems(data);
     }
+    private void navigateToHoaDonChi() {
+        try {
+            // Load HoaDonChi.fxml
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("Manager_HoaDonChi.fxml"));
+            Parent hoaDonChiRoot = loader.load();
 
+            // Get the current stage from the event source
+            Stage stage = (Stage) chiCheckBox.getScene().getWindow();
+
+            // Set the new scene
+            stage.setScene(new Scene(hoaDonChiRoot));
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+            // Handle exceptions here
+        }
+
+    }
     // ... other methods as needed
     public class HoaDon {
         private String id;
