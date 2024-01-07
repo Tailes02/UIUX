@@ -665,7 +665,7 @@
                         <Font size="15.0" />
                     </font>
                 </Button>
-                <Button fx:id="ButtonThayDoiThongTin" layoutX="112.0" layoutY="503.0" mnemonicParsing="false" prefHeight="78.0" prefWidth="206.0" style="-fx-border-radius: 30; -fx-background-radius: 30; -fx-background-color: #ffffff; -fx-border-color: #0B8C56;" text="Thay đổi thông tin" GridPane.columnIndex="2" GridPane.columnSpan="4" GridPane.rowIndex="17" GridPane.rowSpan="2">
+                <Button fx:id="ButtonThayDoiThongTin" layoutX="112.0" layoutY="503.0" mnemonicParsing="false" prefHeight="78.0" prefWidth="206.0" style="-fx-border-radius: 30; -fx-background-radius: 30; -fx-background-color: #ffffff; -fx-border-color: #0B8C56;" text="Thay đổi thông tin" GridPane.columnIndex="2" GridPane.columnSpan="4" GridPane.rowIndex="17" GridPane.rowSpan="2" onAction="#handleButtonThayDoiThongTin">
                     <font>
                         <Font size="15.0" />
                     </font>

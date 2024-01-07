@@ -36,6 +36,9 @@ public class admin_ThongTinCanHoController extends admin_ChuyenTrangController {
         Main.loadScene("admin_ThongTinChiTietCanHo.fxml");
     }
 
+    public void handleThemTaiKhoanButton(){
+        Main.loadScene("admin_ThemTaiKhoan.fxml");
+    }
     public void initialize() {
         // Initialize your columns here
         IdColumn.setCellValueFactory(cellData -> new ReadOnlyObjectWrapper<>(cellData.getValue().getId()));
