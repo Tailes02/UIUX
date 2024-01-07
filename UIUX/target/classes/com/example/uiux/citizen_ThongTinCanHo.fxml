@@ -651,9 +651,14 @@
                   </VBox>
                </content>
             </ScrollPane>
-            <Button fx:id="ButtonThayDoiThongTin" layoutX="112.0" layoutY="503.0" mnemonicParsing="false" onAction="#ThayDoiThongTin" prefHeight="78.0" prefWidth="206.0" style="-fx-border-radius: 30; -fx-background-radius: 30; -fx-background-color: #ffffff; -fx-border-color: #0B8C56;" text="Thay đổi thông tin" GridPane.columnIndex="7" GridPane.columnSpan="4" GridPane.rowIndex="17" GridPane.rowSpan="2">
+            <Button fx:id="ButtonThayDoiThongTin" layoutX="112.0" layoutY="503.0" mnemonicParsing="false" onAction="#ThayDoiThongTin" prefHeight="78.0" prefWidth="206.0" style="-fx-border-radius: 30; -fx-background-radius: 30; -fx-background-color: #ffffff; -fx-border-color: #0B8C56;" text="Thay đổi thông tin" GridPane.columnIndex="3" GridPane.columnSpan="4" GridPane.rowIndex="17" GridPane.rowSpan="2">
                <font>
                   <Font size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="ButtonDangXuat" mnemonicParsing="false" onAction="#LogoutButtonClicked" prefHeight="78.0" prefWidth="206.0" style="-fx-border-radius: 30; -fx-background-radius: 30; -fx-background-color: #ffffff; -fx-border-color: #0B8C56;" text="Đăng xuất" textFill="#ef0000" GridPane.columnIndex="14" GridPane.columnSpan="2" GridPane.rowIndex="18" GridPane.rowSpan="2">
+               <font>
+                  <Font name="System Bold" size="15.0" />
                </font>
             </Button>
          </children>
