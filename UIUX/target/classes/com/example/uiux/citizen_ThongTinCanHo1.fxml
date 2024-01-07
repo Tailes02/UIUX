@@ -227,7 +227,7 @@
                 <Pane fx:id="BorderPane" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: lightgray; -fx-border-width: 1;" GridPane.columnSpan="20" GridPane.rowSpan="8" />
             </children>
         </GridPane>
-        <GridPane fx:id="InfomationGrid" prefHeight="554.0" prefWidth="1024.0" style="-fx-background-color: f4f4f4;" GridPane.columnIndex="1" GridPane.columnSpan="4" GridPane.rowIndex="1" GridPane.rowSpan="4">
+        <GridPane fx:id="InfomationGrid" onDragDetected="#handledXoa" prefHeight="554.0" prefWidth="1024.0" style="-fx-background-color: f4f4f4;" GridPane.columnIndex="1" GridPane.columnSpan="4" GridPane.rowIndex="1" GridPane.rowSpan="4">
             <columnConstraints>
                 <ColumnConstraints percentWidth="5.0" />
                 <ColumnConstraints percentWidth="5.0" />
@@ -577,7 +577,7 @@
                         <Font size="15.0" />
                     </font>
                 </Button>
-                <Button fx:id="ButtonHuy1" layoutX="112.0" layoutY="500.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="554.0" style="-fx-border-radius: 30; -fx-background-radius: 30; -fx-background-color: #ffffff; -fx-border-color: #0B8C56;" text="Xóa thành viên" textFill="RED" GridPane.columnIndex="6" GridPane.columnSpan="4" GridPane.rowIndex="17" GridPane.rowSpan="2">
+                <Button fx:id="ButtonHuy1" layoutX="112.0" layoutY="500.0" mnemonicParsing="false" onAction="#handledXoa" prefHeight="58.0" prefWidth="554.0" style="-fx-border-radius: 30; -fx-background-radius: 30; -fx-background-color: #ffffff; -fx-border-color: #0B8C56;" text="Xóa thành viên" textFill="RED" GridPane.columnIndex="6" GridPane.columnSpan="4" GridPane.rowIndex="17" GridPane.rowSpan="2">
                     <font>
                         <Font size="15.0" />
                     </font>

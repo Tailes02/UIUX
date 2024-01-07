@@ -295,7 +295,7 @@
                         <VBox fx:id="headlineColumn" prefHeight="573.0" prefWidth="763.0" />
                     </content>
                 </ScrollPane>
-            <Button fx:id="ButtonThemSuKien" mnemonicParsing="false" prefHeight="62.0" prefWidth="102.0" style="-fx-background-radius: 20; -fx-background-color: FFFFFF; -fx-border-radius: 20; -fx-border-color: #0B8C56;" text="Thêm sự kiện" GridPane.columnIndex="16" GridPane.columnSpan="2" GridPane.rowIndex="17" GridPane.rowSpan="2" />
+            <Button fx:id="ButtonThemSuKien" mnemonicParsing="false" prefHeight="62.0" prefWidth="102.0" style="-fx-background-radius: 20; -fx-background-color: FFFFFF; -fx-border-radius: 20; -fx-border-color: #0B8C56;" text="Thêm sự kiện" GridPane.columnIndex="17" GridPane.columnSpan="2" GridPane.rowIndex="17" GridPane.rowSpan="2" />
             </children>
         </GridPane>
 

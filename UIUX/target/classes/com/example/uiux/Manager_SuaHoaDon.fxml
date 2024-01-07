@@ -17,7 +17,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="720" prefWidth="1280" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.uiux.Manager_TaoHoaDonController">
+<AnchorPane prefHeight="720" prefWidth="1280" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.uiux.Manager_SuaHoaDonController">
     <GridPane fx:id="mainGrid" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <columnConstraints>
             <ColumnConstraints percentWidth="20.0" />
@@ -164,7 +164,7 @@
                     </font>
                 </Button>
                 <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#E3D464" height="55.0" stroke="BLACK" strokeType="INSIDE" width="13.0" GridPane.rowIndex="8" GridPane.rowSpan="2" />
-            <Button fx:id="ButtonThongTinCaNhan" mnemonicParsing="false"  prefHeight="58.0" prefWidth="204.0" style="-fx-background-color: #0B8C56; -fx-padding: 0 0 0 0; -fx-alignment: CENTER_LEFT; -fx-margin: 0 0 54 0;" text="Thông tin cá nhân" textFill="WHITE" GridPane.columnIndex="1" GridPane.columnSpan="8" GridPane.rowIndex="2" GridPane.rowSpan="2">
+            <Button fx:id="ButtonThongTinCaNhan" mnemonicParsing="false" prefHeight="58.0" prefWidth="204.0" style="-fx-background-color: #0B8C56; -fx-padding: 0 0 0 0; -fx-alignment: CENTER_LEFT; -fx-margin: 0 0 54 0;" text="Thông tin cá nhân" textFill="WHITE" GridPane.columnIndex="1" GridPane.columnSpan="8" GridPane.rowIndex="2" GridPane.rowSpan="2">
                <font>
                   <Font name="System Bold" size="20.0" />
                </font>
@@ -290,7 +290,7 @@
          <children>
             <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.columnSpan="4">
                <children>
-                  <Text layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tạo hóa đơn">
+                  <Text layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sửa hóa đơn">
                      <font>
                         <Font name="System Bold" size="25.0" />
                      </font></Text>
@@ -323,18 +323,9 @@
                      </FXCollections>
                  </items>
              </ComboBox>
-            <DatePicker prefHeight="27.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.columnSpan="3" GridPane.rowIndex="7" />
-            <DatePicker prefHeight="27.0" prefWidth="253.0" GridPane.columnIndex="9" GridPane.columnSpan="3" GridPane.rowIndex="7" />
-            <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.columnSpan="3" GridPane.rowIndex="9">
-               <children>
-                  <Text layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Số tiền">
-                     <font>
-                        <Font size="18.0" />
-                     </font>
-                  </Text>
-               </children>
-            </Pane>
-            <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.columnSpan="2" GridPane.rowIndex="6">
+            <DatePicker prefHeight="27.0" prefWidth="200.0" promptText="01/10/2023" GridPane.columnIndex="4" GridPane.columnSpan="3" GridPane.rowIndex="8" />
+            <DatePicker prefHeight="27.0" prefWidth="253.0" promptText="31/10/202" GridPane.columnIndex="4" GridPane.columnSpan="3" GridPane.rowIndex="11" />
+            <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.columnSpan="2" GridPane.rowIndex="7">
                <children>
                   <Text layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Từ ngày">
                      <font>
@@ -343,7 +334,7 @@
                   </Text>
                </children>
             </Pane>
-            <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="9" GridPane.columnSpan="2" GridPane.rowIndex="6">
+            <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.columnSpan="2" GridPane.rowIndex="10">
                <children>
                   <Text layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Đến ngày">
                      <font>
@@ -352,7 +343,6 @@
                   </Text>
                </children>
             </Pane>
-            <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ffffff; -fx-background-radius: 20;" GridPane.columnIndex="4" GridPane.columnSpan="5" GridPane.rowIndex="10" />
             <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.columnSpan="3" GridPane.rowIndex="13">
                <children>
                   <Text layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Trạng thái">
@@ -371,27 +361,22 @@
                      </FXCollections>
                  </items>
              </ComboBox>
-            <Button mnemonicParsing="false" onAction="#handleQuayLai" prefHeight="90.0" prefWidth="93.0" style="-fx-border-radius: 20; -fx-background-radius: 20; -fx-border-color: #0B8C56; -fx-background-color: #ffffff;" text="Hủy" GridPane.columnIndex="4" GridPane.columnSpan="2" GridPane.rowIndex="16" GridPane.rowSpan="2">
+            <Button mnemonicParsing="false" onAction="#handleQuayLai" prefHeight="90.0" prefWidth="93.0" style="-fx-border-radius: 20; -fx-background-radius: 20; -fx-border-color: #0B8C56; -fx-background-color: #ffffff;" text="Hủy" GridPane.columnIndex="13" GridPane.columnSpan="2" GridPane.rowIndex="16" GridPane.rowSpan="2">
                <font>
                   <Font name="System Bold" size="15.0" />
                </font>
             </Button>
-            <Button mnemonicParsing="false" onAction="#handleXacNhan" prefHeight="213.0" prefWidth="91.0" style="-fx-border-radius: 20; -fx-background-radius: 20; -fx-border-color: #0B8C56; -fx-background-color: #ffffff;" text="Xác nhận" GridPane.columnIndex="16" GridPane.columnSpan="2" GridPane.rowIndex="16" GridPane.rowSpan="2">
+            <Button mnemonicParsing="false" onAction="#handleXacNhan" prefHeight="213.0" prefWidth="91.0" style="-fx-border-radius: 20; -fx-background-radius: 20; -fx-border-color: #0B8C56; -fx-background-color: #0B8C56;" text="Xác nhận" textFill="WHITE" GridPane.columnIndex="15" GridPane.columnSpan="2" GridPane.rowIndex="16" GridPane.rowSpan="2">
                <font>
                   <Font name="System Bold" size="15.0" />
                </font>
             </Button>
-            <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.columnSpan="3" GridPane.rowIndex="11">
-               <children>
-                  <Text layoutX="-2.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phòng">
-                     <font>
-                        <Font size="18.0" />
-                     </font>
-                  </Text>
-               </children>
-            </Pane>
-            <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ffffff; -fx-background-radius: 20;" GridPane.columnIndex="4" GridPane.columnSpan="4" GridPane.rowIndex="12" />
-            <TextField prefHeight="44.0" prefWidth="466.0" style="-fx-border-radius: 20; -fx-background-radius: 20;" GridPane.columnIndex="4" GridPane.columnSpan="10" GridPane.rowIndex="5" />
+            <TextField prefHeight="44.0" prefWidth="466.0" promptText="Danh sách đóng tiền điện tháng 9" style="-fx-border-radius: 20; -fx-background-radius: 20;" GridPane.columnIndex="4" GridPane.columnSpan="10" GridPane.rowIndex="5" />
+            <Button mnemonicParsing="false" onAction="#handleQuayLai" prefHeight="90.0" prefWidth="93.0" style="-fx-border-radius: 20; -fx-background-radius: 20; -fx-border-color: #0B8C56; -fx-background-color: #ffffff;" text="Xóa" textFill="RED" GridPane.columnIndex="4" GridPane.columnSpan="2" GridPane.rowIndex="16" GridPane.rowSpan="2">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
          </children>
         </GridPane>
 
