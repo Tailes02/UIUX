@@ -2,6 +2,7 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -336,6 +337,11 @@
                                                 <Font size="20.0" />
                                             </font>
                                         </Text>
+                              <Text layoutX="10.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mật Khẩu:">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Text>
                                     </children>
                                 </VBox>
                                 <VBox layoutX="391.0" layoutY="10.0" prefHeight="200.0" prefWidth="225.0">
@@ -345,6 +351,11 @@
                                                 <Font size="20.0" />
                                             </font>
                                         </Text>
+                              <TextField layoutX="10.0" layoutY="32.0" text="12345678">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </TextField>
                                     </children>
                                 </VBox>
                             </children>
@@ -384,26 +395,26 @@
                                         </VBox>
                                         <VBox fx:id="FirstInfoVbox" layoutX="10.0" prefHeight="172.8" prefWidth="255.2" spacing="5.0">
                                             <children>
-                                                <Text fx:id="TextName" strokeType="OUTSIDE" strokeWidth="0.0" text="Nguyễn Thị Hằng">
+                                                <TextField fx:id="TextName" text="Nguyễn Thị Hằng">
                                                     <font>
                                                         <Font size="20.0" />
                                                     </font>
-                                                </Text>
-                                                <Text fx:id="TextSex" layoutX="10.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nữ">
+                                                </TextField>
+                                                <TextField fx:id="TextSex" layoutX="10.0" layoutY="32.0" text="Nữ">
                                                     <font>
                                                         <Font size="20.0" />
                                                     </font>
-                                                </Text>
-                                                <Text fx:id="DOB" layoutX="10.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="14-12-2000">
+                                                </TextField>
+                                                <TextField fx:id="DOB" layoutX="10.0" layoutY="62.0" text="14-12-2000">
                                                     <font>
                                                         <Font size="20.0" />
                                                     </font>
-                                                </Text>
-                                                <Text fx:id="TextJob" layoutX="10.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kĩ sư">
+                                                </TextField>
+                                                <TextField fx:id="TextJob" layoutX="10.0" layoutY="93.0" text="Kĩ sư">
                                                     <font>
                                                         <Font size="20.0" />
                                                     </font>
-                                                </Text>
+                                                </TextField>
                                             </children>
                                         </VBox>
                                         <VBox layoutX="250.0" prefHeight="172.8" prefWidth="102.7" spacing="5.0">
@@ -432,31 +443,31 @@
                                         </VBox>
                                         <VBox fx:id="SecondInfoVbox" layoutX="368.0" prefHeight="172.8" prefWidth="306.4" spacing="5.0">
                                             <children>
-                                                <Text fx:id="TextRole" strokeType="OUTSIDE" strokeWidth="0.0" text="Chủ hộ">
+                                                <TextField fx:id="TextRole" text="Chủ hộ">
                                                     <font>
                                                         <Font size="20.0" />
                                                     </font>
-                                                </Text>
-                                                <Text fx:id="TextCCCD" layoutX="10.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="001202008965">
+                                                </TextField>
+                                                <TextField fx:id="TextCCCD" layoutX="10.0" layoutY="32.0" text="001202008965">
                                                     <font>
                                                         <Font size="20.0" />
                                                     </font>
-                                                </Text>
-                                                <Text fx:id="TextMail" layoutX="10.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HangN2000@yahoo.com">
+                                                </TextField>
+                                                <TextField fx:id="TextMail" layoutX="10.0" layoutY="62.0" text="HangN2000@yahoo.com">
                                                     <font>
                                                         <Font size="20.0" />
                                                     </font>
-                                                </Text>
-                                                <Text fx:id="TextPhone" layoutX="10.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0912738037">
+                                                </TextField>
+                                                <TextField fx:id="TextPhone" layoutX="10.0" layoutY="93.0" text="0912738037">
                                                     <font>
                                                         <Font size="20.0" />
                                                     </font>
-                                                </Text>
+                                                </TextField>
                                             </children>
                                         </VBox>
                                     </children>
                                 </HBox>
-                                <HBox fx:id="InformationHBox1" onMouseClicked="#onInformationHBox1Clicked"  layoutX="10.0" layoutY="10.0" prefHeight="115.2" prefWidth="818.2" style="-fx-border-color: #0B8C56; -fx-border-width: 0 0 1 0;">
+                                <HBox fx:id="InformationHBox1" layoutX="10.0" layoutY="10.0" onMouseClicked="#onInformationHBox1Clicked" prefHeight="115.2" prefWidth="818.2" style="-fx-border-color: #0B8C56; -fx-border-width: 0 0 1 0;">
                                     <children>
                                         <VBox prefHeight="172.8" prefWidth="153.9" spacing="5.0">
                                             <children>
@@ -484,26 +495,26 @@
                                         </VBox>
                                         <VBox fx:id="FirstInfoVbox1" layoutX="10.0" prefHeight="172.8" prefWidth="255.2" spacing="5.0">
                                             <children>
-                                                <Text fx:id="TextName1" strokeType="OUTSIDE" strokeWidth="0.0" text="Nguyễn Lan Hương">
+                                                <TextField fx:id="TextName1" text="Nguyễn Lan Hương">
                                                     <font>
                                                         <Font size="20.0" />
                                                     </font>
-                                                </Text>
-                                                <Text fx:id="TextSex1" layoutX="10.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nữ">
+                                                </TextField>
+                                                <TextField fx:id="TextSex1" layoutX="10.0" layoutY="32.0" text="Nữ">
                                                     <font>
                                                         <Font size="20.0" />
                                                     </font>
-                                                </Text>
-                                                <Text fx:id="DOB1" layoutX="10.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="02-06-2000">
+                                                </TextField>
+                                                <TextField fx:id="DOB1" layoutX="10.0" layoutY="62.0" text="02-06-2000">
                                                     <font>
                                                         <Font size="20.0" />
                                                     </font>
-                                                </Text>
-                                                <Text fx:id="TextJob1" layoutX="10.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tự do">
+                                                </TextField>
+                                                <TextField fx:id="TextJob1" layoutX="10.0" layoutY="93.0" text="Tự do">
                                                     <font>
                                                         <Font size="20.0" />
                                                     </font>
-                                                </Text>
+                                                </TextField>
                                             </children>
                                         </VBox>
                                         <VBox layoutX="250.0" prefHeight="172.8" prefWidth="102.7" spacing="5.0">
@@ -532,31 +543,31 @@
                                         </VBox>
                                         <VBox fx:id="SecondInfoVbox1" layoutX="368.0" prefHeight="172.8" prefWidth="255.2" spacing="5.0">
                                             <children>
-                                                <Text fx:id="TextRole1" strokeType="OUTSIDE" strokeWidth="0.0" text="Thành viên">
+                                                <TextField fx:id="TextRole1" text="Thành viên">
                                                     <font>
                                                         <Font size="20.0" />
                                                     </font>
-                                                </Text>
-                                                <Text fx:id="TextCCCD1" layoutX="10.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="001202001037">
+                                                </TextField>
+                                                <TextField fx:id="TextCCCD1" layoutX="10.0" layoutY="32.0" text="001202001037">
                                                     <font>
                                                         <Font size="20.0" />
                                                     </font>
-                                                </Text>
-                                                <Text fx:id="TextMail1" layoutX="10.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0">
+                                                </TextField>
+                                                <TextField fx:id="TextMail1" layoutX="10.0" layoutY="62.0">
                                                     <font>
                                                         <Font size="20.0" />
                                                     </font>
-                                                </Text>
-                                                <Text fx:id="TextPhone1" layoutX="10.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0912714038">
+                                                </TextField>
+                                                <TextField fx:id="TextPhone1" layoutX="10.0" layoutY="93.0" text="0912714038">
                                                     <font>
                                                         <Font size="20.0" />
                                                     </font>
-                                                </Text>
+                                                </TextField>
                                             </children>
                                         </VBox>
                                     </children>
                                 </HBox>
-                                <HBox fx:id="InformationHBox2" onMouseClicked="#onInformationHBox2Clicked"  layoutX="10.0" layoutY="148.0" prefHeight="115.2" prefWidth="818.2">
+                                <HBox fx:id="InformationHBox2" layoutX="10.0" layoutY="148.0" onMouseClicked="#onInformationHBox2Clicked" prefHeight="115.2" prefWidth="818.2">
                                     <children>
                                         <VBox prefHeight="172.8" prefWidth="153.9" spacing="5.0">
                                             <children>
@@ -584,26 +595,26 @@
                                         </VBox>
                                         <VBox fx:id="FirstInfoVbox11" layoutX="10.0" prefHeight="172.8" prefWidth="255.2" spacing="5.0">
                                             <children>
-                                                <Text fx:id="TextName11" strokeType="OUTSIDE" strokeWidth="0.0" text="Nguyễn Thị Thanh Hà">
+                                                <TextField fx:id="TextName11" text="Nguyễn Thị Thanh Hà">
                                                     <font>
                                                         <Font size="20.0" />
                                                     </font>
-                                                </Text>
-                                                <Text fx:id="TextSex11" layoutX="10.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nữ">
+                                                </TextField>
+                                                <TextField fx:id="TextSex11" layoutX="10.0" layoutY="32.0" text="Nữ">
                                                     <font>
                                                         <Font size="20.0" />
                                                     </font>
-                                                </Text>
-                                                <Text fx:id="DOB11" layoutX="10.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="14-02-2000">
+                                                </TextField>
+                                                <TextField fx:id="DOB11" layoutX="10.0" layoutY="62.0" text="14-02-2000">
                                                     <font>
                                                         <Font size="20.0" />
                                                     </font>
-                                                </Text>
-                                                <Text fx:id="TextJob11" layoutX="10.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tự do">
+                                                </TextField>
+                                                <TextField fx:id="TextJob11" layoutX="10.0" layoutY="93.0" text="Tự do">
                                                     <font>
                                                         <Font size="20.0" />
                                                     </font>
-                                                </Text>
+                                                </TextField>
                                             </children>
                                         </VBox>
                                         <VBox layoutX="250.0" prefHeight="172.8" prefWidth="102.7" spacing="5.0">
@@ -632,26 +643,26 @@
                                         </VBox>
                                         <VBox fx:id="SecondInfoVbox11" layoutX="368.0" prefHeight="172.8" prefWidth="306.4" spacing="5.0">
                                             <children>
-                                                <Text fx:id="TextRole11" strokeType="OUTSIDE" strokeWidth="0.0" text="Tạm trú">
+                                                <TextField fx:id="TextRole11" text="Tạm trú">
                                                     <font>
                                                         <Font size="20.0" />
                                                     </font>
-                                                </Text>
-                                                <Text fx:id="TextCCCD11" layoutX="10.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="001202001567">
+                                                </TextField>
+                                                <TextField fx:id="TextCCCD11" layoutX="10.0" layoutY="32.0" text="001202001567">
                                                     <font>
                                                         <Font size="20.0" />
                                                     </font>
-                                                </Text>
-                                                <Text fx:id="TextMail11" layoutX="10.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0">
+                                                </TextField>
+                                                <TextField fx:id="TextMail11" layoutX="10.0" layoutY="62.0">
                                                     <font>
                                                         <Font size="20.0" />
                                                     </font>
-                                                </Text>
-                                                <Text fx:id="TextPhone11" layoutX="10.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0912754367">
+                                                </TextField>
+                                                <TextField fx:id="TextPhone11" layoutX="10.0" layoutY="93.0" text="0912754367">
                                                     <font>
                                                         <Font size="20.0" />
                                                     </font>
-                                                </Text>
+                                                </TextField>
                                             </children>
                                         </VBox>
                                     </children>
@@ -660,7 +671,7 @@
                         </VBox>
                     </content>
                 </ScrollPane>
-                <Button fx:id="ButtonHuy" onAction="#handledButtonHuy" mnemonicParsing="false" prefHeight="66.0" prefWidth="102.0" style="-fx-border-radius: 30; -fx-background-radius: 30; -fx-background-color: #ffffff; -fx-border-color: #0B8C56;" text="Hủy" GridPane.columnIndex="14" GridPane.columnSpan="2" GridPane.rowIndex="17" GridPane.rowSpan="2">
+                <Button fx:id="ButtonHuy" mnemonicParsing="false" onAction="#handledButtonHuy" prefHeight="66.0" prefWidth="102.0" style="-fx-border-radius: 30; -fx-background-radius: 30; -fx-background-color: #ffffff; -fx-border-color: #0B8C56;" text="Hủy" GridPane.columnIndex="14" GridPane.columnSpan="2" GridPane.rowIndex="17" GridPane.rowSpan="2">
                     <font>
                         <Font size="15.0" />
                     </font>
