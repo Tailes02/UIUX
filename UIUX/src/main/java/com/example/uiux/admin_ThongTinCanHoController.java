@@ -60,11 +60,9 @@ public class admin_ThongTinCanHoController extends admin_ChuyenTrangController {
                 } else {
                     setText(item); // Set the text of the cell to the value of the item
 
-                    // If the item is "101", set the text color to red
-                    if ("101".equals(item)) {
+                    if ("101".equals(item) || "201".equals(item)) {
                         setStyle("-fx-text-fill: red;");
                     } else {
-                        // Use a default style (you can adjust this as needed)
                         setStyle("-fx-text-fill: black;");
                     }
                 }
@@ -74,6 +72,8 @@ public class admin_ThongTinCanHoController extends admin_ChuyenTrangController {
         // Create and add data to the table
         ObservableList<admin_ThongTinCanHoController.Household> data = FXCollections.observableArrayList(
                 new admin_ThongTinCanHoController.Household(1, "101", "Nguyễn Thị Hằng", "0989958699",2),
+                new admin_ThongTinCanHoController.Household(2, "201", "Trần Phương Anh", "09154321098",2),
+
                 new admin_ThongTinCanHoController.Household(2, "102", "Hoàng Thị Minh Nguyệt", "0912738073",3),
                 new admin_ThongTinCanHoController.Household(2, "103", "Nguyễn Thanh Mai", "09112345678",3),
                 new admin_ThongTinCanHoController.Household(2, "104", "Trần Ngọc Linh", "09198765432",1),
@@ -81,7 +81,6 @@ public class admin_ThongTinCanHoController extends admin_ChuyenTrangController {
                 new admin_ThongTinCanHoController.Household(2, "106", "Nguyễn Tiến Dũng", "09187654321",4),
                 new admin_ThongTinCanHoController.Household(2, "107", "Mai Ngọc Linh", "09134567890",3),
                 new admin_ThongTinCanHoController.Household(2, "108", "Phạm Ngọc Ngà", "09176543210",2),
-                new admin_ThongTinCanHoController.Household(2, "201", "Trần Phương Anh", "09154321098",2),
                 new admin_ThongTinCanHoController.Household(2, "202", "Lương Thanh Hà", "09189012345",3)
 
             /* dự phòng
