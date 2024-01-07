@@ -10,7 +10,7 @@ public class admin_ThongTinChiTietCanHoController extends admin_ChuyenTrangContr
 
     @FXML
     private void handleButtonThayDoiThongTin(){
-        Main.loadScene("admin_ThongTinCanHoSuu.fxml");
+        Main.loadScene("admin_ThongTinCanHoSua.fxml");
     }
 
     @FXML

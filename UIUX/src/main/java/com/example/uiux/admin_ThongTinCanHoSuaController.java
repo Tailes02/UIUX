@@ -4,7 +4,7 @@ import javafx.fxml.FXML;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.HBox;
 
-public class admin_ThongTinCanHoSuuController extends admin_ChuyenTrangController {
+public class admin_ThongTinCanHoSuaController extends admin_ChuyenTrangController {
     @FXML
     private HBox InformationHBox0;
 
