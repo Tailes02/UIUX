@@ -280,7 +280,7 @@
          <children>
             <ScrollPane fx:id="newsScroll" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: transparent;" GridPane.columnIndex="15" GridPane.columnSpan="5" GridPane.rowIndex="1" GridPane.rowSpan="22">
                <content>
-                  <VBox fx:id="newsColumn" prefHeight="546.0" prefWidth="233.0" />
+                  <VBox fx:id="newsColumn" prefHeight="546.0" prefWidth="255.0" />
                </content>
             </ScrollPane>
             <Label text="Tin tức mới nhất" GridPane.columnIndex="15" GridPane.columnSpan="5">

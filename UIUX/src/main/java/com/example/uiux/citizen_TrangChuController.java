@@ -22,12 +22,6 @@ public class citizen_TrangChuController extends citizen_ChuyenTrangController{
     @FXML
     private ScrollPane headlineScroll;
     @FXML
-    private Label headline;
-    @FXML
-    private TextFlow newsContent;
-    @FXML
-    private Text news;
-    @FXML
     private VBox headlineColumn;
     @FXML
     private void initialize(){
