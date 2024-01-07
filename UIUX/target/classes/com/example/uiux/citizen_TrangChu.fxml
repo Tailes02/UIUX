@@ -9,13 +9,13 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
-<?import javafx.scene.text.TextFlow?>
 
 <AnchorPane prefHeight="720" prefWidth="1280" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.uiux.citizen_TrangChuController">
     <GridPane fx:id="mainGrid" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
@@ -252,8 +252,6 @@
             <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
             <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
             <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
         </columnConstraints>
         <rowConstraints>
             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
@@ -276,17 +274,17 @@
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
         </rowConstraints>
          <children>
-            <ScrollPane fx:id="newsScroll" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: transparent;" GridPane.columnIndex="17" GridPane.columnSpan="5" GridPane.rowIndex="1" GridPane.rowSpan="22">
+            <ScrollPane fx:id="newsScroll" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: transparent;" GridPane.columnIndex="15" GridPane.columnSpan="5" GridPane.rowIndex="1" GridPane.rowSpan="22">
                <content>
                   <VBox fx:id="newsColumn" prefHeight="546.0" prefWidth="233.0" />
                </content>
             </ScrollPane>
-            <Label text="Tin tức mới nhất" GridPane.columnIndex="17" GridPane.columnSpan="5">
+            <Label text="Tin tức mới nhất" GridPane.columnIndex="15" GridPane.columnSpan="5">
                <GridPane.margin>
                   <Insets bottom="25.0" left="15.0" />
                </GridPane.margin>
@@ -294,31 +292,15 @@
                   <Font size="24.0" />
                </font>
             </Label>
-            <ImageView fitHeight="270.0" fitWidth="360.0" GridPane.columnIndex="1" GridPane.rowIndex="5">
-               <image>
-                  <Image url="@../../../icon/LoginImage1.jpg" />
-               </image>
-               <GridPane.margin>
-                  <Insets />
-               </GridPane.margin>
-            </ImageView>
-            <Label fx:id="headline" alignment="TOP_LEFT" maxWidth="501.0" prefHeight="53.0" prefWidth="283.0" text="Giáng sinh 2023" GridPane.columnIndex="9" GridPane.columnSpan="8">
-               <font>
-                  <Font name="System Bold" size="36.0" />
-               </font>
-               <GridPane.margin>
-                  <Insets left="15.0" top="10.0" />
-               </GridPane.margin>
-            </Label>
-            <TextFlow fx:id="newsContent" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="9" GridPane.columnSpan="8" GridPane.rowIndex="2" GridPane.rowSpan="9">
-               <GridPane.margin>
-                  <Insets left="15.0" right="15.0" />
-               </GridPane.margin>
-            </TextFlow>
+            <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.columnSpan="8" GridPane.rowIndex="11" />
+            <ScrollPane fx:id="headlineScroll" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: transparent;" GridPane.columnSpan="15" GridPane.rowSpan="20">
+               <content>
+                  <VBox fx:id="headlineColumn" prefHeight="574.0" prefWidth="763.0" />
+               </content>
+            </ScrollPane>
          </children>
       </GridPane>
 
         <!-- Grid content goes here -->
     </GridPane>
-   <Text fx:id="news" layoutX="235.0" layoutY="-36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
 </AnchorPane>
