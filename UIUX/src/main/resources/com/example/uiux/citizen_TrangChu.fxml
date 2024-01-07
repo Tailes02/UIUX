@@ -274,6 +274,9 @@
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
         </rowConstraints>
          <children>
             <ScrollPane fx:id="newsScroll" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: transparent;" GridPane.columnIndex="15" GridPane.columnSpan="5" GridPane.rowIndex="1" GridPane.rowSpan="22">
@@ -290,6 +293,11 @@
                </font>
             </Label>
             <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.columnSpan="8" GridPane.rowIndex="11" />
+            <ScrollPane fx:id="headlineScroll" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: transparent;" GridPane.columnSpan="15" GridPane.rowSpan="20">
+               <content>
+                  <VBox fx:id="headlineColumn" prefHeight="574.0" prefWidth="763.0" />
+               </content>
+            </ScrollPane>
          </children>
       </GridPane>
 
