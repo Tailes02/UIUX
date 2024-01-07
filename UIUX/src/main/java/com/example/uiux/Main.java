@@ -15,8 +15,7 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) {
-        com.example.uiux.Main.primaryStage = primaryStage; // Assign the primaryStage to the static field
-
+        com.example.uiux.Main.primaryStage = primaryStage; // Assign the primaryStage to the static field git
         loadScene("login.fxml");
     }
 
