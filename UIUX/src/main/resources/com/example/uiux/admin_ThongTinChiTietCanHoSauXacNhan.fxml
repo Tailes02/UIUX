@@ -680,7 +680,7 @@
                         <Font size="15.0" />
                     </font>
                 </Button>
-                <Button fx:id="ButtonXacNhan" layoutX="727.0" layoutY="503.0" mnemonicParsing="false" prefHeight="82.0" prefWidth="103.0" style="-fx-border-radius: 30; -fx-background-radius: 30; -fx-background-color: #0B8C56; -fx-border-color: #0B8C56;" text="Xác nhận" textFill="WHITE" GridPane.columnIndex="16" GridPane.columnSpan="2" GridPane.rowIndex="17" GridPane.rowSpan="2">
+                <Button fx:id="ButtonXacNhan" onAction="#handleButtonXacNhan" layoutX="727.0" layoutY="503.0" mnemonicParsing="false" prefHeight="82.0" prefWidth="103.0" style="-fx-border-radius: 30; -fx-background-radius: 30; -fx-background-color: #0B8C56; -fx-border-color: #0B8C56;" text="Xác nhận" textFill="WHITE" GridPane.columnIndex="16" GridPane.columnSpan="2" GridPane.rowIndex="17" GridPane.rowSpan="2">
                     <font>
                         <Font size="15.0" />
                     </font>

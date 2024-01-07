@@ -336,7 +336,7 @@
                                                 <Font size="20.0" />
                                             </font>
                                         </Text>
-                                        <Text fill="#fa0000" layoutX="10.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mật khẩu:">
+                                        <Text layoutX="10.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mật khẩu:">
                                             <font>
                                                 <Font size="20.0" />
                                             </font>
@@ -570,22 +570,22 @@
                                     <children>
                                         <VBox prefHeight="172.8" prefWidth="153.9" spacing="5.0">
                                             <children>
-                                                <Text  strokeType="OUTSIDE" strokeWidth="0.0" text="Họ tên:">
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Họ tên:">
                                                     <font>
                                                         <Font size="20.0" />
                                                     </font>
                                                 </Text>
-                                                <Text  strokeType="OUTSIDE" strokeWidth="0.0" text="Giới tính:">
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Giới tính:">
                                                     <font>
                                                         <Font size="20.0" />
                                                     </font>
                                                 </Text>
-                                                <Text  layoutX="10.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ngày sinh:">
+                                                <Text layoutX="10.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ngày sinh:">
                                                     <font>
                                                         <Font size="20.0" />
                                                     </font>
                                                 </Text>
-                                                <Text  strokeType="OUTSIDE" strokeWidth="0.0" text="Nghề nghiệp:">
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Nghề nghiệp:">
                                                     <font>
                                                         <Font size="20.0" />
                                                     </font>
@@ -618,22 +618,22 @@
                                         </VBox>
                                         <VBox layoutX="250.0" prefHeight="172.8" prefWidth="102.7" spacing="5.0">
                                             <children>
-                                                <Text  strokeType="OUTSIDE" strokeWidth="0.0" text="Vai trò :">
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Vai trò :">
                                                     <font>
                                                         <Font size="20.0" />
                                                     </font>
                                                 </Text>
-                                                <Text  strokeType="OUTSIDE" strokeWidth="0.0" text="CCCD:">
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="CCCD:">
                                                     <font>
                                                         <Font size="20.0" />
                                                     </font>
                                                 </Text>
-                                                <Text  layoutX="10.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mail:">
+                                                <Text layoutX="10.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mail:">
                                                     <font>
                                                         <Font size="20.0" />
                                                     </font>
                                                 </Text>
-                                                <Text  strokeType="OUTSIDE" strokeWidth="0.0" text="SDT:">
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="SDT:">
                                                     <font>
                                                         <Font size="20.0" />
                                                     </font>
@@ -680,7 +680,7 @@
                         <Font size="15.0" />
                     </font>
                 </Button>
-                <Button fx:id="ButtonXacNhan" layoutX="727.0" layoutY="503.0" mnemonicParsing="false" prefHeight="82.0" prefWidth="103.0" style="-fx-border-radius: 30; -fx-background-radius: 30; -fx-background-color: #0B8C56; -fx-border-color: #0B8C56;" text="Xác nhận" textFill="WHITE" GridPane.columnIndex="16" GridPane.columnSpan="2" GridPane.rowIndex="17" GridPane.rowSpan="2">
+                <Button fx:id="ButtonXacNhan" onAction="#handleButtonXacNhan" layoutX="727.0" layoutY="503.0" mnemonicParsing="false" prefHeight="82.0" prefWidth="103.0" style="-fx-border-radius: 30; -fx-background-radius: 30; -fx-background-color: #0B8C56; -fx-border-color: #0B8C56;" text="Xác nhận" textFill="WHITE" GridPane.columnIndex="16" GridPane.columnSpan="2" GridPane.rowIndex="17" GridPane.rowSpan="2">
                     <font>
                         <Font size="15.0" />
                     </font>
