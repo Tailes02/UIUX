@@ -17,6 +17,14 @@
          <content>
             <VBox prefHeight="871.0" prefWidth="785.0">
                <children>
+                  <Button fx:id="ButtonOK" mnemonicParsing="false" onAction="#OK" style="-fx-border-color: #0B8C56; -fx-background-color: transparent; -fx-border-radius: 20;" text="Quay lại">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="20.0" top="20.0" />
+                     </VBox.margin>
+                  </Button>
                   <Label prefHeight="61.0" prefWidth="800.0" text="Chung cư iHopT tổ chức lễ giáng sinh">
                      <font>
                         <Font name="System Bold" size="36.0" />
@@ -41,14 +49,6 @@
                         <Insets bottom="30.0" left="90.0" top="50.0" />
                      </VBox.margin>
                   </ImageView>
-                  <Button fx:id="ButtonOK" mnemonicParsing="false" onAction="#OK" style="-fx-background-color: #0B8C56;" text="Return" textFill="WHITE">
-                     <font>
-                        <Font size="24.0" />
-                     </font>
-                     <VBox.margin>
-                        <Insets left="340.0" />
-                     </VBox.margin>
-                  </Button>
                </children>
             </VBox>
          </content></ScrollPane>
