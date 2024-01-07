@@ -3,13 +3,42 @@ package com.example.uiux;
 import javafx.beans.property.ReadOnlyObjectWrapper;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.collections.transformation.FilteredList;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.Button;
-import javafx.scene.control.TableCell;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
+import javafx.scene.control.*;
 
 public class admin_ThongTinCanHoController extends admin_ChuyenTrangController {
+    @FXML
+    Button ButtonTimKiem;
+    @FXML
+    private TextField searchTextField;
+    @FXML
+    private void handleTimKiem(ActionEvent event){
+        String keyword = searchTextField.getText().toLowerCase();
+        FilteredList<Household> filteredData = new FilteredList<>(tableView.getItems(), p -> true);
+
+        filteredData.setPredicate(household -> {
+            return keyword.isEmpty() ||
+                    household.getCanHo().toLowerCase().contains(keyword) ||
+                    household.getChuHo().toLowerCase().contains(keyword) ||
+                    household.getDienthoai().toLowerCase().contains(keyword) ||
+                    String.valueOf(household.getId()).toLowerCase().contains(keyword) ||
+                    String.valueOf(household.getSoThanhVien()).toLowerCase().contains(keyword);
+        });
+
+
+        if (!filteredData.isEmpty()) {
+            tableView.setItems(filteredData);
+        } else {
+            Alert alert = new Alert(Alert.AlertType.INFORMATION);
+            alert.setTitle("Thông báo");
+            alert.setHeaderText(null);
+            alert.setContentText("Không tìm thấy thông tin phù hợp!");
+            alert.showAndWait();
+        }
+
+    }
 
     @FXML
     private TableView<admin_ThongTinCanHoController.Household> tableView;
@@ -50,19 +79,38 @@ public class admin_ThongTinCanHoController extends admin_ChuyenTrangController {
         DienThoaiColumn.setCellValueFactory(cellData -> new ReadOnlyObjectWrapper<>(cellData.getValue().getDienthoai()));
         SoThanhVienColumn.setCellValueFactory(cellData -> new ReadOnlyObjectWrapper<>(cellData.getValue().getSoThanhVien()));
 
+        CanHoColumn.setCellFactory(column -> new TableCell<Household, String>() {
+            @Override
+            protected void updateItem(String item, boolean empty) {
+                super.updateItem(item, empty);
+                if (item == null || empty) {
+                    setText(null);
+                    setStyle("");
+                } else {
+                    setText(item); // Set the text of the cell to the value of the item
+
+                    if ("101".equals(item) || "201".equals(item)) {
+                        setStyle("-fx-text-fill: red;");
+                    } else {
+                        setStyle("-fx-text-fill: black;");
+                    }
+                }
+            }
+        });
 
         // Create and add data to the table
         ObservableList<admin_ThongTinCanHoController.Household> data = FXCollections.observableArrayList(
                 new admin_ThongTinCanHoController.Household(1, "101", "Nguyễn Thị Hằng", "0989958699",2),
+                new admin_ThongTinCanHoController.Household(8, "201", "Lương Văn Đức", "0989958699",2),
                 new admin_ThongTinCanHoController.Household(2, "102", "Hoàng Thị Minh Nguyệt", "0912738073",3),
-                new admin_ThongTinCanHoController.Household(2, "103", "Nguyễn Thanh Mai", "09112345678",3),
-                new admin_ThongTinCanHoController.Household(2, "104", "Trần Ngọc Linh", "09198765432",1),
-                new admin_ThongTinCanHoController.Household(2, "105", "Nguyễn Ngọc Khánh", "09123456789",2),
-                new admin_ThongTinCanHoController.Household(2, "106", "Nguyễn Tiến Dũng", "09187654321",4),
-                new admin_ThongTinCanHoController.Household(2, "107", "Mai Ngọc Linh", "09134567890",3),
-                new admin_ThongTinCanHoController.Household(2, "108", "Phạm Ngọc Ngà", "09176543210",2),
-                new admin_ThongTinCanHoController.Household(2, "201", "Trần Phương Anh", "09154321098",2),
-                new admin_ThongTinCanHoController.Household(2, "202", "Lương Thanh Hà", "09189012345",3)
+                new admin_ThongTinCanHoController.Household(3, "103", "Nguyễn Thanh Mai", "09112345678",3),
+                new admin_ThongTinCanHoController.Household(3, "104", "Trần Ngọc Linh", "09198765432",1),
+                new admin_ThongTinCanHoController.Household(4, "105", "Nguyễn Ngọc Khánh", "09123456789",2),
+                new admin_ThongTinCanHoController.Household(5, "106", "Nguyễn Tiến Dũng", "09187654321",4),
+                new admin_ThongTinCanHoController.Household(6, "107", "Mai Ngọc Linh", "09134567890",3),
+                new admin_ThongTinCanHoController.Household(7, "108", "Phạm Ngọc Ngà", "09176543210",2),
+                new admin_ThongTinCanHoController.Household(8, "201", "Lương Văn Đức", "0989958699",2),
+                new admin_ThongTinCanHoController.Household(9, "202", "Lương Thanh Hà", "09189012345",3)
 
             /* dự phòng
                 new admin_ThongTinNhanKhauController.Household(1, "203", "Lương Văn Đức", "0989958699",2,"..."),
@@ -86,7 +134,7 @@ public class admin_ThongTinCanHoController extends admin_ChuyenTrangController {
                     setText(null);
                     setStyle("");
                 } else {
-                    // Format cell
+
                     setText(item.toString()); // Convert integer to String
                     getStyleClass().add("center-aligned-cell"); // apply the CSS class
                 }
