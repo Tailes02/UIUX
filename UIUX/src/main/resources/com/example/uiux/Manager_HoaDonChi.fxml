@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.image.Image?>
@@ -14,7 +15,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="720" prefWidth="1280" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.uiux.Manager_HoaDonChiController">
+<AnchorPane prefHeight="720" prefWidth="1280" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.uiux.Manager_HoaDonChiController">
     <GridPane fx:id="mainGrid" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <columnConstraints>
             <ColumnConstraints percentWidth="20.0" />
@@ -285,11 +286,11 @@
          <children>
              <TableView fx:id="tableView" prefHeight="200.0" prefWidth="200.0" style=" -fx-alignment: TOP_RIGHT" stylesheets="@style.css" GridPane.columnIndex="2" GridPane.columnSpan="16" GridPane.rowIndex="3" GridPane.rowSpan="13">
                  <columns>
-                     <TableColumn fx:id="IdColumn" prefWidth="51.2" text="ID" />
-                     <TableColumn fx:id="TenColumn" prefWidth="332.8" text="Tên khoản thu" />
+                     <TableColumn fx:id="IdColumn" prefWidth="102.4" text="ID" />
+                     <TableColumn fx:id="TenColumn" prefWidth="307.2" text="Tên khoản thu" />
                      <TableColumn fx:id="SoTienColumn" prefWidth="153.6" text="Số tiền" />
                      <TableColumn fx:id="ThoiGianColumn" prefWidth="102.4" text="Thời gian" />
-                     <TableColumn fx:id="ThongTinChiTietColumn" prefWidth="25.6" />
+                     <TableColumn fx:id="GhiChuColumn" prefWidth="204.8" text="Ghi chú" />
 
                  </columns>
              </TableView>
@@ -298,11 +299,21 @@
                   <Font size="15.0" />
                </font>
             </Button>
-            <Button mnemonicParsing="false" prefHeight="84.0" prefWidth="147.0" style="-fx-border-radius: 25; -fx-background-radius: 25; -fx-background-color: #ffffff; -fx-border-color: #0B8C56;" text="Xuất excel" GridPane.columnIndex="16" GridPane.columnSpan="2" GridPane.rowIndex="17" GridPane.rowSpan="2">
+            <Button mnemonicParsing="false" prefHeight="84.0" prefWidth="147.0" style="-fx-border-radius: 25; -fx-background-radius: 25; -fx-background-color: #ffffff; -fx-border-color: #0B8C56;" text="Xem chi tiết" GridPane.columnIndex="16" GridPane.columnSpan="2" GridPane.rowIndex="17" GridPane.rowSpan="2">
                <font>
                   <Font size="15.0" />
                </font>
             </Button>
+            <CheckBox mnemonicParsing="false" text="Thu" GridPane.columnIndex="14" GridPane.columnSpan="2" GridPane.rowIndex="1">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </CheckBox>
+            <CheckBox mnemonicParsing="false" text="Chi" GridPane.columnIndex="16" GridPane.columnSpan="2" GridPane.rowIndex="1">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </CheckBox>
          </children>
         </GridPane>
 
