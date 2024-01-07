@@ -352,17 +352,17 @@
                         </FXCollections>
                     </items>
                 </ComboBox>
-                <Button mnemonicParsing="false" prefHeight="90.0" prefWidth="93.0" style="-fx-border-radius: 30; -fx-background-radius: 30; -fx-border-color: #0B8C56; -fx-background-color: #ffffff;" text="Hủy" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="16" GridPane.rowSpan="2">
+                <Button mnemonicParsing="false" onAction="#handleButtonQuayLai" prefHeight="90.0" prefWidth="93.0" style="-fx-border-radius: 30; -fx-background-radius: 30; -fx-border-color: #0B8C56; -fx-background-color: #ffffff;" text="Hủy" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="16" GridPane.rowSpan="2">
                     <font>
                         <Font name="System Bold" size="15.0" />
                     </font>
                 </Button>
-                <Button mnemonicParsing="false" prefHeight="55.0" prefWidth="273.0" style="-fx-border-radius: 20; -fx-background-radius: 20; -fx-border-color: #0B8C56; -fx-background-color: #ffffff;" text="Xác nhận" GridPane.columnIndex="14" GridPane.columnSpan="4" GridPane.rowIndex="16" GridPane.rowSpan="2">
+                <Button mnemonicParsing="false" onAction="#handleXacNhanButton" prefHeight="55.0" prefWidth="273.0" style="-fx-border-radius: 20; -fx-background-radius: 20; -fx-border-color: #0B8C56; -fx-background-color: #ffffff;" text="Xác nhận" GridPane.columnIndex="14" GridPane.columnSpan="4" GridPane.rowIndex="16" GridPane.rowSpan="2">
                     <font>
                         <Font name="System Bold" size="15.0" />
                     </font>
                 </Button>
-                <TextField prefHeight="27.0" prefWidth="335.0" promptText="Nguyễn Văn A" style="-fx-border-radius: 20; -fx-background-radius: 20;" GridPane.columnIndex="2" GridPane.columnSpan="6" GridPane.rowIndex="5" />
+                <TextField fx:id="hoTenTextField" prefHeight="27.0" prefWidth="335.0" promptText="Nguyễn Văn A" style="-fx-border-radius: 20; -fx-background-radius: 20;" GridPane.columnIndex="2" GridPane.columnSpan="6" GridPane.rowIndex="5" />
                 <TextField prefHeight="27.0" prefWidth="335.0" promptText="035202000987" style="-fx-border-radius: 20; -fx-background-radius: 20;" GridPane.columnIndex="2" GridPane.columnSpan="6" GridPane.rowIndex="7" />
                 <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="12" GridPane.columnSpan="7" GridPane.rowIndex="4">
                     <children>
@@ -410,14 +410,14 @@
             </Text>
             <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: FFFFFF; -fx-background-radius: 20;" GridPane.columnIndex="2" GridPane.columnSpan="6" GridPane.rowIndex="3">
                <children>
-                  <Text layoutX="8.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="101">
+                  <Text layoutX="8.0" layoutY="21.0" strokeType="OUTSIDE" strokeWidth="0.0" text="101">
                      <font>
-                        <Font size="20.0" />
+                        <Font size="18.0" />
                      </font>
                   </Text>
                </children>
             </Pane>
-            <ComboBox prefHeight="30.0" prefWidth="328.0" GridPane.columnIndex="12" GridPane.columnSpan="6" GridPane.rowIndex="11" />
+            <ComboBox fx:id="roleComboBox" prefHeight="30.0" prefWidth="328.0" GridPane.columnIndex="12" GridPane.columnSpan="6" GridPane.rowIndex="11" />
             </children>
         </GridPane>
 

@@ -8,7 +8,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 
-public class admin_ThongTinCanHoController extends admin_ChuyenTrangController {
+public class admin_ThongTinCanHoSauThayDoiController extends admin_ChuyenTrangController {
     @FXML
     Button ButtonTimKiem;
     @FXML
@@ -37,26 +37,24 @@ public class admin_ThongTinCanHoController extends admin_ChuyenTrangController {
             alert.setContentText("Không tìm thấy thông tin phù hợp!");
             alert.showAndWait();
         }
-
     }
+    @FXML
+    private TableView<admin_ThongTinCanHoSauThayDoiController.Household> tableView;
 
     @FXML
-    private TableView<admin_ThongTinCanHoController.Household> tableView;
+    private TableColumn<admin_ThongTinCanHoSauThayDoiController.Household, String> IdColumn;
 
     @FXML
-    private TableColumn<admin_ThongTinCanHoController.Household, String> IdColumn;
+    private TableColumn<admin_ThongTinCanHoSauThayDoiController.Household, String> CanHoColumn;
 
     @FXML
-    private TableColumn<admin_ThongTinCanHoController.Household, String> CanHoColumn;
+    private TableColumn<admin_ThongTinCanHoSauThayDoiController.Household, String> ChuHoColumn;
 
     @FXML
-    private TableColumn<admin_ThongTinCanHoController.Household, String> ChuHoColumn;
+    private TableColumn<admin_ThongTinCanHoSauThayDoiController.Household, String> DienThoaiColumn;
 
     @FXML
-    private TableColumn<admin_ThongTinCanHoController.Household, String> DienThoaiColumn;
-
-    @FXML
-    private TableColumn<admin_ThongTinCanHoController.Household, Integer> SoThanhVienColumn;
+    private TableColumn<admin_ThongTinCanHoSauThayDoiController.Household, Integer> SoThanhVienColumn;
 
     @FXML
     private Button ButtonXemChiTiet;
@@ -89,7 +87,7 @@ public class admin_ThongTinCanHoController extends admin_ChuyenTrangController {
                 } else {
                     setText(item); // Set the text of the cell to the value of the item
 
-                    if ("000".equals(item) ||"101".equals(item) || "201".equals(item)) {
+                    if ("000".equals(item) || "201".equals(item)) {
                         setStyle("-fx-text-fill: red;");
                     } else {
                         setStyle("-fx-text-fill: black;");
@@ -99,19 +97,18 @@ public class admin_ThongTinCanHoController extends admin_ChuyenTrangController {
         });
 
         // Create and add data to the table
-        ObservableList<admin_ThongTinCanHoController.Household> data = FXCollections.observableArrayList(
-                new admin_ThongTinCanHoController.Household("QL01", "000", "Nguyễn Thu Trang", "0976800423",1),
-                new admin_ThongTinCanHoController.Household("1", "101", "Nguyễn Thị Hằng", "0989958699",2),
-                new admin_ThongTinCanHoController.Household("8", "201", "Lương Văn Đức", "0989958699",2),
-                new admin_ThongTinCanHoController.Household("2", "102", "Hoàng Thị Minh Nguyệt", "0912738073",3),
-                new admin_ThongTinCanHoController.Household("3", "103", "Nguyễn Thanh Mai", "09112345678",3),
-                new admin_ThongTinCanHoController.Household("4", "104", "Trần Ngọc Linh", "09198765432",1),
-                new admin_ThongTinCanHoController.Household("5", "105", "Nguyễn Ngọc Khánh", "09123456789",2),
-                new admin_ThongTinCanHoController.Household("6", "106", "Nguyễn Tiến Dũng", "09187654321",4),
-                new admin_ThongTinCanHoController.Household("7", "107", "Mai Ngọc Linh", "09134567890",3),
-                new admin_ThongTinCanHoController.Household("8", "108", "Phạm Ngọc Ngà", "09176543210",2),
-                new admin_ThongTinCanHoController.Household("10", "202", "Lương Thanh Hà", "09189012345",3),
-                new admin_ThongTinCanHoController.Household("11", "301", "Trịnh Phú Quang", "0912738037",1)
+        ObservableList<admin_ThongTinCanHoSauThayDoiController.Household> data = FXCollections.observableArrayList(
+                new admin_ThongTinCanHoSauThayDoiController.Household("QL01", "000", "Nguyễn Thu Trang", "0976800423",1),
+                new admin_ThongTinCanHoSauThayDoiController.Household("8", "201", "Lương Văn Đức", "0989958699",2),
+                new admin_ThongTinCanHoSauThayDoiController.Household("1", "101", "Nguyễn Thị Hằng", "0989958699",2),
+                new admin_ThongTinCanHoSauThayDoiController.Household("2", "102", "Hoàng Thị Minh Nguyệt", "0912738073",3),
+                new admin_ThongTinCanHoSauThayDoiController.Household("3", "103", "Nguyễn Thanh Mai", "09112345678",3),
+                new admin_ThongTinCanHoSauThayDoiController.Household("4", "104", "Trần Ngọc Linh", "09198765432",1),
+                new admin_ThongTinCanHoSauThayDoiController.Household("5", "105", "Nguyễn Ngọc Khánh", "09123456789",2),
+                new admin_ThongTinCanHoSauThayDoiController.Household("6", "106", "Nguyễn Tiến Dũng", "09187654321",4),
+                new admin_ThongTinCanHoSauThayDoiController.Household("7", "107", "Mai Ngọc Linh", "09134567890",3),
+                new admin_ThongTinCanHoSauThayDoiController.Household("8", "108", "Phạm Ngọc Ngà", "09176543210",2),
+                new admin_ThongTinCanHoSauThayDoiController.Household("10", "202", "Lương Thanh Hà", "09189012345",3)
 
             /* dự phòng
                 new admin_ThongTinNhanKhauController.Household(1, "203", "Lương Văn Đức", "0989958699",2,"..."),
