@@ -10,7 +10,7 @@ import javafx.stage.Stage;
 public class admin_ChuyenTrangController {
     public void showThongBaoPopup() {
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("citizen_ThongBao.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("admin_ThongBao.fxml"));
             Parent root = loader.load();
 
             Stage popupStage = new Stage();

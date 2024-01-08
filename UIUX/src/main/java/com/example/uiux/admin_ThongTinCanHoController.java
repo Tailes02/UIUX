@@ -101,7 +101,7 @@ public class admin_ThongTinCanHoController extends admin_ChuyenTrangController {
         // Create and add data to the table
         ObservableList<admin_ThongTinCanHoController.Household> data = FXCollections.observableArrayList(
                 new admin_ThongTinCanHoController.Household("QL01", "000", "Nguyễn Thu Trang", "0976800423",1),
-                new admin_ThongTinCanHoController.Household("1", "101", "Nguyễn Thị Hằng", "0989958699",2),
+                new admin_ThongTinCanHoController.Household("1", "101", "Nguyễn Hàn My", "0989958699",2),
                 new admin_ThongTinCanHoController.Household("8", "201", "Lương Văn Đức", "0989958699",2),
                 new admin_ThongTinCanHoController.Household("2", "102", "Hoàng Thị Minh Nguyệt", "0912738073",3),
                 new admin_ThongTinCanHoController.Household("3", "103", "Nguyễn Thanh Mai", "09112345678",3),

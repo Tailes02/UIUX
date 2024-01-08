@@ -8,7 +8,7 @@ import javafx.scene.control.TableCell;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 
-public class Manager_HoaDonChiTietController extends Manager_ChuyenTrangController{
+public class Manager_HoaDonChiTietSauChinhSuaController extends Manager_ChuyenTrangController{
 
     @FXML
     private TableView<HoaDonChiTiet> tableView;
@@ -52,10 +52,10 @@ public class Manager_HoaDonChiTietController extends Manager_ChuyenTrangControll
 
         // Create and add data to the table
         ObservableList<HoaDonChiTiet> data = FXCollections.observableArrayList(
-                new HoaDonChiTiet("PD30000043546", 101, 284068,"20/09/2023","chưa đóng", ""),
                 new HoaDonChiTiet("PD30000043546", 101, 284068,"20/09/2023","đã đóng", ""),
-                new HoaDonChiTiet("PD30000043546", 101, 284068,"20/09/2023","đã đóng", ""),
-                new HoaDonChiTiet("PD30000043546", 101, 284068,"20/09/2023","đã đóng", "")
+                new HoaDonChiTiet("PD30000043547", 101, 284068,"20/09/2023","đã đóng", ""),
+                new HoaDonChiTiet("PD30000043548", 101, 284068,"20/09/2023","đã đóng", ""),
+                new HoaDonChiTiet("PD30000043549", 101, 284068,"20/09/2023","đã đóng", "")
 
 
 //                new HoaDonChiTiet("00003545", "Danh sách thu tiền nước tháng 9", "01/10/23 - 31/10/23", "Đang thu"),

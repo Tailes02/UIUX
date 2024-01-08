@@ -308,7 +308,7 @@
                                                 <Font size="20.0" />
                                             </font>
                                         </Text>
-                                        <Text layoutX="10.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nguyễn Thị Hằng">
+                                        <Text layoutX="10.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nguyễn Han My">
                                             <font>
                                                 <Font size="20.0" />
                                             </font>
@@ -385,7 +385,7 @@
                                         </VBox>
                                         <VBox fx:id="FirstInfoVbox" layoutX="10.0" prefHeight="172.8" prefWidth="255.2" spacing="5.0">
                                             <children>
-                                                <TextField fx:id="TextName" text="Nguyễn Thị Hằng">
+                                                <TextField fx:id="TextName" text="Nguyễn Han My">
                                                     <font>
                                                         <Font size="20.0" />
                                                     </font>

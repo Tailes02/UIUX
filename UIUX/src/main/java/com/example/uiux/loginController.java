@@ -34,7 +34,7 @@ public class loginController {
             Main.loadScene("admin_TrangChu.fxml");
         } else if (username.equals("manager") && password.equals("1")) {
             Main.loadScene("Manager_TrangChu.fxml");
-        } else if (username.equals("canho101") && password.equals("1")) {
+        } else if (username.equals("canho101") && password.equals("123456")) {
             Main.loadScene("citizen_TrangChu.fxml");
         } else{
             // Handle incorrect credentials (e.g., show an error message)

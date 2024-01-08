@@ -29,17 +29,6 @@ public class Manager_ThongTinCanHoController extends Manager_ChuyenTrangControll
     @FXML
     private TableColumn<Manager_ThongTinCanHoController.Household, Integer> SoThanhVienColumn;
 
-    @FXML
-    private Button ButtonXemChiTiet;
-
-    @FXML
-    public void handleXemChiTietButton(){
-        Main.loadScene("Manager_ThongTinChiTietCanHo.fxml");
-    }
-
-    public void handleThemTaiKhoanButton(){
-        Main.loadScene("Manager_ThemTaiKhoan.fxml");
-    }
 
 
     public void initialize() {
@@ -53,7 +42,7 @@ public class Manager_ThongTinCanHoController extends Manager_ChuyenTrangControll
 
         // Create and add data to the table
         ObservableList<Manager_ThongTinCanHoController.Household> data = FXCollections.observableArrayList(
-                new Manager_ThongTinCanHoController.Household(1, "101", "Nguyễn Thị Hằng", "0989958699",2),
+                new Manager_ThongTinCanHoController.Household(1, "101", "Nguyễn Hàn My", "0989958699",2),
                 new Manager_ThongTinCanHoController.Household(2, "102", "Hoàng Thị Minh Nguyệt", "0912738073",3),
                 new Manager_ThongTinCanHoController.Household(2, "103", "Nguyễn Thanh Mai", "09112345678",3),
                 new Manager_ThongTinCanHoController.Household(2, "104", "Trần Ngọc Linh", "09198765432",1),
@@ -93,21 +82,6 @@ public class Manager_ThongTinCanHoController extends Manager_ChuyenTrangControll
             }
         });
         tableView.setItems(data);
-
-        tableView.getSelectionModel().selectedItemProperty().addListener((obs, oldSelection, newSelection) -> {
-            if (newSelection == null) {
-                // No row selected, disable the button and reset style
-                ButtonXemChiTiet.setDisable(true);
-                ButtonXemChiTiet.setStyle("-fx-background-radius: 20; -fx-background-color: #c4c2c2; -fx-border-radius: 20;");
-            } else {
-                // A row is selected, enable the button and change style
-                ButtonXemChiTiet.setDisable(false);
-                ButtonXemChiTiet.setStyle("-fx-background-radius: 20; -fx-background-color: #ffffff; -fx-border-radius: 20; -fx-border-color: #0B8C56;");
-            }
-        });
-
-        // Initialize the button as disabled since initially no row is selected
-        ButtonXemChiTiet.setDisable(true);
     }
 
     // ... other methods as needed
