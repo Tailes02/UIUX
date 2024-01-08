@@ -26,17 +26,12 @@ public class Manager_ChatController extends Manager_ChuyenTrangController{
         chatScroll.setVbarPolicy(ScrollPane.ScrollBarPolicy.NEVER);
         userScroll.setVbarPolicy(ScrollPane.ScrollBarPolicy.NEVER);
         adminScroll.setVbarPolicy(ScrollPane.ScrollBarPolicy.NEVER);
-        loadUsers("Anh ơi nhà em mất điện rồi anh giúp em vớifjweopfjwaepofjopaweofj ","Phòng 309", "Cư dân",true);
-        loadUsers("Mày ôm tiền định trốn à ","Trịnh Phú Quang", "Quản lý",false);
-        loadUsers("Trả tiền đi em ơi, chơi xấu thế","Lê Hữu Tài","Quản trị", false);
+
+        loadUsers("Em đi thu tiền đến đâu rồi?","Nguyễn Thu Trang", "Quản lý",false);
+        loadUsers("Check phòng 306 nhé em, người ta đang phàn nàn","Chu Hữu Phức","Quản trị", false);
         loadUsers("Anh ơi bể nước nhà em gặp vấn đề","Phòng 409","Cư dân", false);
-        loadUsers("Sao em đóng tiền rồi mà không có điện","Phòng 509","Cư dân",false);
-        loadUsers("Mày ôm tiền định trốn à ","Trịnh Phú Quang", "Quản lý",false);
-        loadUsers("Trả tiền đi em ơi, chơi xấu thế","Lê Hữu Tài","Quản trị", false);
-        loadUsers("Anh ơi bể nước nhà em gặp vấn đề","Phòng 409","Cư dân", false);
-        loadUsers("Sao em đóng tiền rồi mà không có điện","Phòng 509","Cư dân",false);
-        loadUsers("Anh ơi bể nước nhà em gặp vấn đề","Phòng 409","Cư dân", false);
-        loadUsers("Sao em đóng tiền rồi mà không có điện","Phòng 509","Cư dân",false);
+        loadUsers("Anh ơi nhà em mất điện rồi, anh giúp em với","Phòng 309", "Cư dân",true);
+        loadUsers("Bây giờ em sạc xe điện ở đâu đây anh?","Phòng 509","Cư dân",false);
 
         loadMessages("Anh ơi nhà em mất điện rồi, anh giúp em với",1);
         loadMessages("Sao thế em? Em trình bày cụ thể đi",0);

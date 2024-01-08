@@ -29,18 +29,13 @@ public class citizen_ChatController extends citizen_ChuyenTrangController {
         chatScroll.setVbarPolicy(ScrollPane.ScrollBarPolicy.NEVER);
         userScroll.setVbarPolicy(ScrollPane.ScrollBarPolicy.NEVER);
         adminScroll.setVbarPolicy(ScrollPane.ScrollBarPolicy.NEVER);
-        loadUsers("Anh ơi nhà em mất điện rồi anh giúp em vớifjweopfjwaepofjopaweofj ","Phòng 309", "Cư dân",true);
-        loadUsers("Mày ôm tiền định trốn à ","Trịnh Phú Quang", "Quản lý",false);
-        loadUsers("Trả tiền đi em ơi, chơi xấu thế","Lê Hữu Tài","Quản trị", false);
-        loadUsers("Anh ơi bể nước nhà em gặp vấn đề","Phòng 409","Cư dân", false);
-        loadUsers("Sao em đóng tiền rồi mà không có điện","Phòng 509","Cư dân",false);
-        loadUsers("Mày ôm tiền định trốn à ","Trịnh Phú Quang", "Quản lý",false);
-        loadUsers("Trả tiền đi em ơi, chơi xấu thế","Lê Hữu Tài","Quản trị", false);
-        loadUsers("Anh ơi bể nước nhà em gặp vấn đề","Phòng 409","Cư dân", false);
-        loadUsers("Sao em đóng tiền rồi mà không có điện","Phòng 509","Cư dân",false);
+        loadUsers("Anh sẽ cử người xuống xem xét","Chu Hữu Phúc", "Quản trị",true);
+        loadUsers("Bây giờ xe điện chỉ được sạc trước 22h thôi nhé  ","Nguyễn Thu Trang", "Quản lý",false);
+        loadUsers("Nhà ông bà tắt nhạc đi được không? Ai mà ngủ được","Phòng 409","Cư dân", false);
+        loadUsers("Sao khu nhà bà hôi thế?","Phòng 509","Cư dân",false);
 
-        loadMessages("Anh ơi nhà em mất điện rồi, anh giúp em với",1);
-        loadMessages("Sao thế em? Em trình bày cụ thể đi",0);
+        loadMessages("Tầng này có mùi hôi quá anh",0);
+        loadMessages("Anh sẽ cử người xuống xem xét",1);
 
 
     }

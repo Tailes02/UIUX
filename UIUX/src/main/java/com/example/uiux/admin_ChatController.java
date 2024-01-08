@@ -26,20 +26,18 @@ public class admin_ChatController extends admin_ChuyenTrangController {
         chatScroll.setVbarPolicy(ScrollPane.ScrollBarPolicy.NEVER);
         userScroll.setVbarPolicy(ScrollPane.ScrollBarPolicy.NEVER);
         adminScroll.setVbarPolicy(ScrollPane.ScrollBarPolicy.NEVER);
-        loadUsers("Anh ơi nhà em mất điện rồi anh giúp em vớifjweopfjwaepofjopaweofj ","Phòng 309", "Cư dân",true);
-        loadUsers("Mày ôm tiền định trốn à ","Trịnh Phú Quang", "Quản lý",false);
-        loadUsers("Trả tiền đi em ơi, chơi xấu thế","Lê Hữu Tài","Quản trị", false);
-        loadUsers("Anh ơi bể nước nhà em gặp vấn đề","Phòng 409","Cư dân", false);
-        loadUsers("Sao em đóng tiền rồi mà không có điện","Phòng 509","Cư dân",false);
-        loadUsers("Mày ôm tiền định trốn à ","Trịnh Phú Quang", "Quản lý",false);
-        loadUsers("Trả tiền đi em ơi, chơi xấu thế","Lê Hữu Tài","Quản trị", false);
-        loadUsers("Anh ơi bể nước nhà em gặp vấn đề","Phòng 409","Cư dân", false);
-        loadUsers("Sao em đóng tiền rồi mà không có điện","Phòng 509","Cư dân",false);
-        loadUsers("Anh ơi bể nước nhà em gặp vấn đề","Phòng 409","Cư dân", false);
-        loadUsers("Sao em đóng tiền rồi mà không có điện","Phòng 509","Cư dân",false);
 
-        loadMessages("Anh ơi nhà em mất điện rồi, anh giúp em với",1);
-        loadMessages("Sao thế em? Em trình bày cụ thể đi",0);
+        loadUsers("Tháng này có sự kiện gì không anh?","Nguyễn Thu Trang", "Quản lý",false);
+        loadUsers("oke anh","Chu Hữu Phúc","Quản trị", true);
+        loadUsers("Anh ơi phòng bên cạnh ồn quá","Phòng 305","Cư dân", false);
+        loadUsers("Chó phòng bên mới phóng uế trước cửa nhà em anh ạ","Phòng 309", "Cư dân",false);
+        loadUsers("Tầng này có mùi hôi quá anh","Phòng 509","Cư dân",false);
+
+        loadMessages("Check phòng 306 nhé em, người ta đang phàn nàn đấy",0);
+        loadMessages("Có việc gì thế anh?",1);
+        loadMessages("12h đêm rồi vẫn còn bật nhạc nhẽo, đi check xem có gì phạm pháp không",0);
+        loadMessages("Có thì nhớ lập biên bản nhé",0);
+        loadMessages("oke anh",1);
 
 
     }
