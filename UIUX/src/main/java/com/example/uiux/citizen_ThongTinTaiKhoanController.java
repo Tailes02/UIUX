@@ -18,9 +18,7 @@ public class citizen_ThongTinTaiKhoanController extends citizen_ChuyenTrangContr
     private HBox currentlyHighlighted = null;
 
     @FXML
-    private void handledButtonThemNhanKhau() {
-//        Main.loadScene("admin_ThemNhanKhau.fxml");
-    }
+    private void ThemThanhVien(){Main.loadScene("citizen_ThemThanhVien.fxml");}
 
     @FXML
     private void handledXoa() {
