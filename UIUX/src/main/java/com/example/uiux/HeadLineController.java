@@ -24,17 +24,22 @@ public class HeadLineController {
     private String h;
     private String n;
     private String t;
+    private boolean r;
 
-    public HeadLineController(String h, String n, String t){
+    public HeadLineController(String h, String n, String t, boolean r){
         this.h=h;
         this.n=n;
         this.t=t;
+        this.r=r;
     }
     @FXML
     public void initialize() throws URISyntaxException {
         headline.setText(h);
         news.setText(n);
-        thumbnail.setImage((new Image(getClass().getResource(t).toURI().toString())));
+        if (r)
+            thumbnail.setImage((new Image(getClass().getResource(t).toURI().toString())));
+        else
+            thumbnail.setImage(new Image(t));
         }
     @FXML
     public void newsDetail() {
