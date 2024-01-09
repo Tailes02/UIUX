@@ -3,9 +3,11 @@ package com.example.uiux;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.control.ScrollPane;
+import javafx.scene.control.TextField;
 import javafx.scene.layout.VBox;
 
 import java.io.IOException;
+import java.util.Objects;
 
 public class citizen_ChatController extends citizen_ChuyenTrangController {
     @FXML
@@ -24,6 +26,8 @@ public class citizen_ChatController extends citizen_ChuyenTrangController {
     private ScrollPane chatScroll;
     @FXML
     private ScrollPane userScroll;
+    @FXML
+    private TextField textBos;
     @FXML
     public void initialize() {
         chatScroll.setVbarPolicy(ScrollPane.ScrollBarPolicy.NEVER);
@@ -66,6 +70,13 @@ public class citizen_ChatController extends citizen_ChuyenTrangController {
             chatColumn.getChildren().add(loader.getRoot());
         }catch (IOException e){
             e.printStackTrace();
+        }
+    }
+    @FXML
+    private void sendMessage(){
+        if (!(textBos.getText().isEmpty())) {
+            loadMessages(textBos.getText(), 0);
+            textBos.setText("");
         }
     }
 }
