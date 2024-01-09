@@ -54,7 +54,7 @@ public class citizen_TrangChuController extends citizen_ChuyenTrangController{
                 loader = new FXMLLoader(getClass().getResource("TinTuc_headline.fxml"));
             else
                 loader = new FXMLLoader(getClass().getResource("TinTuc_news.fxml"));
-            HeadLineController headlineController = new HeadLineController(headline, content,thumbnail);
+            HeadLineController headlineController = new HeadLineController(headline, content,thumbnail, true);
             loader.setController(headlineController);
             loader.load();
             headlineColumn.getChildren().add(loader.getRoot());

@@ -1,5 +1,6 @@
 package com.example.uiux;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.control.*;
@@ -28,6 +29,7 @@ public class admin_TrangChuController extends admin_ChuyenTrangController {
     private void handleButtonThemSuKienAction() {
         Dialog<Void> dialog = new Dialog<>();
         dialog.setTitle("Tạo Sự Kiện");
+        final String[] imageURL = {""};
 
         // Set the button types.
         ButtonType xacNhanButtonType = new ButtonType("Xác Nhận", ButtonBar.ButtonData.OK_DONE);
@@ -75,9 +77,17 @@ public class admin_TrangChuController extends admin_ChuyenTrangController {
             // Check if a file is selected
             if (selectedFile != null) {
                 // Create an image from the file path and set it to the ImageView
-                Image image = new Image(selectedFile.toURI().toString());
+                imageURL[0] = selectedFile.toURI().toString();
+                System.out.println(imageURL[0]);
+                Image image = new Image(imageURL[0]);
                 hinhAnh.setImage(image);
             }
+
+        });
+        Button okButton = (Button) dialog.getDialogPane().lookupButton(xacNhanButtonType);
+        okButton.setOnAction(event -> {
+            loadNews(noiDung.getText(),tenSuKien.getText(), false);
+            loadHeadlines(tenSuKien.getText(),noiDung.getText(), imageURL[0], false,false);
         });
 
         grid.add(title, 0, 0, 2, 1);
@@ -91,6 +101,7 @@ public class admin_TrangChuController extends admin_ChuyenTrangController {
 
         dialog.getDialogPane().setContent(grid);
         dialog.showAndWait();
+
     }
 
     @FXML
@@ -101,9 +112,9 @@ public class admin_TrangChuController extends admin_ChuyenTrangController {
         loadNews("Ban quản lý tổ chức khen thưởng cho học sinh xuất sắc","Tổng kết học kì 1 2023", false);
         loadNews("Yêu cầu mỗi hộ cử 1 người tham gia","Họp tổ dân phố 12/2023", false);
         loadNews("Hóa đơn đã được gửi đến từng hộ","Hóa đơn tháng 12/2023", false);
-        loadHeadlines("Giáng sinh 2023","Không khí Giáng Sinh đang tràn ngập trên khắp phố phường và len lỏi trong từng con ngõ nhỏ. Tại mỗi quốc gia, mỗi khu vực trên thế giới lại có những phong tục độc đáo riêng để đón chào ngày lễ. Chúng ta đã chiêm ngưỡng cây thông Noel với ánh đèn rực rỡ muôn màu, Ngày của người lớn, của trẻ thơ với các ước nguyện hồn nhiên, trong trẻo","/icon/LoginImage1.jpg",true);
-        loadHeadlines("Tổng kết học kì 1 2023-2024","Chung cư iHopT tổ chức trao thưởng cho học sinh xuất sắc học kì 1 năm học 2023-2024","/icon/LoginImage.jpg", false);
-        loadHeadlines("Trung thu 2023","Chung cư iHopT tổ chức lễ trung thu cho toàn bộ trẻ em thuộc địa bàn chung cư iHopT","/icon/apartment.png", false);
+        loadHeadlines("Giáng sinh 2023","Không khí Giáng Sinh đang tràn ngập trên khắp phố phường và len lỏi trong từng con ngõ nhỏ. Tại mỗi quốc gia, mỗi khu vực trên thế giới lại có những phong tục độc đáo riêng để đón chào ngày lễ. Chúng ta đã chiêm ngưỡng cây thông Noel với ánh đèn rực rỡ muôn màu, Ngày của người lớn, của trẻ thơ với các ước nguyện hồn nhiên, trong trẻo","/icon/LoginImage1.jpg",true, true);
+        loadHeadlines("Tổng kết học kì 1 2023-2024","Chung cư iHopT tổ chức trao thưởng cho học sinh xuất sắc học kì 1 năm học 2023-2024","/icon/LoginImage.jpg", false, true);
+        loadHeadlines("Trung thu 2023","Chung cư iHopT tổ chức lễ trung thu cho toàn bộ trẻ em thuộc địa bàn chung cư iHopT","/icon/apartment.png", false, true);
         ButtonThemSuKien.setOnAction(e -> handleButtonThemSuKienAction());
 
 
@@ -121,14 +132,14 @@ public class admin_TrangChuController extends admin_ChuyenTrangController {
             e.printStackTrace();
         }
     }
-    private void loadHeadlines(String headline, String content, String thumbnail, boolean largePhoto) {
+    private void loadHeadlines(String headline, String content, String thumbnail, boolean largePhoto, boolean resource) {
         try {
             FXMLLoader loader = new FXMLLoader();
             if (largePhoto)
                 loader = new FXMLLoader(getClass().getResource("TinTuc_headline.fxml"));
             else
                 loader = new FXMLLoader(getClass().getResource("TinTuc_news.fxml"));
-            HeadLineController headlineController = new HeadLineController(headline, content,thumbnail);
+            HeadLineController headlineController = new HeadLineController(headline, content,thumbnail, resource);
             loader.setController(headlineController);
             loader.load();
             headlineColumn.getChildren().add(loader.getRoot());
