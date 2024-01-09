@@ -52,7 +52,6 @@ public class Manager_HoaDonChiTietController extends Manager_ChuyenTrangControll
 
         // Create and add data to the table
         ObservableList<HoaDonChiTiet> data = FXCollections.observableArrayList(
-                new HoaDonChiTiet("PD30000043546", 101, 284068,"N/A","chưa đóng", ""),
                 new HoaDonChiTiet("PD30000043545", 306, 728123,"18/09/2023","đã đóng", ""),
                 new HoaDonChiTiet("PD30000043543", 102, 632916,"N/A","đã đóng", ""),
                 new HoaDonChiTiet("PD30000043542", 205, 284068,"11/09/2023","đã đóng", ""),
