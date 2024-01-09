@@ -33,7 +33,10 @@ public class Manager_HoaDonChiController extends Manager_ChuyenTrangController{
 
     @FXML
     private TableColumn<HoaDonChi, String> GhiChuColumn;
-
+    @FXML
+    public void handleThemMoi() {
+        Main.loadScene("Manager_TaoHoaDon.fxml");
+    }
     @FXML
     private CheckBox thuCheckBox;
 

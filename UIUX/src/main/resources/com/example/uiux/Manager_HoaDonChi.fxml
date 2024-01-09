@@ -282,14 +282,14 @@
              <TableView fx:id="tableView" prefHeight="200.0" prefWidth="200.0" style=" -fx-alignment: TOP_RIGHT" stylesheets="@style.css" GridPane.columnIndex="2" GridPane.columnSpan="16" GridPane.rowIndex="3" GridPane.rowSpan="13">
                  <columns>
                      <TableColumn fx:id="IdColumn" prefWidth="102.4" text="ID" />
-                     <TableColumn fx:id="TenColumn" prefWidth="307.2" text="Tên khoản thu" />
+                     <TableColumn fx:id="TenColumn" prefWidth="307.2" text="Tên khoản chi" />
                      <TableColumn fx:id="SoTienColumn" prefWidth="153.6" text="Số tiền" />
                      <TableColumn fx:id="ThoiGianColumn" prefWidth="102.4" text="Thời gian" />
                      <TableColumn fx:id="GhiChuColumn" prefWidth="204.8" text="Ghi chú" />
 
                  </columns>
              </TableView>
-            <Button mnemonicParsing="false" prefHeight="84.0" prefWidth="147.0" style="-fx-border-radius: 30; -fx-background-radius: 30; -fx-background-color: #ffffff; -fx-border-color: #0B8C56;" text="Thêm mới" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="17" GridPane.rowSpan="2">
+            <Button mnemonicParsing="false" prefHeight="84.0" fx:id="Themmoi" onAction="#handleThemmoi" prefWidth="147.0" style="-fx-border-radius: 30; -fx-background-radius: 30; -fx-background-color: #ffffff; -fx-border-color: #0B8C56;" text="Thêm mới" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="17" GridPane.rowSpan="2">
                <font>
                   <Font size="15.0" />
                </font>
