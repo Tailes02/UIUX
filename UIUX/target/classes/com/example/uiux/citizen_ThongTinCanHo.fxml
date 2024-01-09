@@ -12,10 +12,11 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="720" prefWidth="1280" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.uiux.citizen_ThongTinTaiKhoanController">
+<AnchorPane prefHeight="720" prefWidth="1280" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.uiux.citizen_ThongTinTaiKhoanController">
     <GridPane fx:id="mainGrid" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <columnConstraints>
             <ColumnConstraints percentWidth="20.0" />
@@ -162,6 +163,7 @@
                         <Font name="System Bold" size="20.0" />
                     </font>
                 </Button>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#E3D464" height="55.0" stroke="BLACK" strokeType="INSIDE" width="13.0" GridPane.rowIndex="2" GridPane.rowSpan="2" />
                 <!--                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#C5E99B" height="55.0" stroke="BLACK" strokeType="INSIDE" width="13.0" GridPane.rowIndex="3" GridPane.rowSpan="2" />-->
                 <!--                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#C5E99B" height="55.0" stroke="BLACK" strokeType="INSIDE" width="13.0" GridPane.rowIndex="5" GridPane.rowSpan="2" />-->
                 <!--                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#C5E99B" height="55.0" stroke="BLACK" strokeType="INSIDE" width="13.0" GridPane.rowIndex="7" GridPane.rowSpan="2" />-->
