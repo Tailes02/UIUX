@@ -32,7 +32,7 @@ public class Manager_HoaDonThuController extends Manager_ChuyenTrangController{
     private CheckBox chiCheckBox;
     @FXML
     public void handleThemMoi() {
-        Main.loadScene("Manager_TaoHoaDon.fxml");
+        Main.loadScene("Manager_TaoDanhSachThu.fxml");
     }
     @FXML
     public void handleXemChiTiet(){
