@@ -1,318 +1,165 @@
-<?xml version="1.0" encoding="UTF-8"?>
+package com.example.uiux;
 
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.TableColumn?>
-<?import javafx.scene.control.TableView?>
-<?import javafx.scene.control.TextField?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.ColumnConstraints?>
-<?import javafx.scene.layout.GridPane?>
-<?import javafx.scene.layout.Pane?>
-<?import javafx.scene.layout.RowConstraints?>
-<?import javafx.scene.shape.Rectangle?>
-<?import javafx.scene.text.Font?>
-<?import javafx.scene.text.Text?>
+import javafx.beans.property.ReadOnlyObjectWrapper;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
+import javafx.fxml.FXML;
+import javafx.scene.control.TableCell;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
 
-<AnchorPane prefHeight="720" prefWidth="1280" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.uiux.Manager_HoaDonChiTietController">
-    <GridPane fx:id="mainGrid" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-        <columnConstraints>
-            <ColumnConstraints percentWidth="20.0" />
-            <ColumnConstraints percentWidth="20.0" />
-            <ColumnConstraints percentWidth="20.0" />
-            <ColumnConstraints percentWidth="20.0" />
-            <ColumnConstraints percentWidth="20.0" />
-        </columnConstraints>
-        <!-- Define 5 rows with equal height -->
-        <rowConstraints>
-            <RowConstraints percentHeight="20.0" />
-            <RowConstraints percentHeight="20.0" />
-            <RowConstraints percentHeight="20.0" />
-            <RowConstraints percentHeight="20.0" />
-            <RowConstraints percentHeight="20.0" />
-        </rowConstraints>
-        <GridPane fx:id="HeaderGrid" prefHeight="144.0" prefWidth="1024.0" style="-fx-background-color: #FFFFFF;" GridPane.columnIndex="1" GridPane.columnSpan="4">
-            <columnConstraints>
-                <ColumnConstraints percentWidth="5.0" />
-                <ColumnConstraints percentWidth="5.0" />
-                <ColumnConstraints percentWidth="5.0" />
-                <ColumnConstraints percentWidth="5.0" />
-                <ColumnConstraints percentWidth="5.0" />
-                <ColumnConstraints percentWidth="5.0" />
-                <ColumnConstraints percentWidth="5.0" />
-                <ColumnConstraints percentWidth="5.0" />
-                <ColumnConstraints percentWidth="5.0" />
-                <ColumnConstraints percentWidth="5.0" />
-                <ColumnConstraints percentWidth="5.0" />
-                <ColumnConstraints percentWidth="5.0" />
-                <ColumnConstraints percentWidth="5.0" />
-                <ColumnConstraints percentWidth="5.0" />
-                <ColumnConstraints percentWidth="5.0" />
-                <ColumnConstraints percentWidth="5.0" />
-                <ColumnConstraints percentWidth="5.0" />
-                <ColumnConstraints percentWidth="5.0" />
-                <ColumnConstraints percentWidth="5.0" />
-                <ColumnConstraints percentWidth="5.0" />
-            </columnConstraints>
-            <rowConstraints>
-                <RowConstraints percentHeight="10.0" />
-                <RowConstraints percentHeight="10.0" />
-                <RowConstraints percentHeight="10.0" />
-                <RowConstraints percentHeight="10.0" />
-                <RowConstraints percentHeight="10.0" />
-                <RowConstraints percentHeight="10.0" />
-                <RowConstraints percentHeight="10.0" />
-                <RowConstraints percentHeight="10.0" />
-                <RowConstraints maxHeight="24.0" minHeight="10.0" percentHeight="10.0" prefHeight="22.0" />
-                <RowConstraints maxHeight="13.0" minHeight="5.0" percentHeight="10.0" prefHeight="7.0" />
+public class Manager_HoaDonChiTietController extends Manager_ChuyenTrangController{
 
-            </rowConstraints>
-            <children>
-                <Pane prefHeight="91.0" prefWidth="320.0" style="-fx-background-radius: 15;" GridPane.columnIndex="1" GridPane.columnSpan="10" GridPane.rowIndex="1" GridPane.rowSpan="6">
-                    <children>
-                        <Text layoutX="104.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nguyễn Thu Trang">
-                            <font>
-                                <Font name="System Bold" size="30.0" />
-                            </font>
-                        </Text>
-                        <Text layoutX="104.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quản lí">
-                            <font>
-                                <Font size="20.0" />
-                            </font>
-                        </Text>
-                        <ImageView fitHeight="68.0" fitWidth="76.0" layoutX="20.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
-                            <image>
-                                <Image url="@../../../icon/sbcf-default-avatar.png" />
-                            </image>
-                        </ImageView>
-                    </children>
-                </Pane>
-                <Pane fx:id="ButtonThongBao" prefHeight="53.0" prefWidth="105.0" style="-fx-border-color: #0B8C56; -fx-border-width: 1; -fx-border-radius: 20;" GridPane.columnIndex="15" GridPane.columnSpan="3" GridPane.rowIndex="2" GridPane.rowSpan="4">
-                    <children>
-                        <ImageView fitHeight="50.0" fitWidth="50.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
-                            <image>
-                                <Image url="@../../../icon/Bell.png" />
-                            </image>
-                        </ImageView>
-                        <Text layoutX="50.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Thông báo">
-                            <font>
-                                <Font size="20.0" />
-                            </font>
-                        </Text>
-                    </children>
-                </Pane>
-                <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: f4f4f4;" GridPane.columnSpan="20" GridPane.rowIndex="8" GridPane.rowSpan="2" />
-            </children>
-        </GridPane>
-        <GridPane fx:id="LeftSideGrid" style="-fx-background-color: #0B8C56;" GridPane.rowIndex="1" GridPane.rowSpan="4">
-            <columnConstraints>
-                <ColumnConstraints percentWidth="10.0" />
-                <ColumnConstraints percentWidth="10.0" />
-                <ColumnConstraints percentWidth="10.0" />
-                <ColumnConstraints percentWidth="10.0" />
-                <ColumnConstraints percentWidth="10.0" />
-                <ColumnConstraints percentWidth="10.0" />
-                <ColumnConstraints percentWidth="10.0" />
-                <ColumnConstraints percentWidth="10.0" />
-                <ColumnConstraints percentWidth="10.0" />
-                <ColumnConstraints percentWidth="10.0" />
-            </columnConstraints>
-            <rowConstraints>
-                <RowConstraints percentHeight="5.0" />
-                <RowConstraints percentHeight="5.0" />
-                <RowConstraints percentHeight="5.0" />
-                <RowConstraints percentHeight="5.0" />
-                <RowConstraints percentHeight="5.0" />
-                <RowConstraints percentHeight="5.0" />
-                <RowConstraints percentHeight="5.0" />
-                <RowConstraints percentHeight="5.0" />
-                <RowConstraints percentHeight="5.0" />
-                <RowConstraints percentHeight="5.0" />
-                <RowConstraints percentHeight="5.0" />
-                <RowConstraints percentHeight="5.0" />
-                <RowConstraints percentHeight="5.0" />
-                <RowConstraints percentHeight="5.0" />
-                <RowConstraints percentHeight="5.0" />
-                <RowConstraints percentHeight="5.0" />
-                <RowConstraints percentHeight="5.0" />
-                <RowConstraints percentHeight="5.0" />
-                <RowConstraints percentHeight="5.0" />
-                <RowConstraints percentHeight="5.0" />
-            </rowConstraints>
-            <children>
-                <Button fx:id="ButtonTrangChu" mnemonicParsing="false" onAction="#TrangChu" prefHeight="58.0" prefWidth="276.0" style="-fx-background-color: #0B8C56; -fx-padding: 0 0 0 0; -fx-alignment: CENTER_LEFT; -fx-margin: 0 0 54 0;" text="Trang chủ" textFill="WHITE" GridPane.columnIndex="1" GridPane.columnSpan="8" GridPane.rowSpan="2">
-                    <font>
-                        <Font name="System Bold" size="20.0" />
-                    </font>
-                </Button>
-                <Button fx:id="ButtonHoaDon" mnemonicParsing="false" prefHeight="81.0" prefWidth="288.0" style="-fx-background-color: #0B8C56; -fx-padding: 0 0 0 0; -fx-alignment: CENTER_LEFT; -fx-margin: 0 0 54 0;" text="Hóa đơn" textFill="WHITE" GridPane.columnIndex="1" GridPane.columnSpan="8" GridPane.rowIndex="6" GridPane.rowSpan="2">
-                    <font>
-                        <Font name="System Bold" size="20.0" />
-                    </font>
-                </Button>
-                <Button fx:id="ButtonThongTinCanHo" mnemonicParsing="false" onAction="#ThongTinCanHo" prefHeight="58.0" prefWidth="263.0" style="-fx-background-color: #0B8C56; -fx-padding: 0 0 0 0; -fx-alignment: CENTER_LEFT; -fx-margin: 0 0 54 0;" text="Thông tin căn hộ" textFill="WHITE" GridPane.columnIndex="1" GridPane.columnSpan="8" GridPane.rowIndex="4" GridPane.rowSpan="2">
-                    <font>
-                        <Font name="System Bold" size="20.0" />
-                    </font>
-                </Button>
-                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#E3D464" height="55.0" stroke="BLACK" strokeType="INSIDE" width="13.0" GridPane.rowIndex="6" GridPane.rowSpan="2" />
-                <Button fx:id="ButtonThongTinTaiKhoan" mnemonicParsing="false" onAction="#ThongTinTaiKhoan" prefHeight="58.0" prefWidth="204.0" style="-fx-background-color: #0B8C56; -fx-padding: 0 0 0 0; -fx-alignment: CENTER_LEFT; -fx-margin: 0 0 54 0;" text="Thông tin tài khoản" textFill="WHITE" GridPane.columnIndex="1" GridPane.columnSpan="8" GridPane.rowIndex="2" GridPane.rowSpan="2">
-                    <font>
-                        <Font name="System Bold" size="20.0" />
-                    </font>
-                </Button>
-                <Button fx:id="ButtonTinNhan" mnemonicParsing="false" onAction="#TinNhan" prefHeight="81.0" prefWidth="288.0" style="-fx-background-color: #0B8C56; -fx-padding: 0 0 0 0; -fx-alignment: CENTER_LEFT; -fx-margin: 0 0 54 0;" text="Tin nhắn" textFill="WHITE" GridPane.columnIndex="1" GridPane.columnSpan="8" GridPane.rowIndex="8" GridPane.rowSpan="2">
-                    <font>
-                        <Font name="System Bold" size="20.0" />
-                    </font>
-                </Button>
-                <!--                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#C5E99B" height="55.0" stroke="BLACK" strokeType="INSIDE" width="13.0" GridPane.rowIndex="3" GridPane.rowSpan="2" />-->
-                <!--                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#C5E99B" height="55.0" stroke="BLACK" strokeType="INSIDE" width="13.0" GridPane.rowIndex="5" GridPane.rowSpan="2" />-->
-                <!--                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#C5E99B" height="55.0" stroke="BLACK" strokeType="INSIDE" width="13.0" GridPane.rowIndex="7" GridPane.rowSpan="2" />-->
+    @FXML
+    private TableView<HoaDonChiTiet> tableView;
+
+    @FXML
+    private TableColumn<HoaDonChiTiet, String> IdColumn;
+
+    @FXML
+    private TableColumn<HoaDonChiTiet, Integer> PhongColumn;
+
+    @FXML
+    private TableColumn<HoaDonChiTiet, Integer> SoTienColumn;
+
+    @FXML
+    private TableColumn<HoaDonChiTiet, String> ThoiGianColumn;
+
+    @FXML
+    private TableColumn<HoaDonChiTiet, String> TinhTrangColumn;
+
+    @FXML
+    private TableColumn<HoaDonChiTiet, String> GhiChuColumn;
+    @FXML
+    public void handleQuayLai() {
+        Main.loadScene("Manager_HoaDonThu.fxml");
+    }
+
+    @FXML
+    public void handleChinhSuu() {
+        Main.loadScene("Manager_HoaDonChinhSua.fxml");
+    }
+
+    public void initialize() {
+        // Initialize your columns here
+        IdColumn.setCellValueFactory(cellData -> new ReadOnlyObjectWrapper<>(cellData.getValue().getId()));
+        PhongColumn.setCellValueFactory(cellData -> new ReadOnlyObjectWrapper<>(cellData.getValue().getPhong()));
+        SoTienColumn.setCellValueFactory(cellData -> new ReadOnlyObjectWrapper<>(cellData.getValue().getSoTien()));
+        ThoiGianColumn.setCellValueFactory(cellData -> new ReadOnlyObjectWrapper<>(cellData.getValue().getThoiGian()));
+        TinhTrangColumn.setCellValueFactory(cellData -> new ReadOnlyObjectWrapper<>(cellData.getValue().getTinhTrang()));
+        GhiChuColumn.setCellValueFactory(cellData -> new ReadOnlyObjectWrapper<>(cellData.getValue().getGhiChu()));
+
+
+        // Create and add data to the table
+        ObservableList<HoaDonChiTiet> data = FXCollections.observableArrayList(
+                new HoaDonChiTiet("PD30000043546", 101, 284068,"N/A","chưa đóng", ""),
+                new HoaDonChiTiet("PD30000043545", 306, 728123,"18/09/2023","đã đóng", ""),
+                new HoaDonChiTiet("PD30000043543", 102, 632916,"N/A","đã đóng", ""),
+                new HoaDonChiTiet("PD30000043542", 205, 284068,"11/09/2023","đã đóng", ""),
+                new HoaDonChiTiet("PD30000043541", 302, 372165,"07/09/2023","chưa đóng", ""),
+                new HoaDonChiTiet("PD30000043540", 104, 531272,"26/08/2023","đã đóng", ""),
+                new HoaDonChiTiet("PD30000043539", 201, 512748,"21/08/2023","đã đóng", ""),
+                new HoaDonChiTiet("PD30000043538", 103, 937145,"16/08/2023","đã đóng", "")
+
+
+//                new HoaDonChiTiet("00003545", "Danh sách thu tiền nước tháng 9", "01/10/23 - 31/10/23", "Đang thu"),
+//                new HoaDonChiTiet("00003544", "Danh sách thu phí vệ sinh 2023", "15/09/23 - 31/09/23", "Đã đóng")
+//                new HoaDonChiTiet("00003543", 450000, "Trần Ngọc Linh", "09198765432","Đang thu"),
+//                new HoaDonChiTiet("00003542", 205000, "Nguyễn Ngọc Khánh", "09123456789","Đang thu"),
+//                new HoaDonChiTiet("00003541", 201000, "Nguyễn Tiến Dũng", "09187654321","Đã đóng"),
+//                new HoaDonChiTiet("00003540", 206000, "Mai Ngọc Linh", "09134567890","Đang thu"),
+//                new HoaDonChiTiet("00003539", 200000, "Hoàng Thị Minh Nguyệt", "0912738073","Đã đóng"),
+//                new HoaDonChiTiet("00003538", 340000, "Nguyễn Thanh Mai", "09112345678","Đã đóng"),
+//                new HoaDonChiTiet("00003537", 450000, "Trần Ngọc Linh", "09198765432","Đang thu"),
+//                new HoaDonChiTiet("00003536", 205000, "Nguyễn Ngọc Khánh", "09123456789","Đang thu"),
+//                new HoaDonChiTiet("00003535", 201000, "Nguyễn Tiến Dũng", "09187654321","Đã đóng"),
+//                new HoaDonChiTiet("00003534", 206000, "Mai Ngọc Linh", "09134567890","Đang thu")
+
+            /* dự phòng
+                new admin_ThongTinNhanKhauController.HoaDonChiTiet(1, "203", "Lương Văn Đức", "0989958699",2,"..."),
+                new admin_ThongTinNhanKhauController.HoaDonChiTiet(2, "204", "Trần Ngọc An", "0912738073",3,"..."),
+                new admin_ThongTinNhanKhauController.HoaDonChiTiet(2, "205", "Trần Trọng Hoàng", "09112345678",3,"..."),
+                new admin_ThongTinNhanKhauController.HoaDonChiTiet(2, "206", "Trần Ngọc Linh", "09198765432",3,"..."),
+                new admin_ThongTinNhanKhauController.HoaDonChiTiet(2, "207", "Nguyễn Ngọc Khánh", "09123456789",3,"..."),
+                new admin_ThongTinNhanKhauController.HoaDonChiTiet(2, "208", "Nguyễn Tiến Dũng", "09187654321",3,"..."),
+                new admin_ThongTinNhanKhauController.HoaDonChiTiet(2, "301", "Mai Ngọc Linh", "09134567890",3,"..."),
+                new admin_ThongTinNhanKhauController.HoaDonChiTiet(2, "302", "Phạm Ngọc Ngà", "09176543210",3,"..."),
+                new admin_ThongTinNhanKhauController.HoaDonChiTiet(2, "303", "Trần Phương Anh", "09154321098",3,"...")
+                new admin_ThongTinNhanKhauController.HoaDonChiTiet(2, "304", "Lương Thanh Hà", "09189012345",3,"...")
+            */
+        );
+
+        tableView.setItems(data);
+    }
+
+    // ... other methods as needed
+    public class HoaDonChiTiet {
+        private String id;
+        private int phong;
+        private int soTien;
+        private String thoiGian;
+        private String tinhTrang;
+        private String ghiChu;
+
+        public HoaDonChiTiet(String id, int phong, int soTien, String thoiGian,String tinhTrang,String ghiChu) {
+            this.id = id;
+            this.phong = phong;
+            this.soTien = soTien;
+            this.thoiGian = thoiGian;
+            this.tinhTrang = tinhTrang;
+            this.ghiChu = ghiChu;
+        }
+
+        // Getters and setters for each property
+        public String getId() {
+            return id;
+        }
+
+        public void setId(String id) {
+            this.id = id;
+        }
+
+
+        public String getThoiGian() {
+            return thoiGian;
+        }
+
+        public void setThoiGian(String thoiGian) {
+            this.thoiGian = thoiGian;
+        }
+
+        public String getTinhTrang() {
+            return tinhTrang;
+        }
+
+        public void setTinhTrang(String tinhTrang) {
+            this.tinhTrang = tinhTrang;
+        }
+
+        public int getPhong() {
+            return phong;
+        }
+
+        public void setPhong(int phong) {
+            this.phong = phong;
+        }
+        public int getSoTien() {
+            return soTien;
+        }
+        public void setSoTien(int soTien) {
+            this.soTien = soTien;
+        }
+        public String getGhiChu() {
+            return ghiChu;
+        }
+        public void setGhiChu(String tinhTrang) {
+            this.ghiChu = ghiChu;
+        }
+
+
+    }
+
+}
 
 
 
-
-            </children>
-        </GridPane>
-        <GridPane fx:id="LeftHeader" style="-fx-background-color: #FFFFFF;">
-            <columnConstraints>
-                <ColumnConstraints percentWidth="5.0" />
-                <ColumnConstraints percentWidth="5.0" />
-                <ColumnConstraints percentWidth="5.0" />
-                <ColumnConstraints percentWidth="5.0" />
-                <ColumnConstraints percentWidth="5.0" />
-                <ColumnConstraints percentWidth="5.0" />
-                <ColumnConstraints percentWidth="5.0" />
-                <ColumnConstraints percentWidth="5.0" />
-                <ColumnConstraints percentWidth="5.0" />
-                <ColumnConstraints percentWidth="5.0" />
-                <ColumnConstraints percentWidth="5.0" />
-                <ColumnConstraints percentWidth="5.0" />
-                <ColumnConstraints percentWidth="5.0" />
-                <ColumnConstraints percentWidth="5.0" />
-                <ColumnConstraints percentWidth="5.0" />
-                <ColumnConstraints percentWidth="5.0" />
-                <ColumnConstraints percentWidth="5.0" />
-                <ColumnConstraints percentWidth="5.0" />
-                <ColumnConstraints percentWidth="5.0" />
-                <ColumnConstraints percentWidth="5.0" />
-            </columnConstraints>
-            <rowConstraints>
-                <RowConstraints percentHeight="10.0" />
-                <RowConstraints percentHeight="10.0" />
-                <RowConstraints percentHeight="10.0" />
-                <RowConstraints percentHeight="10.0" />
-                <RowConstraints percentHeight="10.0" />
-                <RowConstraints percentHeight="10.0" />
-                <RowConstraints percentHeight="10.0" />
-                <RowConstraints percentHeight="10.0" />
-                <RowConstraints minHeight="10.0" percentHeight="10.0" prefHeight="30.0" />
-                <RowConstraints minHeight="10.0" percentHeight="10.0" prefHeight="30.0" />
-
-            </rowConstraints>
-            <children>
-                <ImageView fitHeight="59.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.columnSpan="4" GridPane.rowIndex="3" GridPane.rowSpan="2">
-                    <image>
-                        <Image url="@../Logo.jpg" />
-                    </image>
-                </ImageView>
-
-                <Pane prefHeight="72.0" prefWidth="145.0" GridPane.columnIndex="7" GridPane.columnSpan="11" GridPane.rowIndex="1" GridPane.rowSpan="5">
-                    <children>
-                        <Text layoutX="14.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="iHopT">
-                            <font>
-                                <Font name="System Bold" size="40.0" />
-                            </font>
-                        </Text>
-                    </children>
-                </Pane>
-                <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #0B8C56;" GridPane.columnSpan="20" GridPane.rowIndex="8" GridPane.rowSpan="2" />
-                <Pane fx:id="BorderPane" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: lightgray; -fx-border-width: 1;" GridPane.columnSpan="20" GridPane.rowSpan="8" />
-            </children>
-        </GridPane>
-        <GridPane fx:id="InformationGrid" prefHeight="554.0" prefWidth="1024.0" style="-fx-background-radius: 40; -fx-border-radius: 40;" GridPane.columnIndex="1" GridPane.columnSpan="4" GridPane.rowIndex="1" GridPane.rowSpan="4">
-            <columnConstraints>
-                <ColumnConstraints percentWidth="5.0" />
-                <ColumnConstraints percentWidth="5.0" />
-                <ColumnConstraints percentWidth="5.0" />
-                <ColumnConstraints percentWidth="5.0" />
-                <ColumnConstraints percentWidth="5.0" />
-                <ColumnConstraints percentWidth="5.0" />
-                <ColumnConstraints percentWidth="5.0" />
-                <ColumnConstraints percentWidth="5.0" />
-                <ColumnConstraints percentWidth="5.0" />
-                <ColumnConstraints percentWidth="5.0" />
-                <ColumnConstraints percentWidth="5.0" />
-                <ColumnConstraints percentWidth="5.0" />
-                <ColumnConstraints percentWidth="5.0" />
-                <ColumnConstraints percentWidth="5.0" />
-                <ColumnConstraints percentWidth="5.0" />
-                <ColumnConstraints percentWidth="5.0" />
-                <ColumnConstraints percentWidth="5.0" />
-                <ColumnConstraints percentWidth="5.0" />
-                <ColumnConstraints percentWidth="5.0" />
-                <ColumnConstraints percentWidth="5.0" />
-            </columnConstraints>
-            <rowConstraints>
-                <RowConstraints percentHeight="5.0" />
-                <RowConstraints percentHeight="5.0" />
-                <RowConstraints percentHeight="5.0" />
-                <RowConstraints percentHeight="5.0" />
-                <RowConstraints percentHeight="5.0" />
-                <RowConstraints percentHeight="5.0" />
-                <RowConstraints percentHeight="5.0" />
-                <RowConstraints percentHeight="5.0" />
-                <RowConstraints percentHeight="5.0" />
-                <RowConstraints percentHeight="5.0" />
-                <RowConstraints percentHeight="5.0" />
-                <RowConstraints percentHeight="5.0" />
-                <RowConstraints percentHeight="5.0" />
-                <RowConstraints percentHeight="5.0" />
-                <RowConstraints percentHeight="5.0" />
-                <RowConstraints percentHeight="5.0" />
-                <RowConstraints percentHeight="5.0" />
-                <RowConstraints percentHeight="5.0" />
-                <RowConstraints percentHeight="5.0" />
-                <RowConstraints percentHeight="5.0" />
-
-            </rowConstraints>
-         <children>
-             <TableView fx:id="tableView" prefHeight="200.0" prefWidth="200.0" style=" -fx-alignment: TOP_RIGHT" stylesheets="@style.css" GridPane.columnIndex="2" GridPane.columnSpan="16" GridPane.rowIndex="3" GridPane.rowSpan="13">
-                 <columns>
-                     <TableColumn fx:id="IdColumn" prefWidth="153.6" text="ID" />
-                     <TableColumn fx:id="PhongColumn" prefWidth="76.8" text="Phòng" />
-                     <TableColumn fx:id="SoTienColumn" prefWidth="128" text="Số tiền" />
-                     <TableColumn fx:id="ThoiGianColumn" prefWidth="128" text="Thời gian" />
-                     <TableColumn fx:id="TinhTrangColumn" prefWidth="128" text="Tình trạng" />
-                     <TableColumn fx:id="GhiChuColumn" prefWidth="200" text="Ghi chú" />
-                 </columns>
-             </TableView>
-            <Button mnemonicParsing="false" onAction="#handleQuayLai" prefHeight="84.0" prefWidth="147.0" style="-fx-border-radius: 30; -fx-background-radius: 30; -fx-background-color: #ffffff; -fx-border-color: #0B8C56;" text="Quay lại" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="17" GridPane.rowSpan="2">
-               <font>
-                  <Font size="15.0" />
-               </font>
-            </Button>
-            <Button mnemonicParsing="false" onAction="#handleChinhSuu" prefHeight="84.0" prefWidth="147.0" style="-fx-border-radius: 30; -fx-background-radius: 30; -fx-background-color: #ffffff; -fx-border-color: #0B8C56;" text="Chỉnh sửa" GridPane.columnIndex="16" GridPane.columnSpan="2" GridPane.rowIndex="17" GridPane.rowSpan="2">
-               <font>
-                  <Font size="15.0" />
-               </font>
-            </Button>
-            <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.columnSpan="10">
-               <children>
-                  <Text layoutY="21.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Danh sách đóng tiền điện tháng 9">
-                     <font>
-                        <Font name="System Bold" size="25.0" />
-                     </font>
-                  </Text>
-               </children>
-            </Pane>
-            <TextField prefHeight="31.0" prefWidth="206.0" GridPane.columnIndex="2" GridPane.columnSpan="4" GridPane.rowIndex="1" />
-            <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="116.0" text="Tìm kiếm" GridPane.columnIndex="6" GridPane.columnSpan="2" GridPane.rowIndex="1" />
-         </children>
-        </GridPane>
-
-        <!-- Grid content goes here -->
-    </GridPane>
-</AnchorPane>
