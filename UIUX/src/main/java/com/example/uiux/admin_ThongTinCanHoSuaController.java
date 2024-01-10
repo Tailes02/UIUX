@@ -32,6 +32,10 @@ public class admin_ThongTinCanHoSuaController extends admin_ChuyenTrangControlle
     }
 
     @FXML
+    private void handledButtonXoa(){Main.loadScene("admin_ThongTinCanHoSuaXoa.fxml");}
+
+
+    @FXML
     private void onInformationHBox0Clicked(MouseEvent event) {
         highlight(InformationHBox0);
     }
