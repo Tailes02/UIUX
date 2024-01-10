@@ -112,9 +112,9 @@ public class admin_TrangChuController extends admin_ChuyenTrangController {
         loadNews("Ban quản lý tổ chức khen thưởng cho học sinh xuất sắc","Tổng kết học kì 1 2023", false);
         loadNews("Yêu cầu mỗi hộ cử 1 người tham gia","Họp tổ dân phố 12/2023", false);
         loadNews("Hóa đơn đã được gửi đến từng hộ","Hóa đơn tháng 12/2023", false);
-        loadHeadlines("Giáng sinh 2023","Không khí Giáng Sinh đang tràn ngập trên khắp phố phường và len lỏi trong từng con ngõ nhỏ. Tại mỗi quốc gia, mỗi khu vực trên thế giới lại có những phong tục độc đáo riêng để đón chào ngày lễ. Chúng ta đã chiêm ngưỡng cây thông Noel với ánh đèn rực rỡ muôn màu, Ngày của người lớn, của trẻ thơ với các ước nguyện hồn nhiên, trong trẻo","/icon/LoginImage1.jpg",true, true);
-        loadHeadlines("Tổng kết học kì 1 2023-2024","Chung cư iHopT tổ chức trao thưởng cho học sinh xuất sắc học kì 1 năm học 2023-2024","/icon/LoginImage.jpg", false, true);
-        loadHeadlines("Trung thu 2023","Chung cư iHopT tổ chức lễ trung thu cho toàn bộ trẻ em thuộc địa bàn chung cư iHopT","/icon/apartment.png", false, true);
+        loadHeadlines("Giáng sinh 2023","Không khí Giáng Sinh đang tràn ngập trên khắp phố phường và len lỏi trong từng con ngõ nhỏ. Tại mỗi quốc gia, mỗi khu vực trên thế giới lại có những phong tục độc đáo riêng để đón chào ngày lễ. Chúng ta đã chiêm ngưỡng cây thông Noel với ánh đèn rực rỡ muôn màu, Ngày của người lớn, của trẻ thơ với các ước nguyện hồn nhiên, trong trẻo","/icon/Giang-Sinh.jpg",true, true);
+        loadHeadlines("Tổng kết học kì 1 2023-2024","Chung cư iHopT tổ chức trao thưởng cho học sinh xuất sắc học kì 1 năm học 2023-2024","/icon/1_1.jpg", false, true);
+        loadHeadlines("Trung thu 2023","Chung cư iHopT tổ chức lễ trung thu cho toàn bộ trẻ em thuộc địa bàn chung cư iHopT","/icon/2022_09_10_22_16_301.jpg", false, true);
         ButtonThemSuKien.setOnAction(e -> handleButtonThemSuKienAction());
 
 

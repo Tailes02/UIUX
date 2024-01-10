@@ -357,12 +357,12 @@
                 </Pane>
                 <ScrollPane fx:id="MainScrollPane" hbarPolicy="NEVER" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #0B8C56;" GridPane.columnIndex="2" GridPane.columnSpan="16" GridPane.rowIndex="6" GridPane.rowSpan="10">
                     <content>
-                        <VBox fx:id="MainVBox" spacing="5">
+                        <VBox fx:id="MainVBox" spacing="15">
 
                             <children>
-                                <HBox fx:id="InformationHBox0" onMouseClicked="#onInformationHBox0Clicked" prefHeight="115.2" prefWidth="818.2" style="-fx-border-color: #0B8C56; -fx-border-width: 0 0 1 0;">
+                                <HBox fx:id="InformationHBox0" onMouseClicked="#onInformationHBox0Clicked" prefHeight="200.0" prefWidth="818.2" style="-fx-border-color: #0B8C56; -fx-border-width: 0 0 1 0;">
                                     <children>
-                                        <VBox prefHeight="172.8" prefWidth="153.9" spacing="5.0">
+                                        <VBox prefHeight="172.8" prefWidth="153.9" spacing="15.0">
                                             <children>
                                                 <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Họ tên:">
                                                     <font>
@@ -393,11 +393,14 @@
                                                         <Font size="20.0" />
                                                     </font>
                                                 </TextField>
-                                                <TextField fx:id="TextSex" layoutX="10.0" layoutY="32.0" text="Nữ">
-                                                    <font>
-                                                        <Font size="20.0" />
-                                                    </font>
-                                                </TextField>
+                                                <ComboBox fx:id="comboBoxSex0" value="Nữ">
+                                                    <items>
+                                                        <FXCollections fx:factory="observableArrayList">
+                                                            <String fx:value="Nữ" />
+                                                            <String fx:value="Nam" />
+                                                        </FXCollections>
+                                                    </items>
+                                                </ComboBox>
                                                 <TextField fx:id="DOB" layoutX="10.0" layoutY="62.0" text="14-12-2000">
                                                     <font>
                                                         <Font size="20.0" />
@@ -410,7 +413,7 @@
                                                 </TextField>
                                             </children>
                                         </VBox>
-                                        <VBox layoutX="250.0" prefHeight="172.8" prefWidth="102.7" spacing="5.0">
+                                        <VBox layoutX="250.0" prefHeight="172.8" prefWidth="102.7" spacing="15.0">
                                             <children>
                                                 <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Vai trò :">
                                                     <font>
@@ -465,9 +468,9 @@
                                         </VBox>
                                     </children>
                                 </HBox>
-                                <HBox fx:id="InformationHBox1" layoutX="10.0" layoutY="10.0" onMouseClicked="#onInformationHBox1Clicked" prefHeight="115.2" prefWidth="818.2" style="-fx-border-color: #0B8C56; -fx-border-width: 0 0 1 0;">
+                                <HBox fx:id="InformationHBox1" layoutX="10.0" layoutY="10.0" onMouseClicked="#onInformationHBox1Clicked" prefHeight="200.0" prefWidth="818.2" style="-fx-border-color: #0B8C56; -fx-border-width: 0 0 1 0;">
                                     <children>
-                                        <VBox prefHeight="172.8" prefWidth="153.9" spacing="5.0">
+                                        <VBox prefHeight="172.8" prefWidth="153.9" spacing="15.0">
                                             <children>
                                                 <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Họ tên:">
                                                     <font>
@@ -498,11 +501,14 @@
                                                         <Font size="20.0" />
                                                     </font>
                                                 </TextField>
-                                                <TextField fx:id="TextSex1" layoutX="10.0" layoutY="32.0" text="Nữ">
-                                                    <font>
-                                                        <Font size="20.0" />
-                                                    </font>
-                                                </TextField>
+                                                <ComboBox fx:id="comboBoxSex1" value="Nữ">
+                                                    <items>
+                                                        <FXCollections fx:factory="observableArrayList">
+                                                            <String fx:value="Nữ" />
+                                                            <String fx:value="Nam" />
+                                                        </FXCollections>
+                                                    </items>
+                                                </ComboBox>
                                                 <TextField fx:id="DOB1" layoutX="10.0" layoutY="62.0" text="02-06-2000">
                                                     <font>
                                                         <Font size="20.0" />
@@ -515,7 +521,7 @@
                                                 </TextField>
                                             </children>
                                         </VBox>
-                                        <VBox layoutX="250.0" prefHeight="172.8" prefWidth="102.7" spacing="5.0">
+                                        <VBox layoutX="250.0" prefHeight="172.8" prefWidth="102.7" spacing="15.0">
                                             <children>
                                                 <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Vai trò :">
                                                     <font>
@@ -570,9 +576,9 @@
                                         </VBox>
                                     </children>
                                 </HBox>
-                                <HBox fx:id="InformationHBox2" layoutX="10.0" layoutY="148.0" onMouseClicked="#onInformationHBox2Clicked" prefHeight="115.2" prefWidth="818.2">
+                                <HBox fx:id="InformationHBox2" layoutX="10.0" layoutY="148.0" onMouseClicked="#onInformationHBox2Clicked" prefHeight="200.0" prefWidth="818.2">
                                     <children>
-                                        <VBox prefHeight="172.8" prefWidth="153.9" spacing="5.0">
+                                        <VBox prefHeight="172.8" prefWidth="153.9" spacing="15.0">
                                             <children>
                                                 <Text fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" text="Họ tên:">
                                                     <font>
@@ -603,11 +609,14 @@
                                                         <Font size="20.0" />
                                                     </font>
                                                 </TextField>
-                                                <TextField fx:id="TextSex11" layoutX="10.0" layoutY="32.0" text="Nữ">
-                                                    <font>
-                                                        <Font size="20.0" />
-                                                    </font>
-                                                </TextField>
+                                                <ComboBox fx:id="comboBoxSex2" value="Nữ">
+                                                    <items>
+                                                        <FXCollections fx:factory="observableArrayList">
+                                                            <String fx:value="Nữ" />
+                                                            <String fx:value="Nam" />
+                                                        </FXCollections>
+                                                    </items>
+                                                </ComboBox>
                                                 <TextField fx:id="DOB11" layoutX="10.0" layoutY="62.0" text="14-02-2000">
                                                     <font>
                                                         <Font size="20.0" />
@@ -620,7 +629,7 @@
                                                 </TextField>
                                             </children>
                                         </VBox>
-                                        <VBox layoutX="250.0" prefHeight="172.8" prefWidth="102.7" spacing="5.0">
+                                        <VBox layoutX="250.0" prefHeight="172.8" prefWidth="102.7" spacing="15.0">
                                             <children>
                                                 <Text fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" text="Vai trò :">
                                                     <font>
