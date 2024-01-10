@@ -7,4 +7,9 @@ public class Manager_ThongTinTaiKhoanController extends Manager_ChuyenTrangContr
     private void LogoutButtonClicked(){
         Main.loadScene("login.fxml");
     }
+    @FXML
+    private void handleYeuCau(){
+        Main.loadScene("Manager_YeuCauChinhSua.fxml");
+    }
+
 }

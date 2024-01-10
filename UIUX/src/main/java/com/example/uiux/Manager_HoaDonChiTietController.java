@@ -4,6 +4,8 @@ import javafx.beans.property.ReadOnlyObjectWrapper;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
+import javafx.geometry.Pos;
+import javafx.scene.control.TableCell;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 
@@ -47,6 +49,42 @@ public class Manager_HoaDonChiTietController extends Manager_ChuyenTrangControll
         ThoiGianColumn.setCellValueFactory(cellData -> new ReadOnlyObjectWrapper<>(cellData.getValue().getThoiGian()));
         TinhTrangColumn.setCellValueFactory(cellData -> new ReadOnlyObjectWrapper<>(cellData.getValue().getTinhTrang()));
         GhiChuColumn.setCellValueFactory(cellData -> new ReadOnlyObjectWrapper<>(cellData.getValue().getGhiChu()));
+
+        SoTienColumn.setCellFactory(column -> {
+            return new TableCell<HoaDonChiTiet, Integer>() {
+                @Override
+                protected void updateItem(Integer item, boolean empty) {
+                    super.updateItem(item, empty);
+
+                    if (item == null || empty) {
+                        setText(null);
+                        setStyle("");
+                    } else {
+                        // Right align the text in the cell
+                        setText(item.toString());
+                        setAlignment(Pos.CENTER_RIGHT); // Align to right
+                    }
+                }
+            };
+        });
+        ThoiGianColumn.setCellFactory(column -> {
+            return new TableCell<HoaDonChiTiet, String>() {
+                @Override
+                protected void updateItem(String item, boolean empty) {
+                    super.updateItem(item, empty);
+
+                    if (item == null || empty) {
+                        setText(null);
+                        setStyle("");
+                    } else {
+                        // Right align the text in the cell
+                        setText(item);
+                        setAlignment(Pos.CENTER); // Align to right
+                    }
+                }
+            };
+        });
+
 
 
         // Create and add data to the table

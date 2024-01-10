@@ -283,10 +283,10 @@
                     <columns>
                         <TableColumn fx:id="IdColumn" prefWidth="153.6" text="ID" />
                         <TableColumn fx:id="PhongColumn" prefWidth="76.8" text="Phòng" />
-                        <TableColumn fx:id="SoTienColumn" prefWidth="128" text="Số tiền" />
+                        <TableColumn fx:id="SoTienColumn" prefWidth="100" text="Số tiền" />
                         <TableColumn fx:id="ThoiGianColumn" prefWidth="128" text="Thời gian" />
                         <TableColumn fx:id="TinhTrangColumn" prefWidth="128" text="Tình trạng" />
-                        <TableColumn fx:id="GhiChuColumn" prefWidth="200" text="Ghi chú" />
+                        <TableColumn fx:id="GhiChuColumn" prefWidth="228" text="Ghi chú" />
                     </columns>
                 </TableView>
                 <Button mnemonicParsing="false" onAction="#handleQuayLai" prefHeight="84.0" prefWidth="147.0" style="-fx-border-radius: 30; -fx-background-radius: 30; -fx-background-color: #ffffff; -fx-border-color: #0B8C56;" text="Quay lại" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="17" GridPane.rowSpan="2">

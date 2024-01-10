@@ -304,7 +304,7 @@
                         </Text>
                     </children>
                 </StackPane>
-            <Button mnemonicParsing="false" prefHeight="54.0" prefWidth="227.0" style="-fx-border-radius: 20; -fx-background-radius: 20; -fx-border-color: #0B8C56; -fx-background-color: #ffffff;" text="Yêu cầu chỉnh sửa" GridPane.columnIndex="8" GridPane.columnSpan="4" GridPane.rowIndex="15" GridPane.rowSpan="2">
+            <Button mnemonicParsing="false" fx:id="YeuCauChinhSuaButton" onAction="#handleYeuCau" prefHeight="54.0" prefWidth="227.0" style="-fx-border-radius: 20; -fx-background-radius: 20; -fx-border-color: #0B8C56; -fx-background-color: #ffffff;" text="Yêu cầu chỉnh sửa" GridPane.columnIndex="8" GridPane.columnSpan="4" GridPane.rowIndex="15" GridPane.rowSpan="2">
                <font>
                   <Font name="System Bold" size="15.0" />
                </font>
