@@ -65,46 +65,46 @@
                 <RowConstraints percentHeight="10.0" />
                 <RowConstraints percentHeight="10.0" />
                 <RowConstraints percentHeight="10.0" />
-            <RowConstraints maxHeight="24.0" minHeight="10.0" percentHeight="10.0" prefHeight="22.0" />
-            <RowConstraints maxHeight="13.0" minHeight="5.0" percentHeight="10.0" prefHeight="7.0" />
-   
+                <RowConstraints maxHeight="24.0" minHeight="10.0" percentHeight="10.0" prefHeight="22.0" />
+                <RowConstraints maxHeight="13.0" minHeight="5.0" percentHeight="10.0" prefHeight="7.0" />
+
             </rowConstraints>
             <children>
-            <Pane prefHeight="91.0" prefWidth="320.0" style="-fx-background-radius: 15;" GridPane.columnIndex="1" GridPane.columnSpan="10" GridPane.rowIndex="1" GridPane.rowSpan="6">
-               <children>
-                  <Text layoutX="104.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nguyễn Hàn My">
-                     <font>
-                        <Font name="System Bold" size="30.0" />
-                     </font>
-                  </Text>
-                  <Text layoutX="104.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cư dân">
-                     <font>
-                        <Font size="20.0" />
-                     </font>
-                  </Text>
-                  <ImageView fx:id="ThongTinTaiKhoan" fitHeight="68.0" fitWidth="76.0" layoutX="20.0" layoutY="7.0" onMouseClicked="#avatarClicked" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../../../icon/sbcf-default-avatar.png" />
-                     </image>
-                  </ImageView>
-               </children>
-            </Pane>
-            <Pane fx:id="ButtonThongBao" prefHeight="53.0" prefWidth="105.0" style="-fx-border-color: #0B8C56; -fx-border-width: 1; -fx-border-radius: 20;" GridPane.columnIndex="15" GridPane.columnSpan="3" GridPane.rowIndex="2" GridPane.rowSpan="4">
-               <children>
-                  <ImageView fitHeight="50.0" fitWidth="50.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../../../icon/Bell.png" />
-                     </image>
-                  </ImageView>
-                  <Text layoutX="50.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Thông báo">
-                     <font>
-                        <Font size="20.0" />
-                     </font>
-                  </Text>
-                  <Button layoutX="-4.0" layoutY="-7.0" mnemonicParsing="false" onAction="#showThongBaoPopup" opacity="0.0" prefHeight="68.0" prefWidth="164.0" />
-               </children>
-            </Pane>
-            <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: f4f4f4;" GridPane.columnSpan="20" GridPane.rowIndex="8" GridPane.rowSpan="2" />
+                <Pane prefHeight="91.0" prefWidth="320.0" style="-fx-background-radius: 15;" GridPane.columnIndex="1" GridPane.columnSpan="10" GridPane.rowIndex="1" GridPane.rowSpan="6">
+                    <children>
+                        <Text layoutX="104.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nguyễn Hàn My">
+                            <font>
+                                <Font name="System Bold" size="30.0" />
+                            </font>
+                        </Text>
+                        <Text layoutX="104.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cư dân">
+                            <font>
+                                <Font size="20.0" />
+                            </font>
+                        </Text>
+                        <ImageView fx:id="ThongTinTaiKhoan" fitHeight="68.0" fitWidth="76.0" layoutX="20.0" layoutY="7.0" onMouseClicked="#avatarClicked" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../../icon/sbcf-default-avatar.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                </Pane>
+                <Pane fx:id="ButtonThongBao" prefHeight="53.0" prefWidth="105.0" style="-fx-border-color: #0B8C56; -fx-border-width: 1; -fx-border-radius: 20;" GridPane.columnIndex="15" GridPane.columnSpan="3" GridPane.rowIndex="2" GridPane.rowSpan="4">
+                    <children>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../../icon/Bell.png" />
+                            </image>
+                        </ImageView>
+                        <Text layoutX="50.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Thông báo">
+                            <font>
+                                <Font size="20.0" />
+                            </font>
+                        </Text>
+                        <Button layoutX="-4.0" layoutY="-7.0" mnemonicParsing="false" onAction="#showThongBaoPopup" opacity="0.0" prefHeight="68.0" prefWidth="164.0" />
+                    </children>
+                </Pane>
+                <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: f4f4f4;" GridPane.columnSpan="20" GridPane.rowIndex="8" GridPane.rowSpan="2" />
             </children>
         </GridPane>
         <GridPane fx:id="LeftSideGrid" style="-fx-background-color: #0B8C56;" GridPane.rowIndex="1" GridPane.rowSpan="4">
@@ -159,14 +159,14 @@
                     </font>
                 </Button>
                 <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#E3D464" height="55.0" stroke="BLACK" strokeType="INSIDE" width="13.0" GridPane.rowIndex="4" GridPane.rowSpan="2" />
-            <Button fx:id="ButtonThongTinCanHo" mnemonicParsing="false" onAction="#ThongTinCanHo" prefHeight="58.0" prefWidth="204.0" style="-fx-background-color: #0B8C56; -fx-padding: 0 0 0 0; -fx-alignment: CENTER_LEFT; -fx-margin: 0 0 54 0;" text="Thông tin căn hộ" textFill="WHITE" GridPane.columnIndex="1" GridPane.columnSpan="8" GridPane.rowIndex="2" GridPane.rowSpan="2">
-               <font>
-                  <Font name="System Bold" size="20.0" />
-               </font>
-            </Button>
-<!--                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#C5E99B" height="55.0" stroke="BLACK" strokeType="INSIDE" width="13.0" GridPane.rowIndex="3" GridPane.rowSpan="2" />-->
-<!--                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#C5E99B" height="55.0" stroke="BLACK" strokeType="INSIDE" width="13.0" GridPane.rowIndex="5" GridPane.rowSpan="2" />-->
-<!--                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#C5E99B" height="55.0" stroke="BLACK" strokeType="INSIDE" width="13.0" GridPane.rowIndex="7" GridPane.rowSpan="2" />-->
+                <Button fx:id="ButtonThongTinCanHo" mnemonicParsing="false" onAction="#ThongTinCanHo" prefHeight="58.0" prefWidth="204.0" style="-fx-background-color: #0B8C56; -fx-padding: 0 0 0 0; -fx-alignment: CENTER_LEFT; -fx-margin: 0 0 54 0;" text="Thông tin căn hộ" textFill="WHITE" GridPane.columnIndex="1" GridPane.columnSpan="8" GridPane.rowIndex="2" GridPane.rowSpan="2">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </Button>
+                <!--                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#C5E99B" height="55.0" stroke="BLACK" strokeType="INSIDE" width="13.0" GridPane.rowIndex="3" GridPane.rowSpan="2" />-->
+                <!--                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#C5E99B" height="55.0" stroke="BLACK" strokeType="INSIDE" width="13.0" GridPane.rowIndex="5" GridPane.rowSpan="2" />-->
+                <!--                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#C5E99B" height="55.0" stroke="BLACK" strokeType="INSIDE" width="13.0" GridPane.rowIndex="7" GridPane.rowSpan="2" />-->
 
 
 
@@ -205,8 +205,8 @@
                 <RowConstraints percentHeight="10.0" />
                 <RowConstraints percentHeight="10.0" />
                 <RowConstraints percentHeight="10.0" />
-            <RowConstraints minHeight="10.0" percentHeight="10.0" prefHeight="30.0" />
-            <RowConstraints minHeight="10.0" percentHeight="10.0" prefHeight="30.0" />
+                <RowConstraints minHeight="10.0" percentHeight="10.0" prefHeight="30.0" />
+                <RowConstraints minHeight="10.0" percentHeight="10.0" prefHeight="30.0" />
 
             </rowConstraints>
             <children>
@@ -214,9 +214,9 @@
                     <image>
                         <Image url="@../Logo.jpg" />
                     </image>
-            </ImageView>
+                </ImageView>
 
-                      <Pane prefHeight="72.0" prefWidth="145.0" GridPane.columnIndex="7" GridPane.columnSpan="11" GridPane.rowIndex="1" GridPane.rowSpan="5">
+                <Pane prefHeight="72.0" prefWidth="145.0" GridPane.columnIndex="7" GridPane.columnSpan="11" GridPane.rowIndex="1" GridPane.rowSpan="5">
                     <children>
                         <Text layoutX="14.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="iHopT">
                             <font>
@@ -224,98 +224,98 @@
                             </font>
                         </Text>
                     </children>
-            </Pane>
-            <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #0B8C56;" GridPane.columnSpan="20" GridPane.rowIndex="8" GridPane.rowSpan="2" />
-            <Pane fx:id="BorderPane" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: lightgray; -fx-border-width: 1;" GridPane.columnSpan="20" GridPane.rowSpan="8" />
+                </Pane>
+                <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #0B8C56;" GridPane.columnSpan="20" GridPane.rowIndex="8" GridPane.rowSpan="2" />
+                <Pane fx:id="BorderPane" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: lightgray; -fx-border-width: 1;" GridPane.columnSpan="20" GridPane.rowSpan="8" />
             </children>
         </GridPane>
-      <ScrollPane hbarPolicy="NEVER" vbarPolicy="NEVER" GridPane.columnIndex="1" GridPane.columnSpan="4" GridPane.rowIndex="1" GridPane.rowSpan="4">
-         <content>
-              <GridPane fx:id="InfomationGrid" maxHeight="1000.0" prefHeight="10000.0" prefWidth="1024.0" style="-fx-background-color: f4f4f4;">
-                  <columnConstraints>
-                      <ColumnConstraints percentWidth="5.0" />
-                      <ColumnConstraints percentWidth="5.0" />
-                      <ColumnConstraints percentWidth="5.0" />
-                      <ColumnConstraints percentWidth="5.0" />
-                      <ColumnConstraints percentWidth="5.0" />
-                      <ColumnConstraints percentWidth="5.0" />
-                      <ColumnConstraints percentWidth="5.0" />
-                      <ColumnConstraints percentWidth="5.0" />
-                      <ColumnConstraints percentWidth="5.0" />
-                      <ColumnConstraints percentWidth="5.0" />
-                      <ColumnConstraints percentWidth="5.0" />
-                      <ColumnConstraints percentWidth="5.0" />
-                      <ColumnConstraints percentWidth="5.0" />
-                      <ColumnConstraints percentWidth="5.0" />
-                      <ColumnConstraints percentWidth="5.0" />
-                      <ColumnConstraints percentWidth="5.0" />
-                      <ColumnConstraints percentWidth="5.0" />
-                      <ColumnConstraints percentWidth="5.0" />
-                      <ColumnConstraints percentWidth="5.0" />
-                      <ColumnConstraints percentWidth="5.0" />
-                  <ColumnConstraints percentWidth="5.0" />
-                  <ColumnConstraints percentWidth="5.0" />
-                  <ColumnConstraints percentWidth="5.0" />
-                  <ColumnConstraints percentWidth="5.0" />
-                  <ColumnConstraints percentWidth="5.0" />
-                  <ColumnConstraints percentWidth="5.0" />
-                  <ColumnConstraints percentWidth="5.0" />
-                  <ColumnConstraints percentWidth="5.0" />
-                  <ColumnConstraints percentWidth="5.0" />
-                  </columnConstraints>
-                  <rowConstraints>
-                      <RowConstraints percentHeight="5.0" />
-                      <RowConstraints percentHeight="5.0" />
-                      <RowConstraints percentHeight="5.0" />
-                      <RowConstraints percentHeight="5.0" />
-                      <RowConstraints percentHeight="5.0" />
-                      <RowConstraints percentHeight="5.0" />
-                      <RowConstraints percentHeight="5.0" />
-                      <RowConstraints percentHeight="5.0" />
-                      <RowConstraints percentHeight="5.0" />
-                      <RowConstraints percentHeight="5.0" />
-                      <RowConstraints percentHeight="5.0" />
-                      <RowConstraints percentHeight="5.0" />
-                      <RowConstraints percentHeight="5.0" />
-                      <RowConstraints percentHeight="5.0" />
-                      <RowConstraints percentHeight="5.0" />
-                      <RowConstraints percentHeight="5.0" />
-                      <RowConstraints percentHeight="5.0" />
-                      <RowConstraints percentHeight="5.0" />
-                      <RowConstraints percentHeight="5.0" />
-                  <RowConstraints percentHeight="5.0" />
-                  <RowConstraints percentHeight="5.0" />
-                  <RowConstraints percentHeight="5.0" />
-                  <RowConstraints percentHeight="5.0" />
-                  <RowConstraints percentHeight="5.0" />
-                  <RowConstraints percentHeight="5.0" />
-                  <RowConstraints percentHeight="5.0" />
-                  <RowConstraints percentHeight="5.0" />
-                  <RowConstraints percentHeight="5.0" />
-                  </rowConstraints>
-               <children>
-                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Hóa đơn" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.rowSpan="2">
-                     <font>
-                        <Font name="System Bold" size="30.0" />
-                     </font>
-                  </Text>
-                  <HBox fx:id="tableView" prefHeight="204.0" prefWidth="706.0" GridPane.columnIndex="3" GridPane.columnSpan="20" GridPane.rowIndex="3" GridPane.rowSpan="12">
-                     <children>
-                        <TableView fx:id="TableHoaDon" prefHeight="178.0" prefWidth="729.0">
-                          <columns>
-                            <TableColumn fx:id="MaHoaDonColumn" prefWidth="140.79999387264252" text="Mã Hóa Đơn" />
-                            <TableColumn fx:id="SoTienColumn" minWidth="0.0" prefWidth="139.2000274658203" text="Số Tiền" />
-                              <TableColumn fx:id="ThoiGianColumn" prefWidth="187.20001220703125" text="Thời Gian" />
-                              <TableColumn fx:id="TinhTrangColumn" prefWidth="102.39999389648438" text="Tình Trạng" />
-                              <TableColumn fx:id="GhiChuColumn" prefWidth="161.599853515625" text="Ghi Chú" />
-                          </columns>
-                        </TableView>
-                     </children>
-                  </HBox>
-               </children>
-              </GridPane>
-         </content>
-      </ScrollPane>
+        <ScrollPane hbarPolicy="NEVER" vbarPolicy="NEVER" GridPane.columnIndex="1" GridPane.columnSpan="4" GridPane.rowIndex="1" GridPane.rowSpan="4">
+            <content>
+                <GridPane fx:id="InfomationGrid" maxHeight="1000.0" prefHeight="10000.0" prefWidth="1024.0" style="-fx-background-color: f4f4f4;">
+                    <columnConstraints>
+                        <ColumnConstraints percentWidth="5.0" />
+                        <ColumnConstraints percentWidth="5.0" />
+                        <ColumnConstraints percentWidth="5.0" />
+                        <ColumnConstraints percentWidth="5.0" />
+                        <ColumnConstraints percentWidth="5.0" />
+                        <ColumnConstraints percentWidth="5.0" />
+                        <ColumnConstraints percentWidth="5.0" />
+                        <ColumnConstraints percentWidth="5.0" />
+                        <ColumnConstraints percentWidth="5.0" />
+                        <ColumnConstraints percentWidth="5.0" />
+                        <ColumnConstraints percentWidth="5.0" />
+                        <ColumnConstraints percentWidth="5.0" />
+                        <ColumnConstraints percentWidth="5.0" />
+                        <ColumnConstraints percentWidth="5.0" />
+                        <ColumnConstraints percentWidth="5.0" />
+                        <ColumnConstraints percentWidth="5.0" />
+                        <ColumnConstraints percentWidth="5.0" />
+                        <ColumnConstraints percentWidth="5.0" />
+                        <ColumnConstraints percentWidth="5.0" />
+                        <ColumnConstraints percentWidth="5.0" />
+                        <ColumnConstraints percentWidth="5.0" />
+                        <ColumnConstraints percentWidth="5.0" />
+                        <ColumnConstraints percentWidth="5.0" />
+                        <ColumnConstraints percentWidth="5.0" />
+                        <ColumnConstraints percentWidth="5.0" />
+                        <ColumnConstraints percentWidth="5.0" />
+                        <ColumnConstraints percentWidth="5.0" />
+                        <ColumnConstraints percentWidth="5.0" />
+                        <ColumnConstraints percentWidth="5.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints percentHeight="5.0" />
+                        <RowConstraints percentHeight="5.0" />
+                        <RowConstraints percentHeight="5.0" />
+                        <RowConstraints percentHeight="5.0" />
+                        <RowConstraints percentHeight="5.0" />
+                        <RowConstraints percentHeight="5.0" />
+                        <RowConstraints percentHeight="5.0" />
+                        <RowConstraints percentHeight="5.0" />
+                        <RowConstraints percentHeight="5.0" />
+                        <RowConstraints percentHeight="5.0" />
+                        <RowConstraints percentHeight="5.0" />
+                        <RowConstraints percentHeight="5.0" />
+                        <RowConstraints percentHeight="5.0" />
+                        <RowConstraints percentHeight="5.0" />
+                        <RowConstraints percentHeight="5.0" />
+                        <RowConstraints percentHeight="5.0" />
+                        <RowConstraints percentHeight="5.0" />
+                        <RowConstraints percentHeight="5.0" />
+                        <RowConstraints percentHeight="5.0" />
+                        <RowConstraints percentHeight="5.0" />
+                        <RowConstraints percentHeight="5.0" />
+                        <RowConstraints percentHeight="5.0" />
+                        <RowConstraints percentHeight="5.0" />
+                        <RowConstraints percentHeight="5.0" />
+                        <RowConstraints percentHeight="5.0" />
+                        <RowConstraints percentHeight="5.0" />
+                        <RowConstraints percentHeight="5.0" />
+                        <RowConstraints percentHeight="5.0" />
+                    </rowConstraints>
+                    <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Hóa đơn" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.rowSpan="2">
+                            <font>
+                                <Font name="System Bold" size="30.0" />
+                            </font>
+                        </Text>
+                        <HBox fx:id="tableView" prefHeight="204.0" prefWidth="706.0" GridPane.columnIndex="3" GridPane.columnSpan="20" GridPane.rowIndex="3" GridPane.rowSpan="12">
+                            <children>
+                                <TableView fx:id="TableHoaDon" prefHeight="178.0" prefWidth="729.0">
+                                    <columns>
+                                        <TableColumn fx:id="MaHoaDonColumn" prefWidth="140.79999387264252" text="Mã Hóa Đơn" />
+                                        <TableColumn fx:id="SoTienColumn" minWidth="0.0" prefWidth="139.2000274658203" text="Số Tiền" />
+                                        <TableColumn fx:id="ThoiGianColumn" prefWidth="187.20001220703125" text="Thời Gian" />
+                                        <TableColumn fx:id="TinhTrangColumn" prefWidth="102.39999389648438" text="Tình Trạng" />
+                                        <TableColumn fx:id="GhiChuColumn" prefWidth="161.599853515625" text="Ghi Chú" />
+                                    </columns>
+                                </TableView>
+                            </children>
+                        </HBox>
+                    </children>
+                </GridPane>
+            </content>
+        </ScrollPane>
 
         <!-- Grid content goes here -->
     </GridPane>

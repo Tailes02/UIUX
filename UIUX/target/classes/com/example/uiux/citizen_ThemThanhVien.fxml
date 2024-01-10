@@ -366,13 +366,13 @@
                 </Pane>
                 <TextField prefHeight="27.0" prefWidth="335.0" promptText="0965800423" style="-fx-border-radius: 20; -fx-background-radius: 20;" GridPane.columnIndex="12" GridPane.columnSpan="6" GridPane.rowIndex="5" />
                 <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="12" GridPane.columnSpan="4" GridPane.rowIndex="10">
-               <children>
-                  <Text layoutY="22.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vai trò">
-                     <font>
-                        <Font size="20.0" />
-                     </font>
-                  </Text>
-               </children></Pane>
+                    <children>
+                        <Text layoutY="22.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vai trò">
+                            <font>
+                                <Font size="20.0" />
+                            </font>
+                        </Text>
+                    </children></Pane>
                 <TextField prefHeight="27.0" prefWidth="335.0" promptText="quanlychungcu@gmail.com" style="-fx-border-radius: 20; -fx-background-radius: 20;" GridPane.columnIndex="2" GridPane.columnSpan="6" GridPane.rowIndex="11" />
                 <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="12" GridPane.columnSpan="4" GridPane.rowIndex="8">
                     <children>
@@ -389,26 +389,26 @@
                         <Font size="18.0" />
                     </font>
                 </Text>
-            <Text strokeType="OUTSIDE" strokeWidth="0.0" GridPane.columnIndex="2" GridPane.rowIndex="3">
-               <font>
-                  <Font size="20.0" />
-               </font>
-            </Text>
-            <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: FFFFFF; -fx-background-radius: 20;" GridPane.columnIndex="2" GridPane.columnSpan="6" GridPane.rowIndex="3">
-               <children>
-                  <Text layoutX="8.0" layoutY="21.0" strokeType="OUTSIDE" strokeWidth="0.0" text="101">
-                     <font>
-                        <Font size="18.0" />
-                     </font>
-                  </Text>
-               </children>
-            </Pane>
-            <ComboBox fx:id="roleComboBox" prefHeight="30.0" prefWidth="328.0" GridPane.columnIndex="12" GridPane.columnSpan="6" GridPane.rowIndex="11" />
-            <Button mnemonicParsing="false" onAction="#QuayLai" prefHeight="66.0" prefWidth="102.0" style="-fx-border-radius: 30; -fx-background-radius: 30; -fx-background-color: #ffffff; -fx-border-color: #0B8C56;" text="Quay lại" GridPane.columnIndex="2" GridPane.columnSpan="3" GridPane.rowIndex="16" GridPane.rowSpan="2">
-               <font>
-                  <Font size="15.0" />
-               </font>
-            </Button>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Text>
+                <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: FFFFFF; -fx-background-radius: 20;" GridPane.columnIndex="2" GridPane.columnSpan="6" GridPane.rowIndex="3">
+                    <children>
+                        <Text layoutX="8.0" layoutY="21.0" strokeType="OUTSIDE" strokeWidth="0.0" text="101">
+                            <font>
+                                <Font size="18.0" />
+                            </font>
+                        </Text>
+                    </children>
+                </Pane>
+                <ComboBox fx:id="roleComboBox" prefHeight="30.0" prefWidth="328.0" GridPane.columnIndex="12" GridPane.columnSpan="6" GridPane.rowIndex="11" />
+                <Button mnemonicParsing="false" onAction="#QuayLai" prefHeight="66.0" prefWidth="102.0" style="-fx-border-radius: 30; -fx-background-radius: 30; -fx-background-color: #ffffff; -fx-border-color: #0B8C56;" text="Quay lại" GridPane.columnIndex="2" GridPane.columnSpan="3" GridPane.rowIndex="16" GridPane.rowSpan="2">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </Button>
             </children>
         </GridPane>
 
