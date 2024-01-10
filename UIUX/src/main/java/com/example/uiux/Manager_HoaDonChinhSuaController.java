@@ -1,6 +1,7 @@
 package com.example.uiux;
 
 import javafx.fxml.FXML;
+import javafx.scene.control.Alert;
 import javafx.scene.control.RadioButton;
 import javafx.scene.control.ToggleGroup;
 
@@ -15,6 +16,7 @@ public class Manager_HoaDonChinhSuaController extends Manager_ChuyenTrangControl
 
     @FXML
     public void handleChinhSua() {
+        Main.showAlert("Chỉnh sửa thông tin hóa đơn thành công", "xác nhận", Alert.AlertType.ERROR);
         Main.loadScene("Manager_HoaDonChiTietSauChinhSua.fxml");
     }
     @FXML

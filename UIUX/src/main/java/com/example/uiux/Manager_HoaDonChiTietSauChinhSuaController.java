@@ -53,9 +53,13 @@ public class Manager_HoaDonChiTietSauChinhSuaController extends Manager_ChuyenTr
         // Create and add data to the table
         ObservableList<HoaDonChiTiet> data = FXCollections.observableArrayList(
                 new HoaDonChiTiet("PD30000043546", 101, 284068,"20/09/2023","đã đóng", ""),
-                new HoaDonChiTiet("PD30000043547", 101, 284068,"20/09/2023","đã đóng", ""),
-                new HoaDonChiTiet("PD30000043548", 101, 284068,"20/09/2023","đã đóng", ""),
-                new HoaDonChiTiet("PD30000043549", 101, 284068,"20/09/2023","đã đóng", "")
+                new HoaDonChiTiet("PD30000043545", 306, 728123,"18/09/2023","đã đóng", ""),
+                new HoaDonChiTiet("PD30000043543", 102, 632916,"N/A","đã đóng", ""),
+                new HoaDonChiTiet("PD30000043542", 205, 284068,"11/09/2023","đã đóng", ""),
+                new HoaDonChiTiet("PD30000043541", 302, 372165,"07/09/2023","chưa đóng", ""),
+                new HoaDonChiTiet("PD30000043540", 104, 531272,"26/08/2023","đã đóng", ""),
+                new HoaDonChiTiet("PD30000043539", 201, 512748,"21/08/2023","đã đóng", ""),
+                new HoaDonChiTiet("PD30000043538", 103, 937145,"16/08/2023","đã đóng", "")
 
 
 //                new HoaDonChiTiet("00003545", "Danh sách thu tiền nước tháng 9", "01/10/23 - 31/10/23", "Đang thu"),
