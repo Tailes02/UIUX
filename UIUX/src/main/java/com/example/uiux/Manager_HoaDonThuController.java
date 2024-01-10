@@ -28,8 +28,6 @@ public class Manager_HoaDonThuController extends Manager_ChuyenTrangController{
     private TableColumn<HoaDon, String> ThoiGianColumn;
 
     @FXML
-    private TableColumn<HoaDon, Integer> SoTienColumn;
-    @FXML
     private CheckBox chiCheckBox;
     @FXML
     public void handleThemMoi() {
@@ -44,40 +42,23 @@ public class Manager_HoaDonThuController extends Manager_ChuyenTrangController{
         IdColumn.setCellValueFactory(cellData -> new ReadOnlyObjectWrapper<>(cellData.getValue().getId()));
         TenColumn.setCellValueFactory(cellData -> new ReadOnlyObjectWrapper<>(cellData.getValue().getTen()));
         ThoiGianColumn.setCellValueFactory(cellData -> new ReadOnlyObjectWrapper<>(cellData.getValue().getThoiGian()));
-        SoTienColumn.setCellValueFactory(cellData -> new ReadOnlyObjectWrapper<>(cellData.getValue().getSoTien()));
         chiCheckBox.selectedProperty().addListener((observable, oldValue, newValue) -> {
             if (newValue) {
                 navigateToHoaDonChi();
             }
         });
 
-        SoTienColumn.setCellFactory(column -> {
-            return new TableCell<HoaDon, Integer>() {
-                @Override
-                protected void updateItem(Integer item, boolean empty) {
-                    super.updateItem(item, empty);
 
-                    if (item == null || empty) {
-                        setText(null);
-                        setStyle("");
-                    } else {
-                        // Right align the text in the cell
-                        setText(item.toString());
-                        setAlignment(Pos.CENTER_RIGHT); // Align to right
-                    }
-                }
-            };
-        });
         // Create and add data to the table
         ObservableList<HoaDon> data = FXCollections.observableArrayList(
-                new HoaDon("00003546", "Danh sách thu tiền điện tháng 9", "01/10/23 - 31/10/23",25104800),
-                new HoaDon("00003545", "Danh sách thu tiền nước tháng 9", "01/10/23 - 31/10/23", 2),
-                new HoaDon("00003543", "Danh sách thu phí vệ sinh 2023", "15/09/23 - 31/09/23", 2),
-                new HoaDon("00003542", "Danh sách thu tiền điện tháng 8", "01/09/23 - 31/09/23", 2),
-                new HoaDon("00003541", "Danh sách thu tiền nước tháng 8", "01/09/23 - 31/09/23", 2),
-                new HoaDon("00003540", "Danh sách thu tiền điện tháng 7", "01/08/23 - 31/08/23", 2),
-                new HoaDon("00003539", "Danh sách thu tiền nước tháng 7", "01/08/23 - 31/08/23", 2),
-                new HoaDon("00003538", "Danh sách thu tiền điện tháng 6", "01/07/23 - 31/07/23", 2)
+                new HoaDon("00003546", "Danh sách thu tiền điện tháng 9", "01/10/23 - 31/10/23"),
+                new HoaDon("00003545", "Danh sách thu tiền nước tháng 9", "01/10/23 - 31/10/23"),
+                new HoaDon("00003543", "Danh sách thu phí vệ sinh 2023", "15/09/23 - 31/09/23"),
+                new HoaDon("00003542", "Danh sách thu tiền điện tháng 8", "01/09/23 - 31/09/23"),
+                new HoaDon("00003541", "Danh sách thu tiền nước tháng 8", "01/09/23 - 31/09/23"),
+                new HoaDon("00003540", "Danh sách thu tiền điện tháng 7", "01/08/23 - 31/08/23"),
+                new HoaDon("00003539", "Danh sách thu tiền nước tháng 7", "01/08/23 - 31/08/23"),
+                new HoaDon("00003538", "Danh sách thu tiền điện tháng 6", "01/07/23 - 31/07/23")
 //                new HoaDon("00003543", 450000, "Trần Ngọc Linh", "09198765432","Đang thu"),
 //                new HoaDon("00003542", 205000, "Nguyễn Ngọc Khánh", "09123456789","Đang thu"),
 //                new HoaDon("00003541", 201000, "Nguyễn Tiến Dũng", "09187654321","Đã đóng"),
@@ -128,13 +109,10 @@ public class Manager_HoaDonThuController extends Manager_ChuyenTrangController{
         private String id;
         private String ten;
         private String thoiGian;
-        private int soTien;
-
-        public HoaDon(String id, String ten, String thoiGian,int soTien) {
+        public HoaDon(String id, String ten, String thoiGian) {
             this.id = id;
             this.ten = ten;
             this.thoiGian = thoiGian;
-            this.soTien = soTien;
         }
 
         // Getters and setters for each property
@@ -162,13 +140,6 @@ public class Manager_HoaDonThuController extends Manager_ChuyenTrangController{
             this.thoiGian = thoiGian;
         }
 
-        public int getSoTien() {
-            return soTien;
-        }
-
-        public void setSoTien(int soTien) {
-            this.soTien = soTien;
-        }
 
 
     }

@@ -278,9 +278,8 @@
              <TableView fx:id="tableView" prefHeight="200.0" prefWidth="200.0" style=" -fx-alignment: TOP_RIGHT" stylesheets="@style.css" GridPane.columnIndex="2" GridPane.columnSpan="16" GridPane.rowIndex="3" GridPane.rowSpan="13">
                  <columns>
                      <TableColumn fx:id="IdColumn" prefWidth="102.4" text="ID" />
-                     <TableColumn fx:id="TenColumn" prefWidth="407.2" text="Tên khoản thu" />
+                     <TableColumn fx:id="TenColumn" prefWidth="507.2" text="Tên khoản thu" />
                      <TableColumn fx:id="ThoiGianColumn" prefWidth="204.8" text="Thời gian" />
-                     <TableColumn fx:id="SoTienColumn" prefWidth="100"  style="-fx-alignment: CENTER-RIGHT;" text="Số tiền" />
 
                  </columns>
              </TableView>

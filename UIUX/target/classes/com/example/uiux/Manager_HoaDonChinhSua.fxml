@@ -346,9 +346,5 @@
             </children>
         </GridPane>
 
-<<<<<<< HEAD
-        <!-- Grid content goes here -->
-=======
->>>>>>> 9af6f3823c478fef3bc9f0a41f6e74cd7340e384
     </GridPane>
 </AnchorPane>

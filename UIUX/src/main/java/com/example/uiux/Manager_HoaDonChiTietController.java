@@ -35,7 +35,7 @@ public class Manager_HoaDonChiTietController extends Manager_ChuyenTrangControll
     }
 
     @FXML
-    public void handleChinhSuu() {
+    public void handleChinhSua() {
         Main.loadScene("Manager_HoaDonChinhSua.fxml");
     }
 
