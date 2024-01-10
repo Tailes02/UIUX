@@ -7,7 +7,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 
-public class Manager_HoaDonThuChiTietController extends Manager_ChuyenTrangController{
+public class Manager_HoaDonChiTietController extends Manager_ChuyenTrangController{
 
     @FXML
     private TableView<HoaDonChiTiet> tableView;
@@ -155,6 +155,5 @@ public class Manager_HoaDonThuChiTietController extends Manager_ChuyenTrangContr
     }
 
 }
-
 
 

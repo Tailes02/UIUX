@@ -346,6 +346,5 @@
             </children>
         </GridPane>
 
-        <!-- Grid content goes here -->
     </GridPane>
 </AnchorPane>

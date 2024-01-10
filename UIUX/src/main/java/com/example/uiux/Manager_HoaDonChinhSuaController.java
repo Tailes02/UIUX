@@ -16,7 +16,7 @@ public class Manager_HoaDonChinhSuaController extends Manager_ChuyenTrangControl
 
     @FXML
     public void handleQuayLai() {
-        Main.loadScene("Manager_HoaDonThuChiTiet.fxml");
+        Main.loadScene("Manager_HoaDonChiTiet.fxml");
     }
 
     @FXML

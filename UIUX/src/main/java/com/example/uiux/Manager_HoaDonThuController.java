@@ -37,7 +37,7 @@ public class Manager_HoaDonThuController extends Manager_ChuyenTrangController{
     }
     @FXML
     public void handleXemChiTiet(){
-        Main.loadScene("Manager_HoaDonThuChiTiet.fxml");
+        Main.loadScene("Manager_HoaDonChiTiet.fxml");
     }
     public void initialize() {
         // Initialize your columns here
