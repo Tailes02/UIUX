@@ -29,4 +29,7 @@
 .table-view .table-cell {
     -fx-font-size: 15px;
 }
+.center-aligned-header .label {
+    -fx-alignment: CENTER;
+}
 

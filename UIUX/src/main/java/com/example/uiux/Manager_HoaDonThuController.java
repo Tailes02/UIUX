@@ -5,6 +5,7 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.geometry.Pos;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
@@ -36,7 +37,7 @@ public class Manager_HoaDonThuController extends Manager_ChuyenTrangController{
     }
     @FXML
     public void handleXemChiTiet(){
-        Main.loadScene("Manager_HoaDonChiTiet.fxml");
+        Main.loadScene("Manager_HoaDonThuChiTiet.fxml");
     }
     public void initialize() {
         // Initialize your columns here
@@ -50,6 +51,23 @@ public class Manager_HoaDonThuController extends Manager_ChuyenTrangController{
             }
         });
 
+        SoTienColumn.setCellFactory(column -> {
+            return new TableCell<HoaDon, Integer>() {
+                @Override
+                protected void updateItem(Integer item, boolean empty) {
+                    super.updateItem(item, empty);
+
+                    if (item == null || empty) {
+                        setText(null);
+                        setStyle("");
+                    } else {
+                        // Right align the text in the cell
+                        setText(item.toString());
+                        setAlignment(Pos.CENTER_RIGHT); // Align to right
+                    }
+                }
+            };
+        });
         // Create and add data to the table
         ObservableList<HoaDon> data = FXCollections.observableArrayList(
                 new HoaDon("00003546", "Danh sách thu tiền điện tháng 9", "01/10/23 - 31/10/23",25104800),

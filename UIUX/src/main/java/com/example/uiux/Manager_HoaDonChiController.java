@@ -5,6 +5,7 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.geometry.Pos;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.CheckBox;
@@ -33,10 +34,10 @@ public class Manager_HoaDonChiController extends Manager_ChuyenTrangController{
 
     @FXML
     private TableColumn<HoaDonChi, String> GhiChuColumn;
-    @FXML
     public void handleThemMoi() {
-        Main.loadScene("Manager_TaoDanhSachChi.fxml");
+        Main.loadScene("Manager_TaoHoaDonChi.fxml");
     }
+
     @FXML
     private CheckBox thuCheckBox;
 
@@ -51,6 +52,40 @@ public class Manager_HoaDonChiController extends Manager_ChuyenTrangController{
             if (newValue) {
                 navigateToHoaDonThu();
             }
+        });
+        SoTienColumn.setCellFactory(column -> {
+            return new TableCell<HoaDonChi, Integer>() {
+                @Override
+                protected void updateItem(Integer item, boolean empty) {
+                    super.updateItem(item, empty);
+
+                    if (item == null || empty) {
+                        setText(null);
+                        setStyle("");
+                    } else {
+                        // Right align the text in the cell
+                        setText(item.toString());
+                        setAlignment(Pos.CENTER_RIGHT); // Align to right
+                    }
+                }
+            };
+        });
+        ThoiGianColumn.setCellFactory(column -> {
+            return new TableCell<HoaDonChi, String>() {
+                @Override
+                protected void updateItem(String item, boolean empty) {
+                    super.updateItem(item, empty);
+
+                    if (item == null || empty) {
+                        setText(null);
+                        setStyle("");
+                    } else {
+                        // Center align the text in the cell
+                        setText(item);
+                        setAlignment(Pos.CENTER); // Align to center
+                    }
+                }
+            };
         });
 
         // Create and add data to the table

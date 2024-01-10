@@ -4,11 +4,10 @@ import javafx.beans.property.ReadOnlyObjectWrapper;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
-import javafx.scene.control.TableCell;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 
-public class Manager_HoaDonChiTietController extends Manager_ChuyenTrangController{
+public class Manager_HoaDonThuChiTietController extends Manager_ChuyenTrangController{
 
     @FXML
     private TableView<HoaDonChiTiet> tableView;
