@@ -90,12 +90,21 @@ public class Manager_HoaDonChiController extends Manager_ChuyenTrangController{
 
         // Create and add data to the table
         ObservableList<HoaDonChi> data = FXCollections.observableArrayList(
-                new HoaDonChi("00003546", "Chi tiền tu sửa tháng 10", "15/10/23",240282,""),
-                new HoaDonChi("00003545", "Chi tiền sự kiện Trung Thu 2023", "01/10/23", 323932,""),
-                new HoaDonChi("00003544", "Chi tiền tu sửa tháng 9", "15/09/23", 203000,""),
-                new HoaDonChi("00003544", "Chi tiền đi du lịch hè 2023", "23/08/23", 43520000,""),
-                new HoaDonChi("00003544", "Chi tiền tu sửa tháng 8", "15/08/23", 190000,""),
-                new HoaDonChi("00003544", "Chi tiền nâng cấp đường truyền mạng", "02/05/23", 1500000,"")
+                new HoaDonChi("00002601", "Chi tiền tu sửa tháng 10", "15/10/23",240282,""),
+                new HoaDonChi("00002600", "Chi tiền sự kiện Trung Thu 2023", "01/10/23", 323932,""),
+                new HoaDonChi("00002599", "Chi tiền tu sửa nhà xe tháng 9", "15/09/23", 203000,""),
+                new HoaDonChi("00002598", "Chi tiền đi du lịch hè 2023", "23/08/23", 43520000,"Du lịch Đà Lạt"),
+                new HoaDonChi("00002597", "Chi tiền tu sửa tháng 8", "15/08/23", 190000,""),
+                new HoaDonChi("00002596", "Chi tiền thay mới bàn ghế ở sảnh", "02/05/23", 1800000,"Đổi sang sofa"),
+                new HoaDonChi("00002595", "Chi tiền phí vệ sinh 2023", "31/04/23", 15000000,""),
+                new HoaDonChi("00002594", "Chi tiền lắp đặt hệ thống camera", "30/04/23", 20000000,""),
+                new HoaDonChi("00002593", "Chi tiền mua cây", "27/04/23", 2400000,""),
+                new HoaDonChi("00002592", "Chi tiền đồng phục nhân viên", "20/04/23", 1600000,""),
+                new HoaDonChi("00002591", "Chi tiền nâng cấp đường truyền mạng", "02/05/23", 1500000,""),
+                new HoaDonChi("00002590", "Chi tiền nâng cấp đường truyền mạng", "02/05/23", 1500000,"")
+
+
+
             /* dự phòng
                 new admin_ThongTinNhanKhauController.HoaDonChi(1, "203", "Lương Văn Đức", "0989958699",2,"..."),
                 new admin_ThongTinNhanKhauController.HoaDonChi(2, "204", "Trần Ngọc An", "0912738073",3,"..."),

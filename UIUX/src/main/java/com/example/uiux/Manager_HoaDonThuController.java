@@ -58,7 +58,19 @@ public class Manager_HoaDonThuController extends Manager_ChuyenTrangController{
                 new HoaDon("00003541", "Danh sách thu tiền nước tháng 8", "01/09/23 - 31/09/23"),
                 new HoaDon("00003540", "Danh sách thu tiền điện tháng 7", "01/08/23 - 31/08/23"),
                 new HoaDon("00003539", "Danh sách thu tiền nước tháng 7", "01/08/23 - 31/08/23"),
-                new HoaDon("00003538", "Danh sách thu tiền điện tháng 6", "01/07/23 - 31/07/23")
+                new HoaDon("00003537", "Danh sách thu tiền điện tháng 6", "01/07/23 - 31/07/23"),
+                new HoaDon("00003536", "Danh sách thu tiền nước tháng 6", "01/07/23 - 31/07/23"),
+                new HoaDon("00003535", "Danh sách thu tiền ủng hộ vùng cao 2023", "16/07/23 - 31/07/23"),
+                new HoaDon("00003534", "Danh sách thu tiền quỹ du lịch hè 2023", "01/07/23 - 15/07/23"),
+                new HoaDon("00003533", "Danh sách thu tiền điện tháng 5", "01/06/23 - 31/06/23"),
+                new HoaDon("00003532", "Danh sách thu tiền nước tháng 5", "01/06/23 - 31/06/23"),
+                new HoaDon("00003531", "Danh sách thu tiền điện tháng 4 ", "01/05/23 - 31/05/23")
+
+
+
+
+
+
 //                new HoaDon("00003543", 450000, "Trần Ngọc Linh", "09198765432","Đang thu"),
 //                new HoaDon("00003542", 205000, "Nguyễn Ngọc Khánh", "09123456789","Đang thu"),
 //                new HoaDon("00003541", 201000, "Nguyễn Tiến Dũng", "09187654321","Đã đóng"),
